@@ -10,7 +10,7 @@ jobs:
 
     steps:
       # 1. Checkout the code
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # 2. Set up Python environment
       - name: Set up Python
@@ -24,13 +24,13 @@ jobs:
 
       # 4. Upload build artifacts
       - name: Upload Safari JS file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: safari-extension
           path: dist/safari_extension.js
 
       - name: Upload Chrome extension zip
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: chrome-extension
           path: dist/chrome_extension.zip
