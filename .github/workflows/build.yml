@@ -1,0 +1,44 @@
+name: Build and Version Bump
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the code
+      - uses: actions/checkout@v3
+
+      # 2. Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      # 3. Build the extension artifacts
+      - name: Run build script
+        run: python build.py
+
+      # 4. Upload build artifacts
+      - name: Upload Safari JS file
+        uses: actions/upload-artifact@v3
+        with:
+          name: safari-extension
+          path: dist/safari_extension.js
+
+      - name: Upload Chrome extension zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: chrome-extension
+          path: dist/chrome_extension.zip
+
+      # 5. Auto bump version and push a tag (only run if this commit is not already a tag)
+      - name: Bump version and create tag
+        if: github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python bump.py

@@ -1,0 +1,41 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'   # Matches tags beginning with "v"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the repository (needed to reference artifacts, if available)
+      - uses: actions/checkout@v3
+
+      # 2. Download artifacts from the build workflow if needed (optional step if you want to include generated files)
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: dist
+
+      # 3. Create a release and attach artifacts using ncipollo/release-action
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+
+      # 4. (Optional) Upload assets to the release:
+      - name: Upload Safari JS to Release
+        run: |
+          gh release upload "${{ github.ref_name }}" dist/safari_extension.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Chrome zip to Release
+        run: |
+          gh release upload "${{ github.ref_name }}" dist/chrome_extension.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
