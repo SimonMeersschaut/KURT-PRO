@@ -1,8 +1,8 @@
 name: Build and Version Bump
 
 on:
-  push:
-    branches: ["main", "CICD-pipeline"]
+  [push]
+    # branches: ["main", "CICD-pipeline"]
 
 jobs:
   build:
