@@ -16,7 +16,8 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
-          path: dist
+          name: safari-extension
+          path: dist/safari_extension.js
 
       # 3. Create a release and attach artifacts using ncipollo/release-action
       - name: Create GitHub Release
