@@ -36,9 +36,9 @@ jobs:
           path: dist/chrome_extension.zip
 
       # 5. Auto bump version and push a tag (only run if this commit is not already a tag)
-      # - name: Bump version and create tag
-      #   if: github.event_name == 'push'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     python bump.py
+      - name: Bump version and create tag
+        if: github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python bump.py
