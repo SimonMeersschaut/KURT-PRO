@@ -17,26 +17,19 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: safari-extension
-          path: dist/safari_extension.js
+          path: dist
 
-      # 3. Create a release and attach artifacts using ncipollo/release-action
+      # 3. List files to confirm what was downloaded
+      - name: Show downloaded files
+        run: ls -R dist
+
+      # 4. Create GitHub Release and upload files
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
-          draft: false
-          prerelease: false
-
-      # 4. (Optional) Upload assets to the release:
-      - name: Upload Safari JS to Release
-        run: |
-          gh release upload "${{ github.ref_name }}" dist/safari_extension.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload Chrome zip to Release
-        run: |
-          gh release upload "${{ github.ref_name }}" dist/chrome_extension.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: Release ${{ github.ref_name }}
+          artifacts: |
+            dist/safari-extension/safari_extension.js
+            dist/chrome-extension/chrome_extension.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
