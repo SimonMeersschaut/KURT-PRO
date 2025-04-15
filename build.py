@@ -6,7 +6,7 @@ SRC_DIR = "src"
 OUTPUT_DIR = "dist"
 SAFARI_FILE = os.path.join(OUTPUT_DIR, "safari_extension.js")
 CHROME_ZIP = os.path.join(OUTPUT_DIR, "chrome_extension.zip")
-MANIFEST = "manifest.json"
+MANIFEST = os.path.join(SRC_DIR, "manifest.json")
 
 # Create output directory
 os.makedirs(OUTPUT_DIR, exist_ok=True)
