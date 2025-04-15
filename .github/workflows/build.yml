@@ -4,6 +4,9 @@ on:
   [push]
     # branches: ["main", "CICD-pipeline"]
 
+permissions:
+  contents: write  # REQUIRED for committing and pushing
+
 jobs:
   build:
     runs-on: ubuntu-latest
