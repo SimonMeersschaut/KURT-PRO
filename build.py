@@ -26,6 +26,6 @@ with zipfile.ZipFile(CHROME_ZIP, "w") as zipf:
     # Add each JavaScript file from src folder
     for fname in os.listdir(SRC_DIR):
         if fname.endswith(".js"):
-            zipf.write(fname, arcname=fname)
+            zipf.write(os.path.join(SRC_DIR, fname), arcname=fname)
 
 print("Artifacts built successfully.")
