@@ -38,7 +38,7 @@ jobs:
           tag_name: ${{ steps.get_tag.outputs.tag }}
           name: Release ${{ steps.get_tag.outputs.tag }}
           files: |
-            dist/safari_extension.js
-            dist/chrome_extension.zip
+            dist/KURT_PRO_safari_extension.js
+            dist/KURT_PRO_chrome_extension.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
