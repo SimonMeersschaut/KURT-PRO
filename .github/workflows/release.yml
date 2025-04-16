@@ -2,7 +2,7 @@ name: Release
 
 on:
   workflow_run:
-    workflows: ["Build"]  # the name of the workflow in build.yml
+    workflows: ["Build and Version Bump"]  # the name of the workflow in build.yml
     types:
       - completed
 
