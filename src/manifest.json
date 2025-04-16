@@ -1,28 +1,24 @@
 {
-    "content_scripts": [
-      {
-        "exclude_matches": [],
-        "matches": [
-            "*://kurt3.ghum.kuleuven.be/"
-        ],
-        "js": ["main.js"]
-      }
-    ],
-  
-    "description": "KURT-PRO is a webbrowser extention that aims to provide students a better experience when using the KULeuven KURT reservation system.",
-  
-    "icons": {
-      "48": "images/logo.png"
-    },
-  
-    "manifest_version": 3,
-  
-    "name": "KURT-PRO",
-  
-    "permissions": ["webNavigation"],
-  
-    "version": "0.1",
-  
-    "web_accessible_resources": []
-  }
-  
+  "content_scripts": [
+    {
+      "exclude_matches": [],
+      "matches": [
+        "*://kurt3.ghum.kuleuven.be/"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ],
+  "description": "KURT-PRO is a webbrowser extention that aims to provide students a better experience when using the KULeuven KURT reservation system.",
+  "icons": {
+    "48": "logo.png"
+  },
+  "manifest_version": 3,
+  "name": "KURT-PRO",
+  "permissions": [
+    "webNavigation"
+  ],
+  "version": "0.1",
+  "web_accessible_resources": []
+}
