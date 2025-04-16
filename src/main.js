@@ -1,6 +1,9 @@
 /*
+The build will automatically append css files above using the following format:
+A constant variable is made with the name {filename}_css, with the value of the content of the file.
+Below is a list of the variables that will be set on build.
 
-STYLESHEET = ...
+homepage_css = ...
 */
 
 function wait_for_authentication(){
@@ -13,7 +16,7 @@ function clear_DOM(){
 }
 
 function inject_static_content(){
-    document.head.innerHTML = STYLESHEET;
+    document.head.innerHTML = "<style>" + homepage_css + "</style>";
 }
 function inject_script(){
     /*
