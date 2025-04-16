@@ -1,17 +1,6 @@
 import os
 import subprocess
 
-
-# Inject auth into remote URL
-token = os.environ['PERSONAL_TOKEN']
-remote_url = f"https://x-access-token:{token}@github.com/{os.environ['GITHUB_REPOSITORY']}.git"
-subprocess.run(["git", "remote", "set-url", "origin", remote_url], check=True)
-
-# Push commit and tag using personal token
-subprocess.run(["git", "push", "origin", "HEAD"], check=True)
-subprocess.run(["git", "push", "origin", "--tags"], check=True)
-
-
 VERSION_FILE = "VERSION"
 
 # Read current version
