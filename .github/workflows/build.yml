@@ -30,13 +30,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: safari-extension
-          path: dist/safari_extension.js
+          path: dist/KURT_PRO_safari_extension.js
 
       - name: Upload Chrome extension zip
         uses: actions/upload-artifact@v4
         with:
           name: chrome-extension
-          path: dist/chrome_extension.zip
+          path: dist/KURT_PRO_chrome_extention.zip
 
       # 5. Auto bump version and push a tag (only run if this commit is not already a tag)
       - name: Bump version and create tag

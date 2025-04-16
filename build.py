@@ -4,8 +4,8 @@ import zipfile
 # Define directories and file names
 SRC_DIR = "src"
 OUTPUT_DIR = "dist"
-SAFARI_FILE = os.path.join(OUTPUT_DIR, "safari_extension.js")
-CHROME_ZIP = os.path.join(OUTPUT_DIR, "chrome_extension.zip")
+SAFARI_FILE = os.path.join(OUTPUT_DIR, "KURT_PRO_safari_extension.js")
+CHROME_ZIP = os.path.join(OUTPUT_DIR, "KURT_PRO_chrome_extention.zip")
 MANIFEST = os.path.join(SRC_DIR, "manifest.json")
 
 """
