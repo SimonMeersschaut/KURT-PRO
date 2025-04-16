@@ -1,0 +1,20 @@
+--  KURT PRO Code structure  --
+
+
+on startup:
+	CHECKS
+	- check for login credentials (make sure they are valid)
+
+	DOM
+	- clean the default DOM
+	- replace it by custom DOM:
+		+ fetch my favorite rooms (e.g. via cookies)
+		+ display favorites ( + event listener for click )
+        + fetch availabilty of favorites
+
+    ON SECTION CLICK:
+    - go to room url
+
+    ON ROOM URL:
+    - load map with available seats (map image + seats json data)
+    - add click event listener on seat ( to go to reservation screen )
