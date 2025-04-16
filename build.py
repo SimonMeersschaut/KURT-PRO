@@ -34,9 +34,11 @@ def create_chrome_extention(script_path:str, manifest_path:str):
     # Package the Chrome extension: include the manifest & all js files
     with zipfile.ZipFile(CHROME_ZIP, "w") as zipf:
         # Add manifest.json at the root of the zip
-        zipf.write(manifest_path, arcname='manifest.json')
+        zipf.write(manifest_path, arcname="manifest.json")
         # Add the javascript file
-        zipf.write(script_path, arcname='main.js')
+        zipf.write(script_path, arcname="main.js")
+        # Add the logo
+        zipf.write(os.path.join(SRC_DIR, "logo.png"), arcname="logo.png")
 
 if __name__ == '__main__':
     print("Building Artifacts.") 
