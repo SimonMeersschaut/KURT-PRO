@@ -40,6 +40,7 @@ def create_chrome_extention(script_path:str, manifest_path:str):
         # Add the logo
         zipf.write(os.path.join(SRC_DIR, "logo.png"), arcname="logo.png")
 
+
 if __name__ == '__main__':
     print("Building Artifacts.") 
     setup()
