@@ -20,10 +20,12 @@ This function returns the content of a single javascript file.
 """
 def script_content():
     # Bundle all .js files into one single file for Safari
+    output = ""
     for fname in os.listdir(SRC_DIR):
         if fname.endswith(".js"):
             with open(os.path.join(SRC_DIR, fname), 'r') as f:
                 output += f.read()
+    return output
 
 """
 This function will create a zip file with a script and a manifest file.
@@ -32,9 +34,9 @@ def create_chrome_extention(script_path:str, manifest_path:str):
     # Package the Chrome extension: include the manifest & all js files
     with zipfile.ZipFile(CHROME_ZIP, "w") as zipf:
         # Add manifest.json at the root of the zip
-        zipf.write(manifest_path)
+        zipf.write(manifest_path, arcname='manifest.json')
         # Add the javascript file
-        zipf.write(script_path)
+        zipf.write(script_path, arcname='main.js')
 
 if __name__ == '__main__':
     print("Building Artifacts.") 
