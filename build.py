@@ -1,5 +1,6 @@
 import os
 import zipfile
+import glob
 
 # Define directories and file names
 SRC_DIR = "src"
@@ -21,10 +22,13 @@ This function returns the content of a single javascript file.
 def script_content():
     # Bundle all .js files into one single file for Safari
     output = ""
-    for fname in os.listdir(SRC_DIR):
-        if fname.endswith(".js"):
-            with open(os.path.join(SRC_DIR, fname), 'r') as f:
-                output += f.read()
+
+    # for filename in glob.glob("*.css"):
+        # TODO
+    for filename in glob.glob("*.js"):
+        with open(os.path.join(SRC_DIR, filename), 'r') as f:
+            output += f.read()
+            
     return output
 
 """
