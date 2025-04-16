@@ -1,35 +1,31 @@
-name: Create Release
+name: Release
 
 on:
   push:
     tags:
-      - 'v*'   # Matches tags beginning with "v"
+      - 'v*'
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout the repository (needed to reference artifacts, if available)
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # 2. Download artifacts from the build workflow if needed (optional step if you want to include generated files)
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          name: safari-extension
-          path: dist
+          python-version: 3.x
 
-      # 3. List files to confirm what was downloaded
-      - name: Show downloaded files
-        run: ls -R dist
+      - name: Build artifacts
+        run: python build.py
 
-      # 4. Create GitHub Release and upload files
       - name: Create GitHub Release
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v1
         with:
-          tag: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          artifacts: |
-            dist/safari-extension/safari_extension.js
-            dist/chrome-extension/chrome_extension.zip
-          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            dist/safari_extension.js
+            dist/chrome_extension.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
