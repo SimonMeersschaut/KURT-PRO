@@ -42,7 +42,6 @@ jobs:
       - name: Bump version and create tag
         if: github.event_name == 'push'
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python bump.py

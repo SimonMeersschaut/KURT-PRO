@@ -5,6 +5,9 @@ on:
     workflows: ["Build and Version Bump"]  # the name of the workflow in build.yml
     types:
       - completed
+  
+permissions: # Give write permissions to the action so that it can create a release
+  contents: write
 
 jobs:
   release:
