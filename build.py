@@ -23,10 +23,15 @@ def script_content():
     # Bundle all .js files into one single file for Safari
     output = ""
 
-    # for filename in glob.glob("*.css"):
-        # TODO
-    for filename in glob.glob("*.js"):
-        with open(os.path.join(SRC_DIR, filename), 'r') as f:
+    # Read css files and append to .js script
+    for filename in glob.glob("src/*.css"):
+        with open(filename, 'r') as f:
+            var_name = filename.split('/')[-1].split('\\')[-1].replace('.', '_')
+            output += f"""const {var_name} = "{f.read().replace('\n', '')}";\n"""
+    
+    # Paste all .js files after one another
+    for filename in glob.glob("src/*.js"):
+        with open(filename, 'r') as f:
             output += f.read()
             
     return output
