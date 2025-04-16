@@ -28,4 +28,5 @@ jobs:
             dist/safari_extension.js
             dist/chrome_extension.zip
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
