@@ -1,20 +1,22 @@
 import os
-import zipfile
 import glob
+import shutil
 
 # Define directories and file names
 SRC_DIR = "src"
-OUTPUT_DIR = "dist"
-SAFARI_FILE = os.path.join(OUTPUT_DIR, "KURT_PRO_safari_extension.js")
-CHROME_ZIP = os.path.join(OUTPUT_DIR, "KURT_PRO_chrome_extention.zip")
-MANIFEST = os.path.join(SRC_DIR, "manifest.json")
+DIST_DIR = "dist"
+BUILD_DIR = os.path.join(DIST_DIR, "build")
+SAFARI_FILENAME = "KURT_PRO_safari_extension.js"
+CHROME_ZIP_FILENAME = "KURT_PRO_chrome_extention.zip"
+LOGO_FILENAME = "logo.png"
 
 """
 Initialize the working directory with a `dist` folder.
 """
 def setup():
     # Create output directory
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(DIST_DIR, exist_ok=True)
+    os.makedirs(BUILD_DIR, exist_ok=True)
 
 """
 This function returns the content of a single javascript file.
@@ -37,26 +39,37 @@ def script_content():
     return output
 
 """
-This function will create a zip file with a script and a manifest file.
+This function will create a folder with a script and a manifest file.
 """
 def create_chrome_extention(script_path:str, manifest_path:str):
     # Package the Chrome extension: include the manifest & all js files
-    with zipfile.ZipFile(CHROME_ZIP, "w") as zipf:
-        # Add manifest.json at the root of the zip
-        zipf.write(manifest_path, arcname="manifest.json")
-        # Add the javascript file
-        zipf.write(script_path, arcname="main.js")
-        # Add the logo
-        zipf.write(os.path.join(SRC_DIR, "logo.png"), arcname="logo.png")
 
+    # Copy javascript file to the output directory
+    shutil.copy(script_path, os.path.join(BUILD_DIR, "main.js"))
+    # Copy manifest file to the output directory
+    shutil.copy(manifest_path, BUILD_DIR)
+    # Copy the logo image
+    shutil.copy(
+        os.path.join(SRC_DIR, LOGO_FILENAME),
+        os.path.join(BUILD_DIR, LOGO_FILENAME)
+    )
 
 if __name__ == '__main__':
     print("Building Artifacts.") 
     setup()
     # write dist output
     # write safari extention (.js file)
-    with open(SAFARI_FILE, 'w+') as f:
+    with open(os.path.join(DIST_DIR, SAFARI_FILENAME), 'w+') as f:
         f.write(script_content())
     # write chrome extention (.zip file)
-    create_chrome_extention(SAFARI_FILE, MANIFEST)
+    create_chrome_extention(
+        os.path.join(DIST_DIR, SAFARI_FILENAME),
+        os.path.join(SRC_DIR, "manifest.json")
+    )
+
+    # Create a zip file for the Chrome extension
+    shutil.make_archive(
+        os.path.join(DIST_DIR, CHROME_ZIP_FILENAME).split(".zip")[0],
+        'zip',
+        "dist/build")
     print("Artifacts built successfully.")
