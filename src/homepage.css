@@ -1,0 +1,18 @@
+/* Align h2 and span next to each other in the .zone_card div */
+.zone_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Optional: Adds space between h2 and span */
+    background-color: rgb(21, 21, 21);
+    color: white;
+    margin-bottom: 5px; /* Space between cards */
+    padding: 10px; /* Padding inside the card for better spacing */
+}
+
+.zone_card h2 {
+    margin: 0; /* Removes default margin for better alignment */
+}
+
+.zone_card span {
+    margin: 0; /* Ensures no extra spacing */
+}

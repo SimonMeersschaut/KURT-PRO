@@ -3,7 +3,7 @@
     {
       "exclude_matches": [],
       "matches": [
-        "*://kurt3.ghum.kuleuven.be/"
+        "*://kurt3.ghum.kuleuven.be/*"
       ],
       "js": [
         "main.js"
