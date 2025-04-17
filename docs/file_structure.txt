@@ -1,0 +1,19 @@
+--	File Structure		--
+
+
+- .github/workflows
+    This folder contains the Github Actions.
+
+- dist
+    This folder is intended for CI/CD builds.
+    Files like `KURT_PRO_safari_extension.js` and `KURT_PRO_chrome_extention.js` will be created
+    by Github actions and put here temporarily to put in a release automatically.
+- docs
+    All documentation: code structure, file structure, screenshots and more
+
+- src
+    The actual code of the extention.
+
+    `main.js` will be called when the browser opens the website.
+
+    `manifest.json` is intended for the chrome extention.

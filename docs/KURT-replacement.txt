@@ -1,0 +1,9 @@
+Mobile app Breitburg:
+url: https://kurtosis.breitburg.com/statement/
+Key features:
+    - Isometric maps of the libraries
+    - On average, the app is 4 times faster than the KURT web app.
+    - Smart search called 'Auto'
+        -> It works instantly, prioritizes your favorites, and even can automatically find available seat sequences when the library is full.
+    - Face ID ( or other built-in biometric system )
+    - Reduced load on the KURT servers.
