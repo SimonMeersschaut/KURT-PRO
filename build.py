@@ -29,7 +29,7 @@ def script_content():
     for filename in glob.glob("src/*.css"):
         with open(filename, 'r') as f:
             var_name = filename.split('/')[-1].split('\\')[-1].replace('.', '_')
-            output += f"""const {var_name} = "{f.read().replace('\n', '')}";\n"""
+            output += f"""const {var_name} = "{f.read().replace('\n', '').replace('"', '\\"')}";\n"""
     
     # Paste all .js files after one another
     for filename in glob.glob("src/*.js"):
