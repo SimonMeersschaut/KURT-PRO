@@ -20,7 +20,7 @@ function main(){
         // Home page
         activateHomePageScript();
     }
-    else if(true){
+    else if(path.split("/")[0] == 'locations' && path.split("?")[1].split("=")[0] == "zone"){
         // Map
         activateMapScript();
     }

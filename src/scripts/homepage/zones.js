@@ -76,5 +76,6 @@ function createZoneCard(zoneData, date){
     card.classList.add("card");
     card.classList.add("card-body");
     card.innerHTML = "<h2>"+zoneData["name"]+"</h2><h2 id='zone_"+zoneData["id"]+"_availability' class='badge text-bg-secondary'>pending</h2>";
+    card.onclick = () => {document.location.assign("/locations/"+zoneData["location"].toString()+"?zone="+zoneData["id"].toString())}
     return card;
 }
