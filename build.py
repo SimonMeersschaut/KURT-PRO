@@ -26,13 +26,13 @@ def script_content():
     output = ""
 
     # Read css files and append to .js script
-    for filename in glob.glob("src/*.css"):
+    for filename in glob.glob("src/styles/*.css"):
         with open(filename, 'r') as f:
             var_name = filename.split('/')[-1].split('\\')[-1].replace('.', '_')
             output += f"""const {var_name} = "{f.read().replace('\n', '').replace('"', '\\"')}";\n"""
     
     # Paste all .js files after one another
-    for filename in glob.glob("src/*.js"):
+    for filename in glob.glob("src/scripts/*.js"):
         with open(filename, 'r') as f:
             output += f.read()
             
@@ -50,7 +50,7 @@ def create_chrome_extention(script_path:str, manifest_path:str):
     shutil.copy(manifest_path, BUILD_DIR)
     # Copy the logo image
     shutil.copy(
-        os.path.join(SRC_DIR, LOGO_FILENAME),
+        os.path.join(SRC_DIR, "images", LOGO_FILENAME),
         os.path.join(BUILD_DIR, LOGO_FILENAME)
     )
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     # write chrome extention (.zip file)
     create_chrome_extention(
         os.path.join(DIST_DIR, SAFARI_FILENAME),
-        os.path.join(SRC_DIR, "manifest.json")
+        os.path.join(SRC_DIR, "data", "manifest.json")
     )
 
     # Create a zip file for the Chrome extension
