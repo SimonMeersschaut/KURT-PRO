@@ -32,9 +32,10 @@ def script_content():
             output += f"""const {var_name} = "{f.read().replace('\n', '').replace('"', '\\"')}";\n"""
     
     # Paste all .js files after one another
-    for filename in glob.glob("src/scripts/*.js"):
+    script_files = ["src/main.js"] + glob.glob("src/scripts/*.js") + glob.glob("src/scripts/*/*.js")
+    for filename in script_files:
         with open(filename, 'r') as f:
-            output += f.read()
+            output += f.read() + "\n"
             
     return output
 

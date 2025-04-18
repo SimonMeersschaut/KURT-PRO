@@ -13,42 +13,21 @@ function main(){
     if (!success){
         throw new Error("User could not be authenticated.");
     }
-    // we assume the user is authenticated when the script reaches this point
-    clearDOM();
-    injectStaticContent();
+    // get the current path
+    const path = document.URL.split("https://kurt3.ghum.kuleuven.be/")[1]
     
+    if (path == ""){
+        // Home page
+        activateHomePageScript();
+    }
+    else if(true){
+        // Map
+        activateMapScript();
+    }
     
-    /* Create custom page. */
-    // Fetch favorite zones of the user
-    var favoriteZones = fetchFavoriteZones();
-
-    // Create day-selectors
-    let onUpdate = (dayIndex) => {
-        const d = new Date(Date.now() + dayIndex*( 3600 * 1000 * 24));
-        // Clear container
-        zoneContainer.innerHTML = "";
-        // Load first three favorite zones
-        for (var i = 0; i < 3; i++){
-            var div = createZoneCard(favoriteZones[i], d);
-            zoneContainer.appendChild(div);
-        }
-
-    };
-    let daySelectors = createDaySelectors(onUpdate);
-    document.body.appendChild(daySelectors);
-    // Fetch future reservations and update the selectors
-    fetchReservations();
-
-    // Create zone container
-    var zoneContainer = document.createElement("div")
-    document.body.appendChild(zoneContainer);
-
-    // Load the data for day 0 (defualt; today)
-    onUpdate(0);
-    // Select the first day (visually)
-    selectDay(0);
 }
 
+// Call the main function when the entire page was loaded
 document.body.onload = () => {
     // run main
     main();
