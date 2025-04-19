@@ -2,6 +2,8 @@ import pygame
 import json
 import os
 
+ZONE_ID = 2
+
 # Initialize pygame
 pygame.init()
 
@@ -11,7 +13,7 @@ DEFAULT_HEIGHT = 25
 MIN_RECT_SIZE = 10  # Minimum width and height for a rectangle to be considered a drag
 
 # Load the image
-image_path = "Agora_silent_study_2.png"  # Ensure this file is in the same directory or provide the full path
+image_path = f"zones/{ZONE_ID}/map.png"  # Ensure this file is in the same directory or provide the full path
 image = pygame.image.load(image_path)
 image_rect = image.get_rect()
 
@@ -35,8 +37,8 @@ font = pygame.font.Font(None, 24)
 # Function to load rectangles from rectangles.json
 def load_rectangles():
     global last_identifier
-    if os.path.exists("rectangles.json"):
-        with open("rectangles.json", "r") as f:
+    if os.path.exists(f"zones/{ZONE_ID}/rectangles.json"):
+        with open(f"zones/{ZONE_ID}/rectangles.json", "r") as f:
             data = json.load(f)
             for item in data:
                 # Resize rectangles to default dimensions
@@ -157,7 +159,7 @@ while running:
                     }
                     for rect_data in rectangles
                 ]
-                with open("rectangles.json", "w") as f:
+                with open(f"zones/{ZONE_ID}/rectangles.json", "w") as f:
                     json.dump(output_data, f, indent=4)
                 print("Rectangles saved to rectangles.json")
 

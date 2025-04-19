@@ -1,7 +1,9 @@
 import json
 from collections import OrderedDict
 
-with open("rectangles.json", "r") as f:
+ZONE_ID = 2
+
+with open(f"zones/{ZONE_ID}/rectangles.json", "r") as f:
     data = json.load(f)
 
 output_data = {}
@@ -17,5 +19,5 @@ for seat in data:
 # Sort the output data by identifier
 sorted_output_data = OrderedDict(sorted(output_data.items(), key=lambda x: int(x[0])))
 
-with open("compression.json", "w+") as f:
+with open(f"zones/{ZONE_ID}/compression.json", "w+") as f:
     json.dump(sorted_output_data, f, indent=4)
