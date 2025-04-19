@@ -20,7 +20,11 @@ function activateHomePageScript(){
     var favoriteZones = fetchFavoriteZones();
     
     // Create day-selectors
-    let onUpdate = (dayIndex) => {
+    var daySelector = new DaySelector(true);
+    document.body.appendChild(daySelector.renderDOM());
+    // set onclick event listener
+    daySelector.onClickDay = (dayIndex) => {
+        /* Load zones with availability. */
         const d = new Date(Date.now() + dayIndex*( 3600 * 1000 * 24));
         // Clear container
         zoneContainer.innerHTML = "";
@@ -29,19 +33,12 @@ function activateHomePageScript(){
             var div = createZoneCard(favoriteZones[i], d);
             zoneContainer.appendChild(div);
         }
-    
-    };
-    let daySelectors = createDaySelectors(onUpdate);
-    document.body.appendChild(daySelectors);
+    }
+
     // Fetch future reservations and update the selectors
-    fetchReservations();
-    
+    daySelector.fetchReservations()
+
     // Create zone container
     var zoneContainer = document.createElement("div")
     document.body.appendChild(zoneContainer);
-    
-    // Load the data for day 0 (defualt; today)
-    onUpdate(0);
-    // Select the first day (visually)
-    selectDay(0);
 }
