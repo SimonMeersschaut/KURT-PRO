@@ -1,17 +1,7 @@
-/*
-This function will return the favorite zones of this user in order.
-*/
-function fetchFavoriteZones(){
-    return [
-        {"location": 10, "id": 2, "name": "Agora - Silent study 2"},
-        {"location": 1, "id": 14, "name": "Agora - De zolder"},
-        {"location": 1, "id": 11, "name": "Agora - De boekenzaal"},
-    ]
-}
-
 class ZoneCard{
-    constructor(onclick){
-        this.onclick = onclick;
+    constructor(zoneData){
+        this.zoneData = zoneData;
+        this.onclick = null; // defualt value
     }
 
     /*
@@ -24,16 +14,15 @@ class ZoneCard{
             "name": "Agora - Silent study 2" // a descriptive name of this zone
         }
     */
-    renderDOM(zoneData, date){
-        // fetchZoneAvailability(zoneData, date, 0, 0);
+    renderDOM(){
         // Create DOM
         var card = document.createElement('div');
-        card.id = "zone_" + zoneData["id"].toString();
+        card.id = "zone_" + this.zoneData["id"].toString();
         card.classList.add("zone_card");
         card.classList.add("card");
         card.classList.add("card-body");
-        card.innerHTML = "<h2>"+zoneData["name"]+"</h2><h2 id='zone_"+zoneData["id"]+"_availability' class='badge text-bg-secondary'>pending</h2>";
-        card.onclick = this.onclick;
+        card.innerHTML = "<h2>"+this.zoneData["name"]+"</h2><h2 id='zone_"+this.zoneData["id"]+"_availability' class='badge text-bg-secondary'>pending</h2>";
+        card.onclick = () => {this.onclick(this.zoneData["id"])};
         return card;
     }
 
@@ -45,46 +34,38 @@ class ZoneCard{
     - page: (default 0) what page the function should fetch
     - offset: (defualt 0) how many seats the previous page had (cummulatively)
     */
-    fetchZoneAvailability(zoneData, date, page, offset){
+    fetchAvailability(date, page=0, offset=0){
         const dateString = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
-        fetch("https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId="+zoneData["location"]+"&zoneId="+zoneData["id"].toString()+"&resourceTypeId=302&pageNumber="+page+"&startDate="+dateString+"&startTime=&endDate="+dateString+"&endTime=&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0")
-        .then(resp => resp.json())
-        .then(data => {
-            var pageAvailability = data["availabilities"].length;
-            var availability = pageAvailability + offset;
-            // change the number of availability
-            var div = document.getElementById("zone_" + zoneData["id"].toString());
-            var badge = document.getElementById("zone_" + zoneData["id"].toString() + "_availability");
-            if (div == null){
-                throw new Error("could not find div.");
-            }else{
-                badge.innerText = availability.toString();
-            }
-            // set badge color based on avalability
-            badge.classList.remove("text-bg-secondary");
-            if (availability == 0){
-                badge.classList.add("text-bg-dark");
-                // make unclickable
-                div.classList.add("disabled");
-            }
-            else if (0 < availability && availability < 20){
-                badge.classList.add("text-bg-warning");
-            }
-            else{
-                badge.classList.add("text-bg-success");
-            }
 
-            if (pageAvailability == 60){
-                // we didnt see the entire list yet, the next function will give it another try
-                fetchZoneAvailability(zoneData, date, page+1, offset+availability);
+        (async () => {
+            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], dateString);
+            for await (const cummulativeCount of seatGenerator) {
+                var pageAvailability = cummulativeCount;
+                var availability = pageAvailability + offset;
+                // change the number of availability
+                var div = document.getElementById("zone_" + this.zoneData["id"].toString());
+                var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");
+                if (div == null){
+                    throw new Error("could not find div.");
+                }else{
+                    badge.innerText = availability.toString();
+                }
+                // set badge color based on avalability
+                badge.classList.remove("text-bg-secondary");
+                if (availability == 0){
+                    badge.classList.add("text-bg-dark");
+                    // make unclickable
+                    div.classList.add("disabled");
+                }
+                else if (0 < availability && availability < 20){
+                    badge.classList.add("text-bg-warning");
+                }
+                else{
+                    badge.classList.add("text-bg-success");
+                }
             }
-        })
-        .catch(error => {
-            console.error(error);
-            throw new Error("Could not fetch availability.");
-        })
+        })();
     }
-
 }
 
 

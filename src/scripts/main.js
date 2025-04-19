@@ -8,6 +8,9 @@ day_selector_css = ...
 map_css = ...
 */
 
+const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+var tunnel = null; // will be set once the page has loaded.
+
 function main(){
     /* Setup & Initialize the webpage */
     var success = enforceAuthentication();
@@ -20,30 +23,47 @@ function main(){
     
     /* Create custom page. */
     // Fetch favorite zones of the user
-    var favoriteZones = fetchFavoriteZones();
+    var favoriteZones = tunnel.getFavoriteZones()
     
     // Create day-selectors
     var daySelector = new DaySelector(true);
     document.body.appendChild(daySelector.renderDOM());
     // set onclick event listener
     daySelector.onClickDay = (dayIndex) => {
-        /* Load zones with availability. */
-        const d = new Date(Date.now() + dayIndex*( 3600 * 1000 * 24));
-        // Clear container
-        zoneContainer.innerHTML = "";
-        // Load first three favorite zones
-        for (var i = 0; i < 3; i++){
-            var card = new ZoneCard(favoriteZones[i], d);
-            zoneContainer.appendChild(card.renderDOM());
-            card.fetchAvailability();
-            card.onclick = (id) => {
-                alert(id);
+        const d = new Date(new Date().getTime() + dayIndex * _MS_PER_DAY);
+        tunnel.hasReservationOn(dayIndex)
+        .then(hasReservation => {
+            if (hasReservation){
+                // show the reserved seat
+                var map = new Map(2, false);
+                zoneContainer.innerHTML = map.renderDOM();
+                tunnel.fetchMapData(2)
+                .then(mapData => {
+                    map.drawSeats(mapData);
+                })
+                map.handleSeatClick(312, true);
             }
-        }
+            else{
+                // show reservation possibilities
+                zoneContainer.innerHTML = "";
+                for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
+                    var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
+                    zoneContainer.appendChild(zoneCard.renderDOM());
+                    zoneCard.fetchAvailability(d);
+                }
+            }
+        })
     }
 
     // Fetch future reservations and update the selectors
-    daySelector.fetchReservations()
+    tunnel.getReservedDays()
+    .then(reservedDays => {
+        daySelector.reservedDays = reservedDays;
+        daySelector.updateClasses();
+    })
+    .catch(error => {
+        console.error("Error updating reserved days:", error);
+    });
 
     // Create zone container
     var zoneContainer = document.createElement("div")
@@ -52,6 +72,10 @@ function main(){
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
+    /*
+    The tunnel will be an interface between the front-end and the back-end and will perform caching.
+    */
+    tunnel = new Tunnel();
     // run main
     main();
 }

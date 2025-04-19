@@ -6,45 +6,48 @@ class Map{
         this.zoneId = zoneId;
         this.enableSelecting = enableSelecting;
         this.onSelectSeat = null;
+        this.selectedSeat = null;
+        this.backgroundImage = `https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/`+this.zoneId+`/map.png?raw=true`
     }
 
     renderDOM(){
         return `<div class="grid" id="grid">`;
     }
 
-    drawSeats(){
+    drawSeats(data){
         // Set hover animation
         if (this.enableSelecting){
             document.getElementById('grid').classList.add('selectable');
         }
-        // Fetch the seats
-        fetch("https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/Maps/resources/maps/zones/2/compression.json")
-        .then(response => response.json())
-        .then(data => {
-            // Fetched seats, now draw them
-            const gridContainer = document.getElementById('grid');
-            gridContainer.style.backgroundImage = `url('https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/`+this.zoneId+`/map.png?raw=true')`
-    
-            Object.entries(data).forEach(([id, value]) => {
-                const [gridColumn, gridRow] = value.split(";");
-                const gridItem = document.createElement("div");
-                gridItem.id = `plaats-${id}`;
-                gridItem.style.gridColumn = gridColumn;
-                gridItem.style.gridRow = gridRow;
-    
-                // Add a class to the grid item (e.g., free, booked, etc.)
-                gridItem.classList.add("free"); // Default class, adjust as needed
-                gridItem.onclick = () => {this.handleSeatClick(id)};
-                gridContainer.appendChild(gridItem);
-            });
+        
+        const gridContainer = document.getElementById('grid');
+        gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
+
+        Object.entries(data).forEach(([id, value]) => {
+            const [gridColumn, gridRow] = value.split(";");
+            const gridItem = document.createElement("div");
+            gridItem.id = `plaats-${id}`;
+            gridItem.style.gridColumn = gridColumn;
+            gridItem.style.gridRow = gridRow;
+
+            // Add a class to the grid item (e.g., free, booked, etc.)
+            gridItem.classList.add("free"); // Default class, adjust as needed
+            if (id == this.selectedSeat)
+                gridItem.classList.add("selected");
+            gridItem.onclick = () => {this.handleSeatClick(id)};
+            gridContainer.appendChild(gridItem);
         })
     }
     /*
     Handle the user clicking on a seat.
+    
+    forceSelect will overwrite enableSelecting
     */
-    handleSeatClick(id){
-        if (!this.enableSelecting)
-            return;
+    handleSeatClick(id, forceSelect=false){
+        if (!forceSelect)
+            if (!this.enableSelecting)
+                return;
+        this.selectedSeat = id;
 
         // de-select all other seats
         Array.from(document.getElementsByClassName("selected")).forEach((element) => {
@@ -52,6 +55,8 @@ class Map{
         });
         // select this element
         const gridItem = document.getElementById(`plaats-${id}`);
+        if (gridItem == null)
+            return;
         gridItem.classList.add("selected");
 
         // Call event listener

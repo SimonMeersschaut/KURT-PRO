@@ -86,24 +86,6 @@ class DaySelector{
         }
     }
 
-    fetchReservations(){
-        fetch("https://kurt3.ghum.kuleuven.be/api/reservations")
-        .then(response => response.json())
-        .then(data => {
-            var d = new Date();
-            data.forEach(reservation => {
-                var date = new Date(reservation["startDate"]);
-                let dayIndex = date.getDay() - d.getDay();
-                if (0 <= dayIndex <= 6){
-                    reservedDays[dayIndex] = true;
-                }
-            });
-            // update the selectors with this new information
-            this.updateClasses();
-        })
-    }
-    
-    
     updateClasses(){
         for (let i = 0; i <= 7; i++){
             let daySelector = document.getElementById("daySelector-" + i.toString());
