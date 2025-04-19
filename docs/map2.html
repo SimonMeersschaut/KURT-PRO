@@ -1,78 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-critters-container="">
+
 <head>
     <style>
-        .image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
         .grid {
-            position: absolute;
-            top: 0;
-            left: 0;
+            max-height: 95vh;
+            /* Set a maximum height */
+            aspect-ratio: 424 / 600;
+            /* Maintain the aspect ratio of the image */
             display: grid;
-            width: 100%;
-            height: 100%;
             grid-template-columns: repeat(424, 1fr);
+            /* Match the grid to the image's resolution */
             grid-template-rows: repeat(600, 1fr);
-        }
-        .grid div {
-            border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.25);
+            background-image: url('https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/your-zone-id/map.png?raw=true');
+            /* Replace with your dynamic image URL */
+            background-size: contain;
+            /* Ensure the image scales proportionally */
+            background-repeat: no-repeat;
+            /* Prevent tiling */
+            background-position: center;
+            /* Center the image */
+            margin: auto;
+            /* Center the grid horizontally */
         }
 
-        .free:hover {
+        @media only screen and (min-width: 1400px) {
+
+            /* Laptop / Computer */
+            .grid {
+                margin: 0;
+            }
+        }
+
+        .grid div {
+            border-radius: 8px;
+            /* background-color: rgba(0, 0, 0, 0.25); */
+        }
+
+        .grid.selectable .free:hover {
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.25);
         }
+
         .booked {
             background-color: rgba(255, 97, 97, 0.5);
         }
+
         .selected {
             background-color: rgba(110, 255, 97, 0.5);
             cursor: pointer;
         }
-        .selected:hover {
+
+        .grid.selectable .selected:hover {
             background-color: rgba(92, 214, 81, 0.5);
         }
     </style>
 </head>
-<body>
-    <div class="wrapper">
-        <img class="image" src="https://images-ext-1.discordapp.net/external/eh3j_XThDdO-4E84sxbucdTFJUAId_wQKi-4xtO6pgw/https/raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/Agora_silent_study_2.png?format=webp&quality=lossless&width=1439&height=2035" alt="Background">
-        <div class="grid" id="grid"></div>
+
+<body class="mat-typography">
+    <h2 id="seatId">303</h2>
+    <div class="grid selectable" id="grid"
+        style="background-image: url(&quot;https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/2/map.png?raw=true&quot;);">
+        <div id="plaats-201" class="free" style="grid-area: 510 / 113 / 522 / 132;"></div>
+        <div id="plaats-202" class="free" style="grid-area: 510 / 133 / 522 / 152;"></div>
+        <div id="plaats-203" class="free" style="grid-area: 488 / 113 / 500 / 132;"></div>
+        <div id="plaats-204" class="free" style="grid-area: 488 / 133 / 500 / 152;"></div>
+        <div id="plaats-205" class="free" style="grid-area: 466 / 113 / 478 / 132;"></div>
+        <div id="plaats-206" class="free" style="grid-area: 466 / 133 / 478 / 152;"></div>
+        <div id="plaats-207" class="free" style="grid-area: 444 / 113 / 456 / 132;"></div>
+        <div id="plaats-208" class="free" style="grid-area: 444 / 133 / 456 / 152;"></div>
+        <div id="plaats-209" class="free" style="grid-area: 423 / 113 / 434 / 132;"></div>
+        <div id="plaats-210" class="free" style="grid-area: 422 / 133 / 434 / 152;"></div>
+        <div id="plaats-211" class="free" style="grid-area: 526 / 217 / 537 / 236;"></div>
+        <div id="plaats-212" class="free" style="grid-area: 526 / 238 / 537 / 256;"></div>
+        <div id="plaats-213" class="free" style="grid-area: 504 / 218 / 515 / 236;"></div>
+        <div id="plaats-214" class="free" style="grid-area: 504 / 238 / 516 / 257;"></div>
+        <div id="plaats-215" class="free" style="grid-area: 474 / 218 / 485 / 236;"></div>
+        <div id="plaats-216" class="free" style="grid-area: 474 / 238 / 485 / 257;"></div>
+        <div id="plaats-217" class="free" style="grid-area: 451 / 218 / 463 / 237;"></div>
+        <div id="plaats-218" class="free" style="grid-area: 452 / 238 / 463 / 257;"></div>
+        <div id="plaats-219" class="free" style="grid-area: 510 / 277 / 522 / 296;"></div>
+        <div id="plaats-220" class="free" style="grid-area: 510 / 298 / 522 / 316;"></div>
+        <div id="plaats-221" class="free" style="grid-area: 488 / 277 / 500 / 296;"></div>
+        <div id="plaats-222" class="free" style="grid-area: 488 / 297 / 500 / 316;"></div>
+        <div id="plaats-223" class="free" style="grid-area: 458 / 277 / 470 / 296;"></div>
+        <div id="plaats-224" class="free" style="grid-area: 458 / 298 / 470 / 316;"></div>
+        <div id="plaats-225" class="free" style="grid-area: 436 / 277 / 448 / 296;"></div>
+        <div id="plaats-226" class="free" style="grid-area: 436 / 298 / 448 / 316;"></div>
+        <div id="plaats-227" class="free" style="grid-area: 376 / 114 / 387 / 133;"></div>
+        <div id="plaats-228" class="free" style="grid-area: 376 / 137 / 388 / 156;"></div>
+        <div id="plaats-229" class="free" style="grid-area: 363 / 114 / 375 / 133;"></div>
+        <div id="plaats-230" class="free" style="grid-area: 364 / 137 / 375 / 156;"></div>
+        <div id="plaats-231" class="free" style="grid-area: 351 / 114 / 362 / 133;"></div>
+        <div id="plaats-232" class="free" style="grid-area: 351 / 137 / 362 / 156;"></div>
+        <div id="plaats-233" class="free" style="grid-area: 338 / 114 / 350 / 133;"></div>
+        <div id="plaats-234" class="free" style="grid-area: 338 / 137 / 350 / 156;"></div>
+        <div id="plaats-235" class="free" style="grid-area: 326 / 114 / 338 / 133;"></div>
+        <div id="plaats-236" class="free" style="grid-area: 326 / 138 / 338 / 156;"></div>
+        <div id="plaats-237" class="free" style="grid-area: 313 / 114 / 325 / 133;"></div>
+        <div id="plaats-238" class="free" style="grid-area: 314 / 137 / 325 / 156;"></div>
+        <div id="plaats-239" class="free" style="grid-area: 301 / 114 / 313 / 133;"></div>
+        <div id="plaats-240" class="free" style="grid-area: 301 / 137 / 312 / 156;"></div>
+        <div id="plaats-241" class="free" style="grid-area: 288 / 114 / 300 / 133;"></div>
+        <div id="plaats-242" class="free" style="grid-area: 288 / 137 / 300 / 156;"></div>
+        <div id="plaats-243" class="free" style="grid-area: 276 / 114 / 287 / 133;"></div>
+        <div id="plaats-244" class="free" style="grid-area: 276 / 137 / 287 / 156;"></div>
+        <div id="plaats-245" class="free" style="grid-area: 263 / 114 / 275 / 133;"></div>
+        <div id="plaats-246" class="free" style="grid-area: 263 / 138 / 275 / 156;"></div>
+        <div id="plaats-247" class="free" style="grid-area: 251 / 114 / 262 / 133;"></div>
+        <div id="plaats-248" class="free" style="grid-area: 250 / 138 / 262 / 156;"></div>
+        <div id="plaats-249" class="free" style="grid-area: 238 / 114 / 250 / 133;"></div>
+        <div id="plaats-250" class="free" style="grid-area: 238 / 137 / 250 / 156;"></div>
+        <div id="plaats-251" class="free" style="grid-area: 225 / 114 / 237 / 133;"></div>
+        <div id="plaats-252" class="free" style="grid-area: 226 / 137 / 237 / 156;"></div>
+        <div id="plaats-253" class="free" style="grid-area: 213 / 114 / 224 / 133;"></div>
+        <div id="plaats-254" class="free" style="grid-area: 213 / 137 / 225 / 156;"></div>
+        <div id="plaats-255" class="free" style="grid-area: 200 / 114 / 212 / 133;"></div>
+        <div id="plaats-256" class="free" style="grid-area: 200 / 137 / 212 / 156;"></div>
+        <div id="plaats-257" class="free" style="grid-area: 387 / 175 / 399 / 194;"></div>
+        <div id="plaats-258" class="free" style="grid-area: 387 / 206 / 399 / 225;"></div>
+        <div id="plaats-259" class="free" style="grid-area: 387 / 238 / 398 / 256;"></div>
+        <div id="plaats-260" class="free" style="grid-area: 364 / 175 / 376 / 194;"></div>
+        <div id="plaats-261" class="free" style="grid-area: 364 / 206 / 375 / 225;"></div>
+        <div id="plaats-262" class="free" style="grid-area: 364 / 237 / 375 / 256;"></div>
+        <div id="plaats-263" class="free" style="grid-area: 327 / 176 / 339 / 194;"></div>
+        <div id="plaats-264" class="free" style="grid-area: 328 / 207 / 339 / 226;"></div>
+        <div id="plaats-265" class="free" style="grid-area: 327 / 238 / 339 / 257;"></div>
+        <div id="plaats-266" class="free" style="grid-area: 304 / 176 / 316 / 194;"></div>
+        <div id="plaats-267" class="free" style="grid-area: 304 / 207 / 316 / 226;"></div>
+        <div id="plaats-268" class="free" style="grid-area: 304 / 238 / 316 / 257;"></div>
+        <div id="plaats-269" class="free" style="grid-area: 269 / 175 / 281 / 194;"></div>
+        <div id="plaats-270" class="free" style="grid-area: 270 / 206 / 281 / 225;"></div>
+        <div id="plaats-271" class="free" style="grid-area: 269 / 237 / 281 / 256;"></div>
+        <div id="plaats-272" class="free" style="grid-area: 246 / 175 / 258 / 194;"></div>
+        <div id="plaats-273" class="free" style="grid-area: 246 / 206 / 258 / 225;"></div>
+        <div id="plaats-274" class="free" style="grid-area: 247 / 238 / 258 / 256;"></div>
+        <div id="plaats-275" class="free" style="grid-area: 211 / 174 / 222 / 193;"></div>
+        <div id="plaats-276" class="free" style="grid-area: 211 / 205 / 223 / 224;"></div>
+        <div id="plaats-277" class="free" style="grid-area: 211 / 236 / 223 / 255;"></div>
+        <div id="plaats-278" class="free" style="grid-area: 188 / 174 / 200 / 193;"></div>
+        <div id="plaats-279" class="free" style="grid-area: 188 / 205 / 200 / 224;"></div>
+        <div id="plaats-280" class="free" style="grid-area: 188 / 236 / 200 / 255;"></div>
+        <div id="plaats-281" class="free" style="grid-area: 376 / 274 / 388 / 292;"></div>
+        <div id="plaats-282" class="free" style="grid-area: 376 / 296 / 388 / 315;"></div>
+        <div id="plaats-283" class="free" style="grid-area: 364 / 274 / 375 / 292;"></div>
+        <div id="plaats-284" class="free" style="grid-area: 364 / 296 / 375 / 315;"></div>
+        <div id="plaats-285" class="free" style="grid-area: 351 / 273 / 363 / 292;"></div>
+        <div id="plaats-286" class="free" style="grid-area: 351 / 296 / 363 / 315;"></div>
+        <div id="plaats-287" class="free" style="grid-area: 339 / 274 / 350 / 292;"></div>
+        <div id="plaats-288" class="free" style="grid-area: 339 / 296 / 350 / 315;"></div>
+        <div id="plaats-289" class="free" style="grid-area: 326 / 273 / 338 / 292;"></div>
+        <div id="plaats-290" class="free" style="grid-area: 326 / 297 / 338 / 316;"></div>
+        <div id="plaats-291" class="free" style="grid-area: 313 / 273 / 325 / 292;"></div>
+        <div id="plaats-292" class="free" style="grid-area: 314 / 296 / 325 / 315;"></div>
+        <div id="plaats-293" class="free" style="grid-area: 301 / 273 / 312 / 292;"></div>
+        <div id="plaats-294" class="free" style="grid-area: 301 / 296 / 312 / 315;"></div>
+        <div id="plaats-295" class="free" style="grid-area: 288 / 273 / 300 / 292;"></div>
+        <div id="plaats-296" class="free" style="grid-area: 288 / 296 / 300 / 315;"></div>
+        <div id="plaats-297" class="free" style="grid-area: 276 / 274 / 287 / 292;"></div>
+        <div id="plaats-298" class="free" style="grid-area: 276 / 296 / 288 / 315;"></div>
+        <div id="plaats-299" class="free" style="grid-area: 263 / 274 / 275 / 292;"></div>
+        <div id="plaats-300" class="free" style="grid-area: 263 / 296 / 275 / 315;"></div>
+        <div id="plaats-301" class="free" style="grid-area: 250 / 274 / 262 / 292;"></div>
+        <div id="plaats-302" class="free" style="grid-area: 251 / 296 / 262 / 315;"></div>
+        <div id="plaats-303" class="free selected" style="grid-area: 238 / 274 / 250 / 292;"></div>
+        <div id="plaats-304" class="free" style="grid-area: 238 / 296 / 250 / 315;"></div>
+        <div id="plaats-305" class="free" style="grid-area: 225 / 273 / 237 / 292;"></div>
+        <div id="plaats-306" class="free" style="grid-area: 225 / 296 / 237 / 315;"></div>
+        <div id="plaats-307" class="free" style="grid-area: 213 / 274 / 224 / 292;"></div>
+        <div id="plaats-308" class="free" style="grid-area: 213 / 296 / 224 / 315;"></div>
+        <div id="plaats-309" class="free" style="grid-area: 200 / 273 / 212 / 292;"></div>
+        <div id="plaats-310" class="free" style="grid-area: 200 / 296 / 212 / 315;"></div>
+        <div id="plaats-311" class="free" style="grid-area: 150 / 104 / 169 / 115;"></div>
+        <div id="plaats-312" class="free" style="grid-area: 129 / 104 / 149 / 115;"></div>
+        <div id="plaats-313" class="free" style="grid-area: 149 / 120 / 169 / 131;"></div>
+        <div id="plaats-314" class="free" style="grid-area: 129 / 121 / 148 / 132;"></div>
+        <div id="plaats-315" class="free" style="grid-area: 149 / 137 / 169 / 148;"></div>
+        <div id="plaats-316" class="free" style="grid-area: 129 / 138 / 148 / 148;"></div>
+        <div id="plaats-317" class="free" style="grid-area: 149 / 154 / 169 / 165;"></div>
+        <div id="plaats-318" class="free" style="grid-area: 129 / 154 / 148 / 165;"></div>
+        <div id="plaats-319" class="free" style="grid-area: 150 / 171 / 169 / 182;"></div>
+        <div id="plaats-320" class="free" style="grid-area: 129 / 171 / 149 / 182;"></div>
+        <div id="plaats-321" class="free" style="grid-area: 150 / 188 / 169 / 198;"></div>
+        <div id="plaats-322" class="free" style="grid-area: 129 / 188 / 149 / 198;"></div>
+        <div id="plaats-323" class="free" style="grid-area: 150 / 231 / 169 / 242;"></div>
+        <div id="plaats-324" class="free" style="grid-area: 129 / 231 / 148 / 242;"></div>
+        <div id="plaats-325" class="free" style="grid-area: 150 / 248 / 169 / 259;"></div>
+        <div id="plaats-326" class="free" style="grid-area: 129 / 248 / 148 / 259;"></div>
+        <div id="plaats-327" class="free" style="grid-area: 149 / 265 / 169 / 276;"></div>
+        <div id="plaats-328" class="free" style="grid-area: 128 / 265 / 148 / 276;"></div>
+        <div id="plaats-329" class="free" style="grid-area: 149 / 282 / 169 / 292;"></div>
+        <div id="plaats-330" class="free" style="grid-area: 129 / 282 / 148 / 292;"></div>
+        <div id="plaats-331" class="free" style="grid-area: 149 / 298 / 169 / 309;"></div>
+        <div id="plaats-332" class="free" style="grid-area: 129 / 298 / 148 / 309;"></div>
+        <div id="plaats-333" class="free" style="grid-area: 149 / 315 / 169 / 326;"></div>
+        <div id="plaats-334" class="free" style="grid-area: 129 / 315 / 148 / 326;"></div>
+        <div id="plaats-335" class="free" style="grid-area: 101 / 95 / 113 / 114;"></div>
+        <div id="plaats-336" class="free" style="grid-area: 101 / 116 / 113 / 135;"></div>
+        <div id="plaats-337" class="free" style="grid-area: 101 / 137 / 113 / 156;"></div>
+        <div id="plaats-338" class="free" style="grid-area: 102 / 158 / 113 / 177;"></div>
+        <div id="plaats-339" class="free" style="grid-area: 101 / 179 / 113 / 198;"></div>
+        <div id="plaats-340" class="free" style="grid-area: 102 / 233 / 113 / 252;"></div>
+        <div id="plaats-341" class="free" style="grid-area: 102 / 254 / 113 / 273;"></div>
+        <div id="plaats-342" class="free" style="grid-area: 102 / 275 / 114 / 294;"></div>
+        <div id="plaats-343" class="free" style="grid-area: 102 / 296 / 113 / 315;"></div>
+        <div id="plaats-344" class="free" style="grid-area: 102 / 317 / 114 / 336;"></div>
     </div>
-
-    <script>
-        // JSON data structure
-        const jsonData = {
-            "201": "113/132;510/522",
-            "202": "133/152;510/522",
-            "203": "113/132;488/500",
-            "204": "133/152;488/500",
-            "205": "113/132;466/478",
-            "206": "133/152;466/478",
-            "207": "113/132;444/456",
-            "208": "133/152;444/456"
-        }
-
-        const gridContainer = document.getElementById('grid');
-
-        // Iterate over the JSON data and create grid elements
-        Object.entries(jsonData).forEach(([id, value]) => {
-            const [gridColumn, gridRow] = value.split(';');
-            const gridItem = document.createElement('div');
-            gridItem.id = `plaats-${id}`;
-            gridItem.style.gridColumn = gridColumn;
-            gridItem.style.gridRow = gridRow;
-
-            // Add a class to the grid item (e.g., free, booked, etc.)
-            gridItem.classList.add('free'); // Default class, adjust as needed
-
-            gridContainer.appendChild(gridItem);
-        });
-    </script>
 </body>
+
 </html>
