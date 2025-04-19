@@ -14,18 +14,40 @@ function main(){
     if (!success){
         throw new Error("User could not be authenticated.");
     }
-    // get the current path
-    const path = document.URL.split("https://kurt3.ghum.kuleuven.be/")[1]
+    // we assume the user is authenticated when the script reaches this point
+    clearDOM();
+    injectStaticContent();
     
-    if (path == ""){
-        // Home page
-        activateHomePageScript();
-    }
-    else if(path.split("/")[0] == 'locations' && path.split("?")[1].split("=")[0] == "zone"){
-        // Map
-        activateMapScript();
-    }
+    /* Create custom page. */
+    // Fetch favorite zones of the user
+    var favoriteZones = fetchFavoriteZones();
     
+    // Create day-selectors
+    var daySelector = new DaySelector(true);
+    document.body.appendChild(daySelector.renderDOM());
+    // set onclick event listener
+    daySelector.onClickDay = (dayIndex) => {
+        /* Load zones with availability. */
+        const d = new Date(Date.now() + dayIndex*( 3600 * 1000 * 24));
+        // Clear container
+        zoneContainer.innerHTML = "";
+        // Load first three favorite zones
+        for (var i = 0; i < 3; i++){
+            var card = new ZoneCard(favoriteZones[i], d);
+            zoneContainer.appendChild(card.renderDOM());
+            card.fetchAvailability();
+            card.onclick = (id) => {
+                alert(id);
+            }
+        }
+    }
+
+    // Fetch future reservations and update the selectors
+    daySelector.fetchReservations()
+
+    // Create zone container
+    var zoneContainer = document.createElement("div")
+    document.body.appendChild(zoneContainer);
 }
 
 // Call the main function when the entire page was loaded
