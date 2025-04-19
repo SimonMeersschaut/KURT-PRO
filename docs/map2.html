@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100x100 Grid</title>
     <style>
-        .wrapper {
-            height: 90vh;
-            margin: auto;
-            position: relative;
-            aspect-ratio: 53 / 75;
-        }
-        @media (max-width: 1000px) {
-            .wrapper {
-                height: auto;
-                width: 100vw;
-            }    
-        }
         .image {
             width: 100%;
             height: 100%;
@@ -35,6 +20,7 @@
         }
         .grid div {
             border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.25);
         }
 
         .free:hover {
@@ -56,28 +42,36 @@
 <body>
     <div class="wrapper">
         <img class="image" src="https://images-ext-1.discordapp.net/external/eh3j_XThDdO-4E84sxbucdTFJUAId_wQKi-4xtO6pgw/https/raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/Agora_silent_study_2.png?format=webp&quality=lossless&width=1439&height=2035" alt="Background">
-        <div class="grid" id="grid">
-            <div id="plaats-335" class="booked"></div>
-            <div id="plaats-336" class="free"></div>
-            <div id="plaats-337" class="free"></div>
-            <div id="plaats-312" class="selected"></div>
-        </div>
+        <div class="grid" id="grid"></div>
     </div>
 
     <script>
-        const gridStyles = {
-            "plaats-335": { gridColumn: "96/114", gridRow: "102 / 112" },
-            "plaats-336": { gridColumn: "118 / 136", gridRow: "102 / 114" },
-            "plaats-337": { gridColumn: "140 / 156", gridRow: "102 / 114" },
-            "plaats-312": { gridColumn: "106 / 116", gridRow: "132 / 148" }
-        };
+        // JSON data structure
+        const jsonData = {
+            "201": "113/132;510/522",
+            "202": "133/152;510/522",
+            "203": "113/132;488/500",
+            "204": "133/152;488/500",
+            "205": "113/132;466/478",
+            "206": "133/152;466/478",
+            "207": "113/132;444/456",
+            "208": "133/152;444/456"
+        }
 
-        Object.entries(gridStyles).forEach(([id, styles]) => {
-            const element = document.getElementById(id);
-            if (element) {
-                element.style.gridColumn = styles.gridColumn;
-                element.style.gridRow = styles.gridRow;
-            }
+        const gridContainer = document.getElementById('grid');
+
+        // Iterate over the JSON data and create grid elements
+        Object.entries(jsonData).forEach(([id, value]) => {
+            const [gridColumn, gridRow] = value.split(';');
+            const gridItem = document.createElement('div');
+            gridItem.id = `plaats-${id}`;
+            gridItem.style.gridColumn = gridColumn;
+            gridItem.style.gridRow = gridRow;
+
+            // Add a class to the grid item (e.g., free, booked, etc.)
+            gridItem.classList.add('free'); // Default class, adjust as needed
+
+            gridContainer.appendChild(gridItem);
         });
     </script>
 </body>

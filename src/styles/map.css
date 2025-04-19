@@ -1,0 +1,42 @@
+.grid {
+    max-height: 95vh; /* Set a maximum height */
+    aspect-ratio: 424 / 600; /* Maintain the aspect ratio of the image */
+    display: grid;
+    grid-template-columns: repeat(424, 1fr); /* Match the grid to the image's resolution */
+    grid-template-rows: repeat(600, 1fr);
+    background-image: url('https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/your-zone-id/map.png?raw=true'); /* Replace with your dynamic image URL */
+    background-size: contain; /* Ensure the image scales proportionally */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    margin: auto; /* Center the grid horizontally */
+}
+
+@media only screen and (min-width: 1400px) {
+    /* Laptop / Computer */
+    .grid{
+        margin:0;
+    }
+  }
+
+.grid div {
+    border-radius: 8px;
+    /* background-color: rgba(0, 0, 0, 0.25); */
+}
+
+.free:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.booked {
+    background-color: rgba(255, 97, 97, 0.5);
+}
+
+.selected {
+    background-color: rgba(110, 255, 97, 0.5);
+    cursor: pointer;
+}
+
+.selected:hover {
+    background-color: rgba(92, 214, 81, 0.5);
+}

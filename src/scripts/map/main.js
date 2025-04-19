@@ -28,5 +28,8 @@ function activateMapScript(){
 
     // 
     // document.body.innerHTML = "<h1>" + zoneId + "</h1>";
-    document.body.innerHTML = "<div></div>";
+    const map = new Map(zoneId);
+    document.body.innerHTML = map.renderDOM();
+    map.drawSeats();
+    return;
 }
