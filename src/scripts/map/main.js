@@ -26,10 +26,9 @@ function activateMapScript(){
         throw new Error("ZoneId could not be read from the URL. Make sure the `zone` is an integer.");
     }
 
-    // 
-    // document.body.innerHTML = "<h1>" + zoneId + "</h1>";
-    const map = new Map(zoneId);
-    document.body.innerHTML = map.renderDOM();
+    const map = new Map(zoneId, true);
+    map.onSelectSeat = (seatId) => {document.getElementById("seatId").innerHTML = seatId.toString()};
+    document.body.innerHTML = "<h2 id='seatId'></h2>"+map.renderDOM();
     map.drawSeats();
     return;
 }
