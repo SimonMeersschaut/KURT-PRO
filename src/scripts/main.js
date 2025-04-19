@@ -12,7 +12,12 @@ const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
 
 
-function selectDay(dayIndex){
+// TODO: docs and split code
+// TODO: change `d` to selectedDay.
+function selectDay(dayIndex, zoneContainer){
+    // Fetch favorite zones of the user
+    var favoriteZones = tunnel.getFavoriteZones()
+    //
     const d = new Date(new Date().getTime() + dayIndex * _MS_PER_DAY);
     tunnel.hasReservationOn(dayIndex)
     .then(hasReservation => {
@@ -33,16 +38,36 @@ function selectDay(dayIndex){
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 zoneContainer.appendChild(zoneCard.renderDOM());
                 zoneCard.fetchAvailability(d);
-                zoneCard.onclick = (id) => {
+                zoneCard.onclick = (zoneId) => {
+                    // mapLoader = new Loader("Loading map");
+                    //
                     zoneContainer.innerHTML = "";
                     // show the reserved seat
-                    var map = new Map(2, false);
+                    var map = new Map(2, true);
                     zoneContainer.innerHTML = map.renderDOM();
                     tunnel.fetchMapData(2)
                     .then(mapData => {
                         map.drawSeats(mapData);
                     })
-                    map.handleSeatClick(312, true);
+                    .then(() => {
+                        (async () => {
+                            const freeSeatGenerator = tunnel.freeSeats(10, zoneId, d);
+                            var interval = setInterval(async () => {
+                                let freeSeat = (await freeSeatGenerator.next())['value'];
+                                if (freeSeat == undefined){
+                                    // end of list
+                                    clearInterval(interval);
+                                    // mapLoader.stop();
+                                    return;
+                                }
+                                document.getElementById(`plaats-${freeSeat}`).classList.add("free");
+                            }, 50);
+                            // for await (const freeSeat of freeSeatGenerator) {
+                            //     console.log(freeSeat);
+                                
+                            // }
+                        })();
+                    })
                 }
             }
         }
@@ -60,8 +85,6 @@ function main(){
     injectStaticContent();
     
     /* Create custom page. */
-    // Fetch favorite zones of the user
-    var favoriteZones = tunnel.getFavoriteZones()
 
     // Create day-selectors
     var daySelector = new DaySelector(true);
@@ -72,7 +95,7 @@ function main(){
     document.body.appendChild(zoneContainer);
     
     // set onclick event listener of day selectors
-    daySelector.onClickDay = selectDay;
+    daySelector.onClickDay = (dayIndex) => selectDay(dayIndex, zoneContainer);
 
     // Fetch future reservations and update the selectors
     tunnel.getReservedDays()

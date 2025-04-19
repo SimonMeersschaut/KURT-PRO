@@ -42,7 +42,8 @@ class ZoneCard{
                 var div = document.getElementById("zone_" + this.zoneData["id"].toString());
                 var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");
                 if (div == null){
-                    throw new Error("could not find div.");
+                    console.log("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
+                    return;
                 }else{
                     badge.innerText = availability.toString();
                 }

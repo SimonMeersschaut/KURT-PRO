@@ -13,8 +13,11 @@ class Map{
     renderDOM(){
         return `<div class="grid" id="grid">`;
     }
-
+    
+    // TODO: DOCS
     drawSeats(data){
+        // if (disabledSeats == null)
+        //     disabledSeats = [];
         // Set hover animation
         if (this.enableSelecting){
             document.getElementById('grid').classList.add('selectable');
@@ -31,7 +34,9 @@ class Map{
             gridItem.style.gridRow = gridRow;
 
             // Add a class to the grid item (e.g., free, booked, etc.)
-            gridItem.classList.add("free"); // Default class, adjust as needed
+            // if (avaiableSeats != null)
+            //     if (avaiableSeats.incudes())
+            //         gridItem.classList.add("free"); // Default class, adjust as needed
             if (id == this.selectedSeat)
                 gridItem.classList.add("selected");
             gridItem.onclick = () => {this.handleSeatClick(id)};

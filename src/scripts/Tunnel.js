@@ -12,7 +12,7 @@ Note that this tunnel will perform some cacheing to minimize the amount of reque
 */
 class Tunnel{
     constructor (){
-        // const dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
+        const dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
         var reservationCache = null;
     }
 
@@ -74,17 +74,10 @@ class Tunnel{
         return reservedDays[dayIndex];
     }
 
-    /*
-    Get the number of available seats on this day.
-    The function fetches the backend page by page and will yield the intermediate results.
-    Hence, the backend sends the seats in pages of 60 seats, so we have to calculate the cummulative sum.
-    We assume that there are no more than 10 pages and use this to avoid infinite loops.
-    */
-    async *getAvailableSeatsNumber(locationId, zoneId, date) {
+    async *getAvailableSeats(locationId, zoneId, date){
         const dateString = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
-        var cummulativeSum = 0;
-        let page = 0;
         let seatsOnPage = 0;
+        let page = 0;
         try {
             do {
                 if (page >= 10)
@@ -93,16 +86,50 @@ class Tunnel{
                     `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=10:00&endDate=${dateString}&endTime=18:00&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
                 );
                 const availableSeats = (await response.json())['availabilities'];
+                seatsOnPage = await availableSeats.length;
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                seatsOnPage = await availableSeats.length;
-                cummulativeSum += seatsOnPage;
-                yield cummulativeSum; // Yield the number of seats on the current page
+                yield availableSeats;
+                // TODO: cache
                 page++;
             } while (seatsOnPage > 0 && seatsOnPage == 60);
         } catch (error) {
             console.error("Error fetching available seats:", error);
+        }
+    }
+
+    /*
+    Get the number of available seats on this day.
+    The function fetches the backend page by page and will yield the intermediate results.
+    Hence, the backend sends the seats in pages of 60 seats, so we have to calculate the cummulative sum.
+    We assume that there are no more than 10 pages and use this to avoid infinite loops.
+    */
+    async *getAvailableSeatsNumber(locationId, zoneId, date) {
+        var cummulativeSum = 0;
+
+        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, date);
+        for await (const availableSeats of seatGenerator) {
+            cummulativeSum += availableSeats.length;
+            yield cummulativeSum; // Yield the number of seats on the current page
+        }
+    }
+
+    async *freeSeats(locationId, zoneId, date){
+        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, date);
+        for await (const availableSeats of seatGenerator) {
+            // avaiableSeats is a list of dictionaries
+            for await (const availableSeat of availableSeats){
+                // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
+                // splits the name "... Seat 236" -> 236
+                let id = await availableSeat["name"].split(" ")[availableSeat["name"].split(" ").length - 1];
+                try{
+                    yield parseInt(id);
+                }
+                catch(error){
+                    console.error(error);
+                }
+            }
         }
     }
 }
