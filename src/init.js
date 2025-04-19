@@ -20,9 +20,12 @@ function clearDOM(){
 
 /*
 This function will inject all necessary css into the head of the page.
+
+page:
+    - "homepage" => 
+    - "map" =>
 */
 function injectStaticContent(){
+    // homepage
     document.head.innerHTML = "<style>" + homepage_css + "</style>" + "<style>" + day_selector_css + "</style>" + BOOTSTRAP_CDN;
-    
-    // documenbt
 }

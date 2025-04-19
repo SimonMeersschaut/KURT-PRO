@@ -14,7 +14,7 @@ This function will clear the DOM and inject the custom homepage.
 function activateMapScript(){
     // we assume the user is authenticated when the script reaches this point
     clearDOM();
-    injectStaticContent();
+    injectStaticContent("map");
 
     /* Create custom page. */
     // Get the identifier of the current zone from the URL
@@ -28,5 +28,5 @@ function activateMapScript(){
 
     // 
     // document.body.innerHTML = "<h1>" + zoneId + "</h1>";
-    document.body.innerHTML "<div></div>"
+    document.body.innerHTML = "<div></div>";
 }
