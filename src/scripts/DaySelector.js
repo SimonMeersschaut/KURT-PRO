@@ -77,7 +77,7 @@ class DaySelector{
 
     selectDay(dayIndex){
         if (dayIndex == this.selectedDayIndex)
-            return;
+            return; // already selected, do nothing
 
         this.selectedDayIndex = dayIndex;
         this.updateClasses();
