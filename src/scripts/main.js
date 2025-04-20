@@ -6,15 +6,15 @@ Below is a list of the variables that will be set on build.
 homepage_css = ...
 day_selector_css = ...
 map_css = ...
+loader_css = ...
 */
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
 
-
 // TODO: docs and split code
 // TODO: change `d` to selectedDay.
-function selectDay(dayIndex, zoneContainer){
+function selectDay(dayIndex, mainContainer){
     // Fetch favorite zones of the user
     var favoriteZones = tunnel.getFavoriteZones()
     //
@@ -24,7 +24,7 @@ function selectDay(dayIndex, zoneContainer){
         if (hasReservation){
             // show the reserved seat
             var map = new Map(2, false);
-            zoneContainer.innerHTML = map.renderDOM();
+            mainContainer.innerHTML = map.renderDOM();
             tunnel.fetchMapData(2)
             .then(mapData => {
                 map.drawSeats(mapData);
@@ -33,39 +33,56 @@ function selectDay(dayIndex, zoneContainer){
         }
         else{
             // show reservation possibilities
-            zoneContainer.innerHTML = "";
+            mainContainer.innerHTML = "";
             for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
-                zoneContainer.appendChild(zoneCard.renderDOM());
+                mainContainer.appendChild(zoneCard.renderDOM());
                 zoneCard.fetchAvailability(d);
                 zoneCard.onclick = (zoneId) => {
-                    // mapLoader = new Loader("Loading map");
-                    //
-                    zoneContainer.innerHTML = "";
-                    // show the reserved seat
+                    mapLoader = new Loader("Loading map");
+                    // Show all available seats
+                    mainContainer.innerHTML = "";
                     var map = new Map(2, true);
-                    zoneContainer.innerHTML = map.renderDOM();
+                    var selectedSeatCard = new SelectedSeatCard();
+                    mainContainer.innerHTML = "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    map.onSelectSeat = (seatId) => {selectedSeatCard.setSeat(seatId)};
+                    selectedSeatCard.onConfirm = bookSeat; // effectively book that seat
                     tunnel.fetchMapData(2)
                     .then(mapData => {
                         map.drawSeats(mapData);
                     })
                     .then(() => {
                         (async () => {
+                            var timeout = 40; // ms between seats opening up
                             const freeSeatGenerator = tunnel.freeSeats(10, zoneId, d);
-                            var interval = setInterval(async () => {
-                                let freeSeat = (await freeSeatGenerator.next())['value'];
-                                if (freeSeat == undefined){
-                                    // end of list
-                                    clearInterval(interval);
-                                    // mapLoader.stop();
-                                    return;
+                            const seatQueue = [];
+                            let isProcessing = false;
+                    
+                            const processQueue = async () => {
+                                if (isProcessing) return;
+                                isProcessing = true;
+                    
+                                while (seatQueue.length > 0) {
+                                    const freeSeat = seatQueue.shift();
+                                    document.getElementById(`plaats-${freeSeat}`).classList.add("free");
+                                    await new Promise(resolve => setTimeout(resolve, timeout));
                                 }
-                                document.getElementById(`plaats-${freeSeat}`).classList.add("free");
-                            }, 50);
-                            // for await (const freeSeat of freeSeatGenerator) {
-                            //     console.log(freeSeat);
-                                
-                            // }
+                                mapLoader.stop();
+                                isProcessing = false;
+                            };
+                    
+                            while (true) {
+                                const { value: freeSeat, done } = await freeSeatGenerator.next();
+                                if (done || freeSeat === undefined) {
+                                    // all seats are now available -> show them immediatly
+                                    processQueue(); // for edge case: 0 seats available (loader would spin infinitely)
+                                    timeout = 0;
+                                    break;
+                                }
+                    
+                                seatQueue.push(freeSeat);
+                                processQueue();
+                            }
                         })();
                     })
                 }
@@ -75,6 +92,7 @@ function selectDay(dayIndex, zoneContainer){
 }
 
 function main(){
+    
     /* Setup & Initialize the webpage */
     var success = enforceAuthentication();
     if (!success){
@@ -83,7 +101,6 @@ function main(){
     // we assume the user is authenticated when the script reaches this point
     clearDOM();
     injectStaticContent();
-    
     /* Create custom page. */
 
     // Create day-selectors
@@ -91,11 +108,11 @@ function main(){
     document.body.appendChild(daySelector.renderDOM());
 
     // Create zone container
-    var zoneContainer = document.createElement("div")
-    document.body.appendChild(zoneContainer);
+    var mainContainer = document.createElement("div")
+    document.body.appendChild(mainContainer);
     
     // set onclick event listener of day selectors
-    daySelector.onClickDay = (dayIndex) => selectDay(dayIndex, zoneContainer);
+    daySelector.onClickDay = (dayIndex) => selectDay(dayIndex, mainContainer);
 
     // Fetch future reservations and update the selectors
     tunnel.getReservedDays()
@@ -118,4 +135,11 @@ document.body.onload = () => {
     tunnel = new Tunnel();
     // run main
     main();
+
+    // const loader = new Loader('example');
+
+    // // Simulate a loading process
+    // setTimeout(() => {
+    //     loader.success(); // Trigger the success animation
+    // }, 3000);
 }

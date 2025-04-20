@@ -43,9 +43,9 @@ class DaySelector{
         const d = new Date();
         let today = d.getDay();
         for (let i=0; i < 8; i++){
-            // calculate the day of the week (monday = 0, ... sunday = 6)
-            let weekday = WEEKDAYS[(today+i - 1) % 7];
-            var daySelector = this.createDaySelector(i, weekday);
+            // calculate the day of the week (sunday=0, ... saturday=6) -> (monday = 0, ... sunday = 6)
+            let weekday = WEEKDAYS[(today+i + 6) % 7];
+            var daySelector = this.createDayButton(i, weekday);
             selectorContainer.appendChild(daySelector);
         }
         if (this.settingsButton){
@@ -60,7 +60,12 @@ class DaySelector{
     /*
     This function creates the DOM of one single day-selector-button.
     */
-    createDaySelector(dayIndex, weekday){
+    createDayButton(dayIndex, weekday){
+        if (weekday == undefined)
+            throw new Error("`weekday` cannot be `undefined`.");
+        if (dayIndex < 0)
+            throw new Error("`dayIndex` cannot be negative.");
+
         const daySelector = document.createElement("div");
 
         daySelector.id = "daySelector-" + dayIndex.toString()

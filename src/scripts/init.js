@@ -27,6 +27,6 @@ page:
 */
 function injectStaticContent(){
     // homepage
-    document.head.innerHTML = "<style>" + homepage_css + "</style>" + "<style>" + day_selector_css + "</style>" + "<style>" + map_css + "</style>" + BOOTSTRAP_CDN;
+    document.head.innerHTML = "<style>" + homepage_css + "</style>" + "<style>" + day_selector_css + "</style>" + "<style>" + map_css + "</style>" + "<style>" + loader_css + "</style>" + BOOTSTRAP_CDN;
     // document.head.innerHTML = "<style>" + map_css + "</style>";
 }

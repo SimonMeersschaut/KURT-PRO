@@ -1,3 +1,15 @@
+/* @keyframes shadowPulse{
+    0%{
+        box-shadow: 0 0 5px 4px #00ff1a;
+    }
+    50%{
+        box-shadow: 0 0 15px 3px #00ff1a;
+    }
+    100%{
+        box-shadow: 0 0 5px 4px #00ff1a;
+    }
+} */
+
 .grid {
     max-height: 87vh; /* Set a maximum height */
     aspect-ratio: 424 / 600; /* Maintain the aspect ratio of the image */
@@ -18,13 +30,13 @@
   }
 
 .grid div {
-    border-radius: 8px;
+    border-radius: 2.5px;
     transition-duration: .5s;
     transition-property: background-color;
     /* tran */
 }
 
-.grid :not(.free) {
+.grid.selectable :not(.free) {
     /* taken seat */
     cursor: default;
     background-color: rgba(0, 0, 0, 0.604);
@@ -47,10 +59,12 @@
 }
 
 .selected {
-    background-color: #19875470;
+    background-color: #00ff1a73;
     cursor: pointer;
+    /* animation: shadowPulse 2s infinite;
+    transition: box-shadow 0.3s ease; */
 }
 
 .grid.selectable .selected:hover {
-    background-color: #1987549d;
+    background-color: #00ff1ac5;
 }
