@@ -14,13 +14,11 @@ class Loader {
         container.innerHTML = `
             <div class="loader-spinner">
                 <div class="spinner-circle"></div>
-                <div class="success-checkmark">
-                    <div class="check-icon">
-                        <span class="icon-line line-tip"></span>
-                        <span class="icon-line line-long"></span>
-                        <div class="icon-circle"></div>
-                        <div class="icon-fix"></div>
-                    </div>
+                <div class="checkmark-container">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14 27l10 10 14-14"/>
+                    </svg>
                 </div>
             </div>
         `;
@@ -37,7 +35,10 @@ class Loader {
     success() {
         // Trigger the success animation
         if (this.loaderElement) {
-            this.loaderElement.classList.add('success');
+            const spinner = this.loaderElement.querySelector('.spinner-circle');
+            if (spinner) {
+                spinner.classList.add('success');
+            }
         }
     }
 }

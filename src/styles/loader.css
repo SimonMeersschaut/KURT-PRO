@@ -23,10 +23,33 @@
 .spinner-circle {
     width: 40px;
     height: 40px;
-    border: 4px solid rgba(0, 0, 0, 0.1); /* Light gray border */
-    border-top-color: #007aff; /* Apple-like blue color */
+    border: 4px solid transparent; /* Transparent border */
+    border-top-color: #007aff; /* Initial blue color */
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    transition: border-top-color 1s linear;
+}
+
+
+.spinner-circle.success {
+    border-top-color: #007bff00; /* Initial blue color */
+    animation: none;
+}
+
+/* Animation to grow the "snake" */
+@keyframes grow-snake {
+    0% {
+        border-top-color: #28a745; /* Green color */
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        border-top-color: #28a745;
+        border-right-color: #28a745;
+        border-bottom-color: #28a745;
+        border-left-color: #28a745; /* Fully wrap the circle */
+    }
 }
 
 /* Spinning animation */
@@ -37,4 +60,57 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.checkmark-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    width: 40px;
+    height: 40px;
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Prevent interaction */
+}
+
+.checkmark {
+    width: 40px;
+    height: 40px;
+    stroke-width: 4;
+    stroke: #28a745; /* Green color for success */
+    fill: none;
+    /* stroke-linecap: round;
+    stroke-linejoin: round; */
+}
+
+.checkmark-circle {
+    stroke-dasharray: 157; /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 157; /* Hidden initially */
+    animation: draw-circle 0.5s ease-out forwards;
+}
+
+.checkmark-check {
+    stroke-dasharray: 36; /* Length of the checkmark */
+    stroke-dashoffset: 36; /* Hidden initially */
+    animation: draw-check 0.3s ease-out 0.5s forwards;
+}
+
+/* Animations for the checkmark */
+@keyframes draw-circle {
+    to {
+        stroke-dashoffset: 0; /* Fully draw the circle */
+    }
+}
+
+@keyframes draw-check {
+    to {
+        stroke-dashoffset: 0; /* Fully draw the checkmark */
+    }
+}
+
+/* Show the checkmark on success */
+.spinner-circle.success + .checkmark-container {
+    display: flex; /* Make the checkmark visible */
 }

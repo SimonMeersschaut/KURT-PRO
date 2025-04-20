@@ -136,10 +136,10 @@ document.body.onload = () => {
     // run main
     main();
 
-    // const loader = new Loader('example');
+    const loader = new Loader('example');
 
-    // // Simulate a loading process
-    // setTimeout(() => {
-    //     loader.success(); // Trigger the success animation
-    // }, 3000);
+    // Simulate a loading process
+    setTimeout(() => {
+        loader.success(); // Trigger the success animation
+    }, 1000);
 }
