@@ -45,20 +45,20 @@ class Tunnel{
         }
 
         try {
-            const output = [false, false, false, false, false, false, false];
+            const output = [false, false, false, false, false, false, false, false];
             const d = new Date();
 
             data.forEach(reservation => {
                 const date = new Date(reservation["startDate"]);
                 const dayIndex = dateDiffInDays(d, date);
-                if (dayIndex >= 0 && dayIndex <= 6) {
+                if (dayIndex >= 0 && dayIndex <= 7) {
                     output[dayIndex] = true;
                 }
             });
             return output;
         } catch (error) {
             console.error("Error fetching reserved days:", error);
-            return [false, false, false, false, false, false, false];
+            return [false, false, false, false, false, false, false, false];
         }
     }
 
@@ -82,9 +82,11 @@ class Tunnel{
     */
     async hasReservationOn(dayIndex){
         // TODO
-        // const reservedDays = await this.getReservedDays();
-        // return reservedDays[dayIndex];
-        return false;
+        const reservedDays = await this.getReservedDays();
+        console.log(reservedDays);
+        console.log(dayIndex);
+        return reservedDays[dayIndex];
+        // return true;
     }
 
     /*
@@ -173,7 +175,7 @@ class Tunnel{
         }
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
-    async bookSeat(seatId, dateString, startTimeString, endTimeString) {
+    async bookSeat(seatId, dateString, startTimeHours, endTimeHours) {
         const EXPECTED_RESPONSE = "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)";
 
         const bodyData = {
@@ -183,9 +185,9 @@ class Tunnel{
             "purpose": "",
             "resourceId": seatId,
             "startDate": dateString,
-            "startTime": startTimeString, // original: "10:00"
+            "startTime": `${startTimeHours}:00`, // original: "10:00"
             "endDate": dateString,
-            "endTime": endTimeString, // original: "17:00"
+            "endTime": `${endTimeHours}:00`, // original: "17:00"
             "participants": [
                 { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be" }
             ],
@@ -224,7 +226,8 @@ class Tunnel{
                     message: responseText ? JSON.parse(responseText) : "Unknown error"
                 };
 
-                console.error(`Error booking the seat. Status code ${response.status}; message: ${responseError.message}`);
+                console.error(`Error booking the seat. Status code ${response.status};`);
+                console.log(responseError.message)
                 return (false, responseError);
             }
         } catch (error) {

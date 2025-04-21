@@ -15,10 +15,10 @@ var tunnel = null; // will be set once the page has loaded.
 const dateToString = (date) => {return date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();};
 
 // TODO: docs and split code
-function selectDay(selectedDay, mainContainer){
+function selectDay(dayIndex, selectedDay, mainContainer){
     // Fetch favorite zones of the user
     var favoriteZones = tunnel.getFavoriteZones()
-    tunnel.hasReservationOn(selectedDay)
+    tunnel.hasReservationOn(dayIndex)
     .then(hasReservation => {
         if (hasReservation){
             // show the reserved seat
@@ -27,8 +27,8 @@ function selectDay(selectedDay, mainContainer){
             tunnel.fetchMapData(2)
             .then(mapData => {
                 map.drawSeats(mapData);
+                map.handleSeatClick(312, 312, true);
             })
-            map.handleSeatClick(312, true);
         }
         else{
             // show reservation possibilities
@@ -36,7 +36,7 @@ function selectDay(selectedDay, mainContainer){
             for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
-                zoneCard.fetchAvailability(selectedDay);
+                zoneCard.fetchAvailability(dayIndex);
                 zoneCard.onclick = (zoneId) => {
                     mainContainer.innerHTML = "";
                     // Render a new map
@@ -45,9 +45,9 @@ function selectDay(selectedDay, mainContainer){
                     mainContainer.innerHTML = "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
                     // event listeners
                     map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
-                    selectedSeatCard.onConfirm = (seatNr, seatId) => {bookSeat(seatId, selectedDay)}; // effectively book that seat
+                    selectedSeatCard.onConfirm = (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)}; // effectively book that seat
                     // fetch data
-                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay);
+                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=dayIndex);
                 }
             }
         }
@@ -75,23 +75,24 @@ function main(){
     document.body.appendChild(mainContainer);
     
     // set onclick event listener of day selectors
-    daySelector.onClickDay = (dayIndex) => selectDay(dayIndex, mainContainer);
+    daySelector.onClickDay = (dayIndex, selectedDay) => {selectDay(dayIndex, selectedDay, mainContainer)};
 
     // Fetch future reservations and update the selectors
     tunnel.getReservedDays()
     .then(reservedDays => {
         daySelector.reservedDays = reservedDays;
         daySelector.updateClasses();
+        // // open today
+        daySelector.selectDay(0);
     })
     .catch(error => {
         console.error("Error updating reserved days:", error);
     });
-
-    
 }
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
+    settings = new Settings();
     /*
     The tunnel will be an interface between the front-end and the back-end and will perform caching.
     */

@@ -3,11 +3,11 @@ class Settings{
 
     }
 
-    getStartTimeString(){
-        return "10:00";
+    getStartTimeHours(){
+        return 10;
     }
 
-    getEndTimeString(){
-        return "11:00";
+    getEndTimeHours(){
+        return 18;
     }
 }

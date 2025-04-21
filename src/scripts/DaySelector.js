@@ -27,8 +27,8 @@ Each instance of this class represents a header with buttons to select days.
 class DaySelector{
     constructor(settingsButton){
         this.settingsButton = settingsButton
-        this.selectedDayIndex = 0; // Will index the current selected day (defualt=today)
-        this.reservedDays = [false, false, false, false, false, false, false]; // will cache on what days the user has reservations
+        this.selectedDayIndex = null; // Will index the current selected day (defualt=today)
+        this.reservedDays = [false, false, false, false, false, false, false, false]; // will cache on what days the user has reservations
         this.onClickDay = null; // defautl value
     }
 
@@ -88,7 +88,7 @@ class DaySelector{
         this.updateClasses();
         if (this.onClickDay != null){
             const selectedDay = new Date(new Date().getTime() + dayIndex * _MS_PER_DAY);
-            this.onClickDay(selectedDay);
+            this.onClickDay(dayIndex, selectedDay);
         }
     }
 
@@ -96,7 +96,9 @@ class DaySelector{
         for (let i = 0; i <= 7; i++){
             let daySelector = document.getElementById("daySelector-" + i.toString());
             let selected = (i == this.selectedDayIndex);
-            let reserved = this.reservedDays[i]
+            let reserved = this.reservedDays[i];
+            if (reserved == undefined)
+                throw new Error("`reserved` was `undefined`.")
             daySelector.className = selectorClasses(false, selected, reserved);
         }
     }    

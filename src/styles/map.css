@@ -36,7 +36,7 @@
     /* tran */
 }
 
-.grid.selectable :not(.free) {
+.grid.selectable div {
     /* taken seat */
     cursor: default;
     background-color: rgba(0, 0, 0, 0.604);
@@ -60,9 +60,6 @@
 
 .selected {
     background-color: #00ff1a73;
-    cursor: pointer;
-    /* animation: shadowPulse 2s infinite;
-    transition: box-shadow 0.3s ease; */
 }
 
 .grid.selectable .selected:hover {
