@@ -40,7 +40,7 @@ class Loader {
                 spinner.classList.add('success');
             }
         }
+
+        setTimeout(() => {this.stop()}, 1500)
     }
 }
-
-

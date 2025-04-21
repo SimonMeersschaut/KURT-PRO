@@ -135,11 +135,4 @@ document.body.onload = () => {
     tunnel = new Tunnel();
     // run main
     main();
-
-    const loader = new Loader('example');
-
-    // Simulate a loading process
-    setTimeout(() => {
-        loader.success(); // Trigger the success animation
-    }, 1000);
 }

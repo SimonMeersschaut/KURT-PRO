@@ -6,8 +6,7 @@ class SelectedSeatCard{
 
     setSeat(seatId){
         this.seatId = seatId;
-        const card = document.getElementById("selectedSeatCard")
-        // alert(seatId);
+        // const card = document.getElementById("selectedSeatCard")
         document.getElementById("seatTitle").innerText = seatId;
         document.getElementById("bookSeatConfirm").onclick = (event) => {this.onConfirm(seatId)};
     }

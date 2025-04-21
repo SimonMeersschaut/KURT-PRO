@@ -32,8 +32,7 @@
 
 
 .spinner-circle.success {
-    border-top-color: #007bff00; /* Initial blue color */
-    animation: none;
+    display: none;
 }
 
 /* Animation to grow the "snake" */
@@ -67,8 +66,8 @@
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for the element's size */
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: none; /* Hidden by default */
     align-items: center;
     justify-content: center;

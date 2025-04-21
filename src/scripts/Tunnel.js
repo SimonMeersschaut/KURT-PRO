@@ -1,3 +1,6 @@
+/*
+TODO: docs
+*/
 function dateDiffInDays(a, b) {
     // Discard the time and time-zone information.
     const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
@@ -12,8 +15,8 @@ Note that this tunnel will perform some cacheing to minimize the amount of reque
 */
 class Tunnel{
     constructor (){
-        const dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
-        var reservationCache = null;
+        this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
+        this.reservationCache = null;
     }
 
     /*
@@ -27,7 +30,9 @@ class Tunnel{
         ]
     }
 
-
+    /*
+    TODO: docs
+    */
     async getReservedDays() {
         var data;
         if (this.reservationCache == null){
@@ -57,6 +62,9 @@ class Tunnel{
         }
     }
 
+    /*
+    TODO: docs
+    */
     async fetchMapData(zoneId){
         try {
             const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/Maps/resources/maps/zones/${zoneId}/compression.json`);
@@ -69,11 +77,17 @@ class Tunnel{
         }
     }
 
+    /*
+    TODO: docs
+    */
     async hasReservationOn(dayIndex){
         const reservedDays = await this.getReservedDays();
         return reservedDays[dayIndex];
     }
 
+    /*
+    TODO: docs
+    */
     async *getAvailableSeats(locationId, zoneId, date){
         const dateString = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
         let seatsOnPage = 0;
@@ -114,7 +128,9 @@ class Tunnel{
             yield cummulativeSum; // Yield the number of seats on the current page
         }
     }
-
+    /*
+    TODO: docs
+    */
     async *freeSeats(locationId, zoneId, date){
         const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, date);
         for await (const availableSeats of seatGenerator) {
@@ -132,4 +148,61 @@ class Tunnel{
             }
         }
     }
+    
+    /*
+    Sends a request to the back-end to make a reservation.
+
+    URL: https://kurt3.ghum.kuleuven.be/api/reservations/
+    PAYLOAD: 
+        {
+            "id":301783,
+            "resourceName":"CBA - Boekenzaal Seat 137",
+            "subject":"CBA - Boekenzaal Seat 137",
+            "purpose":"",
+            "resourceId":301783,
+            "startDate":"2025-04-22",
+            "startTime":"9:00",
+            "endDate":"2025-04-22",
+            "endTime":"10:00",
+            "participants":[{"uid":"R1039801","email":"simon.meersschaut@student.kuleuven.be"}],
+            "summary":["Resource **CBA - Boekenzaal Seat 137**","at **2Bergen Arenberg**","for **simon.meersschaut&commat;student.kuleuven.be**","from **Tue Apr 22 9:00** until **Tue Apr 22 10:00**"],
+            "withCheckIn":false
+        }
+    EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
+    */
+    async bookSeat(seatId, dateString){
+        const EXPECTED_RESPONSE = "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)";
+        
+        const bodyData = {
+            "id":seatId, // original: 301783
+            "resourceName":"", // original: "CBA - Boekenzaal Seat 137"
+            "subject":"", // original: "CBA - Boekenzaal Seat 137"
+            "purpose":"",
+            "resourceId":seatId, // original: 301783
+            "startDate":dateString, // original: "2025-04-22"
+            "startTime":"9:00",
+            "endDate":dateString, // original: "2025-04-22"
+            "endTime":"10:00",
+            "participants":[{"uid":"R1039801","email":"simon.meersschaut@student.kuleuven.be"}],
+            "summary":["Resource **CBA - Boekenzaal Seat 137**","at **2Bergen Arenberg**","for **simon.meersschaut&commat;student.kuleuven.be**","from **Tue Apr 22 9:00** until **Tue Apr 22 10:00**"],
+            "withCheckIn":false
+        };
+
+        const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations/", {
+            method: "POST",
+            body: JSON.stringify(bodyData)
+        });
+        const responseText = await response.text();
+
+        // TODO: update cache with reservation
+        
+        if (responseText == EXPECTED_RESPONSE)
+            return (true, "ok");
+        else{
+            // handle error
+            return (false, responseText)
+        }
+    }
+
+    
 }
