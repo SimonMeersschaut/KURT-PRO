@@ -87,7 +87,8 @@ class DaySelector{
         this.selectedDayIndex = dayIndex;
         this.updateClasses();
         if (this.onClickDay != null){
-            this.onClickDay(dayIndex);
+            const selectedDay = new Date(new Date().getTime() + dayIndex * _MS_PER_DAY);
+            this.onClickDay(selectedDay);
         }
     }
 

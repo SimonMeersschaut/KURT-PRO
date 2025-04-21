@@ -73,7 +73,7 @@ class Tunnel{
         }
         catch(error){
             console.error("Error fetching reserved days:", error);
-            return {};
+            throw error;
         }
     }
 
@@ -81,15 +81,17 @@ class Tunnel{
     TODO: docs
     */
     async hasReservationOn(dayIndex){
-        const reservedDays = await this.getReservedDays();
-        return reservedDays[dayIndex];
+        // TODO
+        // const reservedDays = await this.getReservedDays();
+        // return reservedDays[dayIndex];
+        return false;
     }
 
     /*
     TODO: docs
     */
-    async *getAvailableSeats(locationId, zoneId, date){
-        const dateString = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+    async *getAvailableSeats(locationId, zoneId, selectedDay){
+        const dateString = dateToString(selectedDay);
         let seatsOnPage = 0;
         let page = 0;
         try {
@@ -119,20 +121,21 @@ class Tunnel{
     Hence, the backend sends the seats in pages of 60 seats, so we have to calculate the cummulative sum.
     We assume that there are no more than 10 pages and use this to avoid infinite loops.
     */
-    async *getAvailableSeatsNumber(locationId, zoneId, date) {
+    async *getAvailableSeatsNumber(locationId, zoneId, selectedDay) {
         var cummulativeSum = 0;
 
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, date);
+        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
         for await (const availableSeats of seatGenerator) {
             cummulativeSum += availableSeats.length;
             yield cummulativeSum; // Yield the number of seats on the current page
         }
     }
+
     /*
     TODO: docs
     */
-    async *freeSeats(locationId, zoneId, date){
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, date);
+    async *freeSeats(locationId, zoneId, selectedDay){
+        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
         for await (const availableSeats of seatGenerator) {
             // avaiableSeats is a list of dictionaries
             for await (const availableSeat of availableSeats){
@@ -148,7 +151,7 @@ class Tunnel{
             }
         }
     }
-    
+
     /*
     Sends a request to the back-end to make a reservation.
 
@@ -170,39 +173,69 @@ class Tunnel{
         }
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
-    async bookSeat(seatId, dateString){
+    async bookSeat(seatId, dateString, startTimeString, endTimeString) {
         const EXPECTED_RESPONSE = "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)";
-        
+
         const bodyData = {
-            "id":seatId, // original: 301783
-            "resourceName":"", // original: "CBA - Boekenzaal Seat 137"
-            "subject":"", // original: "CBA - Boekenzaal Seat 137"
-            "purpose":"",
-            "resourceId":seatId, // original: 301783
-            "startDate":dateString, // original: "2025-04-22"
-            "startTime":"9:00",
-            "endDate":dateString, // original: "2025-04-22"
-            "endTime":"10:00",
-            "participants":[{"uid":"R1039801","email":"simon.meersschaut@student.kuleuven.be"}],
-            "summary":["Resource **CBA - Boekenzaal Seat 137**","at **2Bergen Arenberg**","for **simon.meersschaut&commat;student.kuleuven.be**","from **Tue Apr 22 9:00** until **Tue Apr 22 10:00**"],
-            "withCheckIn":false
+            "id": seatId,
+            "resourceName": "CBA - Boekenzaal Seat 137",
+            "subject": "CBA - Boekenzaal Seat 137",
+            "purpose": "",
+            "resourceId": seatId,
+            "startDate": dateString,
+            "startTime": startTimeString, // original: "10:00"
+            "endDate": dateString,
+            "endTime": endTimeString, // original: "17:00"
+            "participants": [
+                { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be" }
+            ],
+            "summary": [
+                "Resource **CBA - Boekenzaal Seat 137**",
+                "at **2Bergen Arenberg**",
+                "for **simon.meersschaut&commat;student.kuleuven.be**",
+                "from **Tue Apr 22 10:00** until **Tue Apr 22 17:00**"
+            ],
+            "withCheckIn": false
         };
 
-        const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations/", {
-            method: "POST",
-            body: JSON.stringify(bodyData)
-        });
-        const responseText = await response.text();
+        try {
+            const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json; charset=utf-8"
+                },
+                body: JSON.stringify(bodyData)
+            });
 
-        // TODO: update cache with reservation
-        
-        if (responseText == EXPECTED_RESPONSE)
-            return (true, "ok");
-        else{
-            // handle error
-            return (false, responseText)
+            const responseText = await response.text();
+
+            if (response.ok) {
+                if (responseText === EXPECTED_RESPONSE) {
+                    return (true, "ok");
+                } else {
+                    console.warn("Unexpected response message:", responseText);
+                    return (false, { type: 'Warning', message: responseText });
+                }
+            } else {
+                // Handle non-OK responses
+                const responseError = {
+                    type: 'Error',
+                    status: response.status,
+                    message: responseText ? JSON.parse(responseText) : "Unknown error"
+                };
+
+                console.error(`Error booking the seat. Status code ${response.status}; message: ${responseError.message}`);
+                return (false, responseError);
+            }
+        } catch (error) {
+            // Handle network or unexpected errors
+            console.error("Unexpected error while booking the seat:", error);
+            return (false, { type: 'Error', message: error.message });
         }
     }
 
+    getSeatId(seatNr){
+        return 301783;
+    }
     
 }

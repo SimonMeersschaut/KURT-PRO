@@ -1,4 +1,13 @@
-TODO
-Difference:
-dayIndex
-...
+This document provides an explanation of common variable names in the script.
+
+ZONES:
+    locationId: e.g. 10 for Agora
+    zoneId: e.g. 2 for Agora (unique over libraries)
+
+SEATS:
+    seatId: the actual back-end identifier given to this seat (location + seatNr)
+    seatNr: the number that the seat has for this location
+
+DATETIME:
+    dayIndex: the index that the day has in the shown daySelector
+    selectedDay: the datetime-object of the selected day.

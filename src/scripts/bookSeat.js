@@ -2,14 +2,15 @@
 /*
 Effectively book that seat.
 */
-function bookSeat(seatId){
+function bookSeat(seatId, selectedDay){
     const loader = new Loader(`Booking seat ${seatId}`);
-    alert(`Booking seat ${seatId}`);
     setTimeout(() => {}, 1000);
 
     tunnel.bookSeat(
-        seatId,
-        
+        seatId=seatId,
+        dateString=dateToString(selectedDay),
+        startTimeString=settings.getStartTimeString(),
+        endTimeString=settings.getEndTimeString()
     )
     .then((success, msg) => {
         if (success)

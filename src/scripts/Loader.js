@@ -43,4 +43,9 @@ class Loader {
 
         setTimeout(() => {this.stop()}, 1500)
     }
+
+    error(msg){
+        // alert(msg);
+        console.error(msg);
+    }
 }

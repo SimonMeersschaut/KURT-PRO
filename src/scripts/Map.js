@@ -26,10 +26,10 @@ class Map{
         const gridContainer = document.getElementById('grid');
         gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
 
-        Object.entries(data).forEach(([id, value]) => {
+        Object.entries(data).forEach(([seatNr, value]) => {
             const [gridColumn, gridRow] = value.split(";");
             const gridItem = document.createElement("div");
-            gridItem.id = `plaats-${id}`;
+            gridItem.id = `plaats-${seatNr}`;
             gridItem.style.gridColumn = gridColumn;
             gridItem.style.gridRow = gridRow;
 
@@ -37,9 +37,9 @@ class Map{
             // if (avaiableSeats != null)
             //     if (avaiableSeats.incudes())
             //         gridItem.classList.add("free"); // Default class, adjust as needed
-            if (id == this.selectedSeat)
+            if (seatNr == this.selectedSeat)
                 gridItem.classList.add("selected");
-            gridItem.onclick = () => {this.handleSeatClick(id)};
+            gridItem.onclick = () => {this.handleSeatClick(seatNr, tunnel.getSeatId(seatNr))};
             gridContainer.appendChild(gridItem);
         })
     }
@@ -48,24 +48,71 @@ class Map{
     
     forceSelect will overwrite enableSelecting
     */
-    handleSeatClick(id, forceSelect=false){
+    handleSeatClick(seatNr, seatId, forceSelect=false){
         if (!forceSelect)
             if (!this.enableSelecting)
                 return;
-        this.selectedSeat = id;
+        this.selectedSeat = seatNr;
 
         // de-select all other seats
         Array.from(document.getElementsByClassName("selected")).forEach((element) => {
             element.classList.remove("selected")
         });
         // select this element
-        const gridItem = document.getElementById(`plaats-${id}`);
+        const gridItem = document.getElementById(`plaats-${seatNr}`);
         if (gridItem == null)
             return;
         gridItem.classList.add("selected");
 
         // Call event listener
         if (this.onSelectSeat != null)
-            this.onSelectSeat(id);
+            this.onSelectSeat(seatNr, seatId);
     }
+
+    /*
+    */
+   fetchMapData(locationId, zoneId, selectedDay){
+        var mapLoader = new Loader("Loading map");
+        tunnel.fetchMapData(zoneId)
+        .then(mapData => {
+            this.drawSeats(mapData);
+        })
+        .then(() => {
+            (async () => {
+                var timeout = 40; // ms between seats opening up
+                const freeSeatGenerator = tunnel.freeSeats(locationId, zoneId, selectedDay);
+                const seatQueue = [];
+                let isProcessing = false;
+        
+                const processQueue = async () => {
+                    if (isProcessing) return;
+                    isProcessing = true;
+        
+                    while (seatQueue.length > 0) {
+                        const freeSeat = seatQueue.shift();
+                        document.getElementById(`plaats-${freeSeat}`).classList.add("free");
+                        await new Promise(resolve => setTimeout(resolve, timeout));
+                    }
+                    mapLoader.stop();
+                    isProcessing = false;
+                };
+        
+                while (true) {
+                    const { value: freeSeat, done } = await freeSeatGenerator.next();
+                    if (done || freeSeat === undefined) {
+                        // all seats are now available -> show them immediatly
+                        processQueue(); // for edge case: 0 seats available (loader would spin infinitely)
+                        timeout = 0;
+                        break;
+                    }
+        
+                    seatQueue.push(freeSeat);
+                    processQueue();
+                }
+            })();
+        })
+        .catch(error => {
+            mapLoader.error(error);
+        })
+   }
 }
