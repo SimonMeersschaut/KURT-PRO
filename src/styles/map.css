@@ -1,0 +1,67 @@
+/* @keyframes shadowPulse{
+    0%{
+        box-shadow: 0 0 5px 4px #00ff1a;
+    }
+    50%{
+        box-shadow: 0 0 15px 3px #00ff1a;
+    }
+    100%{
+        box-shadow: 0 0 5px 4px #00ff1a;
+    }
+} */
+
+.grid {
+    max-height: 87vh; /* Set a maximum height */
+    aspect-ratio: 424 / 600; /* Maintain the aspect ratio of the image */
+    display: grid;
+    grid-template-columns: repeat(424, 1fr); /* Match the grid to the image's resolution */
+    grid-template-rows: repeat(600, 1fr);
+    background-size: contain; /* Ensure the image scales proportionally */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    margin: auto; /* Center the grid horizontally */
+}
+
+@media only screen and (min-width: 1400px) {
+    /* Laptop / Computer */
+    .grid{
+        margin:0;
+    }
+  }
+
+.grid div {
+    border-radius: 2.5px;
+    transition-duration: .5s;
+    transition-property: background-color;
+    /* tran */
+}
+
+.grid.selectable div {
+    /* taken seat */
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.604);
+}
+
+.grid.selectable .free {
+    /* free seat */
+    cursor: pointer;
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+
+.grid.selectable .free:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.booked {
+    background-color: rgba(255, 97, 97, 0.5);
+}
+
+.selected {
+    background-color: #00ff1a73;
+}
+
+.grid.selectable .selected:hover {
+    background-color: #00ff1ac5;
+}

@@ -1,0 +1,108 @@
+const WEEKDAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"]
+
+/*
+Returns a string representation of the classList of the daySelector.
+
+Params:
+- selected: if this day is selected in the website
+- booked: if this day has a reservation.
+- loading: no information is available yet (overwrites some other settings).
+*/
+function selectorClasses(loading, selected, booked){
+    let prefix = selected ? "btn-" : "btn-outline-";
+
+    var color = "";
+    if (loading){
+        color = "dark";
+    }
+    else{
+        color = booked ? "success" : "primary";
+    }
+    return "btn " + prefix + color;
+}
+
+/*
+Each instance of this class represents a header with buttons to select days.
+*/
+class DaySelector{
+    constructor(settingsButton){
+        this.settingsButton = settingsButton
+        this.selectedDayIndex = null; // Will index the current selected day (defualt=today)
+        this.reservedDays = [false, false, false, false, false, false, false, false]; // will cache on what days the user has reservations
+        this.onClickDay = null; // defautl value
+    }
+
+    /*
+    This function creates the DOM of a container with day-selectors.
+    */
+    renderDOM() {
+        // Create container
+        var selectorContainer = document.createElement("div");
+        selectorContainer.id = "daySelectorContainer";
+        // Get the day of the week (of today)
+        const d = new Date();
+        let today = d.getDay();
+        for (let i=0; i < 8; i++){
+            // calculate the day of the week (sunday=0, ... saturday=6) -> (monday = 0, ... sunday = 6)
+            let weekday = WEEKDAYS[(today+i + 6) % 7];
+            var daySelector = this.createDayButton(i, weekday);
+            selectorContainer.appendChild(daySelector);
+        }
+        if (this.settingsButton){
+            var settingsButtonDOM = document.createElement("div");
+            settingsButtonDOM.innerText = "settings";
+            selectorContainer.appendChild(settingsButtonDOM);
+        }
+        // return the DOM
+        return selectorContainer;
+    }
+
+    /*
+    This function creates the DOM of one single day-selector-button.
+    */
+    createDayButton(dayIndex, weekday){
+        if (weekday == undefined)
+            throw new Error("`weekday` cannot be `undefined`.");
+        if (dayIndex < 0)
+            throw new Error("`dayIndex` cannot be negative.");
+
+        const daySelector = document.createElement("div");
+
+        daySelector.id = "daySelector-" + dayIndex.toString()
+        daySelector.classList.add("daySelector");
+        daySelector.className = selectorClasses(true, null, null);
+        daySelector.innerText = weekday[0];
+
+        daySelector.addEventListener("click", (event) => {
+            this.selectDay(dayIndex);
+        });
+
+        return daySelector;
+    }
+
+    selectDay(dayIndex){
+        if (dayIndex == this.selectedDayIndex)
+            return; // already selected, do nothing
+
+        this.selectedDayIndex = dayIndex;
+        this.updateClasses();
+        if (this.onClickDay != null){
+            const selectedDay = new Date(new Date().getTime() + dayIndex * _MS_PER_DAY);
+            this.onClickDay(dayIndex, selectedDay);
+        }
+    }
+
+    updateClasses(){
+        for (let i = 0; i <= 7; i++){
+            let daySelector = document.getElementById("daySelector-" + i.toString());
+            let selected = (i == this.selectedDayIndex);
+            let reserved = this.reservedDays[i];
+            if (reserved == undefined)
+                throw new Error("`reserved` was `undefined`.")
+            daySelector.className = selectorClasses(false, selected, reserved);
+        }
+    }    
+}
+
+
+
