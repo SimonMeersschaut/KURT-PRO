@@ -15,6 +15,8 @@ function bookSeat(seatId, selectedDay, startTimeHours, endTimeHours){
     .then((success, msg) => {
         if (success)
             loader.success()
+
+            
             // TODO: display new map
         else{
             // NO SUCCESS

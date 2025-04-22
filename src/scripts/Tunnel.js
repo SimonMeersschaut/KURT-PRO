@@ -15,7 +15,7 @@ Note that this tunnel will perform some cacheing to minimize the amount of reque
 */
 class Tunnel{
     constructor (){
-        this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
+        this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
         this.reservationCache = null;
     }
 
@@ -91,27 +91,42 @@ class Tunnel{
     TODO: docs
     */
     async *getAvailableSeats(locationId, zoneId, selectedDay){
-        const dateString = dateToString(selectedDay);
-        let seatsOnPage = 0;
-        let page = 0;
-        try {
-            do {
-                if (page >= 10)
-                    throw new Error("Tried to fetch pages more than 10 times.");
-                const response = await fetch(
-                    `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=10:00&endDate=${dateString}&endTime=18:00&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
-                );
-                const availableSeats = (await response.json())['availabilities'];
-                seatsOnPage = await availableSeats.length;
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                yield availableSeats;
-                // TODO: cache
-                page++;
-            } while (seatsOnPage > 0 && seatsOnPage == 60);
-        } catch (error) {
-            console.error("Error fetching available seats:", error);
+        const dayIndex = calculateDayIndex(selectedDay);
+        const zoneCache = this.dayCaches[dayIndex].getZoneCache(zoneId);
+        if (zoneCache == undefined) 
+            throw new Error("`zoneCache` cannot be `null`.");
+        if (zoneCache.isValid()){
+            yield zoneCache.content;
+        }
+        else{
+            // fetch
+            const dateString = dateToString(selectedDay);
+            let seatsOnPage = 0;
+            let page = 0;
+            try {
+                do {
+                    if (page >= 10)
+                        throw new Error("Tried to fetch pages more than 10 times.");
+                    const response = await fetch(
+                        `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=10:00&endDate=${dateString}&endTime=18:00&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
+                    );
+                    const availableSeats = (await response.json())['availabilities'];
+                    seatsOnPage = await availableSeats.length;
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    yield availableSeats;
+                    // add all availableSeats to the cache
+                    availableSeats.forEach(seat => {
+                        zoneCache.content.push(seat);
+                    })
+                    page++;
+                } while (seatsOnPage > 0 && seatsOnPage == 60);
+            } catch (error) {
+                console.error("Error fetching available seats:", error);
+            }
+            // updated entire cache
+            zoneCache.setValid();
         }
     }
 

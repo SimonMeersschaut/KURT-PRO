@@ -1,5 +1,0 @@
-class DayCache{
-    constructor(){
-
-    }
-}

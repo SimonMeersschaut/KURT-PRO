@@ -18,6 +18,23 @@ const dateToString = (date) => {
     return date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
 };
 
+/*
+Calculates the dayIndex based on the selectedDay.
+The dayIndex represents the difference in days between the selectedDay and the current day.
+This implementation avoids rounding issues by normalizing both dates to midnight.
+*/
+function calculateDayIndex(selectedDay) {
+    const _MS_PER_DAY = 1000 * 60 * 60 * 24; // Milliseconds in a day
+
+    // Normalize both dates to midnight
+    const today = new Date();
+    const todayAtMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const selectedDayAtMidnight = new Date(selectedDay.getFullYear(), selectedDay.getMonth(), selectedDay.getDate());
+
+    // Calculate the difference in days
+    return Math.floor((selectedDayAtMidnight - todayAtMidnight) / _MS_PER_DAY);
+}
+
 // TODO: docs and split code
 function selectDay(dayIndex, selectedDay, mainContainer){
     // Fetch favorite zones of the user
