@@ -28,7 +28,7 @@ class DaySelector{
     constructor(settingsButton){
         this.settingsButton = settingsButton
         this.selectedDayIndex = null; // Will index the current selected day (defualt=today)
-        this.reservedDays = [false, false, false, false, false, false, false, false]; // will cache on what days the user has reservations
+        this.reservedDays = [null, null, null, null, null, null, null, null]; // will cache on what days the user has reservations
         this.onClickDay = null; // defautl value
     }
 
@@ -97,8 +97,6 @@ class DaySelector{
             let daySelector = document.getElementById("daySelector-" + i.toString());
             let selected = (i == this.selectedDayIndex);
             let reserved = this.reservedDays[i];
-            if (reserved == undefined)
-                throw new Error("`reserved` was `undefined`.")
             daySelector.className = selectorClasses(false, selected, reserved);
         }
     }    

@@ -20,7 +20,7 @@ class SelectedSeatCard{
         const card = document.getElementById("selectedSeatCard")
         card.style.display = "block";
         document.getElementById("seatTitle").innerText = seatNr;
-        document.getElementById("bookSeatConfirm").onclick = (event) => {this.onConfirm(seatNr, seatId, this.startTimeHours, this.endTimeHours)};
+        document.getElementById("bookSeatConfirm").onclick = (event) => {this.onConfirm(this.seatNr, this.seatId, this.startTimeHours, this.endTimeHours)};
         
         this.updateSeatTime();
     }

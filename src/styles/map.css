@@ -37,20 +37,19 @@
 }
 
 .grid.selectable div {
-    /* taken seat */
+    /* TAKEN SEAT */
     cursor: default;
     background-color: rgba(0, 0, 0, 0.604);
 }
 
 .grid.selectable .free {
-    /* free seat */
+    /* FREE SEAT */
     cursor: pointer;
-    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
 .grid.selectable .free:hover {
-    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -58,10 +57,10 @@
     background-color: rgba(255, 97, 97, 0.5);
 }
 
-.selected {
-    background-color: #00ff1a73;
+.grid .selected {
+    background-color: #00ff1a73 !important;
 }
 
 .grid.selectable .selected:hover {
-    background-color: #00ff1ac5;
+    background-color: #00ff1ac5 !important;
 }

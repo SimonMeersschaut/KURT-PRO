@@ -34,15 +34,15 @@ class ZoneCard{
     - page: (default 0) what page the function should fetch
     - offset: (defualt 0) how many seats the previous page had (cummulatively)
     */
-    fetchAvailability(date){
+    fetchAvailability(selectedDay){
         (async () => {
-            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], date);
+            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], selectedDay);
             for await (const availability of seatGenerator) {
                 // change the number of availability
                 var div = document.getElementById("zone_" + this.zoneData["id"].toString());
                 var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");
                 if (div == null){
-                    console.log("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
+                    console.warn("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
                     return;
                 }else{
                     badge.innerText = availability.toString();

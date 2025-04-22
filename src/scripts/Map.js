@@ -39,7 +39,7 @@ class Map{
             //         gridItem.classList.add("free"); // Default class, adjust as needed
             if (seatNr == this.selectedSeat)
                 gridItem.classList.add("selected");
-            gridItem.onclick = () => {this.handleSeatClick(seatNr, tunnel.getSeatId(seatNr))};
+            gridItem.onclick = () => {this.handleSeatClick(seatNr)};
             gridContainer.appendChild(gridItem);
         })
     }
@@ -48,7 +48,7 @@ class Map{
     
     forceSelect will overwrite enableSelecting
     */
-    handleSeatClick(seatNr, seatId, forceSelect=false){
+    handleSeatClick(seatNr, forceSelect=false){
         if (!forceSelect)
             if (!this.enableSelecting)
                 return;
@@ -59,10 +59,13 @@ class Map{
             element.classList.remove("selected")
         });
         // select this element
-        const gridItem = document.getElementById(`plaats-${seatNr}`);
-        if (gridItem == null)
+        const seatDOM = document.getElementById(`plaats-${seatNr}`);
+        if (seatDOM == null)
             return;
-        gridItem.classList.add("selected");
+        seatDOM.classList.add("selected");
+
+        // get the seat Id
+        const seatId = seatDOM.getAttribute("seatId");
 
         // Call event listener
         if (this.onSelectSeat != null)
@@ -89,8 +92,12 @@ class Map{
                     isProcessing = true;
         
                     while (seatQueue.length > 0) {
-                        const freeSeat = seatQueue.shift();
-                        document.getElementById(`plaats-${freeSeat}`).classList.add("free");
+                        const seatInfo = seatQueue.shift();
+                        const seatDOM = document.getElementById(`plaats-${seatInfo["seatNr"]}`)
+                        seatDOM.setAttribute("seatId", seatInfo["seatId"])
+                        if (seatDOM == null)
+                            throw new Error("`seatDOM` not found.");
+                        seatDOM.classList.add("free");
                         await new Promise(resolve => setTimeout(resolve, timeout));
                     }
                     mapLoader.stop();
@@ -98,15 +105,16 @@ class Map{
                 };
         
                 while (true) {
-                    const { value: freeSeat, done } = await freeSeatGenerator.next();
-                    if (done || freeSeat === undefined) {
+                    const { value: seatInfo, done } = await freeSeatGenerator.next();
+                    // seatInfo = {"seatNr":seatNr, "seatId":seatId}
+                    if (done || seatInfo === undefined) {
                         // all seats are now available -> show them immediatly
                         processQueue(); // for edge case: 0 seats available (loader would spin infinitely)
                         timeout = 0;
                         break;
                     }
         
-                    seatQueue.push(freeSeat);
+                    seatQueue.push(seatInfo);
                     processQueue();
                 }
             })();

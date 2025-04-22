@@ -45,20 +45,21 @@ class Tunnel{
         }
 
         try {
-            const output = [false, false, false, false, false, false, false, false];
+            const output = [null, null, null, null, null, null, null, null];
             const d = new Date();
 
             data.forEach(reservation => {
                 const date = new Date(reservation["startDate"]);
                 const dayIndex = dateDiffInDays(d, date);
                 if (dayIndex >= 0 && dayIndex <= 7) {
-                    output[dayIndex] = true;
+                    let seatNr = parseInt(reservation["resourceName"].split(" ")[reservation["resourceName"].split(" ").length - 1]);
+                    output[dayIndex] = seatNr;
                 }
             });
             return output;
         } catch (error) {
             console.error("Error fetching reserved days:", error);
-            return [false, false, false, false, false, false, false, false];
+            return [null, null, null, null, null, null, null, null];
         }
     }
 
@@ -81,10 +82,7 @@ class Tunnel{
     TODO: docs
     */
     async hasReservationOn(dayIndex){
-        // TODO
         const reservedDays = await this.getReservedDays();
-        console.log(reservedDays);
-        console.log(dayIndex);
         return reservedDays[dayIndex];
         // return true;
     }
@@ -143,9 +141,10 @@ class Tunnel{
             for await (const availableSeat of availableSeats){
                 // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
                 // splits the name "... Seat 236" -> 236
-                let id = await availableSeat["name"].split(" ")[availableSeat["name"].split(" ").length - 1];
+                let seatNr = await parseInt(availableSeat["name"].split(" ")[availableSeat["name"].split(" ").length - 1]);
+                let seatId = await parseInt(availableSeat["id"]);
                 try{
-                    yield parseInt(id);
+                    yield {"seatNr":seatNr, "seatId":seatId};
                 }
                 catch(error){
                     console.error(error);
@@ -180,8 +179,8 @@ class Tunnel{
 
         const bodyData = {
             "id": seatId,
-            "resourceName": "CBA - Boekenzaal Seat 137",
-            "subject": "CBA - Boekenzaal Seat 137",
+            "resourceName": "", // original "CBA - Boekenzaal Seat 137"
+            "subject": "", // original: "CBA - Boekenzaal Seat 137"
             "purpose": "",
             "resourceId": seatId,
             "startDate": dateString,
@@ -189,13 +188,13 @@ class Tunnel{
             "endDate": dateString,
             "endTime": `${endTimeHours}:00`, // original: "17:00"
             "participants": [
-                { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be" }
+                { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be"}
             ],
             "summary": [
-                "Resource **CBA - Boekenzaal Seat 137**",
-                "at **2Bergen Arenberg**",
-                "for **simon.meersschaut&commat;student.kuleuven.be**",
-                "from **Tue Apr 22 10:00** until **Tue Apr 22 17:00**"
+                "", // Resource **CBA - Boekenzaal Seat 137**
+                "", // at **2Bergen Arenberg**
+                "", // for **simon.meersschaut&commat;student.kuleuven.be**
+                "" // from **Tue Apr 22 10:00** until **Tue Apr 22 17:00**
             ],
             "withCheckIn": false
         };
@@ -227,7 +226,7 @@ class Tunnel{
                 };
 
                 console.error(`Error booking the seat. Status code ${response.status};`);
-                console.log(responseError.message)
+                console.error(responseError.message)
                 return (false, responseError);
             }
         } catch (error) {
@@ -236,9 +235,4 @@ class Tunnel{
             return (false, { type: 'Error', message: error.message });
         }
     }
-
-    getSeatId(seatNr){
-        return 301783;
-    }
-    
 }
