@@ -19,6 +19,6 @@
   "permissions": [
     "webNavigation"
   ],
-  "version": "0.1",
+  "version": "$VERSION",
   "web_accessible_resources": []
 }

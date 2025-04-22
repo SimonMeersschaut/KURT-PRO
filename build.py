@@ -1,4 +1,5 @@
 import os
+import json
 import glob
 import shutil
 
@@ -6,9 +7,16 @@ import shutil
 SRC_DIR = "src"
 DIST_DIR = "dist"
 BUILD_DIR = os.path.join(DIST_DIR, "build")
-SAFARI_FILENAME = "KURT_PRO_safari_extension.js"
+SAFARI_FILENAME = "KURT_PRO_userscript.user.js"
 CHROME_ZIP_FILENAME = "KURT_PRO_chrome_extention.zip"
 LOGO_FILENAME = "logo.png"
+
+# read current version
+with open("VERSION") as f:
+    VERSION = f.read()
+
+with open(os.path.join(SRC_DIR, "data", "userscript.js"), "r") as f:
+    USER_SCRIPT_DOCS = f.read()
 
 """
 Initialize the working directory with a `dist` folder.
@@ -47,8 +55,14 @@ def create_chrome_extention(script_path:str, manifest_path:str):
 
     # Copy javascript file to the output directory
     shutil.copy(script_path, os.path.join(BUILD_DIR, "main.js"))
-    # Copy manifest file to the output directory
-    shutil.copy(manifest_path, BUILD_DIR)
+
+    # Read manifest data
+    with open(manifest_path, 'r') as f:
+        manifest_data = json.load(f)
+    manifest_data['version'] = VERSION
+    # Write manifest file to the output directory
+    with open(os.path.join(BUILD_DIR, "manifest.json"), 'w') as f:
+        json.dump(manifest_data, f)
     # Copy the logo image
     shutil.copy(
         os.path.join(SRC_DIR, "images", LOGO_FILENAME),
@@ -59,9 +73,10 @@ if __name__ == '__main__':
     print("Building Artifacts.") 
     setup()
     # write dist output
-    # write safari extention (.js file)
+    # write user-script safari extention (.js file)
     with open(os.path.join(DIST_DIR, SAFARI_FILENAME), 'w+') as f:
-        f.write(script_content())
+        f.write(USER_SCRIPT_DOCS + script_content())
+    
     # write chrome extention (.zip file)
     create_chrome_extention(
         os.path.join(DIST_DIR, SAFARI_FILENAME),
