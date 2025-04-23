@@ -11,6 +11,7 @@ loader_css = ...
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
+var settings = null;
 
 const dateToString = (date) => {
     if (!(date instanceof Date))
@@ -115,6 +116,10 @@ function main(){
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
+    /*
+    The settings will handle both the visual interface of the settings,
+    as well as holding the data (your current preferences).
+    */
     settings = new Settings();
     /*
     The tunnel will be an interface between the front-end and the back-end and will perform caching.
