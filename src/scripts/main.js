@@ -7,6 +7,7 @@ homepage_css = ...
 day_selector_css = ...
 map_css = ...
 loader_css = ...
+clock_css = ...
 */
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -88,7 +89,6 @@ function main(){
     clearDOM();
     injectStaticContent();
     /* Create custom page. */
-
     // Create day-selectors
     var daySelector = new DaySelector(true);
     document.body.appendChild(daySelector.renderDOM());
@@ -103,7 +103,6 @@ function main(){
     // Fetch future reservations and update the selectors
     tunnel.getReservedDays()
     .then(reservedDays => {
-        console.log(reservedDays);
         daySelector.reservedDays = reservedDays;
         daySelector.updateClasses();
         // // open today
@@ -116,6 +115,7 @@ function main(){
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
+    
     /*
     The settings will handle both the visual interface of the settings,
     as well as holding the data (your current preferences).

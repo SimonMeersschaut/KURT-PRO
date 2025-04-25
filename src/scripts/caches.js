@@ -14,10 +14,8 @@ class DayCache{
         if (this.zoneCaches[zoneId] == undefined){
             // no cache found (yet)
             // create a new one
-            console.log(zoneId);
             this.zoneCaches[zoneId] = new ZoneCache();
         }
-        console.log(this.zoneCaches);
         const cache = this.zoneCaches[zoneId];
         if (cache == undefined) 
             throw new Error("`zoneCache` cannot be `null`.");

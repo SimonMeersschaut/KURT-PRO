@@ -9,13 +9,9 @@
     margin: 5px;
 }
 
-.daySelector{
-    margin: 0; 
-    border-radius: 100%;
-    width: 40px;
-    height: 40px
+#daySelectorContainer div.btn{
+    width: 50px;
 }
-
 
 /*
 SETTINGS BUTTON
