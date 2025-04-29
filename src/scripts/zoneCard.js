@@ -32,15 +32,15 @@ class ZoneCard{
 
     params
     - page: (default 0) what page the function should fetch
-    - offset: (defualt 0) how many seats the previous page had (cummulatively)
     */
-    fetchAvailability(selectedDay){
+    fetchAvailability(selectedDay, startTime, endTime){
         (async () => {
-            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], selectedDay);
-            for await (const availability of seatGenerator) {
+            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], selectedDay, startTime, endTime);
+            var availability = 0;
+            var div = document.getElementById("zone_" + this.zoneData["id"].toString());
+            var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");
+            for await (availability of seatGenerator) {
                 // change the number of availability
-                var div = document.getElementById("zone_" + this.zoneData["id"].toString());
-                var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");
                 if (div == null){
                     console.warn("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
                     return;
@@ -48,18 +48,27 @@ class ZoneCard{
                     badge.innerText = availability.toString();
                 }
                 // set badge color based on avalability
-                badge.classList.remove("text-bg-secondary");
                 if (availability == 0){
-                    badge.classList.add("text-bg-dark");
                     // make unclickable
-                    div.classList.add("disabled");
+                    badge.className = "badge text-bg-secondary text-bg-dark disabled";
                 }
-                else if (0 < availability && availability < 20){
-                    badge.classList.add("text-bg-warning");
+                else if (0 < availability && availability < 60){
+                    badge.className = "badge text-bg-secondary text-bg-warning";
                 }
                 else{
-                    badge.classList.add("text-bg-success");
+                    badge.className = "badge text-bg-secondary text-bg-success";
                 }
+            }
+            // set badge color based on avalability
+            if (availability == 0){
+                // make unclickable
+                badge.className = "badge text-bg-secondary text-bg-dark disabled";
+            }
+            else if (0 < availability && availability < 60){
+                badge.className = "badge text-bg-secondary text-bg-warning";
+            }
+            else{
+                badge.className = "badge text-bg-secondary text-bg-success";
             }
         })();
     }

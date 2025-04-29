@@ -8,6 +8,7 @@ class Map{
         this.onSelectSeat = null;
         this.selectedSeat = null;
         this.backgroundImage = `https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/`+this.zoneId+`/map.png?raw=true`
+        this.initialized = false; // will be set on true when the map is loaded initially
     }
 
     renderDOM(){
@@ -33,10 +34,6 @@ class Map{
             gridItem.style.gridColumn = gridColumn;
             gridItem.style.gridRow = gridRow;
 
-            // Add a class to the grid item (e.g., free, booked, etc.)
-            // if (avaiableSeats != null)
-            //     if (avaiableSeats.incudes())
-            //         gridItem.classList.add("free"); // Default class, adjust as needed
             if (seatNr == this.selectedSeat)
                 gridItem.classList.add("selected");
             gridItem.onclick = () => {this.handleSeatClick(seatNr)};
@@ -52,6 +49,11 @@ class Map{
         if (!forceSelect)
             if (!this.enableSelecting)
                 return;
+        
+        const seatDOM = document.getElementById(`plaats-${seatNr}`);
+        if (!seatDOM.classList.contains("free"))
+            return;
+
         this.selectedSeat = seatNr;
 
         // de-select all other seats
@@ -59,7 +61,6 @@ class Map{
             element.classList.remove("selected")
         });
         // select this element
-        const seatDOM = document.getElementById(`plaats-${seatNr}`);
         if (seatDOM == null)
             return;
         seatDOM.classList.add("selected");
@@ -74,16 +75,34 @@ class Map{
 
     /*
     */
-   fetchMapData(locationId, zoneId, selectedDay){
+   fetchMapData(locationId, zoneId, selectedDay, startTime, endTime){
+        if (startTime == null || endTime == null)
+            throw new Error("`startTime` or `endTime` can not be `null`.")
         var mapLoader = new Loader("Loading map");
         tunnel.fetchMapData(zoneId)
         .then(mapData => {
-            this.drawSeats(mapData);
+            if (!this.initialized){
+                // first initialize the map
+                this.drawSeats(mapData);
+                this.initialized = true;
+            }
         })
         .then(() => {
+            if (this.initialized){
+                // remove all 'free' classes
+                const freeSeats = document.getElementsByClassName("free");
+                for (let i=0; i<freeSeats.length; i++){
+                    freeSeats[i].classList.remove("free");
+                }
+                // remove the selected seat(s)
+                const selectedSeats = document.getElementsByClassName("selected");
+                for (let i=0; i<selectedSeats.length; i++){
+                    selectedSeats[i].classList.remove("selected");
+                }
+            }
             (async () => {
                 var timeout = 40; // ms between seats opening up
-                const freeSeatGenerator = tunnel.freeSeats(locationId, zoneId, selectedDay);
+                const freeSeatGenerator = tunnel.getDayData(locationId, zoneId, selectedDay, startTime, endTime);
                 const seatQueue = [];
                 let isProcessing = false;
         
@@ -93,10 +112,12 @@ class Map{
         
                     while (seatQueue.length > 0) {
                         const seatInfo = seatQueue.shift();
+                        if (seatInfo["seatNr"] == undefined)
+                            throw new Error("`seatInfo` had no attribute `seatNr`.");
                         const seatDOM = document.getElementById(`plaats-${seatInfo["seatNr"]}`)
-                        seatDOM.setAttribute("seatId", seatInfo["seatId"])
                         if (seatDOM == null)
-                            throw new Error("`seatDOM` not found.");
+                            throw new Error(`Seat identifier "plaats-${seatInfo["seatNr"]}" was not found.`);
+                        seatDOM.setAttribute("seatId", seatInfo["id"])
                         seatDOM.classList.add("free");
                         await new Promise(resolve => setTimeout(resolve, timeout));
                     }
