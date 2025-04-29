@@ -32,11 +32,10 @@ class ZoneCard{
 
     params
     - page: (default 0) what page the function should fetch
-    - offset: (defualt 0) how many seats the previous page had (cummulatively)
     */
-    fetchAvailability(selectedDay){
+    fetchAvailability(selectedDay, startTime, endTime){
         (async () => {
-            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], selectedDay);
+            const seatGenerator = tunnel.getAvailableSeatsNumber(this.zoneData["location"], this.zoneData["id"], selectedDay, startTime, endTime);
             var availability = 0;
             var div = document.getElementById("zone_" + this.zoneData["id"].toString());
             var badge = document.getElementById("zone_" + this.zoneData["id"].toString() + "_availability");

@@ -60,7 +60,7 @@ function selectDay(dayIndex, selectedDay, mainContainer){
                 // for each zone
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
-                zoneCard.fetchAvailability(selectedDay);
+                zoneCard.fetchAvailability(selectedDay, settings.startTimeHours, settings.endTimeHours);
                 zoneCard.onclick = (zoneId) => {
                     // Show the map of that zone
                     mainContainer.innerHTML = "";
@@ -80,6 +80,7 @@ function selectDay(dayIndex, selectedDay, mainContainer){
                         selectedSeatCard.startTimeHours = clock.startTime;
                         selectedSeatCard.endTimeHours = clock.endTime;
                         selectedSeatCard.updateSeatTime();
+                        map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
                     }
                     // fetch data
                     map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);

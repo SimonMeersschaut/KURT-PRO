@@ -1,7 +1,7 @@
 class Clock{
     constructor(){
         this.startTime = settings.startTimeHours;
-        this.endTime = settings.startTimeHours;
+        this.endTime = settings.endTimeHours;
         this.container = null;
         this.onupdate = null;
     }
@@ -59,6 +59,10 @@ class Clock{
     updatePreview(){
         this.startTime = document.getElementById("start-time-selector").value;
         this.endTime = document.getElementById("end-time-selector").value;
+        if (this.startTime == this.endTime){
+            alert("`startTime` == `endTime`");
+            return;
+        }
         document.getElementById("timer-preview").innerText = this.getPreviewText();
         if (this.onupdate != null)
             this.onupdate();
