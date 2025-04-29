@@ -66,12 +66,23 @@ function selectDay(dayIndex, selectedDay, mainContainer){
                     mainContainer.innerHTML = "";
                     var map = new Map(zoneId, true);
                     var selectedSeatCard = new SelectedSeatCard();
-                    mainContainer.innerHTML = "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    var clock = new Clock();
+                    mainContainer.innerHTML = `<div id="filter-container">` + "</div>" + "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    document.getElementById("filter-container").appendChild(clock.renderDOM());
                     // event listeners
                     map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
                     selectedSeatCard.onConfirm = (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)}; // effectively book that seat
+                    clock.onupdate = () => {
+                        // update settings
+                        settings.startTimeHours = clock.startTime;
+                        settings.endTimeHours = clock.endTime;
+                        // update selectedCard
+                        selectedSeatCard.startTimeHours = clock.startTime;
+                        selectedSeatCard.endTimeHours = clock.endTime;
+                        selectedSeatCard.updateSeatTime();
+                    }
                     // fetch data
-                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay);
+                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
                 }
             }
         }
@@ -95,6 +106,7 @@ function main(){
 
     // Create zone container
     var mainContainer = document.createElement("div")
+    mainContainer.id = "main";
     document.body.appendChild(mainContainer);
     
     // set onclick event listener of day selectors
@@ -115,7 +127,6 @@ function main(){
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
-    
     /*
     The settings will handle both the visual interface of the settings,
     as well as holding the data (your current preferences).

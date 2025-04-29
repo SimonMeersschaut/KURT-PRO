@@ -5,8 +5,8 @@ class SelectedSeatCard{
         this.seatNr = null;
 
         // set defualt start & end time
-        this.startTimeHours = settings.getStartTimeHours();
-        this.endTimeHours = settings.getEndTimeHours();
+        this.startTimeHours = settings.startTimeHours;
+        this.endTimeHours = settings.endTimeHours;
     }
 
     updateSeatTime(){

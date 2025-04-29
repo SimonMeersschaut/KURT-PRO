@@ -90,7 +90,7 @@ class Tunnel{
     /*
     TODO: docs
     */
-    async *getAvailableSeats(locationId, zoneId, selectedDay){
+    async *getDayData(locationId, zoneId, selectedDay, startTime, endTime){
         const dayIndex = calculateDayIndex(selectedDay);
         const zoneCache = this.dayCaches[dayIndex].getZoneCache(zoneId);
         if (zoneCache == undefined) 
@@ -115,11 +115,18 @@ class Tunnel{
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    yield availableSeats;
+                    // yield availableSeats;
                     // add all availableSeats to the cache
-                    availableSeats.forEach(seat => {
+                    for (let seatIndex = 0; seatIndex < availableSeats.length; seatIndex++){
+                        var seat = availableSeats[seatIndex];
+                        // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
+                        // splits the name "... Seat 236" -> 236
+                        seat['seatNr'] = parseInt(seat["name"].split(" ")[seat["name"].split(" ").length - 1]);
+                        // Add this seat to the zoneCache
                         zoneCache.content.push(seat);
-                    })
+                        // Yield each seat individually
+                        yield seat;
+                    }
                     page++;
                 } while (seatsOnPage > 0 && seatsOnPage == 60);
             } catch (error) {
@@ -128,6 +135,7 @@ class Tunnel{
             // updated entire cache
             zoneCache.setValid();
         }
+        return;
     }
 
     /*
@@ -138,34 +146,14 @@ class Tunnel{
     */
     async *getAvailableSeatsNumber(locationId, zoneId, selectedDay) {
         var cummulativeSum = 0;
-
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
-        for await (const availableSeats of seatGenerator) {
-            cummulativeSum += availableSeats.length;
+        
+        const seatGenerator = tunnel.getDayData(locationId, zoneId, selectedDay);
+        for await (const _ of seatGenerator) {
+            cummulativeSum += 1;
             yield cummulativeSum; // Yield the number of seats on the current page
         }
-    }
-
-    /*
-    TODO: docs
-    */
-    async *freeSeats(locationId, zoneId, selectedDay){
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
-        for await (const availableSeats of seatGenerator) {
-            // avaiableSeats is a list of dictionaries
-            for await (const availableSeat of availableSeats){
-                // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
-                // splits the name "... Seat 236" -> 236
-                let seatNr = await parseInt(availableSeat["name"].split(" ")[availableSeat["name"].split(" ").length - 1]);
-                let seatId = await parseInt(availableSeat["id"]);
-                try{
-                    yield {"seatNr":seatNr, "seatId":seatId};
-                }
-                catch(error){
-                    console.error(error);
-                }
-            }
-        }
+        yield cummulativeSum;
+        return;
     }
 
     /*

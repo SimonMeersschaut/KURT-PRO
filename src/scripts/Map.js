@@ -74,7 +74,9 @@ class Map{
 
     /*
     */
-   fetchMapData(locationId, zoneId, selectedDay){
+   fetchMapData(locationId, zoneId, selectedDay, startTime, endTime){
+        if (startTime == null || endTime == null)
+            throw new Error("`startTime` or `endTime` can not be `null`.")
         var mapLoader = new Loader("Loading map");
         tunnel.fetchMapData(zoneId)
         .then(mapData => {
@@ -83,7 +85,7 @@ class Map{
         .then(() => {
             (async () => {
                 var timeout = 40; // ms between seats opening up
-                const freeSeatGenerator = tunnel.freeSeats(locationId, zoneId, selectedDay);
+                const freeSeatGenerator = tunnel.getDayData(locationId, zoneId, selectedDay, startTime, endTime);
                 const seatQueue = [];
                 let isProcessing = false;
         
@@ -94,7 +96,7 @@ class Map{
                     while (seatQueue.length > 0) {
                         const seatInfo = seatQueue.shift();
                         const seatDOM = document.getElementById(`plaats-${seatInfo["seatNr"]}`)
-                        seatDOM.setAttribute("seatId", seatInfo["seatId"])
+                        seatDOM.setAttribute("seatId", seatInfo["id"])
                         if (seatDOM == null)
                             throw new Error("`seatDOM` not found.");
                         seatDOM.classList.add("free");

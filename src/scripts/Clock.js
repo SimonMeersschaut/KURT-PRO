@@ -1,7 +1,7 @@
 class Clock{
     constructor(){
-        this.startTime = 10;
-        this.endTime = 18;
+        this.startTime = settings.startTimeHours;
+        this.endTime = settings.startTimeHours;
         this.container = null;
         this.onupdate = null;
     }
