@@ -7,10 +7,12 @@ homepage_css = ...
 day_selector_css = ...
 map_css = ...
 loader_css = ...
+clock_css = ...
 */
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
+var settings = null;
 
 const dateToString = (date) => {
     if (!(date instanceof Date))
@@ -58,18 +60,30 @@ function selectDay(dayIndex, selectedDay, mainContainer){
                 // for each zone
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
-                zoneCard.fetchAvailability(selectedDay);
+                zoneCard.fetchAvailability(selectedDay, settings.startTimeHours, settings.endTimeHours);
                 zoneCard.onclick = (zoneId) => {
                     // Show the map of that zone
                     mainContainer.innerHTML = "";
                     var map = new Map(zoneId, true);
                     var selectedSeatCard = new SelectedSeatCard();
-                    mainContainer.innerHTML = "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    var clock = new Clock();
+                    mainContainer.innerHTML = `<div id="filter-container">` + "</div>" + "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    document.getElementById("filter-container").appendChild(clock.renderDOM());
                     // event listeners
                     map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
                     selectedSeatCard.onConfirm = (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)}; // effectively book that seat
+                    clock.onupdate = () => {
+                        // update settings
+                        settings.startTimeHours = clock.startTime;
+                        settings.endTimeHours = clock.endTime;
+                        // update selectedCard
+                        selectedSeatCard.startTimeHours = clock.startTime;
+                        selectedSeatCard.endTimeHours = clock.endTime;
+                        selectedSeatCard.updateSeatTime();
+                        map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
+                    }
                     // fetch data
-                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay);
+                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
                 }
             }
         }
@@ -87,13 +101,13 @@ function main(){
     clearDOM();
     injectStaticContent();
     /* Create custom page. */
-
     // Create day-selectors
     var daySelector = new DaySelector(true);
     document.body.appendChild(daySelector.renderDOM());
 
     // Create zone container
     var mainContainer = document.createElement("div")
+    mainContainer.id = "main";
     document.body.appendChild(mainContainer);
     
     // set onclick event listener of day selectors
@@ -102,7 +116,6 @@ function main(){
     // Fetch future reservations and update the selectors
     tunnel.getReservedDays()
     .then(reservedDays => {
-        console.log(reservedDays);
         daySelector.reservedDays = reservedDays;
         daySelector.updateClasses();
         // // open today
@@ -115,6 +128,10 @@ function main(){
 
 // Call the main function when the entire page was loaded
 document.body.onload = () => {
+    /*
+    The settings will handle both the visual interface of the settings,
+    as well as holding the data (your current preferences).
+    */
     settings = new Settings();
     /*
     The tunnel will be an interface between the front-end and the back-end and will perform caching.

@@ -5,7 +5,6 @@ Effectively book that seat.
 function bookSeat(seatId, selectedDay, startTimeHours, endTimeHours){
     const loader = new Loader(`Booking seat ${seatId}`);
 
-    console.log(selectedDay);
     tunnel.bookSeat(
         seatId=seatId,
         dateString=dateToString(selectedDay),

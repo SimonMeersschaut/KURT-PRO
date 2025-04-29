@@ -12,6 +12,7 @@ function dateDiffInDays(a, b) {
 /*
 Each instance of this class represents a tunnel, an interface between the back-end and the front-end.
 Note that this tunnel will perform some cacheing to minimize the amount of requests sent.
+It is advised to make only one instance of this class.
 */
 class Tunnel{
     constructor (){
@@ -25,8 +26,8 @@ class Tunnel{
     getFavoriteZones(){
         return [
             {"location": 10, "id": 2, "name": "Agora - Silent study 2"},
-            {"location": 1, "id": 14, "name": "Agora - De zolder"},
-            {"location": 1, "id": 11, "name": "Agora - De boekenzaal"},
+            {"location": 1, "id": 14, "name": "Arenberg - De zolder"},
+            {"location": 1, "id": 11, "name": "Arenberg - De boekenzaal"},
         ]
     }
 
@@ -90,13 +91,28 @@ class Tunnel{
     /*
     TODO: docs
     */
-    async *getAvailableSeats(locationId, zoneId, selectedDay){
+    async *getDayData(locationId, zoneId, selectedDay, startTime, endTime){
+        function filter(seatData, startTime, endTime){
+            for (let hourIterator = startTime; hourIterator < endTime; hourIterator++){
+                if (seatData["slotAllocation"][hourIterator - 8] != 'A'){
+                    // NOK, this hour is not available
+                    return false;
+                }
+            }
+            return true; // all hours are available
+        }
         const dayIndex = calculateDayIndex(selectedDay);
         const zoneCache = this.dayCaches[dayIndex].getZoneCache(zoneId);
         if (zoneCache == undefined) 
             throw new Error("`zoneCache` cannot be `null`.");
         if (zoneCache.isValid()){
-            yield zoneCache.content;
+            // return items of `zoneCache.content` individually
+            for (let seatIndex = 0; seatIndex < zoneCache.content.length; seatIndex++){
+                const seatData = zoneCache.content[seatIndex];
+                if (filter(seatData, startTime, endTime)){
+                    yield seatData;
+                }
+            }
         }
         else{
             // fetch
@@ -108,18 +124,27 @@ class Tunnel{
                     if (page >= 10)
                         throw new Error("Tried to fetch pages more than 10 times.");
                     const response = await fetch(
-                        `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=10:00&endDate=${dateString}&endTime=18:00&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
+                        `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=&endDate=${dateString}&endTime=&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
                     );
                     const availableSeats = (await response.json())['availabilities'];
                     seatsOnPage = await availableSeats.length;
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    yield availableSeats;
+                    // yield availableSeats;
                     // add all availableSeats to the cache
-                    availableSeats.forEach(seat => {
-                        zoneCache.content.push(seat);
-                    })
+                    for (let seatIndex = 0; seatIndex < availableSeats.length; seatIndex++){
+                        var seatData = availableSeats[seatIndex];
+                        // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
+                        // splits the name "... Seat 236" -> 236
+                        seatData['seatNr'] = parseInt(seatData["name"].split(" ")[seatData["name"].split(" ").length - 1]);
+                        // Add this seat to the zoneCache
+                        zoneCache.content.push(seatData);
+                        // Yield each seat individually
+                        if (filter(seatData, startTime, endTime)){
+                            yield seatData;
+                        }
+                    }
                     page++;
                 } while (seatsOnPage > 0 && seatsOnPage == 60);
             } catch (error) {
@@ -128,6 +153,7 @@ class Tunnel{
             // updated entire cache
             zoneCache.setValid();
         }
+        return;
     }
 
     /*
@@ -136,36 +162,16 @@ class Tunnel{
     Hence, the backend sends the seats in pages of 60 seats, so we have to calculate the cummulative sum.
     We assume that there are no more than 10 pages and use this to avoid infinite loops.
     */
-    async *getAvailableSeatsNumber(locationId, zoneId, selectedDay) {
+    async *getAvailableSeatsNumber(locationId, zoneId, selectedDay, startTime, endTime) {
         var cummulativeSum = 0;
-
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
-        for await (const availableSeats of seatGenerator) {
-            cummulativeSum += availableSeats.length;
+        
+        const seatGenerator = tunnel.getDayData(locationId, zoneId, selectedDay, startTime, endTime);
+        for await (const _ of seatGenerator) {
+            cummulativeSum += 1;
             yield cummulativeSum; // Yield the number of seats on the current page
         }
-    }
-
-    /*
-    TODO: docs
-    */
-    async *freeSeats(locationId, zoneId, selectedDay){
-        const seatGenerator = tunnel.getAvailableSeats(locationId, zoneId, selectedDay);
-        for await (const availableSeats of seatGenerator) {
-            // avaiableSeats is a list of dictionaries
-            for await (const availableSeat of availableSeats){
-                // availableSeat: {"name": "Agora - Silent Study Seat 236", ...}
-                // splits the name "... Seat 236" -> 236
-                let seatNr = await parseInt(availableSeat["name"].split(" ")[availableSeat["name"].split(" ").length - 1]);
-                let seatId = await parseInt(availableSeat["id"]);
-                try{
-                    yield {"seatNr":seatNr, "seatId":seatId};
-                }
-                catch(error){
-                    console.error(error);
-                }
-            }
-        }
+        yield cummulativeSum;
+        return;
     }
 
     /*

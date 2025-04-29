@@ -5,8 +5,8 @@ class SelectedSeatCard{
         this.seatNr = null;
 
         // set defualt start & end time
-        this.startTimeHours = settings.getStartTimeHours();
-        this.endTimeHours = settings.getEndTimeHours();
+        this.startTimeHours = settings.startTimeHours;
+        this.endTimeHours = settings.endTimeHours;
     }
 
     updateSeatTime(){
@@ -31,7 +31,7 @@ class SelectedSeatCard{
             <div class="card-body">
                 <h2 id="seatTitle"></h2>
                 <p id="seatTime">Time: 10:00 - 11:00</p>
-                <button id="bookSeatConfirm" class="btn btn-primary">Book seat</button>
+                <button id="bookSeatConfirm" class="btn btn-primary">Confirm</button>
             </div>
         </div>`;
     }
