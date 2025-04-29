@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: safari-extension
-          path: dist/KURT_PRO_safari_extension.js
+          path: dist/KURT_PRO_userscript.user.js
 
       - name: Upload Chrome extension zip
         uses: actions/upload-artifact@v4
