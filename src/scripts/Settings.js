@@ -19,7 +19,10 @@ class Settings{
             // not fetched yet, load it from the cookies
             // Retrieve the settings cookie
             // get cookie value
-            const cookie = document.cookie.split('; ').find(row => row.startsWith('settings=')).split('settings=')[1];
+            const text = document.cookie.split('; ').find(row => row.startsWith('settings='));
+            var cookie = null;
+            if (text == undefined) return null;
+            cookie = text.split('settings=')[1]
             if (!cookie) return null;
     
             // Extract and decode the settings string
@@ -42,7 +45,7 @@ class Settings{
         this._settingsData = value;
         // Now update the cookies
         // Convert the dictionary to a string with '&' and '='
-        const settingsString = Object.entries(settingsData)
+        const settingsString = Object.entries(this._settingsData)
             .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
             .join('&');
 
@@ -71,19 +74,19 @@ class Settings{
     */
 
     
-    get startTimeHours(){
-        return this.settingsData["startTime"] || 10;
+    get startTimeHours() {
+        return this.settingsData?.startTime !== undefined ? this.settingsData.startTime : 10;
     }
 
-    set startTimeHours(value){
-        this.settingsData["startTime"] = value;
+    set startTimeHours(value) {
+        this.settingsData = { ...this.settingsData, startTime: value };
     }
 
-    get endTimeHours(){
-        return this.settingsData["endTime"] || 18;
+    get endTimeHours() {
+        return this.settingsData?.endTime !== undefined ? this.settingsData.endTime : 18;
     }
 
-    set endTimeHours(value){
-        this.settingsData["endTime"] = value;
+    set endTimeHours(value) {
+        this.settingsData = { ...this.settingsData, endTime: value };
     }
 }

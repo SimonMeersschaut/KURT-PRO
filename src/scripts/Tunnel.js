@@ -38,6 +38,7 @@ class Tunnel{
         var data;
         if (this.reservationCache == null){
             const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations");
+            if (!response.ok) throw new WebTransportError("Could not fetch reservations.");
             data = await response.json();
             this.reservationCache = data;
         }
@@ -70,6 +71,7 @@ class Tunnel{
     async fetchMapData(zoneId){
         try {
             const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/Maps/resources/maps/zones/${zoneId}/compression.json`);
+            if (!response.ok) throw new WebTransportError("Could not fetch zoneData from github.");
             const data = await response.json();
             return data;
         }
@@ -126,6 +128,7 @@ class Tunnel{
                     const response = await fetch(
                         `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=&endDate=${dateString}&endTime=&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
                     );
+                    if (!response.ok) throw new WebTransportError("Could not fetch resource availabilities.");
                     const availableSeats = (await response.json())['availabilities'];
                     seatsOnPage = await availableSeats.length;
                     if (!response.ok) {
@@ -228,6 +231,7 @@ class Tunnel{
                 },
                 body: JSON.stringify(bodyData)
             });
+            if (!response.ok) throw new WebTransportError("Could not fetch previous reservations.");
 
             const responseText = await response.text();
 

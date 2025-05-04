@@ -25,8 +25,8 @@ class Popup{
             </div>
         </div>`
 
-        // Create container
-        document.body.appendChild(container);
+        // Add `container` as first element of `body`
+        document.body.insertBefore(container, document.body.firstChild);
 
         // Show the modal by adding Bootstrap's "show" and "modal-backdrop" classes
         container.classList.add("show");

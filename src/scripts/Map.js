@@ -51,6 +51,9 @@ class Map{
                 return;
         
         const seatDOM = document.getElementById(`plaats-${seatNr}`);
+        if (seatDOM == null){
+            throw new Error(`Seat with identifier 'plaats-${seatNr}' was not found.`);
+        }
         if (!seatDOM.classList.contains("free"))
             return;
 
@@ -140,8 +143,9 @@ class Map{
                 }
             })();
         })
-        .catch(error => {
-            mapLoader.error(error);
-        })
+        // .catch(error => {
+        //     throw error;
+        //     // mapLoader.error(error);
+        // })
    }
 }

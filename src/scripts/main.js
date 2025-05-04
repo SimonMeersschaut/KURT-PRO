@@ -93,37 +93,39 @@ function selectDay(dayIndex, selectedDay, mainContainer){
 function main(){
     
     /* Setup & Initialize the webpage */
-    var success = enforceAuthentication();
-    if (!success){
-        throw new Error("User could not be authenticated.");
-    }
-    // we assume the user is authenticated when the script reaches this point
-    clearDOM();
-    injectStaticContent();
-    /* Create custom page. */
-    // Create day-selectors
-    var daySelector = new DaySelector(true);
-    document.body.appendChild(daySelector.renderDOM());
-
-    // Create zone container
-    var mainContainer = document.createElement("div")
-    mainContainer.id = "main";
-    document.body.appendChild(mainContainer);
+    enforceAuthentication()
+    .then(success => {
+        if (!success){
+            throw new Error("User could not be authenticated.");
+        }
+        // we assume the user is authenticated when the script reaches this point
+        clearDOM();
+        injectStaticContent();
+        /* Create custom page. */
+        // Create day-selectors
+        var daySelector = new DaySelector(true);
+        document.body.appendChild(daySelector.renderDOM());
     
-    // set onclick event listener of day selectors
-    daySelector.onClickDay = (dayIndex, selectedDay) => {selectDay(dayIndex, selectedDay, mainContainer)};
-
-    // Fetch future reservations and update the selectors
-    tunnel.getReservedDays()
-    .then(reservedDays => {
-        daySelector.reservedDays = reservedDays;
-        daySelector.updateClasses();
-        // // open today
-        daySelector.selectDay(0);
+        // Create zone container
+        var mainContainer = document.createElement("div")
+        mainContainer.id = "main";
+        document.body.appendChild(mainContainer);
+        
+        // set onclick event listener of day selectors
+        daySelector.onClickDay = (dayIndex, selectedDay) => {selectDay(dayIndex, selectedDay, mainContainer)};
+    
+        // Fetch future reservations and update the selectors
+        tunnel.getReservedDays()
+        .then(reservedDays => {
+            daySelector.reservedDays = reservedDays;
+            daySelector.updateClasses();
+            // // open today
+            daySelector.selectDay(0);
+        })
+        .catch(error => {
+            console.error("Error updating reserved days:", error);
+        });
     })
-    .catch(error => {
-        console.error("Error updating reserved days:", error);
-    });
 }
 
 // Call the main function when the entire page was loaded

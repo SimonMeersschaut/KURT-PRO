@@ -3,11 +3,16 @@ const BOOTSTRAP_CDN = '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/
 /*
 This function will make sure the user is authenticated and will return wether he succeeded in doing so.
 */
-function enforceAuthentication(){
-    // After some testing, I concluded that this script only runs when the user is already authenticated.
-    // Thus, no checks are performed in this function.
-    // This function is simply there to allow future checks.
-    return true;
+async function enforceAuthentication(){
+    try{
+        const response = await fetch("api/information")
+        // const data = response.json();
+        return response.ok;
+    }
+    catch(e){
+        console.error(e);
+        return false;
+    }
 }
 
 /*
@@ -35,3 +40,30 @@ function injectStaticContent(){
     + "<style>" + clock_css + "</style>"
     + BOOTSTRAP_CDN;
 }
+
+/*
+ERROR HANDLING
+*/
+
+function handleGlobalError(error) {
+    console.error("Global Error Caught:", error);
+
+    const errorMessage = error.message || "An unknown error occurred.";
+    const errorName = error.name || "Error";
+
+    const popup = new Popup(
+        `KURT-PRO encountered a "${errorName}".`,
+        errorMessage,
+        "Close"
+    );
+    popup.show();
+}
+
+// Attach global error handlers
+window.onerror = (message, source, lineno, colno, error) => {
+    handleGlobalError(error || new Error(message));
+};
+
+window.onunhandledrejection = (event) => {
+    handleGlobalError(event.reason || new Error("Unhandled promise rejection"));
+};
