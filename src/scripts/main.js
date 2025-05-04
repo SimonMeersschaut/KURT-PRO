@@ -48,11 +48,12 @@ function selectDay(mainContainer){
     tunnel.hasReservationOn(dayIndex)
     .then(reservationData => {
         if (reservationData != null){
+            clock.hide();
             // show the reserved seat
             var map = new Map(2, false);
             // show a information card
             var selectedSeatCard = new SelectedSeatCard(button=true, buttonText="change");
-            selectedSeatCard.onClick = () => {window.location.assign("/reservations");};
+            selectedSeatCard.onClick = () => {window.location.assign(`/edit-reservation/${reservationData.id}`);};
             mainContainer.innerHTML = map.renderDOM() + selectedSeatCard.renderDOM();
             selectedSeatCard.setSeat(reservationData.seatNr, null);
             selectedSeatCard.startTimeHours = parseInt(reservationData.startTime.split(":")[0]);
@@ -66,6 +67,7 @@ function selectDay(mainContainer){
             })
         }
         else{
+            clock.show();
             // No reservation, show zones
             mainContainer.innerHTML = "";
             // show all zones
@@ -162,30 +164,11 @@ document.body.onload = () => {
     }
     else{
         // show a button to go back to KURT PRO
-        const collection = document.getElementsByClassName("footer-container");
-        if (collection.length == 1){
-            const footer = collection[0];
-            /*
-            Style the footer
-            */
-            footer.style.backgroundColor = "#000000";
-            const style = document.createElement('style');
-            style.innerHTML = `
-            mat-icon, mat-icon.mat-primary, mat-icon.mat-accent, mat-icon.mat-warn {
-                color: #ffffff !important; /* override with your desired color */
-            }`;
-            document.head.appendChild(style);
-            /*
-            Add a button and some text
-            */
-            const button = footer.getElementsByTagName("button")[0];
-            button.onclick = () => {window.location.assign("/?kurt-pro=")}
-            // remove the KULeuven image
-            button.removeChild(button.getElementsByTagName("img")[0]);
-            // Set some text
-            const span = button.getElementsByTagName("span")[2]
-            span.innerText = "KURT-PRO";
-            span.style.color = "#ffffff";
-        }
+        const button = createBanner();
+        button.innerText = "KURT-PRO";
+        button.onclick = () => {window.location.assign("/?kurt-pro=")}
+        const container = document.body.getElementsByClassName("page-outlet")[0]
+        container.insertBefore(button, container.firstChild);
+        
     }
 }

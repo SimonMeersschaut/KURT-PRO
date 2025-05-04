@@ -23,8 +23,8 @@ class Clock{
             <select id="end-time-selector" value="10:00" type="text" class="form-select form-select-sm time-selector" aria-label="Small select example" style="width: 100px; display: inline-block"></select>
             <br>
             <br>
-            <div id="time-selector-error" class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
+            <div id="time-selector-error" class="alert alert-danger" role="alert" style="display: none">
+            
             </div>
         </div>    
         `, "Ok");
@@ -40,7 +40,7 @@ class Clock{
         var selector = document.getElementById("start-time-selector");
         selector.onchange = () => {this.updatePreview()};
         // Set time slots for this selector
-        for (let t = 8; t < 24; t++) {
+        for (let t = 8; t <= 24; t++) {
             let option = document.createElement("option");
             option.innerText = `${t}:00`;
             option.value = t;
@@ -50,7 +50,7 @@ class Clock{
         var selector = document.getElementById("end-time-selector");
         selector.onchange = () => {this.updatePreview()};
         // Set time slots for this selector
-        for (let t = 8; t < 24; t++) {
+        for (let t = 8; t <= 24; t++) {
             let option = document.createElement("option");
             option.innerText = `${t}:00`;
             option.value = t;
@@ -81,5 +81,13 @@ class Clock{
         document.getElementById("timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`;
         if (this.onupdate != null)
             this.onupdate();
+    }
+
+    show(){
+        document.getElementById("timer-preview").style.display = "inline-block";
+    }
+
+    hide(){
+        document.getElementById("timer-preview").style.display = "none";
     }
 }
