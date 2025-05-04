@@ -56,3 +56,8 @@ sorted_output_data = OrderedDict(sorted(output_data.items(), key=lambda x: int(x
 # Save the updated rectangle data
 with open(f"resources/maps/zones/{ZONE_ID}/compression.json", "w+") as f:
     json.dump(sorted_output_data, f, indent=4)
+
+
+new_grid_width = round(424 * (615 / 1060))  # ≈ 246
+new_grid_height = round(600 * (1140 / 1500))  # ≈ 456
+print(f"WARNING: Please change the aspect ratio (in the css) to: '{new_grid_width} / {new_grid_height}'")

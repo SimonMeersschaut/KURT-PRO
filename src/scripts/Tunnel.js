@@ -70,7 +70,7 @@ class Tunnel{
     */
     async fetchMapData(zoneId){
         try {
-            const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/Maps/resources/maps/zones/${zoneId}/compression.json`);
+            const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zoneId}/compression.json`);
             if (!response.ok) throw new WebTransportError("Could not fetch zoneData from github.");
             const data = await response.json();
             return data;

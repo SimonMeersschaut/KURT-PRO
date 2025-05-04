@@ -7,7 +7,7 @@ class Map{
         this.enableSelecting = enableSelecting;
         this.onSelectSeat = null;
         this.selectedSeat = null;
-        this.backgroundImage = `https://github.com/SimonMeersschaut/KURT-PRO/blob/Maps/resources/maps/zones/`+this.zoneId+`/map.png?raw=true`
+        this.backgroundImage = `https://github.com/SimonMeersschaut/KURT-PRO/blob/main/resources/maps/zones/`+this.zoneId+`/map.png?raw=true`
         this.initialized = false; // will be set on true when the map is loaded initially
     }
 
