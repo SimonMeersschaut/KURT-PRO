@@ -75,7 +75,7 @@ class Settings{
 
     
     get startTimeHours() {
-        return this.settingsData?.startTime !== undefined ? this.settingsData.startTime : 10;
+        return parseInt( this.settingsData?.startTime !== undefined ? this.settingsData.startTime : 10 );
     }
 
     set startTimeHours(value) {
@@ -83,7 +83,7 @@ class Settings{
     }
 
     get endTimeHours() {
-        return this.settingsData?.endTime !== undefined ? this.settingsData.endTime : 18;
+        return parseInt( this.settingsData?.endTime !== undefined ? this.settingsData.endTime : 18 );
     }
 
     set endTimeHours(value) {

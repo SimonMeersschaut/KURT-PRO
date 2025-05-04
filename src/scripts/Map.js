@@ -12,7 +12,7 @@ class Map{
     }
 
     renderDOM(){
-        return `<div class="grid" id="grid">`;
+        return `<div class="grid" id="grid"></div>`;
     }
     
     // TODO: DOCS
@@ -51,10 +51,10 @@ class Map{
                 return;
         
         const seatDOM = document.getElementById(`plaats-${seatNr}`);
-        if (seatDOM == null){
+        if (seatDOM == null)
             throw new Error(`Seat with identifier 'plaats-${seatNr}' was not found.`);
-        }
-        if (!seatDOM.classList.contains("free"))
+
+        if (!seatDOM.classList.contains("free") && !forceSelect)
             return;
 
         this.selectedSeat = seatNr;
@@ -64,8 +64,6 @@ class Map{
             element.classList.remove("selected")
         });
         // select this element
-        if (seatDOM == null)
-            return;
         seatDOM.classList.add("selected");
 
         // get the seat Id

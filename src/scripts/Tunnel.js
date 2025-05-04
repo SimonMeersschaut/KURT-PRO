@@ -38,7 +38,7 @@ class Tunnel{
         var data;
         if (this.reservationCache == null){
             const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations");
-            if (!response.ok) throw new WebTransportError("Could not fetch reservations.");
+            if (!response.ok) throw new Error("Could not fetch reservations.");
             data = await response.json();
             this.reservationCache = data;
         }
@@ -55,7 +55,8 @@ class Tunnel{
                 const dayIndex = dateDiffInDays(d, date);
                 if (dayIndex >= 0 && dayIndex <= 7) {
                     let seatNr = parseInt(reservation["resourceName"].split(" ")[reservation["resourceName"].split(" ").length - 1]);
-                    output[dayIndex] = seatNr;
+                    const data = {... reservation, seatNr: seatNr}
+                    output[dayIndex] = data;
                 }
             });
             return output;
@@ -71,7 +72,7 @@ class Tunnel{
     async fetchMapData(zoneId){
         try {
             const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zoneId}/compression.json`);
-            if (!response.ok) throw new WebTransportError("Could not fetch zoneData from github.");
+            if (!response.ok) throw new Error("Could not fetch zoneData from github.");
             const data = await response.json();
             return data;
         }
@@ -96,6 +97,7 @@ class Tunnel{
     async *getDayData(locationId, zoneId, selectedDay, startTime, endTime){
         function filter(seatData, startTime, endTime){
             for (let hourIterator = startTime; hourIterator < endTime; hourIterator++){
+                // console.log("ok");
                 if (seatData["slotAllocation"][hourIterator - 8] != 'A'){
                     // NOK, this hour is not available
                     return false;
@@ -128,7 +130,7 @@ class Tunnel{
                     const response = await fetch(
                         `https://kurt3.ghum.kuleuven.be/api/resourcetypeavailabilities?locationId=${locationId}&zoneId=${zoneId}&resourceTypeId=302&pageNumber=${page}&startDate=${dateString}&startTime=&endDate=${dateString}&endTime=&participantCount=1&tagIds=&exactMatch=true&onlyFavorites=false&resourceNameInfix=&version=2.0`
                     );
-                    if (!response.ok) throw new WebTransportError("Could not fetch resource availabilities.");
+                    if (!response.ok) throw new Error("Could not fetch resource availabilities.");
                     const availableSeats = (await response.json())['availabilities'];
                     seatsOnPage = await availableSeats.length;
                     if (!response.ok) {
@@ -142,7 +144,7 @@ class Tunnel{
                         // splits the name "... Seat 236" -> 236
                         seatData['seatNr'] = parseInt(seatData["name"].split(" ")[seatData["name"].split(" ").length - 1]);
                         // Add this seat to the zoneCache
-                        zoneCache.content.push(seatData);
+                        zoneCache.push(seatData);
                         // Yield each seat individually
                         if (filter(seatData, startTime, endTime)){
                             yield seatData;
@@ -199,8 +201,6 @@ class Tunnel{
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
     async bookSeat(seatId, dateString, startTimeHours, endTimeHours) {
-        const EXPECTED_RESPONSE = "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)";
-
         const bodyData = {
             "id": seatId,
             "resourceName": "", // original "CBA - Boekenzaal Seat 137"
@@ -231,12 +231,12 @@ class Tunnel{
                 },
                 body: JSON.stringify(bodyData)
             });
-            if (!response.ok) throw new WebTransportError("Could not fetch previous reservations.");
+            if (!response.ok) throw new Error("Could not fetch previous reservations.");
 
             const responseText = await response.text();
 
             if (response.ok) {
-                if (responseText === EXPECTED_RESPONSE) {
+                if (responseText.startsWith("Your reservation has been created.")) {
                     return (true, "ok");
                 } else {
                     console.warn("Unexpected response message:", responseText);

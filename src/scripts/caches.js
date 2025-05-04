@@ -54,4 +54,11 @@ class ZoneCache{
     setValid(){
         this.updateTime = new Date();
     }
+
+    push(item){
+        // check that the item is not already in the list
+        if (!this.content.some(x => x.id == item.id))
+            // add the item
+            this.content.push(item);
+    }
 }

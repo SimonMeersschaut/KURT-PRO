@@ -1,6 +1,8 @@
 class SelectedSeatCard{
-    constructor(){
-        this.onConfirm = null;
+    constructor(button = true, buttonText = "Confirm"){
+        this.button = button;
+        this.buttonText = buttonText;
+        this.onClick = null;
         this.seatId = null
         this.seatNr = null;
 
@@ -20,7 +22,10 @@ class SelectedSeatCard{
         const card = document.getElementById("selectedSeatCard")
         card.style.display = "block";
         document.getElementById("seatTitle").innerText = seatNr;
-        document.getElementById("bookSeatConfirm").onclick = (event) => {this.onConfirm(this.seatNr, this.seatId, this.startTimeHours, this.endTimeHours)};
+        if (this.button)
+            if (this.onClick == null)
+                throw new Error("`onClick` was `nulll` for the selectedSeatCard.");
+            document.getElementById("bookSeatConfirm").onclick = (event) => {this.onClick(this.seatNr, this.seatId, this.startTimeHours, this.endTimeHours)};
         
         this.updateSeatTime();
     }
@@ -31,7 +36,7 @@ class SelectedSeatCard{
             <div class="card-body">
                 <h2 id="seatTitle"></h2>
                 <p id="seatTime">Time: 10:00 - 11:00</p>
-                <button id="bookSeatConfirm" class="btn btn-primary">Confirm</button>
+                ${this.button ? '<button id="bookSeatConfirm" class="btn btn-primary">' + this.buttonText + '</button> ' : ''}
             </div>
         </div>`;
     }

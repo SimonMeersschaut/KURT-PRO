@@ -85,8 +85,9 @@ class DaySelector{
     }
 
     selectDay(dayIndex){
-        if (dayIndex == this.selectedDayIndex)
-            return; // already selected, do nothing
+        // if (dayIndex == this.selectedDayIndex)
+        //     return; // already selected, do nothing
+        // has been removed so that you can use the button as a back-button
 
         this.selectedDayIndex = dayIndex;
         this.updateClasses();

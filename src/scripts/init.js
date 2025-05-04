@@ -42,6 +42,13 @@ function injectStaticContent(){
 }
 
 /*
+Returns if the extention should execute on this url.
+*/
+function activeUrl(){
+    return window.location.search.includes("kurt-pro");
+}
+
+/*
 ERROR HANDLING
 */
 
@@ -52,7 +59,7 @@ function handleGlobalError(error) {
     const errorName = error.name || "Error";
 
     const popup = new Popup(
-        `KURT-PRO encountered a "${errorName}".`,
+        `KURT-PRO encountered a ${errorName}.`,
         errorMessage,
         "Close"
     );
