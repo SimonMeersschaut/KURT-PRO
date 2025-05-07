@@ -168,7 +168,13 @@ document.body.onload = () => {
         button.innerText = "KURT-PRO";
         button.onclick = () => {window.location.assign("/?kurt-pro=")}
         const container = document.body.getElementsByClassName("page-outlet")[0]
-        container.insertBefore(button, container.firstChild);
+        if (container == null){
+            // on a safari browser, it seemed like the container couldnt be found.
+            document.body.insertBefore(button, document.body.firstChild);
+        }
+        else{
+            container.insertBefore(button, container.firstChild);
+        }
         
     }
 }
