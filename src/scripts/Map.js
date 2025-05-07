@@ -27,17 +27,26 @@ class Map{
         const gridContainer = document.getElementById('grid');
         gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
 
-        Object.entries(data).forEach(([seatNr, value]) => {
-            const [gridColumn, gridRow] = value.split(";");
-            const gridItem = document.createElement("div");
-            gridItem.id = `plaats-${seatNr}`;
-            gridItem.style.gridColumn = gridColumn;
-            gridItem.style.gridRow = gridRow;
-
-            if (seatNr == this.selectedSeat)
-                gridItem.classList.add("selected");
-            gridItem.onclick = () => {this.handleSeatClick(seatNr)};
-            gridContainer.appendChild(gridItem);
+        Object.entries(data).forEach(([key, value]) => {
+            if (key == "config"){
+                // set the grid information
+                gridContainer.style.aspectRatio = `${value['columns']} / ${value['rows']}`;
+                gridContainer.style.gridTemplateRows = `repeat(${value['rows']}, 1fr)`;
+                gridContainer.style.gridTemplateColumns = `repeat(${value['columns']}, 1fr)`;
+            }else{
+                // key = seatNr, value = grid information
+                const seatNr = key;
+                const [gridColumn, gridRow] = value.split(";");
+                const gridItem = document.createElement("div");
+                gridItem.id = `plaats-${seatNr}`;
+                gridItem.style.gridColumn = gridColumn;
+                gridItem.style.gridRow = gridRow;
+    
+                if (seatNr == this.selectedSeat)
+                    gridItem.classList.add("selected");
+                gridItem.onclick = () => {this.handleSeatClick(seatNr)};
+                gridContainer.appendChild(gridItem);
+            }
         })
     }
     /*
@@ -141,9 +150,5 @@ class Map{
                 }
             })();
         })
-        // .catch(error => {
-        //     throw error;
-        //     // mapLoader.error(error);
-        // })
    }
 }
