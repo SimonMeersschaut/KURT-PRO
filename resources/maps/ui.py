@@ -43,6 +43,8 @@ def load_rectangles():
             for item in data:
                 # Resize rectangles to default dimensions
                 x, y = item["coordinates"]["x"], item["coordinates"]["y"]
+                # CROP_TOPLEFT = (230, 230)
+                # x, y = x - CROP_TOPLEFT[0], y - CROP_TOPLEFT[1]
                 width, height = item["coordinates"]["width"], item["coordinates"]["height"]
                 if width > height:  # Horizontal rectangle
                     rect = pygame.Rect(x, y, DEFAULT_WIDTH, DEFAULT_HEIGHT)
