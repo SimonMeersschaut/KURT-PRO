@@ -200,16 +200,16 @@ class Tunnel{
         }
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
-    async bookSeat(seatId, dateString, startTimeHours, endTimeHours) {
+    async bookSeat(seatId, startDateString, endDateString, startTimeHours, endTimeHours) {
         const bodyData = {
-            "id": seatId,
+            "id": parseInt(seatId),
             "resourceName": "", // original "CBA - Boekenzaal Seat 137"
             "subject": "", // original: "CBA - Boekenzaal Seat 137"
             "purpose": "",
-            "resourceId": seatId,
-            "startDate": dateString,
+            "resourceId": parseInt(seatId),
+            "startDate": startDateString,
             "startTime": `${startTimeHours}:00`, // original: "10:00"
-            "endDate": dateString,
+            "endDate": endDateString,
             "endTime": `${endTimeHours}:00`, // original: "17:00"
             "participants": [
                 { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be"}
@@ -223,41 +223,35 @@ class Tunnel{
             "withCheckIn": false
         };
 
-        try {
-            const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations/", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json; charset=utf-8"
-                },
-                body: JSON.stringify(bodyData)
-            });
-            if (!response.ok) throw new Error("Could not fetch previous reservations.");
+        const response = await fetch("https://kurt3.ghum.kuleuven.be/api/reservations/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            },
+            body: JSON.stringify(bodyData)
+        });
+        if (!response.ok) throw new Error("Could not make the reservation.");
 
-            const responseText = await response.text();
+        const responseText = await response.text();
 
-            if (response.ok) {
-                if (responseText.startsWith("Your reservation has been created.")) {
-                    return (true, "ok");
-                } else {
-                    console.warn("Unexpected response message:", responseText);
-                    return (false, { type: 'Warning', message: responseText });
-                }
+        if (response.ok) {
+            if (responseText.startsWith("Your reservation has been created.")) {
+                // OK, reservation created successfully.
+                return;
             } else {
-                // Handle non-OK responses
-                const responseError = {
-                    type: 'Error',
-                    status: response.status,
-                    message: responseText ? JSON.parse(responseText) : "Unknown error"
-                };
-
-                console.error(`Error booking the seat. Status code ${response.status};`);
-                console.error(responseError.message)
-                return (false, responseError);
+                console.warn("Unexpected response message:", responseText);
+                return;
             }
-        } catch (error) {
-            // Handle network or unexpected errors
-            console.error("Unexpected error while booking the seat:", error);
-            return (false, { type: 'Error', message: error.message });
+        } else {
+            // Handle non-OK responses
+            const responseError = {
+                type: 'Error',
+                status: response.status,
+                message: responseText ? JSON.parse(responseText) : "Unknown error"
+            };
+            console.error(`Error booking the seat. Status code ${response.status};`);
+            console.error(responseError.message)
+            throw new Error(responseError.message);
         }
     }
 }
