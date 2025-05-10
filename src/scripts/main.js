@@ -55,20 +55,33 @@ function selectDay(mainContainer){
                 zone_id = 14;
             else if (reservationData["resourceName"].startsWith("Agora - Silent Study Seat "))
                 zone_id = 2;
-            else alert("Zone Id not found!");
-
+            else throw new Error("Zone Id not found!");
             // show the reserved seat
             var map = new Map(zone_id, false);
             // show a information card
-            var selectedSeatCard = new SelectedSeatCard(button=true, buttonText="change");
-            selectedSeatCard.onClick = () => {window.location.assign(`/edit-reservation/${reservationData.id}`);};
-            mainContainer.innerHTML = map.renderDOM() + selectedSeatCard.renderDOM();
+            var selectedSeatCard = new SelectedSeatCard(buttons=[
+                new Button(
+                    1, // type
+                    "Change", // text
+                    () => {window.location.assign(`/edit-reservation/${reservationData.id}`);} // go to the page to edit the reservation
+                ),
+                new Button(
+                    2, // type
+                    "Cancel", // text
+                    () => {window.location.assign(`/reservations`);} // manage all reservations
+                ),
+            ]);
+            // remove all elements in main container
+            mainContainer.innerHTML = ""; 
+            // Render new DOM
+            mainContainer.appendChild(map.renderDOM());
+            mainContainer.appendChild(selectedSeatCard.renderDOM());
             selectedSeatCard.setSeat(reservationData.seatNr, null);
             selectedSeatCard.startTimeHours = parseInt(reservationData.startTime.split(":")[0]);
             selectedSeatCard.endTimeHours = parseInt(reservationData.endTime.split(":")[0]);
             selectedSeatCard.updateSeatTime();
             // selectDay
-            tunnel.fetchMapData(2)
+            tunnel.fetchMapData(zone_id)
             .then(mapData => {
                 map.drawSeats(mapData);
                 map.handleSeatClick(seatNr=reservationData.seatNr, forceSelect=true);
@@ -88,11 +101,24 @@ function selectDay(mainContainer){
                     // Show the map of that zone
                     mainContainer.innerHTML = "";
                     var map = new Map(zoneId, true);
-                    var selectedSeatCard = new SelectedSeatCard();
-                    mainContainer.innerHTML = `<div id="filter-container">` + "</div>" + "<div>" + map.renderDOM() + "</div>" + selectedSeatCard.renderDOM();
+                    var selectedSeatCard = new SelectedSeatCard(buttons=[
+                        new Button(
+                            1, // type
+                            "Book", // text
+                            (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)} // effectively book that seat
+                        )
+                    ]);
+                    // render dom
+                    const filterContainer = document.createElement("div");
+                    filterContainer.id = "filter-container";
+                    mainContainer.appendChild(filterContainer);
+                    const mapContainer = document.createElement("div");
+                    mapContainer.id = "map-container";
+                    mapContainer.appendChild(map.renderDOM());
+                    mainContainer.appendChild(mapContainer);
+                    mainContainer.appendChild(selectedSeatCard.renderDOM());
                     // event listeners
                     map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
-                    selectedSeatCard.onClick = (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)}; // effectively book that seat
                     // fetch data
                     map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
                 }

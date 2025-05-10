@@ -1,8 +1,9 @@
 class SelectedSeatCard{
-    constructor(button = true, buttonText = "Confirm"){
-        this.button = button;
-        this.buttonText = buttonText;
-        this.onClick = null;
+    constructor(buttons){
+        if (buttons == undefined)
+            throw new Error("`buttons` in `selectedSeatCard` was `undefined`.");
+        this.buttons = buttons;
+
         this.seatId = null
         this.seatNr = null;
 
@@ -19,25 +20,43 @@ class SelectedSeatCard{
         this.seatNr = seatNr;
         this.seatId = seatId;
         
-        const card = document.getElementById("selectedSeatCard")
+        const card = document.getElementById("selectedSeatCard");
+        if (card == null) throw new Error("`selectedSeatCard` could not be found on the DOM.");
         card.style.display = "block";
-        document.getElementById("seatTitle").innerText = seatNr;
-        if (this.button)
-            if (this.onClick == null)
-                throw new Error("`onClick` was `nulll` for the selectedSeatCard.");
-            document.getElementById("bookSeatConfirm").onclick = (event) => {this.onClick(this.seatNr, this.seatId, this.startTimeHours, this.endTimeHours)};
-        
+
+
+        const title = document.getElementById("seatTitle");
+        if (title == null) throw new Error("`selectedSeatCard` could find `title` on the DOM.");
+        title.innerText = seatNr;
+
+        for (let i = 0; i < this.buttons.length; i++){
+            this.buttons[i].DOM.onclick = (event) => {this.buttons[i].onclick(this.seatNr, this.seatId, this.startTimeHours, this.endTimeHours)};
+        }
+
         this.updateSeatTime();
     }
 
     renderDOM(){
-        return `
-        <div id="selectedSeatCard" class="card" style="display: none">
-            <div class="card-body">
-                <h2 id="seatTitle"></h2>
-                <p id="seatTime">Time: 10:00 - 11:00</p>
-                ${this.button ? '<button id="bookSeatConfirm" class="btn btn-primary">' + this.buttonText + '</button> ' : ''}
-            </div>
-        </div>`;
+        const container = document.createElement("div");
+        container.id = "selectedSeatCard";
+        container.classList.add("card");
+        container.style.display = "none";
+
+        const body = document.createElement("div");
+        body.classList.add("card-body");
+        const title = document.createElement("h2");
+        title.id = "seatTitle";
+        body.appendChild(title);
+        const paragraph = document.createElement("p");
+        paragraph.id = "seatTime";
+        body.appendChild(paragraph);
+        container.appendChild(body);
+
+        if (this.buttons == undefined)
+            throw new Error("`buttons` in `selectedSeatCard` was `undefined`.");
+        for (let i = 0; i < this.buttons.length; i++){
+            body.appendChild(this.buttons[i].renderDOM());
+        }
+        return container;
     }
 }

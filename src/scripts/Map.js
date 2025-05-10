@@ -12,7 +12,10 @@ class Map{
     }
 
     renderDOM(){
-        return `<div class="grid" id="grid"></div>`;
+        const container = document.createElement("div");
+        container.classList.add("grid");
+        container.id = "grid";
+        return container;
     }
     
     // TODO: DOCS
