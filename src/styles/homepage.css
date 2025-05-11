@@ -19,3 +19,11 @@
     margin: 0; /* Ensures no extra spacing */
 }
 
+
+#filters *{
+    margin-right: 5px;
+}
+
+#filters #settings-button{
+    float:right;
+}

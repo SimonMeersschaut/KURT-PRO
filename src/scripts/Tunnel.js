@@ -21,17 +21,6 @@ class Tunnel{
     }
 
     /*
-    This function will return the favorite zones of this user in order.
-    */
-    getFavoriteZones(){
-        return [
-            {"location": 10, "id": 2, "name": "Agora - Silent study 2"},
-            {"location": 1, "id": 14, "name": "Arenberg - De zolder"},
-            {"location": 1, "id": 11, "name": "Arenberg - De boekenzaal"},
-        ]
-    }
-
-    /*
     TODO: docs
     */
     async getReservedDays() {

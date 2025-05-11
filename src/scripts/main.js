@@ -3,8 +3,10 @@ The build will automatically append css files above using the following format:
 A constant variable is made with the name {filename}_css, with the value of the content of the file.
 Below is a list of the variables that will be set on build.
 
+main_css = ...
 homepage_css = ...
 day_selector_css = ...
+zone_card_css = ...
 map_css = ...
 loader_css = ...
 clock_css = ...
@@ -20,6 +22,29 @@ const dateToString = (date) => {
         throw new Error("`date` was not a `Date` object.");
     return date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
 };
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 
 /*
 Calculates the dayIndex based on the selectedDay.
@@ -44,7 +69,6 @@ selectedDay = null;
 // TODO: docs and split code
 function selectDay(mainContainer){
     // Fetch favorite zones of the user
-    var favoriteZones = tunnel.getFavoriteZones()
     tunnel.hasReservationOn(dayIndex)
     .then(reservationData => {
         if (reservationData != null){
@@ -91,13 +115,14 @@ function selectDay(mainContainer){
             clock.show();
             // No reservation, show zones
             mainContainer.innerHTML = "";
-            // show all zones
+            // show all favorite zones
+            const favoriteZones = settings.getFavoriteZones();
             for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
                 // for each zone
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
                 zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
-                zoneCard.onclick = (zoneId) => {
+                zoneCard.onclick = (locationId, zoneId) => {
                     // Show the map of that zone
                     mainContainer.innerHTML = "";
                     var map = new Map(zoneId, true);
@@ -120,7 +145,7 @@ function selectDay(mainContainer){
                     // event listeners
                     map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
                     // fetch data
-                    map.fetchMapData(locationId=10, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
+                    map.fetchMapData(locationId=locationId, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
                 }
             }
         }
@@ -146,13 +171,14 @@ function main(){
         // render the filters
         var filtersContainer = document.createElement("div")
         filtersContainer.id = "filters";
-        document.body.appendChild(filtersContainer);
-        filtersContainer.appendChild(clock.renderDOM());
         clock.onupdate = () => {
             settings.startTimeHours = clock.startTime;
             settings.endTimeHours = clock.endTime;
             selectDay(mainContainer)
         };
+        filtersContainer.appendChild(clock.renderDOM());
+        filtersContainer.appendChild(settings.renderDOM());
+        document.body.appendChild(filtersContainer);
     
         // Create zone container
         var mainContainer = document.createElement("div")
@@ -200,7 +226,7 @@ document.body.onload = () => {
         // show a button to go back to KURT PRO
         const button = createBanner();
         button.innerText = "KURT-PRO";
-        button.onclick = () => {window.location.assign("/?kurt-pro=")}
+        button.onclick = () => {window.location.assign("#kurt-pro")}
         const container = document.body.getElementsByClassName("page-outlet")[0]
         if (container == null){
             // on a safari browser, it seemed like the container couldnt be found.

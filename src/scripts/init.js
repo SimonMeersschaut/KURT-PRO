@@ -33,7 +33,9 @@ page:
 function injectStaticContent(){
     // homepage
     document.head.innerHTML = 
-    "<style>" + homepage_css + "</style>"
+    "<style>" + main_css + "</style>"
+    + "<style>" + homepage_css + "</style>"
+    + "<style>" + zone_card_css + "</style>"
     + "<style>" + day_selector_css + "</style>"
     + "<style>" + map_css + "</style>"
     + "<style>" + loader_css + "</style>"
@@ -45,7 +47,7 @@ function injectStaticContent(){
 Returns if the extention should execute on this url.
 */
 function activeUrl(){
-    return window.location.search.includes("kurt-pro");
+    return window.location.hash == "#kurt-pro";
 }
 
 /*
