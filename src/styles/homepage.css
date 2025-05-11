@@ -20,10 +20,10 @@
 }
 
 
-#filters *{
+#filter-container *{
     margin-right: 5px;
 }
 
-#filters #settings-button{
+#filter-container #settings-button{
     float:right;
 }

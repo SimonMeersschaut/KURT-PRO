@@ -134,9 +134,6 @@ function selectDay(mainContainer){
                         )
                     ]);
                     // render dom
-                    const filterContainer = document.createElement("div");
-                    filterContainer.id = "filter-container";
-                    mainContainer.appendChild(filterContainer);
                     const mapContainer = document.createElement("div");
                     mapContainer.id = "map-container";
                     mapContainer.appendChild(map.renderDOM());
@@ -170,7 +167,7 @@ function main(){
 
         // render the filters
         var filtersContainer = document.createElement("div")
-        filtersContainer.id = "filters";
+        filtersContainer.id = "filter-container";
         clock.onupdate = () => {
             settings.startTimeHours = clock.startTime;
             settings.endTimeHours = clock.endTime;

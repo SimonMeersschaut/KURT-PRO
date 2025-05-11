@@ -7,11 +7,12 @@ this.settingsData : {
 }
 */
 class Settings{
-    SETTINGS_CNAME = "KURT_PRO_SETTINGS";
-    FAVORITE_ZONES_CNAME = "KURT_PRO_FAVORITE_ZONES";
-    EXDAYS = 356;
-
     constructor(){
+        // constant variables
+        this.SETTINGS_CNAME = "KURT_PRO_SETTINGS";
+        this.FAVORITE_ZONES_CNAME = "KURT_PRO_FAVORITE_ZONES";
+        this.EXDAYS = 356;
+        // initialize the cache
         this._settingsData = null;
     }
 
@@ -23,7 +24,7 @@ class Settings{
             // not fetched yet, load it from the cookies
             // Retrieve the settings cookie
             // get cookie value
-            const cookie = getCookie(Settings.SETTINGS_CNAME);
+            const cookie = getCookie(this.SETTINGS_CNAME);
             if (cookie == "") return null;
     
             // Extract and decode the settings string
@@ -52,9 +53,9 @@ class Settings{
 
         // Save the string in cookies
         setCookie(
-            Settings.SETTINGS_CNAME,
+            this.SETTINGS_CNAME,
             settingsString,
-            Settings.EXDAYS
+            this.EXDAYS
         );
     }
 
@@ -99,24 +100,30 @@ class Settings{
     This function will return the favorite zones of this user in order.
     */
     getFavoriteZones(){
-        const cookie = getCookie(Settings.FAVORITE_ZONES_CNAME);
+        const defaultValue = [
+            {"locationId": 10, "zoneId": 2, "name": "Agora - Silent study 2"},
+            {"locationId": 1, "zoneId": 14, "name": "Arenberg - De zolder"},
+            {"locationId": 1, "zoneId": 11, "name": "Arenberg - De boekenzaal"},
+        ];
+        const cookie = getCookie(this.FAVORITE_ZONES_CNAME);
         if (cookie == ""){
-            const defaultValue = [
-                {"location": 10, "id": 2, "name": "Agora - Silent study 2"},
-                {"location": 1, "id": 14, "name": "Arenberg - De zolder"},
-                {"location": 1, "id": 11, "name": "Arenberg - De boekenzaal"},
-            ];
             this.setFavoriteZones(defaultValue);
             return defaultValue;
         }
-        return JSON.parse(cookie);
+        try{
+            return JSON.parse(cookie);
+        }catch(e){
+            // Unexpected non-whitespace character after JSON at position 62 (line 1 column 63)
+            this.setFavoriteZones(defaultValue);
+            return defaultValue;
+        }
     }
 
     setFavoriteZones(value){
         setCookie(
-            Settings.FAVORITE_ZONES_CNAME,
+            this.FAVORITE_ZONES_CNAME,
             JSON.stringify(value),
-            Settings.EXDAYS
+            this.EXDAYS
         );
     }
 
