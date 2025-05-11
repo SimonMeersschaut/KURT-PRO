@@ -51,6 +51,14 @@ function activeUrl(){
 }
 
 /*
+Returns if the browser's location is a url to change the reservation details.
+*/
+function isChangeReservationUrl(){
+    // pathname example: "/edit-reservation/3961023370"
+    return window.location.pathname.split("/")[1] == "edit-reservation";
+}
+
+/*
 ERROR HANDLING
 */
 

@@ -232,6 +232,17 @@ document.body.onload = () => {
         else{
             container.insertBefore(button, container.firstChild);
         }
-        
+        // check for edit reservation
+        if (isChangeReservationUrl()){
+            setTimeout(() => {
+                document.getElementById("mat-input-0").value = "Study";
+                document.getElementById("mat-input-1").value = "(KURT-PRO) Change the details of the reservation.";
+
+                const inputs = document.getElementsByTagName("input");
+                for (let i = 0; i < inputs.length; i++)
+                    if (inputs[i].type == "checkbox")
+                        inputs[i].dispatchEvent(new Event("click")); // click on the disclaimer
+            }, 100);
+        }
     }
 }
