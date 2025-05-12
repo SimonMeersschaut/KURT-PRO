@@ -17,6 +17,8 @@ with open("VERSION") as f:
 
 with open(os.path.join(SRC_DIR, "data", "userscript.js"), "r") as f:
     USER_SCRIPT_DOCS = f.read()
+# replace the version with the current version
+USER_SCRIPT_DOCS = USER_SCRIPT_DOCS.replace("$VERSION$", VERSION)
 
 """
 Initialize the working directory with a `dist` folder.
