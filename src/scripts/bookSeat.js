@@ -1,11 +1,11 @@
 
 /*
 Effectively book that seat.
+
+TODO: define return types
 */
-function bookSeat(seatId, selectedDay, startTimeHours, endTimeHours){
+async function bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, endTimeHours){
     const loader = new Loader(`Booking seat ${seatId}`);
-
-
     const startDate = new Date(selectedDay.getFullYear(), selectedDay.getMonth(), selectedDay.getDate());
     const endDate = new Date(selectedDay.getFullYear(), selectedDay.getMonth(), selectedDay.getDate());
 
@@ -15,21 +15,23 @@ function bookSeat(seatId, selectedDay, startTimeHours, endTimeHours){
         endDate.setDate(endDate.getDate() + 1);
     }
 
-    tunnel.bookSeat(
-        seatId=seatId,
-        startDateString=dateToString(startDate),
-        endDateString=dateToString(endDate),
-        startTimeHours=startTimeHours,
-        endTimeHours=endTimeHours
-    )
-    .then(() => {
+    try{
+        await tunnel.bookSeat(
+            dayIndex=dayIndex,
+            seatNr=seatNr,
+            seatId=seatId,
+            startDateString=dateToString(startDate),
+            endDateString=dateToString(endDate),
+            startTimeHours=startTimeHours,
+            endTimeHours=endTimeHours
+        );
+        // success
         loader.success()
-    })
-    .catch((error) => {
-        loader.stop()
-        throw error;
-    })
+        return true;
+    }
+    catch(e){
+        loader.stop();
+        console.error(e);
+        return false;
+    }
 }
-
-
-// const loader = new Loader("Booking seat");

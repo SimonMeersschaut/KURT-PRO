@@ -28,7 +28,7 @@ class DaySelector{
     constructor(settingsButton){
         this.settingsButton = settingsButton
         this.selectedDayIndex = null; // Will index the current selected day (defualt=today)
-        this.reservedDays = [null, null, null, null, null, null, null, null]; // will cache on what days the user has reservations
+        this.reservedDays = [null, null, null, null, null, null, null, null]; // will cache on what days the user has reservations (dicts with the reservation) // FIXME: what when there are multiple reservations??
         this.onClickDay = null; // defautl value
     }
 
@@ -42,8 +42,8 @@ class DaySelector{
         // Get the day of the week (of today)
         const d = new Date();
         let today = d.getDay();
-        for (let i=0; i < 8; i++){
-            // calculate the day of the week (sunday=0, ... saturday=6) -> (monday = 0, ... sunday = 6)
+        for (let i=0; i <= 8; i++){
+            // calculate the day of the week (sunday=0, ... saturday=6) -> (monday = 0, ... sunday = 6) TODO: wat is deze comment
             let weekday = WEEKDAYS[(today+i + 6) % 7];
             var daySelector = this.createDayButton(i, weekday);
             selectorContainer.appendChild(daySelector);
@@ -98,7 +98,7 @@ class DaySelector{
     }
 
     updateClasses(){
-        for (let i = 0; i <= 7; i++){
+        for (let i = 0; i <= 8; i++){
             let daySelector = document.getElementById("daySelector-" + i.toString());
             let selected = (i == this.selectedDayIndex);
             let reserved = this.reservedDays[i];

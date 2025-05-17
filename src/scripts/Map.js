@@ -154,4 +154,9 @@ class Map{
             })();
         })
    }
+
+   disable(){
+        document.getElementById('grid').classList.remove('selectable');
+        this.enableSelecting = false;
+   }
 }

@@ -16,7 +16,7 @@ It is advised to make only one instance of this class.
 */
 class Tunnel{
     constructor (){
-        this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
+        this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
         this.reservationCache = null;
     }
 
@@ -30,9 +30,12 @@ class Tunnel{
             if (!response.ok) throw new Error("Could not fetch reservations.");
             data = await response.json();
             this.reservationCache = data;
+            console.warn("fetched again?");
         }
         else{
             data = this.reservationCache;
+            console.log("Data:");
+            console.log(data);
         }
 
         try {
@@ -42,10 +45,16 @@ class Tunnel{
             data.forEach(reservation => {
                 const date = new Date(reservation["startDate"]);
                 const dayIndex = dateDiffInDays(d, date);
+                console.log("Date:");
+                console.log(date);
+                console.log("DayIndex:");
+                console.log(dayIndex);
                 if (dayIndex >= 0 && dayIndex <= 7) {
                     let seatNr = parseInt(reservation["resourceName"].split(" ")[reservation["resourceName"].split(" ").length - 1]);
                     const data = {... reservation, seatNr: seatNr}
                     output[dayIndex] = data;
+                    console.log("Current output data: ");
+                    console.log(output);
                 }
             });
             return output;
@@ -76,6 +85,7 @@ class Tunnel{
     */
     async hasReservationOn(dayIndex){
         const reservedDays = await this.getReservedDays();
+        console.log(reservedDays);
         return reservedDays[dayIndex];
         // return true;
     }
@@ -189,10 +199,10 @@ class Tunnel{
         }
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
-    async bookSeat(seatId, startDateString, endDateString, startTimeHours, endTimeHours) {
+    async bookSeat(dayIndex, seatNr, seatId, startDateString, endDateString, startTimeHours, endTimeHours) {
         const bodyData = {
             "id": parseInt(seatId),
-            "resourceName": "", // original "CBA - Boekenzaal Seat 137"
+            "resourceName": ` ${seatNr}`, // original "CBA - Boekenzaal Seat 137" // TODO: volledige naam?
             "subject": "", // original: "CBA - Boekenzaal Seat 137"
             "purpose": "",
             "resourceId": parseInt(seatId),
@@ -224,11 +234,18 @@ class Tunnel{
         const responseText = await response.text();
 
         if (response.ok) {
-            if (responseText.startsWith("Your reservation has been created.")) {
+            console.log(this.reservationCache);
+            if (this.reservationCache != null){
+                this.reservationCache.push(bodyData);
+                console.log("Added to reservationCache. New cache:");
+                console.log(this.reservationCache);
+            }
+
+            if (responseText.startsWith('"Your reservation has been created.')) {
                 // OK, reservation created successfully.
                 return;
             } else {
-                console.warn("Unexpected response message:", responseText);
+                console.warn("Unexpected response message: '" + responseText + "'");
                 return;
             }
         } else {

@@ -59,4 +59,10 @@ class SelectedSeatCard{
         }
         return container;
     }
+
+    disableButtons(){
+        const btns = document.getElementById("selectedSeatCard").getElementsByTagName("button");
+        for (let i = 0; i < btns.length; i++)
+            btns[i].disabled = true;
+    }
 }

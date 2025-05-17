@@ -16,6 +16,7 @@ const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
 var settings = null;
 var clock = null;
+var daySelector = null;
 
 const dateToString = (date) => {
     if (!(date instanceof Date))
@@ -66,6 +67,45 @@ function calculateDayIndex(selectedDay) {
 dayIndex = null;
 selectedDay = null;
 
+
+function viewZone(mainContainer, locationId, zoneId){
+    // Show the map of that zone
+    mainContainer.innerHTML = "";
+    var map = new Map(zoneId, true);
+    var selectedSeatCard = new SelectedSeatCard(buttons=[
+        new Button(
+            1, // type
+            "Book", // text
+            (seatNr, seatId, startTimeHours, endTimeHours) => {
+                // effectively book that seat
+                // updates the tunnel cache too!
+                bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, endTimeHours)
+                .then((success) => {
+                    if (success){
+                        // update the page
+                        selectDay(mainContainer);
+                    }
+                    else{
+                        // error
+                        throw new Error("An error occured while booking the seat. Please check the console for more details.");
+                    }
+                })
+            }
+        )
+    ]);
+    // render dom
+    const mapContainer = document.createElement("div");
+    mapContainer.id = "map-container";
+    console.log(mainContainer);
+    mapContainer.appendChild(map.renderDOM());
+    mainContainer.appendChild(mapContainer);
+    mainContainer.appendChild(selectedSeatCard.renderDOM());
+    // event listeners
+    map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
+    // fetch data
+    map.fetchMapData(locationId=locationId, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
+}
+
 // TODO: docs and split code
 function selectDay(mainContainer){
     // Fetch favorite zones of the user
@@ -79,7 +119,9 @@ function selectDay(mainContainer){
                 zone_id = 14;
             else if (reservationData["resourceName"].startsWith("Agora - Silent Study Seat "))
                 zone_id = 2;
-            else throw new Error("Zone Id not found!");
+            else if (reservationData["resourceName"].startsWith("CBA - Boekenzaal Seat "))
+                zone_id = 11;
+            else throw new Error(`Identifier of zone '${reservationData["resourceName"]}' was not found. (seatNr: ${reservationData["seatNr"]})`);
             // show the reserved seat
             var map = new Map(zone_id, false);
             // show a information card
@@ -122,28 +164,7 @@ function selectDay(mainContainer){
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
                 zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
-                zoneCard.onclick = (locationId, zoneId) => {
-                    // Show the map of that zone
-                    mainContainer.innerHTML = "";
-                    var map = new Map(zoneId, true);
-                    var selectedSeatCard = new SelectedSeatCard(buttons=[
-                        new Button(
-                            1, // type
-                            "Book", // text
-                            (seatNr, seatId, startTimeHours, endTimeHours) => {bookSeat(seatId, selectedDay, startTimeHours, endTimeHours)} // effectively book that seat
-                        )
-                    ]);
-                    // render dom
-                    const mapContainer = document.createElement("div");
-                    mapContainer.id = "map-container";
-                    mapContainer.appendChild(map.renderDOM());
-                    mainContainer.appendChild(mapContainer);
-                    mainContainer.appendChild(selectedSeatCard.renderDOM());
-                    // event listeners
-                    map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
-                    // fetch data
-                    map.fetchMapData(locationId=locationId, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
-                }
+                zoneCard.onclick = (locationId, zoneId) => {viewZone(mainContainer, locationId, zoneId)};
             }
         }
     })
@@ -162,7 +183,7 @@ function main(){
         injectStaticContent();
         /* Create custom page. */
         // Create day-selectors
-        var daySelector = new DaySelector(false);
+        daySelector = new DaySelector(false);
         document.body.appendChild(daySelector.renderDOM());
 
         // render the filters
@@ -199,8 +220,7 @@ function main(){
     })
 }
 
-// Call the main function when the entire page was loaded
-document.body.onload = () => {
+function onLoad(){
     // Check if the extention should run on this url
     if (activeUrl()){
         /*
@@ -223,7 +243,7 @@ document.body.onload = () => {
         // show a button to go back to KURT PRO
         const button = createBanner();
         button.innerText = "KURT-PRO";
-        button.onclick = () => {window.location.assign("#kurt-pro")}
+        button.onclick = () => {window.location.assign("#kurt-pro"); setTimeout(() => {onLoad()}, 100);}
         const container = document.body.getElementsByClassName("page-outlet")[0]
         if (container == null){
             // on a safari browser, it seemed like the container couldnt be found.
@@ -246,3 +266,5 @@ document.body.onload = () => {
         }
     }
 }
+// Call the main function when the entire page was loaded
+document.body.onload = onLoad;

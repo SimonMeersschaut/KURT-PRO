@@ -22,6 +22,7 @@
 
 #filter-container *{
     margin-right: 5px;
+    display: flow-root;
 }
 
 #filter-container #settings-button{
