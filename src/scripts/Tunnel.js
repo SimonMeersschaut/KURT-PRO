@@ -18,6 +18,8 @@ class Tunnel{
     constructor (){
         this.dayCaches = [new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache(), new DayCache()];
         this.reservationCache = null;
+        this.usageCache = -1;
+        this.accountCache = null;
     }
 
     /*
@@ -193,7 +195,7 @@ class Tunnel{
             "startTime":"9:00",
             "endDate":"2025-04-22",
             "endTime":"10:00",
-            "participants":[{"uid":"R1039801","email":"simon.meersschaut@student.kuleuven.be"}],
+            "participants":[{"uid":r-number,"email":email}],
             "summary":["Resource **CBA - Boekenzaal Seat 137**","at **2Bergen Arenberg**","for **simon.meersschaut&commat;student.kuleuven.be**","from **Tue Apr 22 9:00** until **Tue Apr 22 10:00**"],
             "withCheckIn":false
         }
@@ -211,7 +213,7 @@ class Tunnel{
             "endDate": endDateString,
             "endTime": `${endTimeHours}:00`, // original: "17:00"
             "participants": [
-                { "uid": "R1039801", "email": "simon.meersschaut@student.kuleuven.be"}
+                await settings.getUser()
             ],
             "summary": [
                 "", // Resource **CBA - Boekenzaal Seat 137**
@@ -243,6 +245,7 @@ class Tunnel{
 
             if (responseText.startsWith('"Your reservation has been created.')) {
                 // OK, reservation created successfully.
+                this.usageCache = this.usageCache + (endTimeHours - startTimeHours);
                 return;
             } else {
                 console.warn("Unexpected response message: '" + responseText + "'");
@@ -259,5 +262,80 @@ class Tunnel{
             console.error(responseError.message)
             throw new Error(responseError.message);
         }
+    }
+
+    /**
+     * {
+            "uid": REDACTED,
+            "email": "simon.meersschaut@student.kuleuven.be",
+            "commonName": "Simon Meersschaut",
+            "firstName": "Simon",
+            "lastName": "Meersschaut",
+            "quota": [
+                {
+                    "resourceType": "Group Work Room",
+                    "usageDay": 0,
+                    "usageWeek": 0,
+                    "maxUsageDay": 4,
+                    "maxUsageWeek": 12
+                },
+                {
+                    "resourceType": "Study Seat",
+                    "usageDay": 0,
+                    "usageWeek": 0,
+                    "maxUsageDay": 16,
+                    "maxUsageWeek": 48
+                },
+                {
+                    "resourceType": "Collection Seat",
+                    "usageDay": 0,
+                    "usageWeek": 0,
+                    "maxUsageDay": 16,
+                    "maxUsageWeek": 48
+                }
+            ]
+        }
+     */
+    async getUssage(){
+        // if already cached, return the cache result
+        if (this.usageCache >= 0) return this.usageCache;
+        
+        // otherwise fetch the users usage
+        const response = await fetch("https://kurt3.ghum.kuleuven.be/api/account", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            }
+        });
+
+        if (!response.ok) throw new Error("Could not fetch current ussage.");
+
+        const data = await response.json();
+
+        const usage = data["quota"][1]["usageWeek"];
+        this.usageCache = usage;
+        return usage;
+    }
+
+    /**
+     * 
+     */
+    async getAccountInfo(){
+        // if the account is already cached, return the cache result
+        if (this.accountCache != null) return this.accountCache;
+        
+        // otherwise fetch the account
+        const response = await fetch("https://kurt3.ghum.kuleuven.be/api/information", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            }
+        });
+
+        if (!response.ok) throw new Error("Could not fetch this user.");
+        
+        const data = response.json();
+        this.accountCache = data;
+        return data;
     }
 }

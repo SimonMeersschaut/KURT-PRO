@@ -122,6 +122,18 @@ class Settings{
         return defaultValue;
     }
 
+    /**
+     * returns {"uid":r-number,"email":email}
+     */
+    async getUser(){
+        const data = await tunnel.getAccountInfo();
+        console.log(data);
+        return {
+            "uid": data["uid"],
+            "email": data["email"],
+        };
+    }
+
     setFavoriteZones(value){
         setCookie(
             this.FAVORITE_ZONES_CNAME,

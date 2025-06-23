@@ -23,9 +23,9 @@ class Clock{
             <select id="end-time-selector" value="10:00" type="text" class="form-select form-select-sm time-selector" aria-label="Small select example" style="width: 100px; display: inline-block"></select>
             <br>
             <br>
-            <div id="time-selector-error" class="alert alert-danger" role="alert" style="display: none">
-            
-            </div>
+            <div id="time-selector-week-limit" class="alert alert-light" role="info"></div>
+            <br>
+            <div id="time-selector-error" class="alert alert-danger" role="alert" style="display: none"> </div>
         </div>    
         `, "Ok");
 
@@ -57,6 +57,8 @@ class Clock{
             option.selected = (t == this.endTime);
             selector.appendChild(option);
         }
+
+        this.updateLimitBadge();
     }
 
     updatePreview(){
@@ -81,6 +83,43 @@ class Clock{
         document.getElementById("timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`;
         if (this.onupdate != null)
             this.onupdate();
+
+        this.updateLimitBadge();
+    }
+
+    updateLimitBadge(){
+        // update week limit badge
+        var weekLimitBadge = document.getElementById("time-selector-week-limit");
+        tunnel.getUssage()
+        .then((usage) => {
+            // calculate delta time
+            const delta = this.endTime - this.startTime;
+            if (usage > 48){
+                // error, should not be possible
+                throw new Error("The current usage exceeds 48 hours.")
+            }
+            // else if (delta > 16){
+            //     // this would exceed the (day) limit
+            //     weekLimitBadge.classList.remove("alert-light");
+            //     weekLimitBadge.classList.add("alert-warning");
+            //     weekLimitBadge.innerText = `Usage: ${usage}/48 -> ${usage+delta}/48
+            //     Exceeds limit 16 per day.`;
+            // }
+            else if (usage + delta > 48){
+                // this would exceed the limit
+                weekLimitBadge.classList.remove("alert-light");
+                weekLimitBadge.classList.add("alert-warning");
+                weekLimitBadge.innerText = `Week usage: ${usage}/48 -> ${usage+delta}/48\nExceeds week limit.`;
+            }
+            else{
+                // OK
+                weekLimitBadge.classList.remove("alert-warning");
+                weekLimitBadge.classList.add("alert-light");
+                weekLimitBadge.innerText = `Week usage: ${usage}/48 -> ${usage+delta}/48`;
+            }
+            
+            }
+        );
     }
 
     show(){
