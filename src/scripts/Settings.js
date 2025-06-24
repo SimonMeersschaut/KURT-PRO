@@ -62,13 +62,15 @@ class Settings{
     /*
     render the popup and put it in the DOM
     */
-    showPopup(){
-        const settingsData = this.loadSettingsData();
+    openSettingsPage(){
+        // const settingsData = this.loadSettingsData();
         const popup = new Popup("Settings", `
             <div style="display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center;">
                 <label for="settings-Favorite-zones">Favorite zones:</label>
-                <div id="settings-Favorite-zones" value="${settingsData.favoriteZones || '(favorite zones)'}">(favorite zones)</div>
+                <br />
+                <button class="btn btn-outline-secondary" onclick="window.location.assign('/')"> Exit KURT-PRO</button>
             </div>`);
+        //<div id="settings-Favorite-zones" value="${settingsData.favoriteZones || '(favorite zones)'}">(favorite zones)</div>
         popup.show();
         popup.onclick = () => {this.saveSettingsData()};
 
@@ -122,6 +124,18 @@ class Settings{
         return defaultValue;
     }
 
+    /**
+     * returns {"uid":r-number,"email":email}
+     */
+    async getUser(){
+        const data = await tunnel.getAccountInfo();
+        console.log(data);
+        return {
+            "uid": data["uid"],
+            "email": data["email"],
+        };
+    }
+
     setFavoriteZones(value){
         setCookie(
             this.FAVORITE_ZONES_CNAME,
@@ -140,9 +154,9 @@ class Settings{
         return button;
     }
 
-    openSettingsPage(){
-        const popup = new Popup("Settings", "<h3>Not implemented yet...</h3>", "Save");
-        popup.show();
-    }
+    // (){
+    //     const popup = new Popup("Settings", "<h3>Not implemented yet...</h3>", "Save");
+    //     popup.show();
+    // }
 
 }
