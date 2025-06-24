@@ -22,7 +22,8 @@ class ZoneCard{
         card.classList.add("card");
         card.classList.add("card-body");
         card.innerHTML = "<h2>"+this.zoneData["name"]+"</h2><h2 id='zone_"+this.zoneData["zoneId"]+"_availability' class='badge text-bg-secondary'>pending</h2>";
-        card.onclick = () => {this.onclick(this.zoneData["locationId"], this.zoneData["zoneId"])};
+
+        card.onclick = () => {this.onclick(this.zoneData["locationId"], this.zoneData["zoneId"], this.zoneData["name"])};
         return card;
     }
 
@@ -42,7 +43,7 @@ class ZoneCard{
             for await (availability of seatGenerator) {
                 // change the number of availability
                 if (div == null){
-                    console.warn("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
+                    log.warn("Could not find zoneCard div. Perhaps the user clicked on a zone before the request was finished.");
                     return;
                 }else{
                     badge.innerText = availability.toString();

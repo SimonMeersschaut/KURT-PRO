@@ -15,6 +15,15 @@ class Clock{
         return this.container;
     }
 
+    // display text of the button
+    setText(text){
+        if (text == null){
+            document.getElementById("timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`
+            return;
+        }
+        document.getElementById("timer-preview").innerText = text;
+    }
+
     showPopup() {
         this.popup = new Popup("Select a timeslot", `
         <div>
@@ -122,11 +131,19 @@ class Clock{
         );
     }
 
-    show(){
-        document.getElementById("timer-preview").style.display = "inline-block";
+    // show(){
+    //     document.getElementById("timer-preview").style.display = "inline-block";
+    // }
+
+    // hide(){
+    //     document.getElementById("timer-preview").style.display = "none";
+    // }
+
+    disable(){
+        document.getElementById("timer-preview").classList.add("disabled");
     }
 
-    hide(){
-        document.getElementById("timer-preview").style.display = "none";
+    enable(){
+        document.getElementById("timer-preview").classList.remove("disabled");
     }
 }

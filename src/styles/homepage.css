@@ -22,9 +22,14 @@
 
 #filter-container *{
     margin-right: 5px;
-    display: flow-root;
+    /* display: flow-root; */
+}
+
+#filter-container {
+    /* display: list-item; */
+    /* margin-bottom: 14px; necessary so that the main div doesnt overlap with the filter-container */
 }
 
 #filter-container #settings-button{
-    float:right;
+    /* float:right; */
 }

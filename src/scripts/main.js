@@ -17,6 +17,7 @@ var tunnel = null; // will be set once the page has loaded.
 var settings = null;
 var clock = null;
 var daySelector = null;
+var log = null;
 
 const dateToString = (date) => {
     if (!(date instanceof Date))
@@ -68,10 +69,10 @@ dayIndex = null;
 selectedDay = null;
 
 
-function viewZone(mainContainer, locationId, zoneId){
+function viewZone(mainContainer, locationId, zoneId, zoneName){
     // Show the map of that zone
     mainContainer.innerHTML = "";
-    var map = new Map(zoneId, true);
+    var map = new Map(zoneId, true, zoneName);
     var selectedSeatCard = new SelectedSeatCard(buttons=[
         new Button(
             1, // type
@@ -111,7 +112,11 @@ function selectDay(mainContainer){
     tunnel.hasReservationOn(dayIndex)
     .then(reservationData => {
         if (reservationData != null){
-            clock.hide();
+            // There already is a reservation.
+            startTimeHours = parseInt(reservationData.startTime.split(":")[0]);
+            endTimeHours = parseInt(reservationData.endTime.split(":")[0]);
+            clock.disable();
+            clock.setText(`${startTimeHours}:00 - ${endTimeHours}:00`);
             // get the id of the map
             let zone_id = null;
             if (reservationData["resourceName"].startsWith("CBA - Zolder Seat "))
@@ -122,7 +127,9 @@ function selectDay(mainContainer){
                 zone_id = 11;
             else throw new Error(`Identifier of zone '${reservationData["resourceName"]}' was not found. (seatNr: ${reservationData["seatNr"]})`);
             // show the reserved seat
-            var map = new Map(zone_id, false);
+            let zoneName = reservationData["resourceName"].split(" - ")[1]
+            zoneName = zoneName.substring(0, zoneName.lastIndexOf(" ")); // remove last word (the seat number)
+            var map = new Map(zone_id, false, zoneName);
             // show a information card
             var selectedSeatCard = new SelectedSeatCard(buttons=[
                 new Button(
@@ -142,8 +149,8 @@ function selectDay(mainContainer){
             mainContainer.appendChild(map.renderDOM());
             mainContainer.appendChild(selectedSeatCard.renderDOM());
             selectedSeatCard.setSeat(reservationData.seatNr, null);
-            selectedSeatCard.startTimeHours = parseInt(reservationData.startTime.split(":")[0]);
-            selectedSeatCard.endTimeHours = parseInt(reservationData.endTime.split(":")[0]);
+            selectedSeatCard.startTimeHours = startTimeHours;
+            selectedSeatCard.endTimeHours = endTimeHours;
             selectedSeatCard.updateSeatTime();
             // selectDay
             tunnel.fetchMapData(zone_id)
@@ -153,8 +160,9 @@ function selectDay(mainContainer){
             })
         }
         else{
-            clock.show();
             // No reservation, show zones
+            clock.enable();
+            clock.setText(null); // reset the text of the button
             mainContainer.innerHTML = "";
             // show all favorite zones
             const favoriteZones = settings.getFavoriteZones();
@@ -163,7 +171,7 @@ function selectDay(mainContainer){
                 var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
                 mainContainer.appendChild(zoneCard.renderDOM());
                 zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
-                zoneCard.onclick = (locationId, zoneId) => {viewZone(mainContainer, locationId, zoneId)};
+                zoneCard.onclick = (locationId, zoneId, zoneName) => {viewZone(mainContainer, locationId, zoneId, zoneName)};
             }
         }
     })
@@ -230,7 +238,7 @@ function main(){
             daySelector.selectDay(0);
         })
         .catch(error => {
-            console.error("Error updating reserved days:", error);
+            log.error("Error updating reserved days:", error);
         });
     })
 }
@@ -238,6 +246,9 @@ function main(){
 function onLoad(){
     // Check if the extention should run on this url
     if (activeUrl()){
+        /*
+        */
+       log = new Log();
         /*
         The settings will handle both the visual interface of the settings,
         as well as holding the data (your current preferences).

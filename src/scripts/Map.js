@@ -2,7 +2,9 @@
 Each instance of this class represents a map of a zone with a grid and calculated seat positions.
 */
 class Map{
-    constructor(zoneId, enableSelecting){
+    constructor(zoneId, enableSelecting, zoneName){
+        if (zoneName == null) throw new Error("zoneName was null");
+        this.zoneName = zoneName;
         this.zoneId = zoneId;
         this.enableSelecting = enableSelecting;
         this.onSelectSeat = null;
@@ -13,8 +15,18 @@ class Map{
 
     renderDOM(){
         const container = document.createElement("div");
-        container.classList.add("grid");
-        container.id = "grid";
+        const zoneNameP = document.createElement("p");
+
+        zoneNameP.id = "zoneNameP";
+        zoneNameP.innerText = this.zoneName;
+        zoneNameP.style.textAlign = "center";
+        const map = document.createElement("div");
+        map.classList.add("grid");
+        map.id = "grid";
+
+        container.appendChild(zoneNameP);
+        container.appendChild(map);
+
         return container;
     }
     
@@ -27,6 +39,7 @@ class Map{
             document.getElementById('grid').classList.add('selectable');
         }
         
+        document.getElementById("zoneNameP").innerText = this.zoneName;
         const gridContainer = document.getElementById('grid');
         gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
 

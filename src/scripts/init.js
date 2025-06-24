@@ -10,7 +10,7 @@ async function enforceAuthentication(){
         return response.ok;
     }
     catch(e){
-        console.error(e);
+        log.error(e);
         return false;
     }
 }
@@ -63,17 +63,12 @@ ERROR HANDLING
 */
 
 function handleGlobalError(error) {
-    console.error("Global Error Caught:", error);
+    log.error("Global Error Caught:", error);
 
     const errorMessage = error.message || "An unknown error occurred.";
     const errorName = error.name || "Error";
 
-    const popup = new Popup(
-        `KURT-PRO encountered a ${errorName}.`,
-        errorMessage,
-        "Close"
-    );
-    popup.show();
+    
 }
 
 // Attach global error handlers
