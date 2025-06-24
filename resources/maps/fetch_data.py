@@ -27,15 +27,18 @@ def load_zone(zone_id: int, cookies):
             f.write(f"{zone_id}\n")
         return
     for seat in data["availabilities"]:
-        output.append({
-            "id": seat['resourceName'].split(' ')[-1],
-            "coordinates": {
-                "x": seat["positionX"],
-                "y": seat["positionY"],
-                "width": 45,
-                "height": 25
-            }
-        })
+        try:
+            output.append({
+                "id": int(seat['resourceName'].split(' ')[-1]),
+                "coordinates": {
+                    "x": seat["positionX"],
+                    "y": seat["positionY"],
+                    "width": 45,
+                    "height": 25
+                }
+            })
+        except ValueError:
+            print("value error for "+seat['resourceName'].split(' ')[-1])
     # create directory
     if not os.path.exists(f"zones/{zone_id}"):
         os.mkdir(f"zones/{zone_id}")

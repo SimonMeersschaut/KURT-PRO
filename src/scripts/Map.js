@@ -75,7 +75,7 @@ class Map{
             if (!this.enableSelecting)
                 return;
         
-        const seatDOM = document.getElementById(`plaats-${seatNr}`);
+        const seatDOM = document.getElementById(`plaats-${parseInt(seatNr)}`);
         if (seatDOM == null)
             throw new Error(`Seat with identifier 'plaats-${seatNr}' was not found.`);
 
