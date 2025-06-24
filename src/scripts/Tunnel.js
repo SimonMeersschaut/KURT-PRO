@@ -36,33 +36,25 @@ class Tunnel{
         }
         else{
             data = this.reservationCache;
-            console.log("Data:");
-            console.log(data);
         }
 
         try {
-            const output = [null, null, null, null, null, null, null, null];
+            const output = [null, null, null, null, null, null, null, null, null];
             const d = new Date();
 
             data.forEach(reservation => {
                 const date = new Date(reservation["startDate"]);
                 const dayIndex = dateDiffInDays(d, date);
-                console.log("Date:");
-                console.log(date);
-                console.log("DayIndex:");
-                console.log(dayIndex);
-                if (dayIndex >= 0 && dayIndex <= 7) {
+                if (dayIndex >= 0 && dayIndex <= 8) {
                     let seatNr = parseInt(reservation["resourceName"].split(" ")[reservation["resourceName"].split(" ").length - 1]);
                     const data = {... reservation, seatNr: seatNr}
                     output[dayIndex] = data;
-                    console.log("Current output data: ");
-                    console.log(output);
                 }
             });
             return output;
         } catch (error) {
             console.error("Error fetching reserved days:", error);
-            return [null, null, null, null, null, null, null, null];
+            return [null, null, null, null, null, null, null, null, null];
         }
     }
 
@@ -87,7 +79,6 @@ class Tunnel{
     */
     async hasReservationOn(dayIndex){
         const reservedDays = await this.getReservedDays();
-        console.log(reservedDays);
         return reservedDays[dayIndex];
         // return true;
     }
@@ -98,7 +89,6 @@ class Tunnel{
     async *getDayData(locationId, zoneId, selectedDay, startTime, endTime){
         function filter(seatData, startTime, endTime){
             for (let hourIterator = startTime; hourIterator < endTime; hourIterator++){
-                // console.log("ok");
                 if (seatData["slotAllocation"][hourIterator - 8] != 'A'){
                     // NOK, this hour is not available
                     return false;
@@ -236,11 +226,8 @@ class Tunnel{
         const responseText = await response.text();
 
         if (response.ok) {
-            console.log(this.reservationCache);
             if (this.reservationCache != null){
                 this.reservationCache.push(bodyData);
-                console.log("Added to reservationCache. New cache:");
-                console.log(this.reservationCache);
             }
 
             if (responseText.startsWith('"Your reservation has been created.')) {

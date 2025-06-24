@@ -129,7 +129,6 @@ class Settings{
      */
     async getUser(){
         const data = await tunnel.getAccountInfo();
-        console.log(data);
         return {
             "uid": data["uid"],
             "email": data["email"],

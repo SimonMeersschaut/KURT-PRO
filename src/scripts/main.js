@@ -96,7 +96,6 @@ function viewZone(mainContainer, locationId, zoneId){
     // render dom
     const mapContainer = document.createElement("div");
     mapContainer.id = "map-container";
-    console.log(mainContainer);
     mapContainer.appendChild(map.renderDOM());
     mainContainer.appendChild(mapContainer);
     mainContainer.appendChild(selectedSeatCard.renderDOM());
@@ -204,7 +203,23 @@ function main(){
         document.body.appendChild(mainContainer);
         
         // set onclick event listener of day selectors
-        daySelector.onClickDay = (_dayIndex, _selectedDay) => {dayIndex=_dayIndex; selectedDay=_selectedDay; selectDay(mainContainer)};
+        daySelector.onClickDay = (_dayIndex, _selectedDay) => {
+            dayIndex=_dayIndex;
+            selectedDay=_selectedDay;
+
+            // if you selected the 8th day and 
+            if (_dayIndex == 8){
+                if (new Date().getHours() < 18){
+                    // NOK, day not available yet
+                    mainContainer.innerHTML = "";
+                    const p = document.createElement("p");
+                    p.innerText = "This will be available at 18:00.";
+                    mainContainer.appendChild(p);
+                    return;
+                }
+            }
+            selectDay(mainContainer)
+        };
     
         // Fetch future reservations and update the selectors
         tunnel.getReservedDays()
