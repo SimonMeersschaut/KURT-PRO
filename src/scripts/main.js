@@ -251,6 +251,8 @@ function onLoad(){
         The tunnel will be an interface between the front-end and the back-end and will perform caching.
         */
         tunnel = new Tunnel();
+        // add manifest data for a Progressive Web Application
+        configPWA()
         // run main
         main();
     }
