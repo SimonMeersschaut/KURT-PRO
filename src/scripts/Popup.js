@@ -49,7 +49,7 @@ class Popup{
         const saveButton = container.querySelector(".btn-primary");
         saveButton.addEventListener("click", () => {
             if (this.onclick == null)
-                console.warn("`onclick` is `null`.");
+                log.warn("`onclick` is `null`.");
             else
                 this.onclick();
             closeModal();

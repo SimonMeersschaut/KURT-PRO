@@ -74,7 +74,7 @@ class Settings{
         popup.show();
         popup.onclick = () => {this.saveSettingsData()};
 
-        document.getElementById("settings-time-selector").appendChild(this.clock.renderDOM());
+        // document.getElementById("settings-time-selector").appendChild(this.clock.renderDOM());
     }
 
     /*

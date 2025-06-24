@@ -32,7 +32,6 @@ class Tunnel{
             if (!response.ok) throw new Error("Could not fetch reservations.");
             data = await response.json();
             this.reservationCache = data;
-            console.warn("fetched again?");
         }
         else{
             data = this.reservationCache;
@@ -61,7 +60,7 @@ class Tunnel{
             });
             return output;
         } catch (error) {
-            console.error("Error fetching reserved days:", error);
+            log.error("Error fetching reserved days:", error);
             return [null, null, null, null, null, null, null, null];
         }
     }
@@ -77,7 +76,7 @@ class Tunnel{
             return data;
         }
         catch(error){
-            console.error("Error fetching reserved days:", error);
+            log.error("Error fetching reserved days:", error);
             throw error;
         }
     }
@@ -154,7 +153,7 @@ class Tunnel{
                     page++;
                 } while (seatsOnPage > 0 && seatsOnPage == 60);
             } catch (error) {
-                console.error("Error fetching available seats:", error);
+                log.error("Error fetching available seats:", error);
             }
             // updated entire cache
             zoneCache.setValid();
@@ -248,7 +247,7 @@ class Tunnel{
                 this.usageCache = this.usageCache + (endTimeHours - startTimeHours);
                 return;
             } else {
-                console.warn("Unexpected response message: '" + responseText + "'");
+                log.warn("Unexpected response message: '" + responseText + "'");
                 return;
             }
         } else {
@@ -258,8 +257,8 @@ class Tunnel{
                 status: response.status,
                 message: responseText ? JSON.parse(responseText) : "Unknown error"
             };
-            console.error(`Error booking the seat. Status code ${response.status};`);
-            console.error(responseError.message)
+            log.error(`Error booking the seat. Status code ${response.status};`);
+            log.error(responseError.message)
             throw new Error(responseError.message);
         }
     }

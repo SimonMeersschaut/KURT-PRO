@@ -31,7 +31,7 @@ async function bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, e
     }
     catch(e){
         loader.stop();
-        console.error(e);
+        log.error(e);
         return false;
     }
 }
