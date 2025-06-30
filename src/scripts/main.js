@@ -121,8 +121,12 @@ function selectDay(mainContainer){
             let zone_id = null;
             if (reservationData["resourceName"].startsWith("CBA - Zolder Seat "))
                 zone_id = 14;
-            else if (reservationData["resourceName"].startsWith("Agora - Silent Study Seat "))
-                zone_id = 2;
+            else if (reservationData["resourceName"].startsWith("Agora - Silent Study Seat ")){
+                if (reservationData["seatNr"] < 200)
+                    zone_id = 1;
+                else
+                    zone_id = 2;
+            }
             else if (reservationData["resourceName"].startsWith("CBA - Boekenzaal Seat "))
                 zone_id = 11;
             else throw new Error(`Identifier of zone '${reservationData["resourceName"]}' was not found. (seatNr: ${reservationData["seatNr"]})`);
