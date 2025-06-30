@@ -31,7 +31,7 @@ class Map{
     }
     
     // TODO: DOCS
-    drawSeats(data){
+    drawSeats(rectangles){
         // if (disabledSeats == null)
         //     disabledSeats = [];
         // Set hover animation
@@ -42,27 +42,27 @@ class Map{
         document.getElementById("zoneNameP").innerText = this.zoneName;
         const gridContainer = document.getElementById('grid');
         gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
+        
+        // set the grid information
+        gridContainer.style.aspectRatio = `${rectangles["image_width"]} / ${rectangles["image_height"]}`;
+        gridContainer.style.gridTemplateRows = `repeat(${rectangles["image_width"]}, 1fr)`;
+        gridContainer.style.gridTemplateColumns = `repeat(${rectangles["image_height"]}, 1fr)`;
 
-        Object.entries(data).forEach(([key, value]) => {
-            if (key == "config"){
-                // set the grid information
-                gridContainer.style.aspectRatio = `${value['columns']} / ${value['rows']}`;
-                gridContainer.style.gridTemplateRows = `repeat(${value['rows']}, 1fr)`;
-                gridContainer.style.gridTemplateColumns = `repeat(${value['columns']}, 1fr)`;
-            }else{
-                // key = seatNr, value = grid information
-                const seatNr = key;
-                const [gridColumn, gridRow] = value.split(";");
-                const gridItem = document.createElement("div");
-                gridItem.id = `plaats-${seatNr}`;
-                gridItem.style.gridColumn = gridColumn;
-                gridItem.style.gridRow = gridRow;
-    
-                if (seatNr == this.selectedSeat)
-                    gridItem.classList.add("selected");
-                gridItem.onclick = () => {this.handleSeatClick(seatNr)};
-                gridContainer.appendChild(gridItem);
-            }
+        console.log(rectangles)
+        Object.entries(rectangles["seats"]).forEach((entry) => {
+            const seatNr = entry["id"];
+            const gridColumn = entry["coordinates"]["x"];
+            const gridRow = entry["coordinates"]["y"];
+
+            const gridItem = document.createElement("div");
+            gridItem.id = `plaats-${seatNr}`;
+            gridItem.style.gridColumn = gridColumn;
+            gridItem.style.gridRow = gridRow;
+
+            if (seatNr == this.selectedSeat)
+                gridItem.classList.add("selected");
+            gridItem.onclick = () => {this.handleSeatClick(seatNr)};
+            gridContainer.appendChild(gridItem);
         })
     }
     /*
@@ -112,8 +112,7 @@ class Map{
                 this.drawSeats(mapData);
                 this.initialized = true;
             }
-        })
-        .then(() => {
+
             if (this.initialized){
                 // remove all 'free' classes
                 const freeSeats = document.getElementsByClassName("free");

@@ -2,6 +2,7 @@ import requests
 import os
 import json
 import shutil
+import cv2
 
 def load_zone(zone_id: int, cookies):
     output = []
@@ -31,8 +32,8 @@ def load_zone(zone_id: int, cookies):
             output.append({
                 "id": int(seat['resourceName'].split(' ')[-1]),
                 "coordinates": {
-                    "x": seat["positionX"],
-                    "y": seat["positionY"],
+                    "x": round(seat["positionX"]),
+                    "y": round(seat["positionY"]),
                     "width": 45,
                     "height": 25
                 }
@@ -43,10 +44,6 @@ def load_zone(zone_id: int, cookies):
     if not os.path.exists(f"zones/{zone_id}"):
         os.mkdir(f"zones/{zone_id}")
 
-    # Write rectangles file
-    with open(f"zones/{zone_id}/rectangles.json", 'w+') as f:
-        json.dump(output, f)
-
     # Fetch image
     url = f"https://kurtfloorplan.blob.core.windows.net/floorplans/FloorPlan_{floor_plan_id}.png"
     r = requests.get(url, stream=True)
@@ -54,6 +51,16 @@ def load_zone(zone_id: int, cookies):
         with open(f"zones/{zone_id}/map.png", 'wb') as f:
             r.raw.decode_content = True
             shutil.copyfileobj(r.raw, f)    
+
+    im = cv2.imread(f"zones/{zone_id}/map.png")
+
+    # Write rectangles file
+    with open(f"zones/{zone_id}/rectangles.json", 'w+') as f:
+        json.dump({
+            "image_width": im.shape[0],
+            "image_height": im.shape[1],
+            "seats": output,
+        }, f)
 
     print(output)
 
