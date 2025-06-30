@@ -12,7 +12,6 @@
 
 .grid {
     max-height: 87vh; /* Set a maximum height */
-    aspect-ratio: 246 / 456; /* Maintain the aspect ratio of the image */
     display: grid;
     grid-template-columns: repeat(424, 1fr); /* Match the grid to the image's resolution */
     grid-template-rows: repeat(600, 1fr);
