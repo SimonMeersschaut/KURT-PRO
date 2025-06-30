@@ -62,7 +62,7 @@ class Tunnel{
     */
     async fetchMapData(zoneId){
         try {
-            const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/switch_to_rectangles/resources/maps/zones/${zoneId}/rectangles.json`);
+            const response = await fetch(`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zoneId}/rectangles.json`);
             if (!response.ok) throw new Error("Could not fetch zoneData from github.");
             const data = await response.json();
             return data;
