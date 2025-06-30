@@ -8,8 +8,8 @@ ZONE_ID = 2
 pygame.init()
 
 # Constants for default rectangle size
-DEFAULT_WIDTH = 45
-DEFAULT_HEIGHT = 25
+DEFAULT_WIDTH = 55
+DEFAULT_HEIGHT = 35
 MIN_RECT_SIZE = 10  # Minimum width and height for a rectangle to be considered a drag
 
 # Load the image
@@ -52,7 +52,7 @@ selected_rectangle = None  # Currently selected rectangle
 selected_rectangles = []   # List for multi-selection
 
 # Font for displaying text (increased size for better visibility)
-font = pygame.font.Font(None, 24)
+font = pygame.font.Font(None, 12)
 
 # Function to load rectangles from rectangles.json (new format)
 def load_rectangles():
@@ -210,6 +210,14 @@ while running:
                             current_rotation = rect.get("rotation", 0)
                             rect["rotation"] = (current_rotation + 11) % 360
                             print(f"Rotated rectangle {rect['id']} to {rect['rotation']} degrees (clockwise)")
+                elif event.key == pygame.K_EQUALS or event.key == pygame.K_PLUS:
+                    # Scale all selected rectangles to default size from their center
+                    for rect in selected_rectangles:
+                        center = rect["rect"].center
+                        rect["rect"].width = DEFAULT_WIDTH
+                        rect["rect"].height = DEFAULT_HEIGHT
+                        rect["rect"].center = center
+                    print(f"Scaled {len(selected_rectangles)} rectangles to default size.")
 
             # Saving should always work, regardless of selection or typing
             if event.key == pygame.K_s:
