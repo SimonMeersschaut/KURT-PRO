@@ -214,8 +214,8 @@ while running:
             # Saving should always work, regardless of selection or typing
             if event.key == pygame.K_s:
                 output_data = {
-                    "image_width": image_rect.width,
-                    "image_height": image_rect.height,
+                    "image_width": round(image_rect.width / scale_factor),
+                    "image_height": round(image_rect.height / scale_factor),
                     "seats": [
                         {
                             "id": int(rect_data["id"]),
