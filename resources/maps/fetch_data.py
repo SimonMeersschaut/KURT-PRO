@@ -55,9 +55,10 @@ def load_zone(zone_id: int, cookies):
 
     # Write rectangles file
     with open(f"zones/{zone_id}/rectangles.json", 'w+') as f:
+        # im returns (height, width, channels)
         json.dump({
-            "image_width": im.shape[0],
-            "image_height": im.shape[1],
+            "image_height": im.shape[0], # width
+            "image_width": im.shape[1], # height
             "seats": output,
         }, f)
 

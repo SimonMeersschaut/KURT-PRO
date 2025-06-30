@@ -2,7 +2,7 @@ import pygame
 import json
 import os
 
-ZONE_ID = 10
+ZONE_ID = 8
 
 # Initialize pygame
 pygame.init()
