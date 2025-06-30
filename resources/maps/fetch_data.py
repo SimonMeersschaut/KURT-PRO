@@ -31,12 +31,11 @@ def load_zone(zone_id: int, cookies):
         try:
             output.append({
                 "id": int(seat['resourceName'].split(' ')[-1]),
-                "coordinates": {
-                    "x": round(seat["positionX"]),
-                    "y": round(seat["positionY"]),
-                    "width": 45,
-                    "height": 25
-                }
+                "x": round(seat["positionX"]),
+                "y": round(seat["positionY"]),
+                "width": 45,
+                "height": 25,
+                "rotation":0
             })
         except ValueError:
             print("value error for "+seat['resourceName'].split(' ')[-1])

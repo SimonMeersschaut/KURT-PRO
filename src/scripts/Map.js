@@ -44,20 +44,22 @@ class Map{
         gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
         
         // set the grid information
-        gridContainer.style.aspectRatio = `${rectangles["image_width"]} / ${rectangles["image_height"]}`;
+        gridContainer.style.aspectRatio = `${rectangles["image_height"]} / ${rectangles["image_width"]}`;
         gridContainer.style.gridTemplateRows = `repeat(${rectangles["image_width"]}, 1fr)`;
         gridContainer.style.gridTemplateColumns = `repeat(${rectangles["image_height"]}, 1fr)`;
 
-        console.log(rectangles)
-        Object.entries(rectangles["seats"]).forEach((entry) => {
+        Object.entries(rectangles["seats"]).forEach(([_, entry]) => {
             const seatNr = entry["id"];
-            const gridColumn = entry["coordinates"]["x"];
-            const gridRow = entry["coordinates"]["y"];
+            const gridColumn = `${entry["x"]} / ${entry["x"] + entry["width"]}`;
+            const gridRow = `${entry["y"]} / ${entry["y"] + entry["height"]}`;
+            const rotation = entry["rotation"];
+
 
             const gridItem = document.createElement("div");
             gridItem.id = `plaats-${seatNr}`;
             gridItem.style.gridColumn = gridColumn;
             gridItem.style.gridRow = gridRow;
+            gridItem.style.transform = `rotate(${rotation})`;
 
             if (seatNr == this.selectedSeat)
                 gridItem.classList.add("selected");
