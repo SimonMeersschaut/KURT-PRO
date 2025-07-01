@@ -111,9 +111,7 @@ function selectDay(mainContainer){
         let clock = new Clock();
         moreReservationsContainer.appendChild(clock.renderDOM());
         clock.hide();
-        addButton = document.createElement("button");
-        addButton.innerText = "Add reservation";
-        addButton.onclick = () => {
+        addButton = new Button(1, "Add reservation", () => {
             clock.show();
             // show zones
             clock.onupdate = () => {
@@ -137,11 +135,13 @@ function selectDay(mainContainer){
                 }
             };
             clock.onupdate();
-        }
+        });
+        moreReservationsMainContainer.appendChild(addButton.renderDOM());
         moreReservationsContainer.appendChild(moreReservationsMainContainer);
-        moreReservationsMainContainer.appendChild(addButton);
+        addButton.dom.style.marginTop = "5px";
+
         mainContainer.appendChild(moreReservationsContainer);
-        if (reservationsData.length == 0) addButton.click(); // if there is no reservation, theres no point in showing this button
+        if (reservationsData.length == 0) addButton.onclick(); // if there is no reservation, theres no point in showing this button
     })
 }
 

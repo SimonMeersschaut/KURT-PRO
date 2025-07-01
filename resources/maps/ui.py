@@ -2,7 +2,7 @@ import pygame
 import json
 import os
 
-ZONE_ID = 1
+ZONE_ID = 11
 
 # Initialize pygame
 pygame.init()
@@ -203,12 +203,12 @@ while running:
                     if pygame.key.get_mods() & pygame.KMOD_SHIFT:
                         for rect in selected_rectangles:
                             current_rotation = rect.get("rotation", 0)
-                            rect["rotation"] = (current_rotation - 22) % 360
+                            rect["rotation"] = (current_rotation - 10) % 360
                             print(f"Rotated rectangle {rect['id']} to {rect['rotation']} degrees (counterclockwise)")
                     else:
                         for rect in selected_rectangles:
                             current_rotation = rect.get("rotation", 0)
-                            rect["rotation"] = (current_rotation + 11) % 360
+                            rect["rotation"] = (current_rotation + 10) % 360
                             print(f"Rotated rectangle {rect['id']} to {rect['rotation']} degrees (clockwise)")
                 elif event.key == pygame.K_EQUALS or event.key == pygame.K_PLUS:
                     # Scale all selected rectangles to default size from their center
@@ -274,13 +274,13 @@ while running:
         # Draw rotated rectangle
         rect_surface = pygame.Surface((draw_rect.width, draw_rect.height), pygame.SRCALPHA)
         pygame.draw.rect(rect_surface, color, rect_surface.get_rect(), 2)
-        rotated_surface = pygame.transform.rotate(rect_surface, rotation)
+        rotated_surface = pygame.transform.rotate(rect_surface, -rotation)
         rotated_rect = rotated_surface.get_rect(center=draw_rect.center)
         screen.blit(rotated_surface, rotated_rect.topleft)
 
         # Render and rotate the identifier text
         text_surface = font.render(str(rect_data["id"]), True, (0, 0, 0))
-        text_surface = pygame.transform.rotate(text_surface, rotation)
+        text_surface = pygame.transform.rotate(text_surface, -rotation)
         text_rect = text_surface.get_rect(center=draw_rect.center)
         screen.blit(text_surface, text_rect)
 
