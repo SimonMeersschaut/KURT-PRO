@@ -15,7 +15,6 @@ clock_css = ...
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
 var settings = null;
-var clock = null;
 var daySelector = null;
 var log = null;
 
@@ -48,6 +47,20 @@ function getCookie(cname) {
     return "";
 }
 
+function getZoneId(name, nr){
+    if (name.startsWith("CBA - Zolder Seat "))
+        return 14;
+    else if (name.startsWith("Agora - Silent Study Seat ")){
+        if (nr < 200)
+            return 1;
+        else
+            return 2;
+    }
+    else if (name.startsWith("CBA - Boekenzaal Seat "))
+        return 11;
+    else throw new Error(`Identifier of zone '${name}' was not found. (seatNr: ${nr})`);
+}
+
 /*
 Calculates the dayIndex based on the selectedDay.
 The dayIndex represents the difference in days between the selectedDay and the current day.
@@ -68,116 +81,67 @@ function calculateDayIndex(selectedDay) {
 dayIndex = null;
 selectedDay = null;
 
-
-function viewZone(mainContainer, locationId, zoneId, zoneName){
-    // Show the map of that zone
-    mainContainer.innerHTML = "";
-    var map = new Map(zoneId, true, zoneName);
-    var selectedSeatCard = new SelectedSeatCard(buttons=[
-        new Button(
-            1, // type
-            "Book", // text
-            (seatNr, seatId, startTimeHours, endTimeHours) => {
-                // effectively book that seat
-                // updates the tunnel cache too!
-                bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, endTimeHours)
-                .then((success) => {
-                    if (success){
-                        // update the page
-                        selectDay(mainContainer);
-                    }
-                    else{
-                        // error
-                        throw new Error("An error occured while booking the seat. Please check the console for more details.");
-                    }
-                })
-            }
-        )
-    ]);
-    // render dom
-    const mapContainer = document.createElement("div");
-    mapContainer.id = "map-container";
-    mapContainer.appendChild(map.renderDOM());
-    mainContainer.appendChild(mapContainer);
-    mainContainer.appendChild(selectedSeatCard.renderDOM());
-    // event listeners
-    map.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
-    // fetch data
-    map.fetchMapData(locationId=locationId, zoneId=zoneId, selectedDay=selectedDay, startTime=clock.startTime, endTime=clock.endTime);
-}
-
 // TODO: docs and split code
 function selectDay(mainContainer){
     // Fetch favorite zones of the user
-    tunnel.hasReservationOn(dayIndex)
-    .then(reservationData => {
-        if (reservationData != null){
-            // There already is a reservation.
-            startTimeHours = parseInt(reservationData.startTime.split(":")[0]);
-            endTimeHours = parseInt(reservationData.endTime.split(":")[0]);
-            clock.disable();
-            clock.setText(`${startTimeHours}:00 - ${endTimeHours}:00`);
-            // get the id of the map
-            let zone_id = null;
-            if (reservationData["resourceName"].startsWith("CBA - Zolder Seat "))
-                zone_id = 14;
-            else if (reservationData["resourceName"].startsWith("Agora - Silent Study Seat ")){
-                if (reservationData["seatNr"] < 200)
-                    zone_id = 1;
+    tunnel.hasReservationsOn(dayIndex)
+    .then(reservationsData => {
+        // remove all elements in main container
+        mainContainer.innerHTML = "";
+        if (reservationsData.length > 0){
+            // There already are reservations.
+            for (let i=0; i<reservationsData.length; i++){
+                reservationData = reservationsData[i];
+                // get the id & name of the map
+                if (reservationData["zoneId"] !== undefined)
+                    zone_id = reservationData["zoneId"]; // cached from a reservation just made!
                 else
-                    zone_id = 2;
-            }
-            else if (reservationData["resourceName"].startsWith("CBA - Boekenzaal Seat "))
-                zone_id = 11;
-            else throw new Error(`Identifier of zone '${reservationData["resourceName"]}' was not found. (seatNr: ${reservationData["seatNr"]})`);
-            // show the reserved seat
-            let zoneName = reservationData["resourceName"].split(" - ")[1]
-            zoneName = zoneName.substring(0, zoneName.lastIndexOf(" ")); // remove last word (the seat number)
-            var map = new Map(zone_id, false, zoneName);
-            // show a information card
-            var selectedSeatCard = new SelectedSeatCard(buttons=[
-                new Button(
-                    1, // type
-                    "Change", // text
-                    () => {window.location.assign(`/edit-reservation/${reservationData.id}`);} // go to the page to edit the reservation
-                ),
-                new Button(
-                    2, // type
-                    "Cancel", // text
-                    () => {window.location.assign(`/reservations`);} // manage all reservations
-                ),
-            ]);
-            // remove all elements in main container
-            mainContainer.innerHTML = ""; 
-            // Render new DOM
-            mainContainer.appendChild(map.renderDOM());
-            mainContainer.appendChild(selectedSeatCard.renderDOM());
-            selectedSeatCard.setSeat(reservationData.seatNr, null);
-            selectedSeatCard.startTimeHours = startTimeHours;
-            selectedSeatCard.endTimeHours = endTimeHours;
-            selectedSeatCard.updateSeatTime();
-            // selectDay
-            tunnel.fetchMapData(zone_id)
-            .then(mapData => {
-                map.drawSeats(mapData);
-                map.handleSeatClick(seatNr=reservationData.seatNr, forceSelect=true);
-            })
-        }
-        else{
-            // No reservation, show zones
-            clock.enable();
-            clock.setText(null); // reset the text of the button
-            mainContainer.innerHTML = "";
-            // show all favorite zones
-            const favoriteZones = settings.getFavoriteZones();
-            for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
-                // for each zone
-                var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
-                mainContainer.appendChild(zoneCard.renderDOM());
-                zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
-                zoneCard.onclick = (locationId, zoneId, zoneName) => {viewZone(mainContainer, locationId, zoneId, zoneName)};
+                    zone_id = getZoneId(reservationData["resourceName"], reservationData["seatNr"]);
+                const zoneName = reservationData["resourceName"].split(" - ")[1]
+                // zoneName = zoneName.substring(0, zoneName.lastIndexOf(" ")); // remove last word (the seat number)
+                var map = new Map(0, zone_id, zoneName); // FIXME locationId
+                mainContainer.appendChild(map.renderDOM());
+                map.showReservation(reservationData);
             }
         }
+        // More reservations button
+        const moreReservationsContainer = document.createElement("div");
+        const moreReservationsMainContainer = document.createElement("div");
+
+        let clock = new Clock();
+        moreReservationsContainer.appendChild(clock.renderDOM());
+        clock.hide();
+        addButton = document.createElement("button");
+        addButton.innerText = "Add reservation";
+        addButton.onclick = () => {
+            clock.show();
+            // show zones
+            clock.onupdate = () => {
+                moreReservationsMainContainer.innerHTML = "";
+
+                // show all favorite zones
+                const favoriteZones = settings.getFavoriteZones();
+                for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
+                    // for each zone
+                    var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
+                    moreReservationsMainContainer.appendChild(zoneCard.renderDOM());
+                    zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
+                    zoneCard.onclick = (locationId, zoneId, zoneName) => {
+                        // Show the map of that zone
+                        moreReservationsMainContainer.innerHTML = "";
+                        var map = new Map(locationId, zoneId, zoneName);
+                        map.fetchMapData(locationId, zoneId, selectedDay, clock.startTime, clock.endTime);
+                        // render dom
+                        moreReservationsMainContainer.appendChild(map.renderDOM());
+                    };
+                }
+            };
+            clock.onupdate();
+        }
+        moreReservationsContainer.appendChild(moreReservationsMainContainer);
+        moreReservationsMainContainer.appendChild(addButton);
+        mainContainer.appendChild(moreReservationsContainer);
+        if (reservationsData.length == 0) addButton.click(); // if there is no reservation, theres no point in showing this button
     })
 }
 
@@ -200,12 +164,7 @@ function main(){
         // render the filters
         var filtersContainer = document.createElement("div")
         filtersContainer.id = "filter-container";
-        clock.onupdate = () => {
-            settings.startTimeHours = clock.startTime;
-            settings.endTimeHours = clock.endTime;
-            selectDay(mainContainer)
-        };
-        filtersContainer.appendChild(clock.renderDOM());
+        
         filtersContainer.appendChild(settings.renderDOM());
         document.body.appendChild(filtersContainer);
     
@@ -234,16 +193,9 @@ function main(){
         };
     
         // Fetch future reservations and update the selectors
-        tunnel.getReservedDays()
-        .then(reservedDays => {
-            daySelector.reservedDays = reservedDays;
-            daySelector.updateClasses();
-            // // open today
-            daySelector.selectDay(0);
-        })
-        .catch(error => {
-            log.error("Error updating reserved days:", error);
-        });
+        daySelector.updateClasses();
+        // open today
+        daySelector.selectDay(0);
     })
 }
 
@@ -251,6 +203,7 @@ function onLoad(){
     // Check if the extention should run on this url
     if (activeUrl()){
         /*
+        TODO
         */
        log = new Log();
         /*
@@ -258,10 +211,10 @@ function onLoad(){
         as well as holding the data (your current preferences).
         */
         settings = new Settings();
-        /*
-        The clock is a user interface to select a time (for reservations).
-        */
-        clock = new Clock();
+        // /*
+        // The clock is a user interface to select a time (for reservations).
+        // */
+        // clock = new Clock();
         /*
         The tunnel will be an interface between the front-end and the back-end and will perform caching.
         */
@@ -288,7 +241,9 @@ function onLoad(){
         if (isChangeReservationUrl()){
             setTimeout(() => {
                 document.getElementById("mat-input-0").value = "Study";
+                document.getElementById("mat-input-0").dispatchEvent(new Event("input"));
                 document.getElementById("mat-input-1").value = "(KURT-PRO) Change the details of the reservation.";
+                document.getElementById("mat-input-1").dispatchEvent(new Event("input"));
 
                 const inputs = document.getElementsByTagName("input");
                 for (let i = 0; i < inputs.length; i++)

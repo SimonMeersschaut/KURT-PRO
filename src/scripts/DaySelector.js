@@ -28,7 +28,6 @@ class DaySelector{
     constructor(settingsButton){
         this.settingsButton = settingsButton
         this.selectedDayIndex = null; // Will index the current selected day (defualt=today)
-        this.reservedDays = [null, null, null, null, null, null, null, null]; // will cache on what days the user has reservations (dicts with the reservation) // FIXME: what when there are multiple reservations??
         this.onClickDay = null; // defautl value
     }
 
@@ -75,7 +74,7 @@ class DaySelector{
         daySelector.id = "daySelector-" + dayIndex.toString()
         daySelector.classList.add("daySelector");
         daySelector.className = selectorClasses(true, null, null);
-        daySelector.innerText = weekday[0];
+        daySelector.innerText = weekday[0]+weekday[1];
 
         daySelector.addEventListener("click", (event) => {
             this.selectDay(dayIndex);
@@ -101,8 +100,10 @@ class DaySelector{
         for (let i = 0; i <= 8; i++){
             let daySelector = document.getElementById("daySelector-" + i.toString());
             let selected = (i == this.selectedDayIndex);
-            let reserved = this.reservedDays[i];
-            daySelector.className = selectorClasses(false, selected, reserved);
+            tunnel.hasReservationsOn(i).then(resp => {
+                let reserved = (resp.length > 0);
+                daySelector.className = selectorClasses(false, selected, reserved);
+            })
         }
     }    
 }

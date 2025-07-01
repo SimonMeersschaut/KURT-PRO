@@ -2,14 +2,15 @@ class Popup{
     constructor(title, innerHTML, buttonText="Save changes"){
         this.title = title;
         this.innerHTML = innerHTML;
-        this.onclick = null;
+        this.dom = null;
+        this.onclick = null; // on null -> just close the popup
         this.buttonText = buttonText
     }
 
     show(){
-        const container = document.createElement("div");
-        container.className = "modal fade"
-        container.innerHTML = `
+        this.dom = document.createElement("div");
+        this.dom.className = "modal fade"
+        this.dom.innerHTML = `
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
@@ -26,11 +27,11 @@ class Popup{
         </div>`
 
         // Add `container` as first element of `body`
-        document.body.insertBefore(container, document.body.firstChild);
+        document.body.insertBefore(this.dom, document.body.firstChild);
 
         // Show the modal by adding Bootstrap's "show" and "modal-backdrop" classes
-        container.classList.add("show");
-        container.style.display = "block";
+        this.dom.classList.add("show");
+        this.dom.style.display = "block";
 
         // Create and append a backdrop
         const backdrop = document.createElement("div");
@@ -39,24 +40,26 @@ class Popup{
 
         // Close the modal when the close button or backdrop is clicked
         const closeModal = () => {
-            container.classList.remove("show");
-            container.style.display = "none";
+            this.dom.classList.remove("show");
+            this.dom.style.display = "none";
             backdrop.remove();
-            container.remove();
+            this.dom.remove();
         };
 
         // Save data when the "Save changes" button is clicked
-        const saveButton = container.querySelector(".btn-primary");
+        const saveButton = this.dom.querySelector(".btn-primary");
         saveButton.addEventListener("click", () => {
-            if (this.onclick == null)
-                log.warn("`onclick` is `null`.");
+            if (this.onclick == null){
+                // log.warn("`onclick` is `null`.");
+                // pass
+            }
             else
                 this.onclick();
             closeModal();
         });
 
-        container.querySelector(".btn-close").addEventListener("click", closeModal);
-        container.querySelector("[data-bs-dismiss='modal']").addEventListener("click", closeModal);
+        this.dom.querySelector(".btn-close").addEventListener("click", closeModal);
+        this.dom.querySelector("[data-bs-dismiss='modal']").addEventListener("click", closeModal);
         backdrop.addEventListener("click", closeModal);
 
     }

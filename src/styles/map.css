@@ -1,15 +1,3 @@
-/* @keyframes shadowPulse{
-    0%{
-        box-shadow: 0 0 5px 4px #00ff1a;
-    }
-    50%{
-        box-shadow: 0 0 15px 3px #00ff1a;
-    }
-    100%{
-        box-shadow: 0 0 5px 4px #00ff1a;
-    }
-} */
-
 .grid {
     max-height: 87vh; /* Set a maximum height */
     display: grid;
@@ -35,16 +23,18 @@
     /* tran */
 }
 
-.grid.selectable div {
+.grid div {
     /* TAKEN SEAT */
     cursor: default;
     background-color: rgba(0, 0, 0, 0.604);
 }
 
-.grid.selectable .free {
+.grid .free {
     /* FREE SEAT */
-    cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+}
+.grid.selectable .free{
+    cursor: pointer;
 }
 
 
@@ -52,11 +42,7 @@
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.booked {
-    background-color: rgba(255, 97, 97, 0.5);
-}
-
-.grid .selected {
+.grid.selectable .selected {
     background-color: #00ff1a73 !important;
 }
 

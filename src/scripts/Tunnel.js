@@ -38,7 +38,7 @@ class Tunnel{
         }
 
         try {
-            const output = [null, null, null, null, null, null, null, null, null];
+            const output = [[], [], [], [], [], [], [], [], []];
             const d = new Date();
 
             data.forEach(reservation => {
@@ -47,13 +47,13 @@ class Tunnel{
                 if (dayIndex >= 0 && dayIndex <= 8) {
                     let seatNr = parseInt(reservation["resourceName"].split(" ")[reservation["resourceName"].split(" ").length - 1]);
                     const data = {... reservation, seatNr: seatNr}
-                    output[dayIndex] = data;
+                    output[dayIndex].push(data);
                 }
             });
             return output;
         } catch (error) {
             log.error("Error fetching reserved days:", error);
-            return [null, null, null, null, null, null, null, null, null];
+            return [[], [], [], [], [], [], [], [], []];
         }
     }
 
@@ -76,10 +76,9 @@ class Tunnel{
     /*
     TODO: docs
     */
-    async hasReservationOn(dayIndex){
+    async hasReservationsOn(dayIndex){
         const reservedDays = await this.getReservedDays();
         return reservedDays[dayIndex];
-        // return true;
     }
 
     /*
@@ -190,10 +189,21 @@ class Tunnel{
         }
     EXPECTED MESSAGE: "Your reservation has been created. You will receive an e-mail confirmation. The following attendees were validated: R1039801;. (Do not forget to log off on public computers.)"
     */
-    async bookSeat(dayIndex, seatNr, seatId, startDateString, endDateString, startTimeHours, endTimeHours) {
+    async bookSeat(zoneId, zoneName, seatId, seatNr, startDateString, endDateString, startTimeHours, endTimeHours) {
+        if (zoneId == undefined || zoneId == null) throw new Error("'zoneId' was null or undefined.");
+        if (zoneName == undefined || zoneName == null) throw new Error("'zoneName' was null or undefined.");
+        if (seatId == undefined || seatId == null) throw new Error("'seatId' was null or undefined.");
+        if (startDateString == undefined || startDateString == null) throw new Error("'startDateString' was null or undefined.");
+        if (endDateString == undefined || endDateString == null) throw new Error("'endDateString' was null or undefined.");
+        if (startTimeHours == undefined || startTimeHours == null) throw new Error("'startTimeHours' was null or undefined.");
+        if (endTimeHours == undefined || endTimeHours == null) throw new Error("'endTimeHours' was null or undefined.");
+
         const bodyData = {
+            "zoneId": zoneId,
+            "seatNr": seatNr,
+            // legit:
             "id": parseInt(seatId),
-            "resourceName": ` ${seatNr}`, // original "CBA - Boekenzaal Seat 137" // TODO: volledige naam?
+            "resourceName": ` - ${zoneName} ${seatNr}`, // original "CBA - Boekenzaal Seat 137"
             "subject": "", // original: "CBA - Boekenzaal Seat 137"
             "purpose": "",
             "resourceId": parseInt(seatId),
@@ -226,7 +236,11 @@ class Tunnel{
 
         if (response.ok) {
             if (this.reservationCache != null){
+                // insert bodyData in reservationCache at the right place
                 this.reservationCache.push(bodyData);
+                this.reservationCache.sort(function(reservationData){
+                    return parseInt( reservationData["startTime"].split(" ")[0] );
+                })
             }
 
             if (responseText.startsWith('"Your reservation has been created.')) {

@@ -2,26 +2,27 @@ class Clock{
     constructor(){
         this.startTime = settings.startTimeHours;
         this.endTime = settings.endTimeHours;
-        this.container = null;
+        this.dom = null;
+        this.popup = null;
         this.onupdate = null;
     }
 
     renderDOM(){
-        this.container = document.createElement("div");
-        this.container.id = "timer-preview";
-        this.container.className = "btn btn-light clockPreview";
-        this.container.onclick = () => {this.showPopup()};
-        this.container.innerText = `${this.startTime}:00 - ${this.endTime}:00`;
-        return this.container;
+        this.dom = document.createElement("div");
+        this.dom.id = "timer-preview";
+        this.dom.className = "btn btn-light clockPreview";
+        this.dom.onclick = () => {this.showPopup()};
+        this.dom.innerText = `${this.startTime}:00 - ${this.endTime}:00`;
+        return this.dom;
     }
 
     // display text of the button
     setText(text){
         if (text == null){
-            document.getElementById("timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`
+            this.dom.querySelector("#timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`
             return;
         }
-        document.getElementById("timer-preview").innerText = text;
+        this.dom.querySelector("#timer-preview").innerText = text;
     }
 
     showPopup() {
@@ -46,7 +47,7 @@ class Clock{
         this.popup.show();
 
         // Add times to select tags
-        var selector = document.getElementById("start-time-selector");
+        var selector = this.popup.dom.querySelector("#start-time-selector");
         selector.onchange = () => {this.updatePreview()};
         // Set time slots for this selector
         for (let t = 8; t <= 24; t++) {
@@ -56,7 +57,7 @@ class Clock{
             option.selected = (t == this.startTime);
             selector.appendChild(option);
         }
-        var selector = document.getElementById("end-time-selector");
+        var selector = this.popup.dom.querySelector("#end-time-selector");
         selector.onchange = () => {this.updatePreview()};
         // Set time slots for this selector
         for (let t = 8; t <= 24; t++) {
@@ -71,9 +72,9 @@ class Clock{
     }
 
     updatePreview(){
-        const dangerAlert = document.getElementById("time-selector-error");
-        this.startTime = parseInt( document.getElementById("start-time-selector").value );
-        this.endTime = parseInt( document.getElementById("end-time-selector").value );
+        const dangerAlert = this.popup.dom.querySelector("#time-selector-error");
+        this.startTime = parseInt( this.popup.dom.querySelector("#start-time-selector").value );
+        this.endTime = parseInt( this.popup.dom.querySelector("#end-time-selector").value );
 
         if (this.startTime > this.endTime){
             dangerAlert.innerText = "The start time was later than the end time, which is not valid.";
@@ -89,7 +90,7 @@ class Clock{
         dangerAlert.innerText = "";
         dangerAlert.style.display = "none";
 
-        document.getElementById("timer-preview").innerText = `${this.startTime}:00 - ${this.endTime}:00`;
+        this.dom.innerText = `${this.startTime}:00 - ${this.endTime}:00`;
         if (this.onupdate != null)
             this.onupdate();
 
@@ -98,7 +99,7 @@ class Clock{
 
     updateLimitBadge(){
         // update week limit badge
-        var weekLimitBadge = document.getElementById("time-selector-week-limit");
+        var weekLimitBadge = this.popup.dom.querySelector("#time-selector-week-limit");
         tunnel.getUssage()
         .then((usage) => {
             // calculate delta time
@@ -131,19 +132,19 @@ class Clock{
         );
     }
 
-    // show(){
-    //     document.getElementById("timer-preview").style.display = "inline-block";
-    // }
+    hide(){
+        this.dom.style.display = "none";
+    }
 
-    // hide(){
-    //     document.getElementById("timer-preview").style.display = "none";
-    // }
+    show(){
+        this.dom.style.display = "inline-block";
+    }
 
     disable(){
-        document.getElementById("timer-preview").classList.add("disabled");
+        this.dom.classList.add("disabled");
     }
 
     enable(){
-        document.getElementById("timer-preview").classList.remove("disabled");
+        this.dom.classList.remove("disabled");
     }
 }

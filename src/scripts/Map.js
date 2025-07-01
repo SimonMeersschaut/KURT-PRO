@@ -2,19 +2,21 @@
 Each instance of this class represents a map of a zone with a grid and calculated seat positions.
 */
 class Map{
-    constructor(zoneId, enableSelecting, zoneName){
+    constructor(locationId, zoneId, zoneName){
+        if (locationId == null) throw new Error("locationId was null");
+        if (zoneId == null) throw new Error("zoneId was null");
         if (zoneName == null) throw new Error("zoneName was null");
+        this.locationId = locationId;
         this.zoneName = zoneName;
         this.zoneId = zoneId;
-        this.enableSelecting = enableSelecting;
-        this.onSelectSeat = null;
-        this.selectedSeat = null;
+        this.dom = null;
         this.backgroundImage = `https://github.com/SimonMeersschaut/KURT-PRO/blob/main/resources/maps/zones/`+this.zoneId+`/map.png?raw=true`
         this.initialized = false; // will be set on true when the map is loaded initially
+        this.reservationData = null;
     }
 
     renderDOM(){
-        const container = document.createElement("div");
+        this.dom = document.createElement("div");
         const zoneNameP = document.createElement("p");
 
         zoneNameP.id = "zoneNameP";
@@ -24,82 +26,13 @@ class Map{
         map.classList.add("grid");
         map.id = "grid";
 
-        container.appendChild(zoneNameP);
-        container.appendChild(map);
-
-        return container;
+        this.dom.appendChild(zoneNameP);
+        this.dom.appendChild(map);
+        // fetch and display seats
+        this.fetchMapData(this.locationId, this.zoneId, selectedDay, 8, 10); // FIXME change to clock
+        return this.dom;
     }
     
-    // TODO: DOCS
-    drawSeats(rectangles){
-        // if (disabledSeats == null)
-        //     disabledSeats = [];
-        // Set hover animation
-        if (this.enableSelecting){
-            document.getElementById('grid').classList.add('selectable');
-        }
-        
-        document.getElementById("zoneNameP").innerText = this.zoneName;
-        const gridContainer = document.getElementById('grid');
-        gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
-        
-        // set the grid information
-        gridContainer.style.aspectRatio = `${rectangles["image_width"]} / ${rectangles["image_height"]}`;
-        gridContainer.style.gridTemplateRows = `repeat(${rectangles["image_height"]}, 1fr)`;
-        gridContainer.style.gridTemplateColumns = `repeat(${rectangles["image_width"]}, 1fr)`;
-
-        Object.entries(rectangles["seats"]).forEach(([_, entry]) => {
-            const seatNr = entry["id"];
-            const gridItem = document.createElement("div");
-            gridItem.id = `plaats-${seatNr}`;
-            
-            gridItem.style.gridRowStart = entry["y"];
-            gridItem.style.gridRowEnd = entry["y"] + entry["height"];
-            gridItem.style.gridColumnStart = entry["x"];
-            gridItem.style.gridColumnEnd = entry["x"] + entry["width"];
-
-            gridItem.style.transform = `rotate(${entry["rotation"]}deg)`;
-
-            if (seatNr == this.selectedSeat)
-                gridItem.classList.add("selected");
-            gridItem.onclick = () => {this.handleSeatClick(seatNr)};
-            gridContainer.appendChild(gridItem);
-        })
-    }
-    /*
-    Handle the user clicking on a seat.
-    
-    forceSelect will overwrite enableSelecting
-    */
-    handleSeatClick(seatNr, forceSelect=false){
-        if (!forceSelect)
-            if (!this.enableSelecting)
-                return;
-        
-        const seatDOM = document.getElementById(`plaats-${parseInt(seatNr)}`);
-        if (seatDOM == null)
-            throw new Error(`Seat with identifier 'plaats-${seatNr}' was not found.`);
-
-        if (!seatDOM.classList.contains("free") && !forceSelect)
-            return;
-
-        this.selectedSeat = seatNr;
-
-        // de-select all other seats
-        Array.from(document.getElementsByClassName("selected")).forEach((element) => {
-            element.classList.remove("selected")
-        });
-        // select this element
-        seatDOM.classList.add("selected");
-
-        // get the seat Id
-        const seatId = seatDOM.getAttribute("seatId");
-
-        // Call event listener
-        if (this.onSelectSeat != null)
-            this.onSelectSeat(seatNr, seatId);
-    }
-
     /*
     */
    fetchMapData(locationId, zoneId, selectedDay, startTime, endTime){
@@ -110,18 +43,18 @@ class Map{
         .then(mapData => {
             if (!this.initialized){
                 // first initialize the map
-                this.drawSeats(mapData);
+                this.drawSeats(mapData, zoneId, startTime, endTime);
                 this.initialized = true;
             }
-
+ 
             if (this.initialized){
                 // remove all 'free' classes
-                const freeSeats = document.getElementsByClassName("free");
+                const freeSeats = this.dom.getElementsByClassName("free");
                 for (let i=0; i<freeSeats.length; i++){
                     freeSeats[i].classList.remove("free");
                 }
                 // remove the selected seat(s)
-                const selectedSeats = document.getElementsByClassName("selected");
+                const selectedSeats = this.dom.getElementsByClassName("selected");
                 for (let i=0; i<selectedSeats.length; i++){
                     selectedSeats[i].classList.remove("selected");
                 }
@@ -140,7 +73,7 @@ class Map{
                         const seatInfo = seatQueue.shift();
                         if (seatInfo["seatNr"] == undefined)
                             throw new Error("`seatInfo` had no attribute `seatNr`.");
-                        const seatDOM = document.getElementById(`plaats-${seatInfo["seatNr"]}`)
+                        const seatDOM = this.dom.querySelector(`#plaats-${seatInfo["seatNr"]}`)
                         if (seatDOM == null)
                             throw new Error(`Seat identifier "plaats-${seatInfo["seatNr"]}" was not found.`);
                         seatDOM.setAttribute("seatId", seatInfo["id"])
@@ -168,8 +101,143 @@ class Map{
         })
    }
 
-   disable(){
-        document.getElementById('grid').classList.remove('selectable');
-        this.enableSelecting = false;
-   }
+    // TODO: DOCS
+    drawSeats(rectangles, zoneId, startTimeHours, endTimeHours){
+        this.dom.querySelector('#grid').classList.add('selectable');
+        
+        this.dom.querySelector("#zoneNameP").innerText = this.zoneName;
+        const gridContainer = this.dom.querySelector('#grid');
+        gridContainer.style.backgroundImage = `url("`+this.backgroundImage+`")`
+        
+        // set the grid information
+        gridContainer.style.aspectRatio = `${rectangles["image_width"]} / ${rectangles["image_height"]}`;
+        gridContainer.style.gridTemplateRows = `repeat(${rectangles["image_height"]}, 1fr)`;
+        gridContainer.style.gridTemplateColumns = `repeat(${rectangles["image_width"]}, 1fr)`;
+
+        Object.entries(rectangles["seats"]).forEach(([_, entry]) => {
+            const seatNr = entry["id"];
+            const gridItem = document.createElement("div");
+            gridItem.id = `plaats-${seatNr}`;
+            
+            gridItem.style.gridRowStart = entry["y"];
+            gridItem.style.gridRowEnd = entry["y"] + entry["height"];
+            gridItem.style.gridColumnStart = entry["x"];
+            gridItem.style.gridColumnEnd = entry["x"] + entry["width"];
+
+            gridItem.style.transform = `rotate(${entry["rotation"]}deg)`;
+
+            if (seatNr == this.selectedSeat)
+                gridItem.classList.add("selected");
+            gridItem.onclick = () => {this.handleSeatClick(seatNr)};
+            gridContainer.appendChild(gridItem);
+        })
+
+        if (this.reservationData == null){
+            // no reservation
+            var selectedSeatCard = new SelectedSeatCard([
+                new Button(
+                    1, // type
+                    "Book", // text
+                    (seatNr, seatId, startTimeHours, endTimeHours) => {
+                        // effectively book that seat
+                        // updates the tunnel cache too!
+                        bookSeat(zoneId, this.zoneName, seatId, seatNr, selectedDay, startTimeHours, endTimeHours)
+                        .then((success) => {
+                            if (success){
+                                // update the page
+                                selectDay(document.getElementById("main"));
+                            }
+                            else{
+                                // error
+                                throw new Error("An error occured while booking the seat. Please check the console for more details.");
+                            }
+                        })
+                    }
+                )
+            ], startTimeHours, endTimeHours);
+            // selectedSeatCard.setSeatTime(startTimeHours, endTimeHours);
+            this.dom.appendChild(selectedSeatCard.renderDOM());
+            // event listeners
+            this.onSelectSeat = (seatNr, seatId) => {selectedSeatCard.setSeat(seatNr, seatId)};
+        }
+        else{
+            // reservation
+            this.dom.querySelector('#grid').classList.remove("selectable");
+            // show a information card
+            const _startTimeHours = parseInt(this.reservationData.startTime.split(":")[0]);
+            const _endTimeHours = parseInt(this.reservationData.endTime.split(":")[0]);
+            var selectedSeatCard = new SelectedSeatCard([
+                new Button(
+                    1, // type
+                    "Change", // text
+                    () => {window.location.assign(`/edit-reservation/${this.reservationData["id"]}`);} // go to the page to edit the reservation
+                ),
+                new Button(
+                    2, // type
+                    "Cancel", // text
+                    () => {window.location.assign(`/reservations`);} // manage all reservations
+                ),
+            ], _startTimeHours, _endTimeHours);
+            this.dom.appendChild(selectedSeatCard.renderDOM());
+            // show reserved seat
+            selectedSeatCard.setTitle(this.reservationData["seatNr"]);
+            const seatDOM = this.dom.querySelector(`#plaats-${this.reservationData["seatNr"]}`);
+            seatDOM.style.backgroundColor = "#00ff1ac5";
+            seatDOM.disabled = true;
+            // event listener
+            this.onSelectSeat = (seatNr, seatId) => {};
+        }
+    }
+
+    /*
+    Handle the user clicking on a seat.
+    */
+    handleSeatClick(seatNr){
+        const seatDOM = this.dom.querySelector(`#plaats-${parseInt(seatNr)}`);
+        if (seatDOM == null)
+            throw new Error(`Seat with identifier 'plaats-${seatNr}' was not found.`);
+
+        if (!seatDOM.classList.contains("free"))
+            return;
+
+        this.selectedSeat = seatNr;
+
+        // de-select all other seats
+        Array.from(this.dom.getElementsByClassName("selected")).forEach((element) => {
+            element.classList.remove("selected")
+        });
+        // select this element
+        seatDOM.classList.add("selected");
+
+        // get the seat Id
+        const seatId = seatDOM.getAttribute("seatId");
+
+        // Call event listener
+        this.onSelectSeat(seatNr, seatId);
+    }
+
+
+    showReservation(reservationData){
+        this.reservationData = reservationData;
+        // 
+        // 
+        // clock.setText(`${startTimeHours}:00 - ${endTimeHours}:00`);
+        // clock.disable();
+
+        
+        
+        // Render new DOM
+        // mainContainer.appendChild(map.renderDOM());
+        // mainContainer.appendChild(selectedSeatCard.renderDOM());
+        // selectedSeatCard.setSeat(reservationData.seatNr, null);
+        // selectedSeatCard.startTimeHours = startTimeHours;
+        // selectedSeatCard.endTimeHours = endTimeHours;
+        // selectedSeatCard.updateSeatTime();
+
+        // tunnel.fetchMapData(zone_id)
+        // .then(mapData => {
+        //     map.drawSeats(mapData);
+        //     map.handleSeatClick(seatNr=reservationData.seatNr, forceSelect=true);
+        // })
+    }
 }

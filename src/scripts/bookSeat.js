@@ -4,7 +4,7 @@ Effectively book that seat.
 
 TODO: define return types
 */
-async function bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, endTimeHours){
+async function bookSeat(zoneId, zoneName, seatId, seatNr, selectedDay, startTimeHours, endTimeHours){
     const loader = new Loader(`Booking seat ${seatId}`);
     const startDate = new Date(selectedDay.getFullYear(), selectedDay.getMonth(), selectedDay.getDate());
     const endDate = new Date(selectedDay.getFullYear(), selectedDay.getMonth(), selectedDay.getDate());
@@ -17,9 +17,10 @@ async function bookSeat(dayIndex, seatNr, seatId, selectedDay, startTimeHours, e
 
     try{
         await tunnel.bookSeat(
-            dayIndex=dayIndex,
-            seatNr=seatNr,
+            zoneId=zoneId,
+            zoneName=zoneName,
             seatId=seatId,
+            seatNr=seatNr,
             startDateString=dateToString(startDate),
             endDateString=dateToString(endDate),
             startTimeHours=startTimeHours,
