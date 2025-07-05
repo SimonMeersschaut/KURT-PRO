@@ -63,18 +63,9 @@ class Settings{
     render the popup and put it in the DOM
     */
     openSettingsPage(){
-        // const settingsData = this.loadSettingsData();
-        const popup = new Popup("Settings", `
-            <div style="display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center;">
-                <label for="settings-Favorite-zones">Favorite zones:</label>
-                <br />
-                <button class="btn btn-outline-secondary" onclick="window.location.assign('/')"> Exit KURT-PRO</button>
-            </div>`);
-        //<div id="settings-Favorite-zones" value="${settingsData.favoriteZones || '(favorite zones)'}">(favorite zones)</div>
+        const popup = new Popup("Settings", this.renderDOM());
+        popup.onclick = () => {daySelector.selectDay(0)}
         popup.show();
-        popup.onclick = () => {this.saveSettingsData()};
-
-        // document.getElementById("settings-time-selector").appendChild(this.clock.renderDOM());
     }
 
     /*
@@ -101,27 +92,26 @@ class Settings{
     /*
     This function will return the favorite zones of this user in order.
     */
-    getFavoriteZones(){
-        const defaultValue = [
-            {"locationId": 10, "zoneId": 2, "name": "Agora - Silent study 2"},
-            {"locationId": 10, "zoneId": 1, "name": "Agora - Silent study 1"},
-            {"locationId": 1, "zoneId": 11, "name": "Arenberg - De boekenzaal"},
-            {"locationId": 1, "zoneId": 10, "name": "Arenberg - Leeszaal"},
-            {"locationId": 1, "zoneId": 14, "name": "Arenberg - De zolder"},
-            {"locationId": 1, "zoneId": 8, "name": "Arenberg - Kelder"},
-        ];
-        // const cookie = getCookie(this.FAVORITE_ZONES_CNAME);
-        // if (cookie == ""){
-        //     this.setFavoriteZones(defaultValue);
-        //     return defaultValue;
-        // }
-        // try{
-        //     return JSON.parse(cookie);
-        // }catch(e){
-        //     // Unexpected non-whitespace character after JSON at position 62 (line 1 column 63)
-        //     this.setFavoriteZones(defaultValue);
-        // }
-        return defaultValue;
+    getFavoriteZoneIds(){
+        function parseString(value){
+            return value.split(",").map(x => parseInt(x));
+        }
+
+        const defaultValue = "2"; // Silent Study 2
+        const cookie = getCookie(this.FAVORITE_ZONES_CNAME);
+
+        if (cookie == ""){
+            this.setFavoriteZones(defaultValue);
+            return parseString(defaultValue); TODO
+        }
+        try{
+            return parseString(cookie);
+        }catch(e){
+            // Unexpected non-whitespace character after JSON at position 62 (line 1 column 63)
+            this.setFavoriteZones(defaultValue);
+            log.error(e);
+            return parseString(defaultValue);
+        }
     }
 
     /**
@@ -138,24 +128,72 @@ class Settings{
     setFavoriteZones(value){
         setCookie(
             this.FAVORITE_ZONES_CNAME,
-            JSON.stringify(value),
+            value,
             this.EXDAYS
         );
     }
 
     renderDOM(){
-        const button = document.createElement("button");
-        button.innerText = "Settings";
-        button.onclick = this.openSettingsPage;
-        button.classList.add("btn");
-        button.classList.add("btn-light");
-        button.id = "settings-button";
-        return button;
+        let container = document.createElement("div");
+
+        // favorite zones
+        let label = document.createElement("label");
+        label.innerText = "Favorite zones:";
+        container.appendChild(label);
+
+        container.appendChild(document.createElement("br"));
+
+        // draw all zone selectors
+        var selectedZones = this.getFavoriteZoneIds();
+        for (let i=0; i<ALL_ZONES.length; i++){
+            // selectionButton
+            let selectionButton = document.createElement("input");
+            selectionButton.type = "checkbox";
+            selectionButton.className = "form-check-input mt-0";
+            // is checked:
+            let selected = selectedZones.some( (item) => item == ALL_ZONES[i]["zoneId"] );
+            selectionButton.checked = selected;
+            container.appendChild(selectionButton);
+            // event listener (click)
+            selectionButton.onchange = (ev) => {
+                let isChecked = ev.target.checked;
+                if (isChecked){
+                    // add to favorites
+                    selectedZones.push(ALL_ZONES[i]["zoneId"]);
+                    this.setFavoriteZones(selectedZones.join(","));
+                }
+                else{
+                    // check if selection is valid
+                    if (selectedZones.length <= 1){
+                        // not valid, reselect
+                        ev.target.checked = true;
+                    }
+                    else{
+                        // remove from favorites
+                        const index = selectedZones.indexOf(ALL_ZONES[i]["zoneId"]);
+                        selectedZones.splice(index, 1);
+                        this.setFavoriteZones(selectedZones.join(","));
+                    }
+                }
+                
+            }
+            
+            let zoneLabel = document.createElement("label");
+            zoneLabel.innerText = ALL_ZONES[i]["name"];
+            container.appendChild(zoneLabel);
+
+            container.appendChild(document.createElement("br"));
+        }
+
+        container.appendChild(document.createElement("br"));
+
+        // exit kurt-pro
+        let exitButton = document.createElement("button");
+        exitButton.innerText = "Exit KURT-PRO";
+        exitButton.className = "btn btn-outline-secondary";
+        exitButton.onclick = () => {window.location.assign("/")};
+        container.appendChild(exitButton);
+
+        return container;
     }
-
-    // (){
-    //     const popup = new Popup("Settings", "<h3>Not implemented yet...</h3>", "Save");
-    //     popup.show();
-    // }
-
 }

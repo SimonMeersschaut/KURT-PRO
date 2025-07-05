@@ -1,6 +1,14 @@
 class ZoneCard{
-    constructor(zoneData){
-        this.zoneData = zoneData;
+    constructor(zoneId){
+        // get zoneData based on zoneId
+        const candidates = ALL_ZONES.filter((item) => item["zoneId"] == zoneId)
+        if (candidates.length == 1)
+            this.zoneData = candidates[0];
+        else if (candidates.length > 1)
+            log.error(`Too many candidates for zoneId=${zoneId}`);
+        else
+            log.error(`No candidates for zoneId=${zoneId}`);
+
         this.onclick = null; // defualt value
     }
 

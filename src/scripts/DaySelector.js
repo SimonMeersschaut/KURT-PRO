@@ -47,13 +47,17 @@ class DaySelector{
             var daySelector = this.createDayButton(i, weekday);
             selectorContainer.appendChild(daySelector);
         }
+        
+        // add settings button
         if (this.settingsButton){
             var settingsButtonDOM = document.createElement("div");
             settingsButtonDOM.id = "settings-button";
             settingsButtonDOM.classList.add("btn");
             settingsButtonDOM.classList.add("btn-outline-dark");
             settingsButtonDOM.innerHTML = SETTINGS_SVG;
-            settingsButtonDOM.onclick = (event) => {settings.showPopup()}
+            settingsButtonDOM.style.paddingLeft = "revert";
+            settingsButtonDOM.style.paddingRight = "revert";
+            settingsButtonDOM.onclick = (event) => {settings.openSettingsPage()}
             selectorContainer.appendChild(settingsButtonDOM);
         }
         // return the DOM
@@ -74,7 +78,7 @@ class DaySelector{
         daySelector.id = "daySelector-" + dayIndex.toString()
         daySelector.classList.add("daySelector");
         daySelector.className = selectorClasses(true, null, null);
-        daySelector.innerText = weekday[0]+weekday[1];
+        daySelector.innerText = weekday[0];
 
         daySelector.addEventListener("click", (event) => {
             this.selectDay(dayIndex);

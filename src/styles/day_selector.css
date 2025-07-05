@@ -5,12 +5,12 @@
     margin-bottom: 5px; /* Space between cards */
     /* border: solid 1px rgba(0, 0, 0, 0.175); */
     /* border-radius: 10px; */
-    padding: 5px;
-    margin: 5px;
+    /* padding: 5px;
+    margin: 5px; */
 }
 
 #daySelectorContainer div.btn{
-    width: 50px;
+    width: 40px;
 }
 
 /*

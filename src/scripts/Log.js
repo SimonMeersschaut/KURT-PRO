@@ -7,9 +7,11 @@ class Log{
     constructor(){ }
 
     error(title, msg){
+        const label = document.createElement("label")
+        label.innerText = msg;
         const popup = new Popup(
             `Error - ${title}`,
-            msg,
+            label,
             "Close"
         );
         popup.show();
@@ -18,9 +20,11 @@ class Log{
     /*
     */
     warn(title, msg){
+        const label = document.createElement("label")
+        label.innerText = msg;
         const popup = new Popup(
             `Warning - ${title}`,
-            msg,
+            label,
             "Close"
         );
         popup.show();

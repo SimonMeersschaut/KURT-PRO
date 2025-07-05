@@ -12,6 +12,15 @@ loader_css = ...
 clock_css = ...
 */
 
+const ALL_ZONES = [
+    {"locationId": 10, "zoneId": 2, "name": "Agora - Silent study 2"},
+    {"locationId": 10, "zoneId": 1, "name": "Agora - Silent study 1"},
+    {"locationId": 1, "zoneId": 11, "name": "Arenberg - De boekenzaal"},
+    {"locationId": 1, "zoneId": 10, "name": "Arenberg - Leeszaal"},
+    {"locationId": 1, "zoneId": 14, "name": "Arenberg - De zolder"},
+    {"locationId": 1, "zoneId": 8, "name": "Arenberg - Kelder"},
+];
+
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.
 var settings = null;
@@ -118,10 +127,10 @@ function selectDay(mainContainer){
                 moreReservationsMainContainer.innerHTML = "";
 
                 // show all favorite zones
-                const favoriteZones = settings.getFavoriteZones();
-                for (let zoneIndex = 0; zoneIndex < favoriteZones.length; zoneIndex++){
+                const favoriteZoneIds = settings.getFavoriteZoneIds();
+                for (let zoneIndex = 0; zoneIndex < favoriteZoneIds.length; zoneIndex++){
                     // for each zone
-                    var zoneCard = new ZoneCard(favoriteZones[zoneIndex])
+                    var zoneCard = new ZoneCard(favoriteZoneIds[zoneIndex]);
                     moreReservationsMainContainer.appendChild(zoneCard.renderDOM());
                     zoneCard.fetchAvailability(selectedDay, clock.startTime, clock.endTime);
                     zoneCard.onclick = (locationId, zoneId, zoneName) => {
@@ -158,16 +167,9 @@ function main(){
         injectStaticContent();
         /* Create custom page. */
         // Create day-selectors
-        daySelector = new DaySelector(false);
+        daySelector = new DaySelector(true);
         document.body.appendChild(daySelector.renderDOM());
 
-        // render the filters
-        var filtersContainer = document.createElement("div")
-        filtersContainer.id = "filter-container";
-        
-        filtersContainer.appendChild(settings.renderDOM());
-        document.body.appendChild(filtersContainer);
-    
         // Create zone container
         var mainContainer = document.createElement("div")
         mainContainer.id = "main";

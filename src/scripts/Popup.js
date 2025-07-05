@@ -9,22 +9,58 @@ class Popup{
 
     show(){
         this.dom = document.createElement("div");
-        this.dom.className = "modal fade"
-        this.dom.innerHTML = `
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">${this.title}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="settings-body">
-                ${this.innerHTML}
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">${this.buttonText}</button>
-            </div>
-            </div>
-        </div>`
+        this.dom.className = "modal fade";
+
+        // Create modal-dialog
+        const modalDialog = document.createElement("div");
+        modalDialog.className = "modal-dialog";
+
+        // Create modal-content
+        const modalContent = document.createElement("div");
+        modalContent.className = "modal-content";
+
+        // Create modal-header
+        const modalHeader = document.createElement("div");
+        modalHeader.className = "modal-header";
+
+        const modalTitle = document.createElement("h1");
+        modalTitle.className = "modal-title fs-5";
+        modalTitle.id = "exampleModalLabel";
+        modalTitle.textContent = this.title;
+
+        // const closeButton = document.createElement("button");
+        // closeButton.type = "button";
+        // closeButton.className = "btn-close";
+        // closeButton.setAttribute("data-bs-dismiss", "modal");
+        // closeButton.setAttribute("aria-label", "Close");
+
+        modalHeader.appendChild(modalTitle);
+        // modalHeader.appendChild(closeButton);
+
+        // Create modal-body
+        const modalBody = document.createElement("div");
+        modalBody.className = "modal-body";
+        modalBody.id = "settings-body";
+        // append the content as a child
+        modalBody.appendChild(this.innerHTML);
+
+        // Create modal-footer
+        const modalFooter = document.createElement("div");
+        modalFooter.className = "modal-footer";
+
+        const saveButton = document.createElement("button");
+        saveButton.type = "button";
+        saveButton.className = "btn btn-primary";
+        saveButton.textContent = this.buttonText;
+
+        modalFooter.appendChild(saveButton);
+
+        // Assemble modal
+        modalContent.appendChild(modalHeader);
+        modalContent.appendChild(modalBody);
+        modalContent.appendChild(modalFooter);
+        modalDialog.appendChild(modalContent);
+        this.dom.appendChild(modalDialog);
 
         // Add `container` as first element of `body`
         document.body.insertBefore(this.dom, document.body.firstChild);
@@ -47,10 +83,8 @@ class Popup{
         };
 
         // Save data when the "Save changes" button is clicked
-        const saveButton = this.dom.querySelector(".btn-primary");
         saveButton.addEventListener("click", () => {
             if (this.onclick == null){
-                // log.warn("`onclick` is `null`.");
                 // pass
             }
             else
@@ -58,9 +92,7 @@ class Popup{
             closeModal();
         });
 
-        this.dom.querySelector(".btn-close").addEventListener("click", closeModal);
-        this.dom.querySelector("[data-bs-dismiss='modal']").addEventListener("click", closeModal);
+        // closeButton.addEventListener("click", closeModal);
         backdrop.addEventListener("click", closeModal);
-
     }
 }
