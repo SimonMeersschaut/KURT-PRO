@@ -95,7 +95,12 @@ class Settings{
     */
     getFavoriteZoneIds(){
         function parseString(value){
-            return value.split(",").map(x => parseInt(x));
+            const result = value.split(",").map(x => parseInt(x));
+
+            if (result.some(x => (x == undefined || isNaN(x)))) // if the wrong format was read, parseInt will return NaN
+                throw new Error("Error reading favorite zone cookies.");
+            
+            return result;
         }
 
         const defaultValue = "2"; // Silent Study 2
@@ -103,7 +108,7 @@ class Settings{
 
         if (cookie == ""){
             this.setFavoriteZones(defaultValue);
-            return parseString(defaultValue); TODO
+            return parseString(defaultValue);
         }
         try{
             return parseString(cookie);

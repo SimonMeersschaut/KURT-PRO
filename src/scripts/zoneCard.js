@@ -6,6 +6,8 @@ class ZoneCard{
     constructor(zoneId){
         // get zoneData based on zoneId
         const candidates = ALL_ZONES.filter((item) => item["zoneId"] == zoneId)
+        if (zoneId == NaN)
+            log.error("`zoneId` was NaN.")
         if (candidates.length == 1)
             this.zoneData = candidates[0];
         else if (candidates.length > 1)
