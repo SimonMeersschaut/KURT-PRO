@@ -12,7 +12,7 @@
   ],
   "description": "KURT-PRO is a webbrowser extention that aims to provide students a better experience when using the KULeuven KURT reservation system.",
   "icons": {
-    "48": "logo.png"
+    "48": "48x48.png"
   },
   "manifest_version": 3,
   "name": "KURT-PRO",

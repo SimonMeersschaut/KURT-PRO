@@ -9,7 +9,7 @@ DIST_DIR = "dist"
 BUILD_DIR = os.path.join(DIST_DIR, "build")
 SAFARI_FILENAME = "KURT_PRO_userscript.user.js"
 CHROME_ZIP_FILENAME = "KURT_PRO_chrome_extention.zip"
-LOGO_FILENAME = "logo.png"
+LOGO_FILENAME = "48x48.png"
 
 # read current version
 with open("VERSION") as f:
@@ -41,11 +41,16 @@ def script_content():
             var_name = filename.split('/')[-1].split('\\')[-1].replace('.', '_')
             output += f"""const {var_name} = "{f.read().replace('\n', '').replace('"', '\\"')}";\n"""
     
+    # paste zones.json
+    with open("src/data/zones.json", 'r') as f:
+            output += "const ALL_ZONES = " + f.read().replace('\n', '').strip() + "\n"
+    
     # Paste all .js files after one another
     script_files = glob.glob("src/scripts/*.js") + glob.glob("src/scripts/*/*.js")
     for filename in script_files:
         with open(filename, 'r') as f:
             output += f.read() + "\n"
+    
             
     return output
 
@@ -67,7 +72,7 @@ def create_chrome_extention(script_path:str, manifest_path:str):
         json.dump(manifest_data, f)
     # Copy the logo image
     shutil.copy(
-        os.path.join(SRC_DIR, "images", LOGO_FILENAME),
+        os.path.join(SRC_DIR, "images/logo", LOGO_FILENAME),
         os.path.join(BUILD_DIR, LOGO_FILENAME)
     )
 

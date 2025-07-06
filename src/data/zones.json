@@ -1,0 +1,167 @@
+[
+    {
+        "locationId": 1,
+        "zoneId": 8,
+        "name": "2Bergen Arenberg - Kelder"
+    },
+    {
+        "locationId": 1,
+        "zoneId": 9,
+        "name": "2Bergen Arenberg - Tulp 0"
+    },
+    {
+        "locationId": 1,
+        "zoneId": 10,
+        "name": "2Bergen Arenberg - De leeszaal"
+    },
+    {
+        "locationId": 1,
+        "zoneId": 11,
+        "name": "2Bergen Arenberg - De boekenzaal"
+    },
+    {
+        "locationId": 1,
+        "zoneId": 14,
+        "name": "2Bergen Arenberg - De zolder"
+    },
+    {
+        "locationId": 2,
+        "zoneId": 33,
+        "name": "2Bergen D\u00e9sir\u00e9 Collen - Inkom"
+    },
+    {
+        "locationId": 2,
+        "zoneId": 34,
+        "name": "2Bergen D\u00e9sir\u00e9 Collen - Leeszaal"
+    },
+    {
+        "locationId": 2,
+        "zoneId": 35,
+        "name": "2Bergen D\u00e9sir\u00e9 Collen - Back"
+    },
+    {
+        "locationId": 2,
+        "zoneId": 36,
+        "name": "2Bergen D\u00e9sir\u00e9 Collen - Flex"
+    },
+    {
+        "locationId": 10,
+        "zoneId": 1,
+        "name": "Agora Learning Centre - Silent study 1"
+    },
+    {
+        "locationId": 10,
+        "zoneId": 2,
+        "name": "Agora Learning Centre - Silent study 2"
+    },
+    {
+        "locationId": 10,
+        "zoneId": 4,
+        "name": "Agora Learning Centre - Group Study Area"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 15,
+        "name": "Artes Erasmushuis - Ground Floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 16,
+        "name": "Artes Erasmushuis - Second floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 17,
+        "name": "Artes Erasmushuis - Third floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 18,
+        "name": "Artes Erasmushuis - Fourth floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 19,
+        "name": "Artes Erasmushuis - Fifth floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 20,
+        "name": "Artes Erasmushuis - Sixth floor"
+    },
+    {
+        "locationId": 3,
+        "zoneId": 21,
+        "name": "Artes Erasmushuis - Seventh floor"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 24,
+        "name": "Law and Criminology Library - Zaal 1A"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 25,
+        "name": "Law and Criminology Library - Zaal 1B"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 27,
+        "name": "Law and Criminology Library - Zaal 2A"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 28,
+        "name": "Law and Criminology Library - Zaal 2B"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 29,
+        "name": "Law and Criminology Library - Zaal 2C"
+    },
+    {
+        "locationId": 26,
+        "zoneId": 30,
+        "name": "Law and Criminology Library - Zaal 2BC"
+    },
+    {
+        "locationId": 16,
+        "zoneId": 22,
+        "name": "Psychology and Educational Sciences Library - Gelijkvloers/Ground floor"
+    },
+    {
+        "locationId": 16,
+        "zoneId": 23,
+        "name": "Psychology and Educational Sciences Library - Kelderverdieping/Basement floor"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 48,
+        "name": "Social Sciences Library - Communication"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 49,
+        "name": "Social Sciences Library - Anthropology"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 50,
+        "name": "Social Sciences Library - Sociology"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 51,
+        "name": "Social Sciences Library - Political Sciences"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 52,
+        "name": "Social Sciences Library - Basement"
+    },
+    {
+        "locationId": 12,
+        "zoneId": 53,
+        "name": "Social Sciences Library - PC-room"
+    }
+]

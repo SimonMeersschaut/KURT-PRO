@@ -10,16 +10,14 @@ zone_card_css = ...
 map_css = ...
 loader_css = ...
 clock_css = ...
-*/
 
 const ALL_ZONES = [
     {"locationId": 10, "zoneId": 2, "name": "Agora - Silent study 2"},
-    {"locationId": 10, "zoneId": 1, "name": "Agora - Silent study 1"},
-    {"locationId": 1, "zoneId": 11, "name": "Arenberg - De boekenzaal"},
-    {"locationId": 1, "zoneId": 10, "name": "Arenberg - Leeszaal"},
-    {"locationId": 1, "zoneId": 14, "name": "Arenberg - De zolder"},
-    {"locationId": 1, "zoneId": 8, "name": "Arenberg - Kelder"},
+    ...
 ];
+*/
+
+
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 var tunnel = null; // will be set once the page has loaded.

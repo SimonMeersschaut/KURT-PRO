@@ -8,15 +8,15 @@ function configPWA(){
       theme_color: "#ffffff",
       icons: [
         {
-          src: "https://picsum.photos/192/192",
+          src: "https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/src/images/logo/192x192.png",
           sizes: "192x192",
           type: "image/png"
         },
-        {
-          src: "https://picsum.photos/512/512",
-          sizes: "512x512",
-          type: "image/png"
-        }
+        // {
+        //   src: "https://picsum.photos/512/512",
+        //   sizes: "512x512",
+        //   type: "image/png"
+        // }
       ]
     };
     

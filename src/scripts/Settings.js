@@ -135,9 +135,17 @@ class Settings{
 
     renderDOM(){
         let container = document.createElement("div");
+        
+        // exit kurt-pro
+        let exitButton = document.createElement("button");
+        exitButton.innerText = "Exit KURT-PRO";
+        exitButton.className = "btn btn-outline-secondary";
+        exitButton.onclick = () => {window.location.assign("/")};
+        container.appendChild(exitButton);
+
 
         // favorite zones
-        let label = document.createElement("label");
+        let label = document.createElement("h6");
         label.innerText = "Favorite zones:";
         container.appendChild(label);
 
@@ -175,7 +183,6 @@ class Settings{
                         this.setFavoriteZones(selectedZones.join(","));
                     }
                 }
-                
             }
             
             let zoneLabel = document.createElement("label");
@@ -186,13 +193,6 @@ class Settings{
         }
 
         container.appendChild(document.createElement("br"));
-
-        // exit kurt-pro
-        let exitButton = document.createElement("button");
-        exitButton.innerText = "Exit KURT-PRO";
-        exitButton.className = "btn btn-outline-secondary";
-        exitButton.onclick = () => {window.location.assign("/")};
-        container.appendChild(exitButton);
 
         return container;
     }
