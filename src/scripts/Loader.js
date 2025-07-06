@@ -1,6 +1,11 @@
+/*
+Each instance of this class represents a loading bar (spinner).
+
+@param: name: an identifier of what's loading (unused).
+*/
 class Loader {
     constructor(name) {
-        this.name = name;
+        // this.name = name; // unused
         this.loaderElement = this.renderDOM();
         document.body.appendChild(this.loaderElement);
     }

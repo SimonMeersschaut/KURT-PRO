@@ -1,5 +1,8 @@
 const MAX_DAYCACHE_TIME = 1 * 60 * 60 * 1000; // one hour caches
 
+/*
+Each instance caches availabilities for all zones (using zoneCache instances).
+*/
 class DayCache{
     constructor(){
         // update time may only be set when the entire content has been updated
@@ -35,7 +38,9 @@ class DayCache{
     }
 }
 
-
+/*
+Each instance caches availabilities for one zones on a single day.
+*/
 class ZoneCache{
     constructor(){
         // update time may only be set when the entire content has been updated

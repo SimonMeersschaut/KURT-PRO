@@ -3,7 +3,8 @@ The settings will handle both the visual interface of the settings,
 as well as holding the data (your current preferences).
 
 this.settingsData : {
-    "" TODO
+    "startTime": 10,
+    "endTime": 16
 }
 */
 class Settings{

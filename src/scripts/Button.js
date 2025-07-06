@@ -1,3 +1,12 @@
+/*
+Creates a button.
+
+@param: type:
+    1   -   primary
+    2   -   danger
+@param: text: the text inside the button
+@param: onclick: event listener
+*/
 class Button{
     constructor(type, text, onclick){
         this.type = type;

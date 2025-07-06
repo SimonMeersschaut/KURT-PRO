@@ -1,3 +1,6 @@
+/*
+This function will insert manifest data to configurate the website as a PWA.
+*/
 function configPWA(){
     const manifest = {
       name: "KURT-PRO",

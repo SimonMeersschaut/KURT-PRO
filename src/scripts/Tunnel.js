@@ -1,5 +1,5 @@
 /*
-TODO: docs
+Returns the number of days between Date-objects `a` and `b`.
 */
 function dateDiffInDays(a, b) {
     // Discard the time and time-zone information.
@@ -23,7 +23,7 @@ class Tunnel{
     }
 
     /*
-    TODO: docs
+    Returns the reservations one has made, sorted by day.
     */
     async getReservedDays() {
         var data;
@@ -58,7 +58,7 @@ class Tunnel{
     }
 
     /*
-    TODO: docs
+    Returns map-data for `zoneId`, containing rectangles for where to draw seats on the map.
     */
     async fetchMapData(zoneId){
         try {
@@ -74,7 +74,7 @@ class Tunnel{
     }
 
     /*
-    TODO: docs
+    Returns if the user has a reservation on `dayIndex` ( by using `this.getReservedDays()` ).
     */
     async hasReservationsOn(dayIndex){
         const reservedDays = await this.getReservedDays();
@@ -82,7 +82,9 @@ class Tunnel{
     }
 
     /*
-    TODO: docs
+    Returns availabilities on `selectedDay` for `zoneId`.
+    It first checks if it already requested this resource (using a cache).
+    If this resource is not cached, it will fetch all availabilities, per batch (=page) of 60 seats.
     */
     async *getDayData(locationId, zoneId, selectedDay, startTime, endTime){
         function filter(seatData, startTime, endTime){
@@ -318,7 +320,7 @@ class Tunnel{
     }
 
     /**
-     * 
+     * Returns account info for this user.
      */
     async getAccountInfo(){
         // if the account is already cached, return the cache result

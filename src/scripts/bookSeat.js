@@ -2,7 +2,7 @@
 /*
 Effectively book that seat.
 
-TODO: define return types
+@returns bool: if the booking was succesfull.
 */
 async function bookSeat(zoneId, zoneName, seatId, seatNr, selectedDay, startTimeHours, endTimeHours){
     const loader = new Loader(`Booking seat ${seatId}`);

@@ -114,6 +114,7 @@ class DaySelector{
 
 
 // SOURCE: https://www.svgrepo.com/svg/13688/settings
+// the svg code for settings-icon
 const SETTINGS_SVG = `
 <svg fill="#000000" height="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 54 54" xml:space="preserve" class="">

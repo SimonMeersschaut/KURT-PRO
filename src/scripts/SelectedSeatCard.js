@@ -1,3 +1,8 @@
+/*
+Each instance of this class represents a card, shown below a map, that shows more information about the selected seat,
+such as the searNr, and the time for which you are about to book.
+Besides, it contains a button to confirm the booking.
+*/
 class SelectedSeatCard{
     constructor(buttons, startTimeHours, endTimeHours){
         if (buttons == undefined) throw new Error("`buttons` in `selectedSeatCard` was `undefined`.");

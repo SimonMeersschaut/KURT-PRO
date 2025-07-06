@@ -1,3 +1,7 @@
+/*
+Each instance of this class represents a card (shown in the main page) for one zone.
+This card contains the name of the zone and the available seats for the selected day and time.
+*/
 class ZoneCard{
     constructor(zoneId){
         // get zoneData based on zoneId

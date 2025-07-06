@@ -1,7 +1,14 @@
+/*
+Each instance of this class represents a popup window.
+
+@param: title: the title to be shown at the top of the popup.
+@param: innerDOM: the DOM representation of what will be put inside the body of the popup.
+@param: buttonText: the text inside the button (default: "Save changes").
+*/
 class Popup{
-    constructor(title, innerHTML, buttonText="Save changes"){
+    constructor(title, innerDOM, buttonText="Save changes"){
         this.title = title;
-        this.innerHTML = innerHTML;
+        this.innerDOM = innerDOM;
         this.dom = null;
         this.onclick = null; // on null -> just close the popup
         this.buttonText = buttonText
@@ -42,7 +49,7 @@ class Popup{
         modalBody.className = "modal-body";
         modalBody.id = "settings-body";
         // append the content as a child
-        modalBody.appendChild(this.innerHTML);
+        modalBody.appendChild(this.innerDOM);
 
         // Create modal-footer
         const modalFooter = document.createElement("div");

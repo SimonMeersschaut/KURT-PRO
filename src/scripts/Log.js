@@ -1,11 +1,15 @@
 /*
- * 
+ * Each instance of this class represents a logging object for logging messages, warnings and errors.
  */
 class Log{
     /*
+    Initializes a new instance.
     */
     constructor(){ }
 
+    /*
+    Show an error to the user.
+    */
     error(title, msg){
         const label = document.createElement("label")
         label.innerText = msg;
@@ -18,6 +22,7 @@ class Log{
     }
 
     /*
+    Show a warning to the user.
     */
     warn(title, msg){
         const label = document.createElement("label")
@@ -31,6 +36,7 @@ class Log{
     }
 
     /*
+    Log a message to the user.
     */
     log(title, msg){
         console.log(`${title} - ${msg}`);

@@ -1,3 +1,6 @@
+/*
+Each instance represents a UI clock element, on which you can select a start- and end-time.
+*/
 class Clock{
     constructor(){
         this.startTime = settings.startTimeHours;
