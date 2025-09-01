@@ -1,5 +1,7 @@
 const express = require("express");
 const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
 const port = 5000;
@@ -14,33 +16,71 @@ const zones = [
   { id: 14, name: "De zolder", totalSeats: 12 },
 ];
 
-// Helper to generate random resources
-function generateResources(zone) {
-  const resources = [];
+// Helper to generate seat grid for a zone
+function generateSeatMap(zone) {
+  const image_width = 20;  // mock grid width
+  const image_height = 15; // mock grid height
+
+  const seats = {};
   for (let i = 0; i < zone.totalSeats; i++) {
-    resources.push({
-      resourceId: 300000 + zone.id * 100 + i,
-      resourceName: `${zone.name} Seat ${i + 1}`,
-      positionX: Math.floor(Math.random() * 500),
-      positionY: Math.floor(Math.random() * 2000),
-    });
+    seats[i + 1] = {
+      id: i + 1,
+      x: Math.floor(Math.random() * (image_width - 1)) + 1,
+      y: Math.floor(Math.random() * (image_height - 1)) + 1,
+      width: 1,
+      height: 1,
+      rotation: 0,
+      available: Math.random() > 0.2, // ~80% chance seat is free
+    };
   }
-  return resources;
+
+  return { image_width, image_height, seats };
 }
 
+// Endpoint: /api/zones/:zoneId/map
+app.get("/api/zones/:zoneId/map", (req, res) => {
+  const zoneId = parseInt(req.params.zoneId);
+
+  const zone = zones.find((z) => z.id === zoneId);
+  if (!zone) {
+    return res.status(404).json({ message: "Zone not found" });
+  }
+
+  const mapFilePath = path.join(__dirname, "../resources/maps/zones", `${zoneId}`, "rectangles.json");
+
+  fs.readFile(mapFilePath, "utf8", (err, data) => {
+    if (err) {
+      if (err.code === "ENOENT") {
+        return res.status(404).json({ message: "Map file not found" });
+      }
+      return res.status(500).json({ message: "Error reading map file" });
+    }
+
+    try {
+      const mapData = JSON.parse(data);
+      res.json(mapData);
+    } catch (parseError) {
+      res.status(500).json({ message: "Error parsing map file" });
+    }
+  });
+});
+// Optional: existing endpoint for zone availabilities
 app.get("/api/zoneavailabilities", (req, res) => {
   const { locationId, zoneId, startDate, startTime } = req.query;
 
-  // Find the requested zone
   const zone = zones.find((z) => z.id === parseInt(zoneId));
   if (!zone) {
     return res.status(404).json({ message: "Zone not found" });
   }
 
-  // Build response in the format of the real API
   const response = {
     location: { id: parseInt(locationId) || 1, unit: "2Bergen Arenberg" },
-    availabilities: generateResources(zone),
+    availabilities: Array.from({ length: zone.totalSeats }, (_, i) => ({
+      resourceId: 300000 + zone.id * 100 + i,
+      resourceName: `${zone.name} Seat ${i + 1}`,
+      positionX: Math.floor(Math.random() * 500),
+      positionY: Math.floor(Math.random() * 2000),
+    })),
     floorPlan: {
       id: zone.id,
       floorPlanUrl: `https://example.com/floorplans/FloorPlan_${zone.id}.png`,

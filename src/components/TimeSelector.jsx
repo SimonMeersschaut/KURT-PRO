@@ -2,14 +2,13 @@ import React from "react";
 import { Box, FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 
 export default function TimeSelector({ startTime, endTime, onChange }) {
-  // Hours available for reservation
-  const hours = Array.from({ length: 24 }, (_, i) =>
-    i.toString().padStart(2, "0") + ":00"
+  // Hours from 08:00 to 23:00
+  const hours = Array.from({ length: 16 }, (_, i) =>
+    (i + 8).toString().padStart(2, "0") + ":00"
   );
 
   const handleStartChange = (event) => {
     const newStart = event.target.value;
-    // Ensure start is before end
     if (newStart > endTime) {
       onChange(newStart, newStart);
     } else {
@@ -19,7 +18,6 @@ export default function TimeSelector({ startTime, endTime, onChange }) {
 
   const handleEndChange = (event) => {
     const newEnd = event.target.value;
-    // Ensure end is after start
     if (newEnd < startTime) {
       onChange(newEnd, newEnd);
     } else {
@@ -28,10 +26,10 @@ export default function TimeSelector({ startTime, endTime, onChange }) {
   };
 
   return (
-    <Box display="flex" gap={2} mt={2}>
-      <FormControl fullWidth>
-        <InputLabel>Start Hour</InputLabel>
-        <Select value={startTime} label="Start Hour" onChange={handleStartChange}>
+    <Box display="flex" gap={1} mt={2} flexWrap="wrap">
+      <FormControl size="small" sx={{ minWidth: 100 }}>
+        <InputLabel>Start</InputLabel>
+        <Select value={startTime} label="Start" onChange={handleStartChange}>
           {hours.map((h) => (
             <MenuItem key={h} value={h}>
               {h}
@@ -40,9 +38,9 @@ export default function TimeSelector({ startTime, endTime, onChange }) {
         </Select>
       </FormControl>
 
-      <FormControl fullWidth>
-        <InputLabel>End Hour</InputLabel>
-        <Select value={endTime} label="End Hour" onChange={handleEndChange}>
+      <FormControl size="small" sx={{ minWidth: 100 }}>
+        <InputLabel>End</InputLabel>
+        <Select value={endTime} label="End" onChange={handleEndChange}>
           {hours.map((h) => (
             <MenuItem key={h} value={h}>
               {h}

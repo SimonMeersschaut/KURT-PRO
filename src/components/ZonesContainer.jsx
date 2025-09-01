@@ -1,8 +1,24 @@
+import React, { useState } from "react";
 import ZoneCardLoader from "./ZoneCardLoader";
+import ReservationPage from "./ReservationPage";
 
 export default function ZonesContainer({ selectedDate, selectedTime }) {
   const locationId = 1; // Hardcoded for now
   const zones = [14, 11, 2]; // Example zone IDs
+
+  const [reservedZone, setReservedZone] = useState(null);
+
+  // If a zone is selected, show the reservation page
+  if (reservedZone) {
+    return (
+      <ReservationPage
+        zone={reservedZone}
+        date={selectedDate}
+        time={selectedTime}
+        onBack={() => setReservedZone(null)}
+      />
+    );
+  }
 
   return (
     <div
@@ -20,8 +36,7 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
           date={selectedDate}
           time={selectedTime}
           onReserve={(zone) => {
-            console.log("Reserve clicked for", zone);
-            // Navigate to reservation page here
+            setReservedZone(zone);
           }}
         />
       ))}
