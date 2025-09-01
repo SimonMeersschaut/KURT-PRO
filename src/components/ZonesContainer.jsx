@@ -5,7 +5,13 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
   const zones = [14, 11, 2]; // Example zone IDs
 
   return (
-    <div style={{ display: "grid", gap: "1rem" }}>
+    <div
+      style={{
+        display: "grid",
+        gap: "1rem",
+        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+      }}
+    >
       {zones.map((zoneId) => (
         <ZoneCardLoader
           key={zoneId}

@@ -9,6 +9,10 @@ import {
 import InfoIcon from "@mui/icons-material/Info";
 
 export default function ZoneCard({ zone, onClick, onInfo }) {
+  // Calculate available seats from the availabilities array
+  console.log(zone)
+  const availableSeats = zone.availabilities?.length || 0;
+
   return (
     <Card
       sx={{ cursor: "pointer", height: "100%" }}
@@ -17,7 +21,7 @@ export default function ZoneCard({ zone, onClick, onInfo }) {
     >
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Typography variant="h6">{zone.name}</Typography>
+          <Typography variant="h6">{zone.zone?.name || zone.name}</Typography>
           <IconButton
             size="small"
             onClick={(e) => {
@@ -30,10 +34,10 @@ export default function ZoneCard({ zone, onClick, onInfo }) {
         </Box>
         <Typography
           variant="body2"
-          color={zone.available > 0 ? "success.main" : "error.main"}
+          color={availableSeats > 0 ? "success.main" : "error.main"}
         >
-          {zone.available > 0
-            ? `${zone.available} seats available`
+          {availableSeats > 0
+            ? `${availableSeats} seats available`
             : "No seats available"}
         </Typography>
       </CardContent>

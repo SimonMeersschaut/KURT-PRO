@@ -8,15 +8,10 @@ export default function ZoneCardLoader({ locationId, zoneId, date, time, onReser
 
   useEffect(() => {
     getZoneAvailabilities(locationId, zoneId, date, time)
-      .then((res) => {
+    .then((res) => {
         const availableSeats = res.availabilities?.length ?? 0;
-        setZone({
-          id: zoneId,
-          name: res.zone?.name || `Zone ${zoneId}`,
-          available: availableSeats,
-          floorPlan: res.floorPlan?.floorPlanUrl
-        });
-      })
+        setZone(res);
+    })
       .catch((err) => setError(err.message));
   }, [locationId, zoneId, date, time]);
 
