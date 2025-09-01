@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "KURT-PRO Full Page App",
+  "version": "1.0",
+  "description": "Replace entire page with React app",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://kurt3.ghum.kuleuven.be/*", "https://kurt3.ghum.kuleuven.be/*"],
+      "js": ["main.js"],
+      "css": []
+    }
+  ],
+  "permissions": ["activeTab"]
+}
