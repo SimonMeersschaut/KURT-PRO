@@ -1,12 +1,5 @@
-import { apiFetch } from "./client";
+import { apiFetch, kurt3 } from "./client";
 
 export function fetchZones(dayIndex) {
-  return apiFetch(`/reservations?day=${dayIndex}`);
-}
-
-export function createReservation(zoneId, dayIndex, data) {
-  return apiFetch(`/reservations`, {
-    method: "POST",
-    body: JSON.stringify({ zoneId, dayIndex, ...data }),
-  });
+  return apiFetch(`/reservations?day=${dayIndex}`, {}, kurt3);
 }

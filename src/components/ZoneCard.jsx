@@ -6,11 +6,11 @@ import {
   IconButton,
   Box
 } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-export default function ZoneCard({ zone, onClick, onInfo }) {
+export default function ZoneCard({ zone, onClick, onFavorite, isFavorite }) {
   // Calculate available seats from the availabilities array
-  console.log(zone)
   const availableSeats = zone.availabilities?.length || 0;
 
   return (
@@ -25,11 +25,11 @@ export default function ZoneCard({ zone, onClick, onInfo }) {
           <IconButton
             size="small"
             onClick={(e) => {
-              e.stopPropagation();
-              onInfo?.(zone);
+              e.stopPropagation(); // Prevent triggering card click
+              onFavorite?.(zone);
             }}
           >
-            <InfoIcon />
+            {isFavorite ? <FavoriteIcon color="error" /> : <FavoriteBorderIcon />}
           </IconButton>
         </Box>
         <Typography

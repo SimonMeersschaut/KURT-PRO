@@ -1,5 +1,4 @@
-import { apiFetch } from "./client";
-
+import { apiFetch, kurt3 } from "./client";
 /**
  * Fetch availabilities for a specific zone on a given date/time.
  * 
@@ -9,6 +8,7 @@ import { apiFetch } from "./client";
  * @param {string} startTime - Time string in HH:mm
  */
 export function getZoneAvailabilities(locationId, zoneId, startDate, startTime) {
-  const query = `?locationId=${locationId}&zoneId=${zoneId}&startDate=${startDate}&startTime=${startTime}`;
-  return apiFetch(`/api/zoneavailabilities${query}`);
+    // Use relative path; apiFetch handles which base URL to call
+    const query = `?locationId=${locationId}&zoneId=${zoneId}&startDate=${startDate}&startTime=${startTime}`;
+    return apiFetch(`/api/zoneavailabilities${query}`);
 }

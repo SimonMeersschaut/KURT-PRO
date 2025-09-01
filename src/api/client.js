@@ -1,28 +1,19 @@
-// Centralized fetch wrapper
+// client.js
+export const kurt3 =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:5000" // Mock server
+    : "https://kurt3.ghum.kuleuven.be"; // Production
 
-const DEBUG = process.env.NODE_ENV === "development";
+export const github =
+  "https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/";
 
-// Define your possible backends
-const BASE_URLS = {
-  KULEUVEN: "https://kurt3.ghum.kuleuven.be",
-  GITHUB: "https://raw.githubusercontent.com/YourUsername/YourRepo/main", 
-  MOCK: "http://localhost:5000", // e.g. json-server
-};
-
-// Choose which to use for what
-function resolveBaseUrl(endpoint) {
-  if (DEBUG) return BASE_URLS.MOCK;
-
-  // Decide based on endpoint
-  if (endpoint.startsWith("/reservations")) return BASE_URLS.KULEUVEN;
-  if (endpoint.startsWith("/zones")) return BASE_URLS.KULEUVEN;
-  if (endpoint.startsWith("/config") || endpoint.startsWith("/settings")) return BASE_URLS.GITHUB;
-
-  throw new Error(`Unknown API endpoint: ${endpoint}`);
-}
-
-export async function apiFetch(endpoint, options = {}) {
-  const baseUrl = resolveBaseUrl(endpoint);
+/**
+ * Centralized fetch wrapper
+ * @param {string} endpoint - relative path (e.g., "/reservations")
+ * @param {object} options - fetch options
+ * @param {string} baseUrl - optional, defaults to kurt3
+ */
+export async function apiFetch(endpoint, options = {}, baseUrl = kurt3) {
   const url = `${baseUrl}${endpoint}`;
 
   try {
