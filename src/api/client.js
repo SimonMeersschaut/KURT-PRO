@@ -5,7 +5,7 @@ export const kurt3 =
     : "https://kurt3.ghum.kuleuven.be"; // Production
 
 export const github =
-  "https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/";
+  "https://corsproxy.io/?https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/";
 
 /**
  * Centralized fetch wrapper
@@ -13,7 +13,10 @@ export const github =
  * @param {object} options - fetch options
  * @param {string} baseUrl - optional, defaults to kurt3
  */
-export async function apiFetch(endpoint, options = {}, baseUrl = kurt3) {
+export async function apiFetch(endpoint, options = {}, baseUrl = null) {
+  if (baseUrl == null){
+    throw new Error("No base url was provided.")
+  }
   const url = `${baseUrl}${endpoint}`;
 
   try {

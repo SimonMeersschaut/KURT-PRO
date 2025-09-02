@@ -21,7 +21,16 @@ export default function ZoneCard({ zone, onClick, onFavorite, isFavorite }) {
     >
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Typography variant="h6">{zone.zone?.name || zone.name}</Typography>
+          <Box>
+            <Typography variant="h6">
+              {zone.zone?.name || zone.name}
+            </Typography>
+            {zone.libraryName && (
+              <Typography variant="body2" color="text.secondary">
+                {zone.libraryName}
+              </Typography>
+            )}
+          </Box>
           <IconButton
             size="small"
             onClick={(e) => {
@@ -35,6 +44,7 @@ export default function ZoneCard({ zone, onClick, onFavorite, isFavorite }) {
         <Typography
           variant="body2"
           color={availableSeats > 0 ? "success.main" : "error.main"}
+          mt={1}
         >
           {availableSeats > 0
             ? `${availableSeats} seats available`

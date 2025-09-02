@@ -1,5 +1,5 @@
-import { apiFetch } from "./client";
+import { apiFetch, github } from "./client";
 
 export function getZones() {
-  return apiFetch("https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/zones.json");
+  return apiFetch("resources/maps/zones/zones.json", {}, github);
 }
