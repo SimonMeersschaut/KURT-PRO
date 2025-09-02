@@ -11,7 +11,35 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --font-size-body: 1rem;        /* 16px */
+  --font-size-small: 0.875rem;   /* 14px */
+  --font-size-medium: 1rem;      /* 16px */
+  --font-size-large: 1.125rem;   /* 18px */
+  --font-size-h1: 3.2rem;        /* 3.2em equivalent */
+  --font-size-h2: 2.4rem;        /* 2.4em */
+  --font-size-h3: 1.8rem;        /* 1.8em */
+  --font-size-h4: 1.5rem;        /* 1.5em */
+  --font-size-h5: 1.25rem;       /* 1.25em */
+  --font-size-h6: 1rem;          /* 1em */
 }
+
+body {
+  font-size: var(--font-size-body);
+  line-height: 1.5;
+}
+
+h1 { font-size: var(--font-size-h1); line-height: 1.1; }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+button {
+  font-size: var(--font-size-medium);
+}
+
 
 a {
   font-weight: 500;
