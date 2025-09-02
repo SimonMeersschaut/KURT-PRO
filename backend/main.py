@@ -20,7 +20,8 @@ def send_push(token: str, title: str, body: str):
     print("Successfully sent message:", response)
 
 if __name__ == "__main__":
-    fcm_token = "cVYwxUdl2Tr57qsZsP2aaP:APA91bHZy2UMXkfTyF4-1wY6WEYnwo8iHRdZ9qniNoG8vQ-d1VW-QLZTHBnpSDW3b2IKZZRQ68BE-WcWzhsEHEz_IAbxpvE4UlqZqlGkCMALoJGf8mASmFI"
+    with open("fcm.key", 'r') as f:
+        fcm_token = f.read()
 
     send_push(
         fcm_token,
