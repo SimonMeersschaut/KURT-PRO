@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ZoneCard from "./ZoneCard";
 import { getZoneAvailabilities } from "../api/zoneAvailabilities";
 
-export default function ZoneCardLoader({ locationId, zoneId, date, time, onReserve }) {
+export default function ZoneCardLoader({ locationId, zoneId, date, time, onReserve, isFavorite}) {
   const [zone, setZone] = useState(null);
   const [error, setError] = useState("");
 
@@ -17,7 +17,7 @@ export default function ZoneCardLoader({ locationId, zoneId, date, time, onReser
 
   if (error) return <div style={{ color: "red" }}>Error: {error}</div>;
   if (!zone) return <div>Loading zone {zoneId}…</div>;
-
+  console.log(zone);
   return (
     <ZoneCard
       zone={zone}
@@ -26,6 +26,7 @@ export default function ZoneCardLoader({ locationId, zoneId, date, time, onReser
         // Example: open a modal or show floor plan image
         alert(`Map for ${z.name}\nFloor plan: ${z.floorPlan || "none"}`);
       }}
+      isFavorite = {isFavorite}
     />
   );
 }

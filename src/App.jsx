@@ -43,7 +43,7 @@ export default function App() {
   return (
     <Container maxWidth="md" sx={{ py: 2 }}>
       <Typography variant="h4" gutterBottom>
-        Seat Reservation
+        Kurt PRO
       </Typography>
 
       <DaySelector onSelect={setSelectedDate} />

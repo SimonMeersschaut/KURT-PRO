@@ -1,139 +1,105 @@
-import React, { useEffect, useState } from "react";
-import { Box, Typography, Paper, Button } from "@mui/material";
-import { apiFetch } from "../api/client";
+const express = require("express");
+const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
 
-export default function SeatMap({ zone, date, time, onReserve }) {
-  const [seatMap, setSeatMap] = useState(null); // the static map
-  const [availabilities, setAvailabilities] = useState({}); // availability per seat
-  const [selectedSeat, setSelectedSeat] = useState(null);
+const app = express();
+const port = 5000;
 
-  // 1️⃣ Fetch the static map once per zone
-  useEffect(() => {
-    if (!zone) return;
+app.use(cors());
+app.use(express.json());
 
-    const fetchMap = async () => {
-      try {
-        const mapData = await apiFetch(`/api/zones/${zone.zone.id}/map`);
-        setSeatMap(mapData);
-      } catch (err) {
-        console.error("Failed to fetch map data:", err);
-      }
+// Define all zones your app uses
+const zones = [
+  { id: 2, name: "Zone 2", totalSeats: 10 },
+  { id: 11, name: "Zone 11", totalSeats: 8 },
+  { id: 14, name: "De zolder", totalSeats: 12 },
+];
+
+// Helper to generate seat grid for a zone
+function generateSeatMap(zone) {
+  const image_width = 20;  // mock grid width
+  const image_height = 15; // mock grid height
+
+  const seats = {};
+  for (let i = 0; i < zone.totalSeats; i++) {
+    seats[i + 1] = {
+      id: i + 1,
+      x: Math.floor(Math.random() * (image_width - 1)) + 1,
+      y: Math.floor(Math.random() * (image_height - 1)) + 1,
+      width: 1,
+      height: 1,
+      rotation: 0,
+      available: Math.random() > 0.2, // ~80% chance seat is free
     };
+  }
 
-    fetchMap();
-  }, [zone]);
-
-  // 2️⃣ Fetch seat availability when date or time changes
-  useEffect(() => {
-    if (!zone || !date || !time) return;
-
-    const fetchAvailability = async () => {
-      try {
-        const availabilityData = await apiFetch(
-          `/api/zones/${zone.zone.id}/availability?date=${date.toISOString().split("T")[0]}&start=${time.start}&end=${time.end}`
-        );
-        // Expected response: { seatId: true/false, ... }
-        setAvailabilities(availabilityData);
-        setSelectedSeat(null); // reset selection when time changes
-      } catch (err) {
-        console.error("Failed to fetch seat availability:", err);
-      }
-    };
-
-    fetchAvailability();
-  }, [zone, date, time]);
-
-  const handleSeatClick = (seat) => {
-    if (!availabilities[seat.id]) return; // only click free seats
-    setSelectedSeat(seat.id);
-  };
-
-  const handleReserve = () => {
-    if (!selectedSeat) return;
-    onReserve(selectedSeat);
-  };
-
-  if (!seatMap) return <Typography>Loading seat map...</Typography>;
-
-  return (
-    <Box
-      sx={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: `${seatMap.image_width} / ${seatMap.image_height}`,
-        display: "grid",
-        gridTemplateColumns: `repeat(${seatMap.image_width}, 1fr)`,
-        gridTemplateRows: `repeat(${seatMap.image_height}, 1fr)`,
-      }}
-    >
-      {/* Background map */}
-      <Box
-        component="img"
-        src={`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/main/resources/maps/zones/${zone.zone.id}/map.png`}
-        alt={zone.name}
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "contain",
-          zIndex: 0,
-        }}
-      />
-
-      {/* Seats */}
-      {Object.values(seatMap.seats).map((seat) => {
-        const available = availabilities[seat.id] ?? false;
-        return (
-          <Box
-            key={seat.id}
-            onClick={() => handleSeatClick(seat)}
-            sx={{
-              gridColumnStart: seat.x,
-              gridColumnEnd: seat.x + seat.width,
-              gridRowStart: seat.y,
-              gridRowEnd: seat.y + seat.height,
-              backgroundColor: available
-                ? selectedSeat === seat.id
-                  ? "blue"
-                  : "green"
-                : "grey",
-              transform: `rotate(${seat.rotation}deg)`,
-              transformOrigin: "top left",
-              cursor: available ? "pointer" : "not-allowed",
-              border: "1px solid black",
-              zIndex: 1,
-            }}
-          />
-        );
-      })}
-
-      {/* Reservation button */}
-      {selectedSeat && (
-        <Paper
-          sx={{
-            position: "absolute",
-            bottom: 8,
-            left: "50%",
-            transform: "translateX(-50%)",
-            p: 2,
-            backgroundColor: "rgba(255,255,255,0.9)",
-            maxWidth: 300,
-            zIndex: 2,
-          }}
-        >
-          <Typography>Selected Seat: {selectedSeat}</Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ mt: 1 }}
-            onClick={handleReserve}
-          >
-            Reserve
-          </Button>
-        </Paper>
-      )}
-    </Box>
-  );
+  return { image_width, image_height, seats };
 }
+
+// Endpoint: /api/zones/:zoneId/map
+app.get("/api/zones/:zoneId/map", (req, res) => {
+  const zoneId = parseInt(req.params.zoneId);
+
+  let zone = zones.find((z) => z.id === zoneId);
+  if (!zone) {
+    zone = { id: 2, name: "Zone 2", totalSeats: 10 }
+  //   return res.status(404).json({ message: "Zone not found" });
+  }
+
+  const mapFilePath = path.join(__dirname, "../resources/maps/zones", `${zoneId}`, "rectangles.json");
+
+  fs.readFile(mapFilePath, "utf8", (err, data) => {
+    if (err) {
+      if (err.code === "ENOENT") {
+        return res.status(404).json({ message: "Map file not found" });
+      }
+      return res.status(500).json({ message: "Error reading map file" });
+    }
+
+    try {
+      const mapData = JSON.parse(data);
+      res.json(mapData);
+    } catch (parseError) {
+      res.status(500).json({ message: "Error parsing map file" });
+    }
+  });
+});
+// Optional: existing endpoint for zone availabilities
+app.get("/api/zoneavailabilities", (req, res) => {
+  const { locationId, zoneId, startDate, startTime } = req.query;
+
+  let zone = zones.find((z) => z.id === parseInt(zoneId));
+  if (!zone) {
+    zone = { id: 2, name: "Zone 2", totalSeats: 10 };
+  }
+
+  const response = {
+    location: { id: parseInt(locationId) || 1, unit: "2Bergen Arenberg" },
+    availabilities: Array.from({ length: zone.totalSeats }, (_, i) => ({
+      resourceId: 300000 + zone.id * 100 + i,
+      resourceName: `${zone.name} Seat ${i + 1}`,
+      positionX: Math.floor(Math.random() * 500),
+      positionY: Math.floor(Math.random() * 2000),
+    })),
+    floorPlan: {
+      id: zone.id,
+      floorPlanUrl: `https://example.com/floorplans/FloorPlan_${zone.id}.png`,
+    },
+    message: "",
+    startDate: startDate || new Date().toISOString().split("T")[0],
+    startTime: startTime || "09:00",
+    zone: {
+      id: zone.id,
+      name: zone.name,
+      floorPlanId: 0,
+      resourceTypeIds: [],
+    },
+  };
+
+  res.json(response);
+});
+
+app.listen(port, () => {
+  console.log(`Mock server running at http://localhost:${port}`);
+});

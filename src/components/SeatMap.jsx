@@ -14,7 +14,7 @@ export default function SeatMap({ zone, date, time, onReserve }) {
     const fetchMap = async () => {
       try {
         const mapData = await fetch(
-          `https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zone.zone.id}/rectangles.json`
+          `https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zone.id}/rectangles.json`
         ).then((res) => res.json());
         setSeatMap(mapData);
       } catch (err) {
@@ -28,16 +28,17 @@ export default function SeatMap({ zone, date, time, onReserve }) {
   // Fetch availability when date/time changes
   useEffect(() => {
     if (!zone || !date || !time) return;
-
+    console.log(zone)
     const fetchAvailability = async () => {
       try {
         const startDate = date.toISOString().split("T")[0];
-        const availabilityData = await getZoneAvailabilities(
+        const availabilityData = (await getZoneAvailabilities(
           1, // hardcoded locationId
-          zone.zone.id,
+          zone.id,
           startDate,
           time.start
-        );
+        ))["availabilities"];
+        console.log(availabilityData)
         // Transform availability data into { seatId: true/false }
         const availabilityMap = {};
         availabilityData.forEach((seat) => {
@@ -79,7 +80,7 @@ export default function SeatMap({ zone, date, time, onReserve }) {
       {/* Map image */}
       <Box
         component="img"
-        src={`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/main/resources/maps/zones/${zone.zone.id}/map.png`}
+        src={`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/main/resources/maps/zones/${zone.id}/map.png`}
         alt={zone.name}
         sx={{
           position: "absolute",
