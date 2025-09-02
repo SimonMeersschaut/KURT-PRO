@@ -70,8 +70,8 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
         {favoriteZones.map((zone) => (
           <ZoneCardLoader
             key={zone.id}
-            locationId={locationId}
-            zoneId={zone.id}
+            zone = {zone}
+            locationId = {locationId}
             date={selectedDate}
             time={selectedTime}
             onReserve={(z) => setReservedZone(z)}
@@ -99,8 +99,8 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
             otherZones.map((zone) => (
               <ZoneCardLoader
                 key={zone.id}
-                locationId={locationId}
-                zoneId={zone.id}
+                zone = {zone}
+                locationId = {locationId}
                 date={selectedDate}
                 time={selectedTime}
                 onReserve={(z) => setReservedZone(z)}

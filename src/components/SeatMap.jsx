@@ -111,7 +111,7 @@ export default function SeatMap({ zone, date, time, onReserve }) {
                   : "green"
                 : "grey",
               transform: `rotate(${seat.rotation}deg)`,
-              transformOrigin: "top left",
+              transformOrigin: "center", // <-- rotate around center
               cursor: available ? "pointer" : "not-allowed",
               border: "1px solid black",
               zIndex: 1,

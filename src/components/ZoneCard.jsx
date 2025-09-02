@@ -9,9 +9,10 @@ import {
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-export default function ZoneCard({ zone, onClick, onFavorite, isFavorite }) {
+export default function ZoneCard({ zone, availabilitiesData, onClick, onFavorite, isFavorite }) {
   // Calculate available seats from the availabilities array
-  const availableSeats = zone.availabilities?.length || 0;
+  console.log(availabilitiesData)
+  const availableSeats = availabilitiesData.availabilities.length;
 
   return (
     <Card
@@ -22,12 +23,12 @@ export default function ZoneCard({ zone, onClick, onFavorite, isFavorite }) {
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Box>
-            <Typography variant="h6">
-              {zone.zone?.name || zone.name}
+            <Typography variant="h2">
+              {zone?.zone?.name || zone?.name}
             </Typography>
-            {zone.libraryName && (
+            {zone?.libraryName && (
               <Typography variant="body2" color="text.secondary">
-                {zone.libraryName}
+                {zone?.libraryName}
               </Typography>
             )}
           </Box>

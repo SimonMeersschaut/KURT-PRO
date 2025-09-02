@@ -9,8 +9,8 @@ export default function TimeSelector({ startTime, endTime, onChange }) {
 
   const handleStartChange = (event) => {
     const newStart = event.target.value;
-    if (newStart > endTime) {
-      onChange(newStart, newStart);
+    if (newStart >= endTime) {
+      onChange(newStart, newStart); // FIXME + 1 hour
     } else {
       onChange(newStart, endTime);
     }
