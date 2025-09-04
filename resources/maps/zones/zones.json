@@ -1,309 +1,585 @@
 [
-    {
-        "name": "Leuven",
+  {
+    "name": "Leuven",
+    "id": 1,
+    "libraries": [
+      {
+        "name": "2Bergen Arenberg",
         "id": 1,
-        "libraries": [
-            {
-                "name": "2Bergen Arenberg",
-                "id": 1,
-                "zones": [
-                    {
-                        "id": 8,
-                        "name": "Kelder"
-                    },
-                    {
-                        "id": 9,
-                        "name": "Tulp 0"
-                    },
-                    {
-                        "id": 10,
-                        "name": "De leeszaal"
-                    },
-                    {
-                        "id": 11,
-                        "name": "De boekenzaal"
-                    },
-                    {
-                        "id": 14,
-                        "name": "De zolder"
-                    }
-                ]
-            },
-            {
-                "name": "2Bergen D\u00e9sir\u00e9 Collen",
-                "id": 2,
-                "zones": [
-                    {
-                        "id": 33,
-                        "name": "Inkom"
-                    },
-                    {
-                        "id": 34,
-                        "name": "Leeszaal"
-                    },
-                    {
-                        "id": 35,
-                        "name": "Back"
-                    },
-                    {
-                        "id": 36,
-                        "name": "Flex"
-                    }
-                ]
-            },
-            {
-                "name": "Agora Learning Centre",
-                "id": 10,
-                "zones": [
-                    {
-                        "id": 1,
-                        "name": "Silent study 1"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Silent study 2"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Group Study Area"
-                    }
-                ]
-            },
-            {
-                "name": "Artes Erasmushuis",
-                "id": 3,
-                "zones": [
-                    {
-                        "id": 15,
-                        "name": "Ground Floor"
-                    },
-                    {
-                        "id": 16,
-                        "name": "Second floor"
-                    },
-                    {
-                        "id": 17,
-                        "name": "Third floor"
-                    },
-                    {
-                        "id": 18,
-                        "name": "Fourth floor"
-                    },
-                    {
-                        "id": 19,
-                        "name": "Fifth floor"
-                    },
-                    {
-                        "id": 20,
-                        "name": "Sixth floor"
-                    },
-                    {
-                        "id": 21,
-                        "name": "Seventh floor"
-                    }
-                ]
-            },
-            {
-                "name": "Economics and Business Library",
-                "id": 7,
-                "zones": []
-            },
-            {
-                "name": "Institute of Philosophy Library",
-                "id": 9,
-                "zones": []
-            },
-            {
-                "name": "Law and Criminology Library",
-                "id": 26,
-                "zones": [
-                    {
-                        "id": 24,
-                        "name": "Zaal 1A"
-                    },
-                    {
-                        "id": 25,
-                        "name": "Zaal 1B"
-                    },
-                    {
-                        "id": 27,
-                        "name": "Zaal 2A"
-                    },
-                    {
-                        "id": 28,
-                        "name": "Zaal 2B"
-                    },
-                    {
-                        "id": 29,
-                        "name": "Zaal 2C"
-                    },
-                    {
-                        "id": 30,
-                        "name": "Zaal 2BC"
-                    }
-                ]
-            },
-            {
-                "name": "Psychology and Educational Sciences Library",
-                "id": 16,
-                "zones": [
-                    {
-                        "id": 22,
-                        "name": "Gelijkvloers/Ground floor"
-                    },
-                    {
-                        "id": 23,
-                        "name": "Kelderverdieping/Basement floor"
-                    }
-                ]
-            },
-            {
-                "name": "Social Sciences Library",
-                "id": 12,
-                "zones": [
-                    {
-                        "id": 48,
-                        "name": "Communication"
-                    },
-                    {
-                        "id": 49,
-                        "name": "Anthropology"
-                    },
-                    {
-                        "id": 50,
-                        "name": "Sociology"
-                    },
-                    {
-                        "id": 51,
-                        "name": "Political Sciences"
-                    },
-                    {
-                        "id": 52,
-                        "name": "Basement"
-                    },
-                    {
-                        "id": 53,
-                        "name": "PC-room"
-                    }
-                ]
-            }
+        "zones": [
+          {
+            "id": 11,
+            "name": "De boekenzaal",
+            "floorPlanId": 25,
+            "resourceTypeIds": [
+              302,
+              303
+            ]
+          },
+          {
+            "id": 8,
+            "name": "De kelder",
+            "floorPlanId": 50,
+            "resourceTypeIds": [
+              302,
+              1
+            ]
+          },
+          {
+            "id": 13,
+            "name": "De le Ville-zaal",
+            "floorPlanId": 45,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 10,
+            "name": "De leeszaal",
+            "floorPlanId": 49,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 14,
+            "name": "De zolder",
+            "floorPlanId": 47,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Tulp 0",
+            "floorPlanId": 42,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Tulp 1",
+            "floorPlanId": 44,
+            "resourceTypeIds": [
+              302,
+              1
+            ]
+          }
         ]
-    },
-    {
-        "name": "Antwerp",
+      },
+      {
+        "name": "2Bergen D\u00e9sir\u00e9 Collen",
         "id": 2,
-        "libraries": [
-            {
-                "name": "Antwerp Library",
-                "id": 47,
-                "zones": [
-                    {
-                        "id": 42,
-                        "name": "Silent study floor one"
-                    },
-                    {
-                        "id": 43,
-                        "name": "Balustrade floor one"
-                    },
-                    {
-                        "id": 44,
-                        "name": "Group Work Rooms floor one"
-                    },
-                    {
-                        "id": 45,
-                        "name": "Balustrade floor two"
-                    },
-                    {
-                        "id": 46,
-                        "name": "Silent Study floor three"
-                    },
-                    {
-                        "id": 47,
-                        "name": "Group Work Rooms floor two"
-                    },
-                    {
-                        "id": 59,
-                        "name": "Balustrade floor three"
-                    },
-                    {
-                        "id": 60,
-                        "name": "PC table floor two"
-                    },
-                    {
-                        "id": 61,
-                        "name": "PC table floor three"
-                    }
-                ]
-            }
+        "zones": [
+          {
+            "id": 35,
+            "name": "Back",
+            "floorPlanId": 55,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 36,
+            "name": "Flex",
+            "floorPlanId": 57,
+            "resourceTypeIds": [
+              302,
+              1
+            ]
+          },
+          {
+            "id": 33,
+            "name": "Inkom",
+            "floorPlanId": 53,
+            "resourceTypeIds": [
+              302,
+              1
+            ]
+          },
+          {
+            "id": 34,
+            "name": "Leeszaal",
+            "floorPlanId": 58,
+            "resourceTypeIds": [
+              302,
+              1,
+              303
+            ]
+          }
         ]
-    },
-    {
-        "name": "Bruges",
+      },
+      {
+        "name": "Agora Learning Centre",
+        "id": 10,
+        "zones": [
+          {
+            "id": 3,
+            "name": "Flexispace",
+            "floorPlanId": 21,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Group Study Area",
+            "floorPlanId": 22,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 62,
+            "name": "Group Work Rooms",
+            "floorPlanId": -1,
+            "resourceTypeIds": [
+              1
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Silent study 1",
+            "floorPlanId": 14,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Silent study 2",
+            "floorPlanId": 72,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Artes Erasmushuis",
         "id": 3,
-        "libraries": [
-            {
-                "name": "2Bergen Bruges",
-                "id": 4,
-                "zones": []
-            }
+        "zones": [
+          {
+            "id": 15,
+            "name": "Floor 0",
+            "floorPlanId": 41,
+            "resourceTypeIds": [
+              302,
+              303,
+              1
+            ]
+          },
+          {
+            "id": 16,
+            "name": "Floor 2",
+            "floorPlanId": 33,
+            "resourceTypeIds": [
+              302,
+              303
+            ]
+          },
+          {
+            "id": 17,
+            "name": "Floor 3",
+            "floorPlanId": 34,
+            "resourceTypeIds": [
+              302,
+              303
+            ]
+          },
+          {
+            "id": 18,
+            "name": "Floor 4",
+            "floorPlanId": 35,
+            "resourceTypeIds": [
+              303,
+              302
+            ]
+          },
+          {
+            "id": 19,
+            "name": "Floor 5",
+            "floorPlanId": 36,
+            "resourceTypeIds": [
+              302,
+              303
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Floor 6",
+            "floorPlanId": 37,
+            "resourceTypeIds": [
+              303,
+              302
+            ]
+          },
+          {
+            "id": 21,
+            "name": "Floor 7",
+            "floorPlanId": 38,
+            "resourceTypeIds": [
+              302,
+              303
+            ]
+          }
         ]
-    },
-    {
-        "name": "Brussels",
+      },
+      {
+        "name": "Economics and Business Library",
+        "id": 7,
+        "zones": [
+          {
+            "id": 38,
+            "name": "EBIB - Deloitte ",
+            "floorPlanId": 66,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 37,
+            "name": "EBIB - Flexispace",
+            "floorPlanId": 65,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 41,
+            "name": "EBIB - Kelder",
+            "floorPlanId": 69,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 40,
+            "name": "EBIB - Quiet Study",
+            "floorPlanId": 68,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 39,
+            "name": "EBIB - ResLab",
+            "floorPlanId": 67,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Institute of Philosophy Library",
+        "id": 9,
+        "zones": []
+      },
+      {
+        "name": "Law and Criminology Library",
+        "id": 26,
+        "zones": [
+          {
+            "id": 24,
+            "name": "Zaal 1A",
+            "floorPlanId": 27,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 25,
+            "name": "Zaal 1B",
+            "floorPlanId": 23,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 27,
+            "name": "Zaal 2A",
+            "floorPlanId": 29,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 28,
+            "name": "Zaal 2B",
+            "floorPlanId": 30,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 30,
+            "name": "Zaal 2BC",
+            "floorPlanId": -1,
+            "resourceTypeIds": []
+          },
+          {
+            "id": 29,
+            "name": "Zaal 2C",
+            "floorPlanId": 31,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Psychology and Educational Sciences Library",
+        "id": 16,
+        "zones": [
+          {
+            "id": 22,
+            "name": "Gelijkvloers/Ground floor",
+            "floorPlanId": 70,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 23,
+            "name": "Kelderverdieping/Basement floor",
+            "floorPlanId": 71,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Social Sciences Library",
+        "id": 12,
+        "zones": [
+          {
+            "id": 49,
+            "name": "Anthropology",
+            "floorPlanId": 76,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 48,
+            "name": "Communication",
+            "floorPlanId": 74,
+            "resourceTypeIds": [
+              1,
+              302
+            ]
+          },
+          {
+            "id": 51,
+            "name": "Political Sciences",
+            "floorPlanId": 78,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 50,
+            "name": "Sociology",
+            "floorPlanId": 77,
+            "resourceTypeIds": [
+              1,
+              302
+            ]
+          },
+          {
+            "id": 52,
+            "name": "Study Basement",
+            "floorPlanId": 79,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Antwerp",
+    "id": 2,
+    "libraries": [
+      {
+        "name": "Antwerp Library",
+        "id": 47,
+        "zones": [
+          {
+            "id": 43,
+            "name": "Balustrade floor 1",
+            "floorPlanId": 81,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 45,
+            "name": "Balustrade floor 2",
+            "floorPlanId": 82,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 59,
+            "name": "Balustrade floor 3",
+            "floorPlanId": 85,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 42,
+            "name": "Silent study floor 1",
+            "floorPlanId": 80,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 46,
+            "name": "Silent Study floor 3",
+            "floorPlanId": 83,
+            "resourceTypeIds": [
+              302
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bruges",
+    "id": 3,
+    "libraries": [
+      {
+        "name": "2Bergen Bruges",
         "id": 4,
-        "libraries": [
-            {
-                "name": "Brussels Library",
-                "id": 5,
-                "zones": []
-            }
-        ]
-    },
-    {
-        "name": "Kortrijk",
+        "zones": []
+      }
+    ]
+  },
+  {
+    "name": "Brussels",
+    "id": 4,
+    "libraries": [
+      {
+        "name": "Brussels Library",
         "id": 5,
-        "libraries": [
-            {
-                "name": "Kortrijk Library",
-                "id": 15,
-                "zones": [
-                    {
-                        "id": 64,
-                        "name": "Kelder"
-                    }
-                ]
-            }
+        "zones": []
+      }
+    ]
+  },
+  {
+    "name": "Kortrijk",
+    "id": 5,
+    "libraries": [
+      {
+        "name": "Kortrijk Library",
+        "id": 15,
+        "zones": [
+          {
+            "id": 65,
+            "name": "Bovenverdieping Leeszaal",
+            "floorPlanId": 94,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 75,
+            "name": "Bovenverdieping Studielokalen",
+            "floorPlanId": 97,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 63,
+            "name": "Gelijkvloers - Zone Balie",
+            "floorPlanId": 90,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 72,
+            "name": "Gelijkvloers - Zone Vlasakker",
+            "floorPlanId": 91,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 74,
+            "name": "Gelijkvoers - Zone Study Booths",
+            "floorPlanId": 95,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 64,
+            "name": "Verdieping -1 Leeszaal KOPO",
+            "floorPlanId": 89,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 70,
+            "name": "Verdieping -1 Leeszaal Literatuur",
+            "floorPlanId": 86,
+            "resourceTypeIds": [
+              302
+            ]
+          },
+          {
+            "id": 71,
+            "name": "Verdieping -1 Leeszaal Taalkunde",
+            "floorPlanId": 88,
+            "resourceTypeIds": [
+              302
+            ]
+          }
         ]
-    },
-    {
-        "name": "Learning Lab",
-        "id": 8,
-        "libraries": [
-            {
-                "name": "TLD Celestijnenlaan",
-                "id": 54,
-                "zones": []
-            },
-            {
-                "name": "TLD Herestraat",
-                "id": 52,
-                "zones": []
-            },
-            {
-                "name": "TLD Kapeldreef",
-                "id": 36,
-                "zones": []
-            },
-            {
-                "name": "TLD Minderbroedersstraat",
-                "id": 51,
-                "zones": []
-            },
-            {
-                "name": "TLD Sabbelaan",
-                "id": 53,
-                "zones": []
-            }
-        ]
-    }
+      }
+    ]
+  },
+  {
+    "name": "Learning Lab",
+    "id": 8,
+    "libraries": [
+      {
+        "name": "TLD Celestijnenlaan",
+        "id": 54,
+        "zones": []
+      },
+      {
+        "name": "TLD Herestraat",
+        "id": 52,
+        "zones": []
+      },
+      {
+        "name": "TLD Kapeldreef",
+        "id": 36,
+        "zones": []
+      },
+      {
+        "name": "TLD Minderbroedersstraat",
+        "id": 51,
+        "zones": []
+      },
+      {
+        "name": "TLD Sabbelaan",
+        "id": 53,
+        "zones": []
+      }
+    ]
+  }
 ]

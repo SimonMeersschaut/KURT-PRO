@@ -1,1 +1,65 @@
-{"image_height": 906, "image_width": 1350, "seats": [{"id": 327, "x": 800, "y": 571, "width": 45, "height": 25, "rotation": 0}, {"id": 330, "x": 800, "y": 658, "width": 45, "height": 25, "rotation": 0}, {"id": 331, "x": 800, "y": 702, "width": 45, "height": 25, "rotation": 0}, {"id": 332, "x": 748, "y": 702, "width": 45, "height": 25, "rotation": 0}, {"id": 333, "x": 748, "y": 790, "width": 45, "height": 25, "rotation": 0}, {"id": 334, "x": 800, "y": 790, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 906,
+   "seats": [
+      {
+         "seatNr": 327,
+         "x": 800,
+         "y": 571,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 330,
+         "x": 800,
+         "y": 658,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 331,
+         "x": 800,
+         "y": 702,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 332,
+         "x": 748,
+         "y": 702,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 333,
+         "x": 748,
+         "y": 790,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 334,
+         "x": 800,
+         "y": 790,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      }
+   ],
+   "city": "Leuven",
+   "library": "Artes Erasmushuis",
+   "locationId": 3,
+   "zoneName": "Floor 7"
+}

@@ -1,1 +1,3872 @@
-{"image_height": 1909, "image_width": 1350, "seats": [{"id": 1, "x": 568, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 2, "x": 520, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 3, "x": 472, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 4, "x": 424, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 5, "x": 376, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 6, "x": 328, "y": 1664, "width": 45, "height": 25, "rotation": 0}, {"id": 7, "x": 548, "y": 1610, "width": 45, "height": 25, "rotation": 0}, {"id": 8, "x": 501, "y": 1610, "width": 45, "height": 25, "rotation": 0}, {"id": 9, "x": 453, "y": 1610, "width": 45, "height": 25, "rotation": 0}, {"id": 10, "x": 406, "y": 1610, "width": 45, "height": 25, "rotation": 0}, {"id": 11, "x": 322, "y": 1540, "width": 45, "height": 25, "rotation": 0}, {"id": 12, "x": 322, "y": 1492, "width": 45, "height": 25, "rotation": 0}, {"id": 13, "x": 404, "y": 1427, "width": 45, "height": 25, "rotation": 0}, {"id": 14, "x": 453, "y": 1427, "width": 45, "height": 25, "rotation": 0}, {"id": 15, "x": 501, "y": 1427, "width": 45, "height": 25, "rotation": 0}, {"id": 16, "x": 550, "y": 1427, "width": 45, "height": 25, "rotation": 0}, {"id": 17, "x": 422, "y": 1378, "width": 45, "height": 25, "rotation": 0}, {"id": 18, "x": 468, "y": 1378, "width": 45, "height": 25, "rotation": 0}, {"id": 19, "x": 352, "y": 1300, "width": 45, "height": 25, "rotation": 0}, {"id": 20, "x": 540, "y": 1302, "width": 45, "height": 25, "rotation": 0}, {"id": 21, "x": 352, "y": 1253, "width": 45, "height": 25, "rotation": 0}, {"id": 22, "x": 540, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 23, "x": 352, "y": 1206, "width": 45, "height": 25, "rotation": 0}, {"id": 24, "x": 540, "y": 1208, "width": 45, "height": 25, "rotation": 0}, {"id": 25, "x": 352, "y": 1159, "width": 45, "height": 25, "rotation": 0}, {"id": 26, "x": 540, "y": 1160, "width": 45, "height": 25, "rotation": 0}, {"id": 27, "x": 352, "y": 1112, "width": 45, "height": 25, "rotation": 0}, {"id": 28, "x": 540, "y": 1113, "width": 45, "height": 25, "rotation": 0}, {"id": 29, "x": 352, "y": 1065, "width": 45, "height": 25, "rotation": 0}, {"id": 30, "x": 540, "y": 1066, "width": 45, "height": 25, "rotation": 0}, {"id": 31, "x": 355, "y": 962, "width": 45, "height": 25, "rotation": 0}, {"id": 32, "x": 541, "y": 965, "width": 45, "height": 25, "rotation": 0}, {"id": 33, "x": 355, "y": 916, "width": 45, "height": 25, "rotation": 0}, {"id": 34, "x": 541, "y": 917, "width": 45, "height": 25, "rotation": 0}, {"id": 35, "x": 355, "y": 870, "width": 45, "height": 25, "rotation": 0}, {"id": 36, "x": 541, "y": 870, "width": 45, "height": 25, "rotation": 0}, {"id": 37, "x": 355, "y": 824, "width": 45, "height": 25, "rotation": 0}, {"id": 38, "x": 541, "y": 822, "width": 45, "height": 25, "rotation": 0}, {"id": 39, "x": 424, "y": 742, "width": 45, "height": 25, "rotation": 0}, {"id": 40, "x": 470, "y": 744, "width": 45, "height": 25, "rotation": 0}, {"id": 41, "x": 548, "y": 700, "width": 45, "height": 25, "rotation": 0}, {"id": 42, "x": 500, "y": 700, "width": 45, "height": 25, "rotation": 0}, {"id": 43, "x": 449, "y": 700, "width": 45, "height": 25, "rotation": 0}, {"id": 44, "x": 401, "y": 700, "width": 45, "height": 25, "rotation": 0}, {"id": 45, "x": 319, "y": 636, "width": 45, "height": 25, "rotation": 0}, {"id": 46, "x": 319, "y": 588, "width": 45, "height": 25, "rotation": 0}, {"id": 47, "x": 397, "y": 519, "width": 45, "height": 25, "rotation": 0}, {"id": 48, "x": 446, "y": 519, "width": 45, "height": 25, "rotation": 0}, {"id": 49, "x": 496, "y": 519, "width": 45, "height": 25, "rotation": 0}, {"id": 50, "x": 545, "y": 518, "width": 45, "height": 25, "rotation": 0}, {"id": 51, "x": 326, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 52, "x": 375, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 53, "x": 424, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 54, "x": 473, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 55, "x": 522, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 56, "x": 571, "y": 453, "width": 45, "height": 25, "rotation": 0}, {"id": 57, "x": 875, "y": 436, "width": 45, "height": 25, "rotation": 0}, {"id": 58, "x": 922, "y": 436, "width": 45, "height": 25, "rotation": 0}, {"id": 59, "x": 969, "y": 436, "width": 45, "height": 25, "rotation": 0}, {"id": 60, "x": 764, "y": 504, "width": 45, "height": 25, "rotation": 0}, {"id": 61, "x": 810, "y": 504, "width": 45, "height": 25, "rotation": 0}, {"id": 62, "x": 859, "y": 504, "width": 45, "height": 25, "rotation": 0}, {"id": 63, "x": 906, "y": 504, "width": 45, "height": 25, "rotation": 0}, {"id": 64, "x": 992, "y": 570, "width": 45, "height": 25, "rotation": 0}, {"id": 65, "x": 991, "y": 616, "width": 45, "height": 25, "rotation": 0}, {"id": 66, "x": 909, "y": 684, "width": 45, "height": 25, "rotation": 0}, {"id": 67, "x": 862, "y": 684, "width": 45, "height": 25, "rotation": 0}, {"id": 68, "x": 814, "y": 684, "width": 45, "height": 25, "rotation": 0}, {"id": 69, "x": 767, "y": 684, "width": 45, "height": 25, "rotation": 0}, {"id": 70, "x": 770, "y": 788, "width": 45, "height": 25, "rotation": 0}, {"id": 71, "x": 817, "y": 788, "width": 45, "height": 25, "rotation": 0}, {"id": 72, "x": 865, "y": 788, "width": 45, "height": 25, "rotation": 0}, {"id": 73, "x": 912, "y": 788, "width": 45, "height": 25, "rotation": 0}, {"id": 74, "x": 996, "y": 854, "width": 45, "height": 25, "rotation": 0}, {"id": 75, "x": 996, "y": 902, "width": 45, "height": 25, "rotation": 0}, {"id": 76, "x": 912, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 77, "x": 865, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 78, "x": 817, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 79, "x": 770, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 80, "x": 770, "y": 1091, "width": 45, "height": 25, "rotation": 0}, {"id": 81, "x": 819, "y": 1091, "width": 45, "height": 25, "rotation": 0}, {"id": 82, "x": 867, "y": 1091, "width": 45, "height": 25, "rotation": 0}, {"id": 83, "x": 916, "y": 1091, "width": 45, "height": 25, "rotation": 0}, {"id": 84, "x": 996, "y": 1154, "width": 45, "height": 25, "rotation": 0}, {"id": 85, "x": 997, "y": 1204, "width": 45, "height": 25, "rotation": 0}, {"id": 86, "x": 916, "y": 1272, "width": 45, "height": 25, "rotation": 0}, {"id": 87, "x": 867, "y": 1272, "width": 45, "height": 25, "rotation": 0}, {"id": 88, "x": 819, "y": 1272, "width": 45, "height": 25, "rotation": 0}, {"id": 89, "x": 770, "y": 1272, "width": 45, "height": 25, "rotation": 0}, {"id": 90, "x": 772, "y": 1390, "width": 45, "height": 25, "rotation": 0}, {"id": 91, "x": 821, "y": 1390, "width": 45, "height": 25, "rotation": 0}, {"id": 92, "x": 869, "y": 1390, "width": 45, "height": 25, "rotation": 0}, {"id": 93, "x": 918, "y": 1390, "width": 45, "height": 25, "rotation": 0}, {"id": 94, "x": 998, "y": 1454, "width": 45, "height": 25, "rotation": 0}, {"id": 95, "x": 1000, "y": 1502, "width": 45, "height": 25, "rotation": 0}, {"id": 96, "x": 916, "y": 1574, "width": 45, "height": 25, "rotation": 0}, {"id": 97, "x": 868, "y": 1574, "width": 45, "height": 25, "rotation": 0}, {"id": 98, "x": 820, "y": 1574, "width": 45, "height": 25, "rotation": 0}, {"id": 99, "x": 772, "y": 1574, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 1,
+         "x": 568,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305480,
+         "name": "Agora - FlexiSpace Seat 001",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 2,
+         "x": 520,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400769,
+         "name": "Agora - FlexiSpace Seat 002",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 3,
+         "x": 472,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305479,
+         "name": "Agora - FlexiSpace Seat 003",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 4,
+         "x": 424,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400770,
+         "name": "Agora - FlexiSpace Seat 004",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 5,
+         "x": 376,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305478,
+         "name": "Agora - FlexiSpace Seat 005",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 6,
+         "x": 328,
+         "y": 1664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400771,
+         "name": "Agora - FlexiSpace Seat 006",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 7,
+         "x": 548,
+         "y": 1610,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305477,
+         "name": "Agora - FlexiSpace Seat 007",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 8,
+         "x": 501,
+         "y": 1610,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400772,
+         "name": "Agora - FlexiSpace Seat 008",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 9,
+         "x": 453,
+         "y": 1610,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305476,
+         "name": "Agora - FlexiSpace Seat 009",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 10,
+         "x": 406,
+         "y": 1610,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400773,
+         "name": "Agora - FlexiSpace Seat 010",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 11,
+         "x": 322,
+         "y": 1540,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305475,
+         "name": "Agora - FlexiSpace Seat 011",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 12,
+         "x": 322,
+         "y": 1492,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400774,
+         "name": "Agora - FlexiSpace Seat 012",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 13,
+         "x": 404,
+         "y": 1427,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305474,
+         "name": "Agora - FlexiSpace Seat 013",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 14,
+         "x": 453,
+         "y": 1427,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400775,
+         "name": "Agora - FlexiSpace Seat 014",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 15,
+         "x": 501,
+         "y": 1427,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305473,
+         "name": "Agora - FlexiSpace Seat 015",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 16,
+         "x": 550,
+         "y": 1427,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400776,
+         "name": "Agora - FlexiSpace Seat 016",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 17,
+         "x": 422,
+         "y": 1378,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305472,
+         "name": "Agora - FlexiSpace Seat 017",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 18,
+         "x": 468,
+         "y": 1378,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400777,
+         "name": "Agora - FlexiSpace Seat 018",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 19,
+         "x": 352,
+         "y": 1300,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305471,
+         "name": "Agora - FlexiSpace Seat 019",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 20,
+         "x": 540,
+         "y": 1302,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400778,
+         "name": "Agora - FlexiSpace Seat 020",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 21,
+         "x": 352,
+         "y": 1253,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305470,
+         "name": "Agora - FlexiSpace Seat 021",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 22,
+         "x": 540,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400779,
+         "name": "Agora - FlexiSpace Seat 022",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 23,
+         "x": 352,
+         "y": 1206,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305469,
+         "name": "Agora - FlexiSpace Seat 023",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 24,
+         "x": 540,
+         "y": 1208,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400780,
+         "name": "Agora - FlexiSpace Seat 024",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 25,
+         "x": 352,
+         "y": 1159,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305468,
+         "name": "Agora - FlexiSpace Seat 025",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 26,
+         "x": 540,
+         "y": 1160,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400781,
+         "name": "Agora - FlexiSpace Seat 026",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 27,
+         "x": 352,
+         "y": 1112,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305467,
+         "name": "Agora - FlexiSpace Seat 027",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 28,
+         "x": 540,
+         "y": 1113,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400782,
+         "name": "Agora - FlexiSpace Seat 028",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 29,
+         "x": 352,
+         "y": 1065,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305466,
+         "name": "Agora - FlexiSpace Seat 029",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 30,
+         "x": 540,
+         "y": 1066,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400783,
+         "name": "Agora - FlexiSpace Seat 030",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 31,
+         "x": 355,
+         "y": 962,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305465,
+         "name": "Agora - FlexiSpace Seat 031",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 32,
+         "x": 541,
+         "y": 965,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400784,
+         "name": "Agora - FlexiSpace Seat 032",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 33,
+         "x": 355,
+         "y": 916,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305464,
+         "name": "Agora - FlexiSpace Seat 033",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 34,
+         "x": 541,
+         "y": 917,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400785,
+         "name": "Agora - FlexiSpace Seat 034",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 35,
+         "x": 355,
+         "y": 870,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305463,
+         "name": "Agora - FlexiSpace Seat 035",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 36,
+         "x": 541,
+         "y": 870,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400786,
+         "name": "Agora - FlexiSpace Seat 036",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 37,
+         "x": 355,
+         "y": 824,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305462,
+         "name": "Agora - FlexiSpace Seat 037",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 5,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 38,
+         "x": 541,
+         "y": 822,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400787,
+         "name": "Agora - FlexiSpace Seat 038",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 39,
+         "x": 424,
+         "y": 742,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305461,
+         "name": "Agora - FlexiSpace Seat 039",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 40,
+         "x": 470,
+         "y": 744,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400788,
+         "name": "Agora - FlexiSpace Seat 040",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 41,
+         "x": 548,
+         "y": 700,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305460,
+         "name": "Agora - FlexiSpace Seat 041",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 42,
+         "x": 500,
+         "y": 700,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400789,
+         "name": "Agora - FlexiSpace Seat 042",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 43,
+         "x": 449,
+         "y": 700,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305459,
+         "name": "Agora - FlexiSpace Seat 043",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 44,
+         "x": 401,
+         "y": 700,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400790,
+         "name": "Agora - FlexiSpace Seat 044",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 45,
+         "x": 319,
+         "y": 636,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305458,
+         "name": "Agora - FlexiSpace Seat 045",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 46,
+         "x": 319,
+         "y": 588,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400791,
+         "name": "Agora - FlexiSpace Seat 046",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 47,
+         "x": 397,
+         "y": 519,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305457,
+         "name": "Agora - FlexiSpace Seat 047",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 48,
+         "x": 446,
+         "y": 519,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400792,
+         "name": "Agora - FlexiSpace Seat 048",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 49,
+         "x": 496,
+         "y": 519,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305456,
+         "name": "Agora - FlexiSpace Seat 049",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 50,
+         "x": 545,
+         "y": 518,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400793,
+         "name": "Agora - FlexiSpace Seat 050",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 51,
+         "x": 326,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305455,
+         "name": "Agora - FlexiSpace Seat 051",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 52,
+         "x": 375,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400794,
+         "name": "Agora - FlexiSpace Seat 052",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 53,
+         "x": 424,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305454,
+         "name": "Agora - FlexiSpace Seat 053",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 54,
+         "x": 473,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400795,
+         "name": "Agora - FlexiSpace Seat 054",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 55,
+         "x": 522,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305453,
+         "name": "Agora - FlexiSpace Seat 055",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 56,
+         "x": 571,
+         "y": 453,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400796,
+         "name": "Agora - FlexiSpace Seat 056",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 57,
+         "x": 875,
+         "y": 436,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305452,
+         "name": "Agora - FlexiSpace Seat 057",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 58,
+         "x": 922,
+         "y": 436,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400797,
+         "name": "Agora - FlexiSpace Seat 058",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 59,
+         "x": 969,
+         "y": 436,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305451,
+         "name": "Agora - FlexiSpace Seat 059",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 60,
+         "x": 764,
+         "y": 504,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400798,
+         "name": "Agora - FlexiSpace Seat 060",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 61,
+         "x": 810,
+         "y": 504,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305450,
+         "name": "Agora - FlexiSpace Seat 061",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 62,
+         "x": 859,
+         "y": 504,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400799,
+         "name": "Agora - FlexiSpace Seat 062",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 63,
+         "x": 906,
+         "y": 504,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305449,
+         "name": "Agora - FlexiSpace Seat 063",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 64,
+         "x": 992,
+         "y": 570,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400800,
+         "name": "Agora - FlexiSpace Seat 064",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 65,
+         "x": 991,
+         "y": 616,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305448,
+         "name": "Agora - FlexiSpace Seat 065",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 66,
+         "x": 909,
+         "y": 684,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400801,
+         "name": "Agora - FlexiSpace Seat 066",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 67,
+         "x": 862,
+         "y": 684,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305447,
+         "name": "Agora - FlexiSpace Seat 067",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 68,
+         "x": 814,
+         "y": 684,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400802,
+         "name": "Agora - FlexiSpace Seat 068",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 69,
+         "x": 767,
+         "y": 684,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305446,
+         "name": "Agora - FlexiSpace Seat 069",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 70,
+         "x": 770,
+         "y": 788,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400803,
+         "name": "Agora - FlexiSpace Seat 070",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 71,
+         "x": 817,
+         "y": 788,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305445,
+         "name": "Agora - FlexiSpace Seat 071",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 72,
+         "x": 865,
+         "y": 788,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400804,
+         "name": "Agora - FlexiSpace Seat 072",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 73,
+         "x": 912,
+         "y": 788,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305444,
+         "name": "Agora - FlexiSpace Seat 073",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 74,
+         "x": 996,
+         "y": 854,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400805,
+         "name": "Agora - FlexiSpace Seat 074",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 75,
+         "x": 996,
+         "y": 902,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305443,
+         "name": "Agora - FlexiSpace Seat 075",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 76,
+         "x": 912,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400806,
+         "name": "Agora - FlexiSpace Seat 076",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 77,
+         "x": 865,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305442,
+         "name": "Agora - FlexiSpace Seat 077",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 78,
+         "x": 817,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400807,
+         "name": "Agora - FlexiSpace Seat 078",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 79,
+         "x": 770,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305441,
+         "name": "Agora - FlexiSpace Seat 079",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 80,
+         "x": 770,
+         "y": 1091,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400808,
+         "name": "Agora - FlexiSpace Seat 080",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 81,
+         "x": 819,
+         "y": 1091,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400809,
+         "name": "Agora - FlexiSpace Seat 081",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 82,
+         "x": 867,
+         "y": 1091,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400810,
+         "name": "Agora - FlexiSpace Seat 082",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 2,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 83,
+         "x": 916,
+         "y": 1091,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400811,
+         "name": "Agora - FlexiSpace Seat 083",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 84,
+         "x": 996,
+         "y": 1154,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400812,
+         "name": "Agora - FlexiSpace Seat 084",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 85,
+         "x": 997,
+         "y": 1204,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400813,
+         "name": "Agora - FlexiSpace Seat 085",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 86,
+         "x": 916,
+         "y": 1272,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400814,
+         "name": "Agora - FlexiSpace Seat 086",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 87,
+         "x": 867,
+         "y": 1272,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400815,
+         "name": "Agora - FlexiSpace Seat 087",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 88,
+         "x": 819,
+         "y": 1272,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400816,
+         "name": "Agora - FlexiSpace Seat 088",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 89,
+         "x": 770,
+         "y": 1272,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400817,
+         "name": "Agora - FlexiSpace Seat 089",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 90,
+         "x": 772,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400818,
+         "name": "Agora - FlexiSpace Seat 090",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 91,
+         "x": 821,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400819,
+         "name": "Agora - FlexiSpace Seat 091",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 92,
+         "x": 869,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400820,
+         "name": "Agora - FlexiSpace Seat 092",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 93,
+         "x": 918,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400821,
+         "name": "Agora - FlexiSpace Seat 093",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 94,
+         "x": 998,
+         "y": 1454,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400822,
+         "name": "Agora - FlexiSpace Seat 094",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 95,
+         "x": 1000,
+         "y": 1502,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400823,
+         "name": "Agora - FlexiSpace Seat 095",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 96,
+         "x": 916,
+         "y": 1574,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400824,
+         "name": "Agora - FlexiSpace Seat 096",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 97,
+         "x": 868,
+         "y": 1574,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400825,
+         "name": "Agora - FlexiSpace Seat 097",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 98,
+         "x": 820,
+         "y": 1574,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400826,
+         "name": "Agora - FlexiSpace Seat 098",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 99,
+         "x": 772,
+         "y": 1574,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400827,
+         "name": "Agora - FlexiSpace Seat 099",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/3",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Agora Learning Centre",
+   "locationId": 10,
+   "zoneName": "Flexispace"
+}

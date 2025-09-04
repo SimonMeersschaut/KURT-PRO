@@ -1,1 +1,299 @@
-{"image_height": 1249, "image_width": 1350, "seats": [{"id": 235, "x": 950, "y": 569, "width": 45, "height": 25, "rotation": 0}, {"id": 236, "x": 950, "y": 636, "width": 45, "height": 25, "rotation": 0}, {"id": 237, "x": 950, "y": 704, "width": 45, "height": 25, "rotation": 0}, {"id": 238, "x": 950, "y": 770, "width": 45, "height": 25, "rotation": 0}, {"id": 239, "x": 887, "y": 745, "width": 45, "height": 25, "rotation": 0}, {"id": 240, "x": 887, "y": 694, "width": 45, "height": 25, "rotation": 0}, {"id": 241, "x": 887, "y": 644, "width": 45, "height": 25, "rotation": 0}, {"id": 242, "x": 803, "y": 644, "width": 45, "height": 25, "rotation": 0}, {"id": 243, "x": 803, "y": 694, "width": 45, "height": 25, "rotation": 0}, {"id": 244, "x": 803, "y": 745, "width": 45, "height": 25, "rotation": 0}, {"id": 245, "x": 797, "y": 888, "width": 45, "height": 25, "rotation": 0}, {"id": 246, "x": 797, "y": 962, "width": 45, "height": 25, "rotation": 0}, {"id": 247, "x": 797, "y": 1036, "width": 45, "height": 25, "rotation": 0}, {"id": 248, "x": 797, "y": 1112, "width": 45, "height": 25, "rotation": 0}, {"id": 249, "x": 733, "y": 808, "width": 45, "height": 25, "rotation": 0}, {"id": 250, "x": 733, "y": 760, "width": 45, "height": 25, "rotation": 0}, {"id": 251, "x": 733, "y": 711, "width": 45, "height": 25, "rotation": 0}, {"id": 252, "x": 647, "y": 711, "width": 45, "height": 25, "rotation": 0}, {"id": 253, "x": 647, "y": 760, "width": 45, "height": 25, "rotation": 0}, {"id": 254, "x": 647, "y": 808, "width": 45, "height": 25, "rotation": 0}, {"id": 255, "x": 606, "y": 831, "width": 45, "height": 25, "rotation": 0}, {"id": 256, "x": 606, "y": 784, "width": 45, "height": 25, "rotation": 0}, {"id": 257, "x": 606, "y": 738, "width": 45, "height": 25, "rotation": 0}, {"id": 258, "x": 606, "y": 689, "width": 45, "height": 25, "rotation": 0}, {"id": 259, "x": 523, "y": 689, "width": 45, "height": 25, "rotation": 0}, {"id": 260, "x": 523, "y": 738, "width": 45, "height": 25, "rotation": 0}, {"id": 261, "x": 523, "y": 784, "width": 45, "height": 25, "rotation": 0}, {"id": 262, "x": 523, "y": 831, "width": 45, "height": 25, "rotation": 0}, {"id": 263, "x": 489, "y": 831, "width": 45, "height": 25, "rotation": 0}, {"id": 264, "x": 489, "y": 784, "width": 45, "height": 25, "rotation": 0}, {"id": 265, "x": 489, "y": 738, "width": 45, "height": 25, "rotation": 0}, {"id": 266, "x": 489, "y": 689, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1249,
+   "seats": [
+      {
+         "seatNr": 235,
+         "x": 950,
+         "y": 569,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 236,
+         "x": 950,
+         "y": 636,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 237,
+         "x": 950,
+         "y": 704,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 238,
+         "x": 950,
+         "y": 770,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 239,
+         "x": 887,
+         "y": 745,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 240,
+         "x": 887,
+         "y": 694,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 241,
+         "x": 887,
+         "y": 644,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 242,
+         "x": 803,
+         "y": 644,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 243,
+         "x": 803,
+         "y": 694,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 244,
+         "x": 803,
+         "y": 745,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 245,
+         "x": 797,
+         "y": 888,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 246,
+         "x": 797,
+         "y": 962,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 247,
+         "x": 797,
+         "y": 1036,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 248,
+         "x": 797,
+         "y": 1112,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 249,
+         "x": 733,
+         "y": 808,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 250,
+         "x": 733,
+         "y": 760,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 251,
+         "x": 733,
+         "y": 711,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 252,
+         "x": 647,
+         "y": 711,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 253,
+         "x": 647,
+         "y": 760,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 254,
+         "x": 647,
+         "y": 808,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 255,
+         "x": 606,
+         "y": 831,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 256,
+         "x": 606,
+         "y": 784,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 257,
+         "x": 606,
+         "y": 738,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 258,
+         "x": 606,
+         "y": 689,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 259,
+         "x": 523,
+         "y": 689,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 260,
+         "x": 523,
+         "y": 738,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 261,
+         "x": 523,
+         "y": 784,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 262,
+         "x": 523,
+         "y": 831,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 263,
+         "x": 489,
+         "y": 831,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 264,
+         "x": 489,
+         "y": 784,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 265,
+         "x": 489,
+         "y": 738,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 266,
+         "x": 489,
+         "y": 689,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      }
+   ],
+   "city": "Leuven",
+   "library": "Artes Erasmushuis",
+   "locationId": 3,
+   "zoneName": "Floor 5"
+}

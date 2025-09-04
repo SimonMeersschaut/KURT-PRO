@@ -1,1 +1,5048 @@
-{"image_height": 1620, "image_width": 1350, "seats": [{"id": 1, "x": 47, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 2, "x": 47, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 3, "x": 47, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 4, "x": 47, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 5, "x": 123, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 6, "x": 123, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 7, "x": 123, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 8, "x": 123, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 9, "x": 153, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 10, "x": 153, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 11, "x": 153, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 12, "x": 153, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 13, "x": 233, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 14, "x": 233, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 15, "x": 233, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 16, "x": 233, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 17, "x": 262, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 18, "x": 262, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 19, "x": 262, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 20, "x": 262, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 21, "x": 338, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 22, "x": 338, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 23, "x": 338, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 24, "x": 338, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 25, "x": 367, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 26, "x": 367, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 27, "x": 367, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 28, "x": 367, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 29, "x": 444, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 30, "x": 444, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 31, "x": 444, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 32, "x": 444, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 33, "x": 472, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 34, "x": 472, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 35, "x": 472, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 36, "x": 472, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 37, "x": 548, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 38, "x": 548, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 39, "x": 548, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 40, "x": 548, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 41, "x": 579, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 42, "x": 579, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 43, "x": 579, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 44, "x": 579, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 45, "x": 659, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 46, "x": 659, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 47, "x": 659, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 48, "x": 659, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 49, "x": 687, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 50, "x": 687, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 51, "x": 687, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 52, "x": 687, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 53, "x": 765, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 54, "x": 765, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 55, "x": 765, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 56, "x": 765, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 57, "x": 794, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 58, "x": 794, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 59, "x": 794, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 60, "x": 794, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 61, "x": 872, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 62, "x": 872, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 63, "x": 872, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 64, "x": 872, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 65, "x": 902, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 66, "x": 902, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 67, "x": 902, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 68, "x": 902, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 69, "x": 981, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 70, "x": 981, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 71, "x": 981, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 72, "x": 981, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 73, "x": 1012, "y": 487, "width": 45, "height": 25, "rotation": 0}, {"id": 74, "x": 1012, "y": 445, "width": 45, "height": 25, "rotation": 0}, {"id": 75, "x": 1012, "y": 400, "width": 45, "height": 25, "rotation": 0}, {"id": 76, "x": 1012, "y": 358, "width": 45, "height": 25, "rotation": 0}, {"id": 77, "x": 1091, "y": 357, "width": 45, "height": 25, "rotation": 0}, {"id": 78, "x": 1091, "y": 399, "width": 45, "height": 25, "rotation": 0}, {"id": 79, "x": 1091, "y": 444, "width": 45, "height": 25, "rotation": 0}, {"id": 80, "x": 1091, "y": 486, "width": 45, "height": 25, "rotation": 0}, {"id": 81, "x": 890, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 82, "x": 926, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 83, "x": 961, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 84, "x": 998, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 85, "x": 1036, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 86, "x": 1075, "y": 848, "width": 45, "height": 25, "rotation": 0}, {"id": 87, "x": 890, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 88, "x": 924, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 89, "x": 963, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 90, "x": 1002, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 91, "x": 1036, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 92, "x": 1077, "y": 971, "width": 45, "height": 25, "rotation": 0}, {"id": 93, "x": 891, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 94, "x": 926, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 95, "x": 964, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 96, "x": 999, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 97, "x": 1036, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 98, "x": 1072, "y": 1002, "width": 45, "height": 25, "rotation": 0}, {"id": 99, "x": 894, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 100, "x": 929, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 101, "x": 965, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 102, "x": 999, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 103, "x": 1038, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 104, "x": 1076, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 105, "x": 894, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 106, "x": 929, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 107, "x": 967, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 108, "x": 999, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 109, "x": 1039, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 110, "x": 1080, "y": 1153, "width": 45, "height": 25, "rotation": 0}, {"id": 111, "x": 896, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 112, "x": 931, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 113, "x": 967, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 114, "x": 1001, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 115, "x": 1037, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 116, "x": 1076, "y": 1255, "width": 45, "height": 25, "rotation": 0}, {"id": 117, "x": 894, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 118, "x": 929, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 119, "x": 966, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 120, "x": 1001, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 121, "x": 1037, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 122, "x": 1077, "y": 1289, "width": 45, "height": 25, "rotation": 0}, {"id": 123, "x": 896, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 124, "x": 931, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 125, "x": 967, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 126, "x": 1003, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 127, "x": 1039, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 128, "x": 1075, "y": 1389, "width": 45, "height": 25, "rotation": 0}, {"id": 129, "x": 840, "y": 1252, "width": 45, "height": 25, "rotation": 0}, {"id": 132, "x": 843, "y": 1340, "width": 45, "height": 25, "rotation": 0}, {"id": 133, "x": 746, "y": 1340, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1620,
+   "seats": [
+      {
+         "seatNr": 1,
+         "x": 47,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 106268,
+         "name": "PBIB -  Seat 001",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 2,
+         "x": 47,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400549,
+         "name": "PBIB -  Seat 002",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 3,
+         "x": 47,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304095,
+         "name": "PBIB -  Seat 003",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 4,
+         "x": 47,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304096,
+         "name": "PBIB -  Seat 004",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 5,
+         "x": 123,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305224,
+         "name": "PBIB -  Seat 005",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 6,
+         "x": 123,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400550,
+         "name": "PBIB -  Seat 006",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 7,
+         "x": 123,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305225,
+         "name": "PBIB -  Seat 007",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 8,
+         "x": 123,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305290,
+         "name": "PBIB -  Seat 008",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 9,
+         "x": 153,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305226,
+         "name": "PBIB -  Seat 009",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 10,
+         "x": 153,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400551,
+         "name": "PBIB -  Seat 010",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 11,
+         "x": 153,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305227,
+         "name": "PBIB -  Seat 011",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 12,
+         "x": 153,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305291,
+         "name": "PBIB -  Seat 012",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 13,
+         "x": 233,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305228,
+         "name": "PBIB -  Seat 013",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 14,
+         "x": 233,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400552,
+         "name": "PBIB -  Seat 014",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 15,
+         "x": 233,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304107,
+         "name": "PBIB -  Seat 015",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 16,
+         "x": 233,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305292,
+         "name": "PBIB -  Seat 016",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 17,
+         "x": 262,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305229,
+         "name": "PBIB -  Seat 017",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 18,
+         "x": 262,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400553,
+         "name": "PBIB -  Seat 018",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 19,
+         "x": 262,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305230,
+         "name": "PBIB -  Seat 019",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 20,
+         "x": 262,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304112,
+         "name": "PBIB -  Seat 020",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 21,
+         "x": 338,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305231,
+         "name": "PBIB -  Seat 021",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 22,
+         "x": 338,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400554,
+         "name": "PBIB -  Seat 022",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 23,
+         "x": 338,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304115,
+         "name": "PBIB -  Seat 023",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 24,
+         "x": 338,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305293,
+         "name": "PBIB -  Seat 024",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 25,
+         "x": 367,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305232,
+         "name": "PBIB -  Seat 025",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 26,
+         "x": 367,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400555,
+         "name": "PBIB -  Seat 026",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 27,
+         "x": 367,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305233,
+         "name": "PBIB -  Seat 027",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 28,
+         "x": 367,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304120,
+         "name": "PBIB -  Seat 028",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 29,
+         "x": 444,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304121,
+         "name": "PBIB -  Seat 029",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 30,
+         "x": 444,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400556,
+         "name": "PBIB -  Seat 030",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 31,
+         "x": 444,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304123,
+         "name": "PBIB -  Seat 031",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 32,
+         "x": 444,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304124,
+         "name": "PBIB -  Seat 032",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 33,
+         "x": 472,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305234,
+         "name": "PBIB -  Seat 033",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 34,
+         "x": 472,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400557,
+         "name": "PBIB -  Seat 034",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 35,
+         "x": 472,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305235,
+         "name": "PBIB -  Seat 035",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 36,
+         "x": 472,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305294,
+         "name": "PBIB -  Seat 036",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 37,
+         "x": 548,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305236,
+         "name": "PBIB -  Seat 037",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 38,
+         "x": 548,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400558,
+         "name": "PBIB -  Seat 038",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 39,
+         "x": 548,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304131,
+         "name": "PBIB -  Seat 039",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 40,
+         "x": 548,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304132,
+         "name": "PBIB -  Seat 040",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 41,
+         "x": 579,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304133,
+         "name": "PBIB -  Seat 041",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 42,
+         "x": 579,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400559,
+         "name": "PBIB -  Seat 042",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 43,
+         "x": 579,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305237,
+         "name": "PBIB -  Seat 043",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 44,
+         "x": 579,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305295,
+         "name": "PBIB -  Seat 044",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 45,
+         "x": 659,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304137,
+         "name": "PBIB -  Seat 045",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 46,
+         "x": 659,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400560,
+         "name": "PBIB -  Seat 046",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 47,
+         "x": 659,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305238,
+         "name": "PBIB -  Seat 047",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 48,
+         "x": 659,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305296,
+         "name": "PBIB -  Seat 048",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 49,
+         "x": 687,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305239,
+         "name": "PBIB -  Seat 049",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 50,
+         "x": 687,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400561,
+         "name": "PBIB -  Seat 050",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 51,
+         "x": 687,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304143,
+         "name": "PBIB -  Seat 051",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 52,
+         "x": 687,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305297,
+         "name": "PBIB -  Seat 052",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 53,
+         "x": 765,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305240,
+         "name": "PBIB -  Seat 053",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 54,
+         "x": 765,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400562,
+         "name": "PBIB -  Seat 054",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 55,
+         "x": 765,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304147,
+         "name": "PBIB -  Seat 055",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 56,
+         "x": 765,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304148,
+         "name": "PBIB -  Seat 056",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 57,
+         "x": 794,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304149,
+         "name": "PBIB -  Seat 057",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 58,
+         "x": 794,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400563,
+         "name": "PBIB -  Seat 058",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 59,
+         "x": 794,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305241,
+         "name": "PBIB -  Seat 059",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 60,
+         "x": 794,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305298,
+         "name": "PBIB -  Seat 060",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 61,
+         "x": 872,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304153,
+         "name": "PBIB -  Seat 061",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 62,
+         "x": 872,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400564,
+         "name": "PBIB -  Seat 062",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 63,
+         "x": 872,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305242,
+         "name": "PBIB -  Seat 063",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 64,
+         "x": 872,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305299,
+         "name": "PBIB -  Seat 064",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 65,
+         "x": 902,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305243,
+         "name": "PBIB -  Seat 065",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 66,
+         "x": 902,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400565,
+         "name": "PBIB -  Seat 066",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 67,
+         "x": 902,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304159,
+         "name": "PBIB -  Seat 067",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 68,
+         "x": 902,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305300,
+         "name": "PBIB -  Seat 068",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 69,
+         "x": 981,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304161,
+         "name": "PBIB -  Seat 069",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 70,
+         "x": 981,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400566,
+         "name": "PBIB -  Seat 070",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 71,
+         "x": 981,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305244,
+         "name": "PBIB -  Seat 071",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 72,
+         "x": 981,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305301,
+         "name": "PBIB -  Seat 072",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 73,
+         "x": 1012,
+         "y": 487,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304165,
+         "name": "PBIB -  Seat 073",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 74,
+         "x": 1012,
+         "y": 445,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400567,
+         "name": "PBIB -  Seat 074",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 75,
+         "x": 1012,
+         "y": 400,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304167,
+         "name": "PBIB -  Seat 075",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 76,
+         "x": 1012,
+         "y": 358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305302,
+         "name": "PBIB -  Seat 076",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 77,
+         "x": 1091,
+         "y": 357,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304169,
+         "name": "PBIB -  Seat 077",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 78,
+         "x": 1091,
+         "y": 399,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400568,
+         "name": "PBIB -  Seat 078",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 79,
+         "x": 1091,
+         "y": 444,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305245,
+         "name": "PBIB -  Seat 079",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 80,
+         "x": 1091,
+         "y": 486,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304172,
+         "name": "PBIB -  Seat 080",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 81,
+         "x": 890,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305518,
+         "name": "PBIB -  Seat 081",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 82,
+         "x": 926,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305303,
+         "name": "PBIB -  Seat 082",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 83,
+         "x": 961,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305247,
+         "name": "PBIB -  Seat 083",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 84,
+         "x": 998,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304176,
+         "name": "PBIB -  Seat 084",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 85,
+         "x": 1036,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304177,
+         "name": "PBIB -  Seat 085",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 86,
+         "x": 1075,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304178,
+         "name": "PBIB -  Seat 086",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 87,
+         "x": 890,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400569,
+         "name": "PBIB -  Seat 087",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 88,
+         "x": 924,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305248,
+         "name": "PBIB -  Seat 088",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 89,
+         "x": 963,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305304,
+         "name": "PBIB -  Seat 089",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 90,
+         "x": 1002,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305249,
+         "name": "PBIB -  Seat 090",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 91,
+         "x": 1036,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305305,
+         "name": "PBIB -  Seat 091",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 92,
+         "x": 1077,
+         "y": 971,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304184,
+         "name": "PBIB -  Seat 092",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 93,
+         "x": 891,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305517,
+         "name": "PBIB -  Seat 093",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 94,
+         "x": 926,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305306,
+         "name": "PBIB -  Seat 094",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 95,
+         "x": 964,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305251,
+         "name": "PBIB -  Seat 095",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 96,
+         "x": 999,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304188,
+         "name": "PBIB -  Seat 096",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 97,
+         "x": 1036,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304189,
+         "name": "PBIB -  Seat 097",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 98,
+         "x": 1072,
+         "y": 1002,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304190,
+         "name": "PBIB -  Seat 098",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 99,
+         "x": 894,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400570,
+         "name": "PBIB -  Seat 099",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 100,
+         "x": 929,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305252,
+         "name": "PBIB -  Seat 100",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 101,
+         "x": 965,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304193,
+         "name": "PBIB -  Seat 101",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 102,
+         "x": 999,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305253,
+         "name": "PBIB -  Seat 102",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 103,
+         "x": 1038,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304195,
+         "name": "PBIB -  Seat 103",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 104,
+         "x": 1076,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304196,
+         "name": "PBIB -  Seat 104",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "desktop computer",
+               "name": "Desktop computer",
+               "iconType": 0,
+               "icon": "computer"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 105,
+         "x": 894,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305516,
+         "name": "PBIB -  Seat 105",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 106,
+         "x": 929,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304198,
+         "name": "PBIB -  Seat 106",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 107,
+         "x": 967,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304199,
+         "name": "PBIB -  Seat 107",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 108,
+         "x": 999,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305307,
+         "name": "PBIB -  Seat 108",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 109,
+         "x": 1039,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305255,
+         "name": "PBIB -  Seat 109",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 110,
+         "x": 1080,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304202,
+         "name": "PBIB -  Seat 110",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 111,
+         "x": 896,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400571,
+         "name": "PBIB -  Seat 111",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 112,
+         "x": 931,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304204,
+         "name": "PBIB -  Seat 112",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 113,
+         "x": 967,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304205,
+         "name": "PBIB -  Seat 113",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 114,
+         "x": 1001,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304206,
+         "name": "PBIB -  Seat 114",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 115,
+         "x": 1037,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305308,
+         "name": "PBIB -  Seat 115",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 116,
+         "x": 1076,
+         "y": 1255,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304208,
+         "name": "PBIB -  Seat 116",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "Docking1",
+               "name": "Docking 1",
+               "iconType": 1,
+               "icon": "assets/tags/docking1.svg"
+            },
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 117,
+         "x": 894,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305515,
+         "name": "PBIB -  Seat 117",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 118,
+         "x": 929,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304210,
+         "name": "PBIB -  Seat 118",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 119,
+         "x": 966,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305257,
+         "name": "PBIB -  Seat 119",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 120,
+         "x": 1001,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304212,
+         "name": "PBIB -  Seat 120",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 121,
+         "x": 1037,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304213,
+         "name": "PBIB -  Seat 121",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 122,
+         "x": 1077,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305309,
+         "name": "PBIB -  Seat 122",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 123,
+         "x": 896,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400572,
+         "name": "PBIB -  Seat 123",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 124,
+         "x": 931,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304216,
+         "name": "PBIB -  Seat 124",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 125,
+         "x": 967,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304217,
+         "name": "PBIB -  Seat 125",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 126,
+         "x": 1003,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304218,
+         "name": "PBIB -  Seat 126",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 127,
+         "x": 1039,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305310,
+         "name": "PBIB -  Seat 127",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 128,
+         "x": 1075,
+         "y": 1389,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304220,
+         "name": "PBIB -  Seat 128",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 129,
+         "x": 840,
+         "y": 1252,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400573,
+         "name": "PBIB -  Seat 129",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 132,
+         "x": 843,
+         "y": 1340,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400574,
+         "name": "PBIB -  Seat 132",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 133,
+         "x": 746,
+         "y": 1340,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400575,
+         "name": "PBIB -  Seat 133",
+         "locationId": 16,
+         "unit": "Psychology and Educational Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/pbib/afbeeldingen/pbib-layout-plaatsen.pdf",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Psychology and Educational Sciences Library",
+   "locationId": 16,
+   "zoneName": "Gelijkvloers/Ground floor"
+}

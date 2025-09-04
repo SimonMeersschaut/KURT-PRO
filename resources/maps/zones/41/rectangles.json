@@ -1,1 +1,1169 @@
-{"image_height": 2073, "image_width": 1350, "seats": [{"id": 415, "x": 548, "y": 1598, "width": 45, "height": 25, "rotation": 0}, {"id": 416, "x": 546, "y": 1470, "width": 45, "height": 25, "rotation": 0}, {"id": 417, "x": 451, "y": 1598, "width": 45, "height": 25, "rotation": 0}, {"id": 418, "x": 452, "y": 1470, "width": 45, "height": 25, "rotation": 0}, {"id": 419, "x": 354, "y": 1598, "width": 45, "height": 25, "rotation": 0}, {"id": 420, "x": 358, "y": 1470, "width": 45, "height": 25, "rotation": 0}, {"id": 421, "x": 548, "y": 1368, "width": 45, "height": 25, "rotation": 0}, {"id": 422, "x": 546, "y": 1242, "width": 45, "height": 25, "rotation": 0}, {"id": 423, "x": 453, "y": 1368, "width": 45, "height": 25, "rotation": 0}, {"id": 424, "x": 450, "y": 1242, "width": 45, "height": 25, "rotation": 0}, {"id": 425, "x": 358, "y": 1368, "width": 45, "height": 25, "rotation": 0}, {"id": 426, "x": 354, "y": 1242, "width": 45, "height": 25, "rotation": 0}, {"id": 427, "x": 538, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 428, "x": 532, "y": 998, "width": 45, "height": 25, "rotation": 0}, {"id": 429, "x": 444, "y": 1122, "width": 45, "height": 25, "rotation": 0}, {"id": 430, "x": 438, "y": 998, "width": 45, "height": 25, "rotation": 0}, {"id": 431, "x": 346, "y": 1120, "width": 45, "height": 25, "rotation": 0}, {"id": 432, "x": 344, "y": 998, "width": 45, "height": 25, "rotation": 0}, {"id": 433, "x": 534, "y": 880, "width": 45, "height": 25, "rotation": 0}, {"id": 434, "x": 534, "y": 756, "width": 45, "height": 25, "rotation": 0}, {"id": 435, "x": 438, "y": 880, "width": 45, "height": 25, "rotation": 0}, {"id": 436, "x": 434, "y": 754, "width": 45, "height": 25, "rotation": 0}, {"id": 437, "x": 336, "y": 880, "width": 45, "height": 25, "rotation": 0}, {"id": 438, "x": 340, "y": 754, "width": 45, "height": 25, "rotation": 0}, {"id": 439, "x": 492, "y": 580, "width": 45, "height": 25, "rotation": 0}, {"id": 440, "x": 490, "y": 456, "width": 45, "height": 25, "rotation": 0}, {"id": 441, "x": 393, "y": 580, "width": 45, "height": 25, "rotation": 0}, {"id": 442, "x": 396, "y": 456, "width": 45, "height": 25, "rotation": 0}, {"id": 443, "x": 294, "y": 580, "width": 45, "height": 25, "rotation": 0}, {"id": 444, "x": 302, "y": 456, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 2073,
+   "seats": [
+      {
+         "seatNr": 415,
+         "x": 548,
+         "y": 1598,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304066,
+         "name": "EBIB - Kelder Seat 415",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 416,
+         "x": 546,
+         "y": 1470,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304067,
+         "name": "EBIB - Kelder Seat 416",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 417,
+         "x": 451,
+         "y": 1598,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305339,
+         "name": "EBIB - Kelder Seat 417",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 418,
+         "x": 452,
+         "y": 1470,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401519,
+         "name": "EBIB - Kelder Seat 418",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 419,
+         "x": 354,
+         "y": 1598,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304064,
+         "name": "EBIB - Kelder Seat 419",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 420,
+         "x": 358,
+         "y": 1470,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304069,
+         "name": "EBIB - Kelder Seat 420",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 421,
+         "x": 548,
+         "y": 1368,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304072,
+         "name": "EBIB - Kelder Seat 421",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 422,
+         "x": 546,
+         "y": 1242,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304073,
+         "name": "EBIB - Kelder Seat 422",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 423,
+         "x": 453,
+         "y": 1368,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305351,
+         "name": "EBIB - Kelder Seat 423",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 424,
+         "x": 450,
+         "y": 1242,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401520,
+         "name": "EBIB - Kelder Seat 424",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 425,
+         "x": 358,
+         "y": 1368,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304070,
+         "name": "EBIB - Kelder Seat 425",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 426,
+         "x": 354,
+         "y": 1242,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304075,
+         "name": "EBIB - Kelder Seat 426",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 427,
+         "x": 538,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304078,
+         "name": "EBIB - Kelder Seat 427",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 428,
+         "x": 532,
+         "y": 998,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304079,
+         "name": "EBIB - Kelder Seat 428",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 429,
+         "x": 444,
+         "y": 1122,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305350,
+         "name": "EBIB - Kelder Seat 429",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 430,
+         "x": 438,
+         "y": 998,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401521,
+         "name": "EBIB - Kelder Seat 430",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 431,
+         "x": 346,
+         "y": 1120,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304076,
+         "name": "EBIB - Kelder Seat 431",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 432,
+         "x": 344,
+         "y": 998,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304081,
+         "name": "EBIB - Kelder Seat 432",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 433,
+         "x": 534,
+         "y": 880,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304084,
+         "name": "EBIB - Kelder Seat 433",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 434,
+         "x": 534,
+         "y": 756,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304085,
+         "name": "EBIB - Kelder Seat 434",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 435,
+         "x": 438,
+         "y": 880,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305349,
+         "name": "EBIB - Kelder Seat 435",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 436,
+         "x": 434,
+         "y": 754,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401522,
+         "name": "EBIB - Kelder Seat 436",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 437,
+         "x": 336,
+         "y": 880,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304082,
+         "name": "EBIB - Kelder Seat 437",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 438,
+         "x": 340,
+         "y": 754,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304087,
+         "name": "EBIB - Kelder Seat 438",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 439,
+         "x": 492,
+         "y": 580,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304090,
+         "name": "EBIB - Kelder Seat 439",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 440,
+         "x": 490,
+         "y": 456,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304091,
+         "name": "EBIB - Kelder Seat 440",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 441,
+         "x": 393,
+         "y": 580,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305348,
+         "name": "EBIB - Kelder Seat 441",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 442,
+         "x": 396,
+         "y": 456,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401523,
+         "name": "EBIB - Kelder Seat 442",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 443,
+         "x": 294,
+         "y": 580,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304088,
+         "name": "EBIB - Kelder Seat 443",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 444,
+         "x": 302,
+         "y": 456,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304093,
+         "name": "EBIB - Kelder Seat 444",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Economics and Business Library",
+   "locationId": 7,
+   "zoneName": "EBIB - Kelder"
+}

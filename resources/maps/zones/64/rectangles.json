@@ -1,1 +1,518 @@
-{"image_height": 1909, "image_width": 1350, "seats": [{"id": 285, "x": 613, "y": 1550, "width": 45, "height": 25, "rotation": 0}, {"id": 286, "x": 613, "y": 1439, "width": 45, "height": 25, "rotation": 0}, {"id": 287, "x": 614, "y": 1330, "width": 45, "height": 25, "rotation": 0}, {"id": 288, "x": 615, "y": 1221, "width": 45, "height": 25, "rotation": 0}, {"id": 289, "x": 614, "y": 1110, "width": 45, "height": 25, "rotation": 0}, {"id": 290, "x": 613, "y": 998, "width": 45, "height": 25, "rotation": 0}, {"id": 291, "x": 613, "y": 888, "width": 45, "height": 25, "rotation": 0}, {"id": 292, "x": 615, "y": 778, "width": 45, "height": 25, "rotation": 0}, {"id": 293, "x": 614, "y": 672, "width": 45, "height": 25, "rotation": 0}, {"id": 294, "x": 613, "y": 558, "width": 45, "height": 25, "rotation": 0}, {"id": 295, "x": 615, "y": 442, "width": 45, "height": 25, "rotation": 0}, {"id": 296, "x": 614, "y": 333, "width": 45, "height": 25, "rotation": 0}, {"id": 297, "x": 614, "y": 222, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 285,
+         "x": 613,
+         "y": 1550,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401914,
+         "name": "KOR - Verdieping -1 Seat 285",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 286,
+         "x": 613,
+         "y": 1439,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401915,
+         "name": "KOR - Verdieping -1 Seat 286",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 287,
+         "x": 614,
+         "y": 1330,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401916,
+         "name": "KOR - Verdieping -1 Seat 287",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 288,
+         "x": 615,
+         "y": 1221,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401917,
+         "name": "KOR - Verdieping -1 Seat 288",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 289,
+         "x": 614,
+         "y": 1110,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401918,
+         "name": "KOR - Verdieping -1 Seat 289",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 290,
+         "x": 613,
+         "y": 998,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401919,
+         "name": "KOR - Verdieping -1 Seat 290",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 291,
+         "x": 613,
+         "y": 888,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401920,
+         "name": "KOR - Verdieping -1 Seat 291",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 292,
+         "x": 615,
+         "y": 778,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401921,
+         "name": "KOR - Verdieping -1 Seat 292",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 293,
+         "x": 614,
+         "y": 672,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401922,
+         "name": "KOR - Verdieping -1 Seat 293",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 294,
+         "x": 613,
+         "y": 558,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401923,
+         "name": "KOR - Verdieping -1 Seat 294",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 295,
+         "x": 615,
+         "y": 442,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401924,
+         "name": "KOR - Verdieping -1 Seat 295",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 296,
+         "x": 614,
+         "y": 333,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401925,
+         "name": "KOR - Verdieping -1 Seat 296",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 297,
+         "x": 614,
+         "y": 222,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401926,
+         "name": "KOR - Verdieping -1 Seat 297",
+         "locationId": 15,
+         "unit": "Kortrijk Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kulak.kuleuven.be/nl/over_kulak/diensten/bibliotheek/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 9,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Kortrijk",
+   "library": "Kortrijk Library",
+   "locationId": 15,
+   "zoneName": "Verdieping -1 Leeszaal KOPO"
+}

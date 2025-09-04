@@ -1,1 +1,1559 @@
-{"image_height": 1909, "image_width": 1350, "seats": [{"id": 1, "x": 347, "y": 1403, "width": 45, "height": 25, "rotation": 0}, {"id": 2, "x": 404, "y": 1403, "width": 45, "height": 25, "rotation": 0}, {"id": 3, "x": 462, "y": 1403, "width": 45, "height": 25, "rotation": 0}, {"id": 4, "x": 516, "y": 1403, "width": 45, "height": 25, "rotation": 0}, {"id": 5, "x": 516, "y": 1296, "width": 45, "height": 25, "rotation": 0}, {"id": 6, "x": 460, "y": 1296, "width": 45, "height": 25, "rotation": 0}, {"id": 7, "x": 402, "y": 1296, "width": 45, "height": 25, "rotation": 0}, {"id": 8, "x": 347, "y": 1296, "width": 45, "height": 25, "rotation": 0}, {"id": 9, "x": 347, "y": 1236, "width": 45, "height": 25, "rotation": 0}, {"id": 10, "x": 403, "y": 1236, "width": 45, "height": 25, "rotation": 0}, {"id": 11, "x": 459, "y": 1236, "width": 45, "height": 25, "rotation": 0}, {"id": 12, "x": 516, "y": 1236, "width": 45, "height": 25, "rotation": 0}, {"id": 13, "x": 516, "y": 1129, "width": 45, "height": 25, "rotation": 0}, {"id": 14, "x": 459, "y": 1129, "width": 45, "height": 25, "rotation": 0}, {"id": 15, "x": 403, "y": 1129, "width": 45, "height": 25, "rotation": 0}, {"id": 16, "x": 347, "y": 1129, "width": 45, "height": 25, "rotation": 0}, {"id": 17, "x": 348, "y": 1063, "width": 45, "height": 25, "rotation": 0}, {"id": 18, "x": 404, "y": 1063, "width": 45, "height": 25, "rotation": 0}, {"id": 19, "x": 462, "y": 1063, "width": 45, "height": 25, "rotation": 0}, {"id": 20, "x": 515, "y": 1063, "width": 45, "height": 25, "rotation": 0}, {"id": 21, "x": 516, "y": 953, "width": 45, "height": 25, "rotation": 0}, {"id": 22, "x": 458, "y": 953, "width": 45, "height": 25, "rotation": 0}, {"id": 23, "x": 403, "y": 953, "width": 45, "height": 25, "rotation": 0}, {"id": 24, "x": 347, "y": 953, "width": 45, "height": 25, "rotation": 0}, {"id": 25, "x": 347, "y": 884, "width": 45, "height": 25, "rotation": 0}, {"id": 26, "x": 405, "y": 884, "width": 45, "height": 25, "rotation": 0}, {"id": 27, "x": 463, "y": 884, "width": 45, "height": 25, "rotation": 0}, {"id": 28, "x": 517, "y": 884, "width": 45, "height": 25, "rotation": 0}, {"id": 29, "x": 516, "y": 771, "width": 45, "height": 25, "rotation": 0}, {"id": 30, "x": 461, "y": 771, "width": 45, "height": 25, "rotation": 0}, {"id": 31, "x": 402, "y": 771, "width": 45, "height": 25, "rotation": 0}, {"id": 32, "x": 348, "y": 771, "width": 45, "height": 25, "rotation": 0}, {"id": 33, "x": 349, "y": 708, "width": 45, "height": 25, "rotation": 0}, {"id": 34, "x": 405, "y": 708, "width": 45, "height": 25, "rotation": 0}, {"id": 35, "x": 461, "y": 708, "width": 45, "height": 25, "rotation": 0}, {"id": 36, "x": 517, "y": 708, "width": 45, "height": 25, "rotation": 0}, {"id": 37, "x": 516, "y": 603, "width": 45, "height": 25, "rotation": 0}, {"id": 38, "x": 458, "y": 603, "width": 45, "height": 25, "rotation": 0}, {"id": 39, "x": 401, "y": 603, "width": 45, "height": 25, "rotation": 0}, {"id": 40, "x": 347, "y": 603, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 1,
+         "x": 347,
+         "y": 1403,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401261,
+         "name": "RBIB - Zaal 1A Seat 01",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 2,
+         "x": 404,
+         "y": 1403,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305143,
+         "name": "RBIB - Zaal 1A Seat 02",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 3,
+         "x": 462,
+         "y": 1403,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305144,
+         "name": "RBIB - Zaal 1A Seat 03",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 4,
+         "x": 516,
+         "y": 1403,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305145,
+         "name": "RBIB - Zaal 1A Seat 04",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 5,
+         "x": 516,
+         "y": 1296,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305146,
+         "name": "RBIB - Zaal 1A Seat 05",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 6,
+         "x": 460,
+         "y": 1296,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305147,
+         "name": "RBIB - Zaal 1A Seat 06",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 7,
+         "x": 402,
+         "y": 1296,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305148,
+         "name": "RBIB - Zaal 1A Seat 07",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 8,
+         "x": 347,
+         "y": 1296,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305149,
+         "name": "RBIB - Zaal 1A Seat 08",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 9,
+         "x": 347,
+         "y": 1236,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401262,
+         "name": "RBIB - Zaal 1A Seat 09",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 10,
+         "x": 403,
+         "y": 1236,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400406,
+         "name": "RBIB - Zaal 1A Seat 10",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 11,
+         "x": 459,
+         "y": 1236,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304507,
+         "name": "RBIB - Zaal 1A Seat 11",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 12,
+         "x": 516,
+         "y": 1236,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400405,
+         "name": "RBIB - Zaal 1A Seat 12",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 13,
+         "x": 516,
+         "y": 1129,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304509,
+         "name": "RBIB - Zaal 1A Seat 13",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 14,
+         "x": 459,
+         "y": 1129,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400404,
+         "name": "RBIB - Zaal 1A Seat 14",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 15,
+         "x": 403,
+         "y": 1129,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304511,
+         "name": "RBIB - Zaal 1A Seat 15",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 16,
+         "x": 347,
+         "y": 1129,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400403,
+         "name": "RBIB - Zaal 1A Seat 16",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 17,
+         "x": 348,
+         "y": 1063,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304513,
+         "name": "RBIB - Zaal 1A Seat 17",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 18,
+         "x": 404,
+         "y": 1063,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400402,
+         "name": "RBIB - Zaal 1A Seat 18",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 19,
+         "x": 462,
+         "y": 1063,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304515,
+         "name": "RBIB - Zaal 1A Seat 19",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 20,
+         "x": 515,
+         "y": 1063,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400401,
+         "name": "RBIB - Zaal 1A Seat 20",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 21,
+         "x": 516,
+         "y": 953,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304517,
+         "name": "RBIB - Zaal 1A Seat 21",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 22,
+         "x": 458,
+         "y": 953,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400400,
+         "name": "RBIB - Zaal 1A Seat 22",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 23,
+         "x": 403,
+         "y": 953,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304519,
+         "name": "RBIB - Zaal 1A Seat 23",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 24,
+         "x": 347,
+         "y": 953,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400399,
+         "name": "RBIB - Zaal 1A Seat 24",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 25,
+         "x": 347,
+         "y": 884,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304521,
+         "name": "RBIB - Zaal 1A Seat 25",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 26,
+         "x": 405,
+         "y": 884,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400398,
+         "name": "RBIB - Zaal 1A Seat 26",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 27,
+         "x": 463,
+         "y": 884,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304523,
+         "name": "RBIB - Zaal 1A Seat 27",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 28,
+         "x": 517,
+         "y": 884,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400397,
+         "name": "RBIB - Zaal 1A Seat 28",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 29,
+         "x": 516,
+         "y": 771,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304525,
+         "name": "RBIB - Zaal 1A Seat 29",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 30,
+         "x": 461,
+         "y": 771,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400396,
+         "name": "RBIB - Zaal 1A Seat 30",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 31,
+         "x": 402,
+         "y": 771,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304527,
+         "name": "RBIB - Zaal 1A Seat 31",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 32,
+         "x": 348,
+         "y": 771,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400395,
+         "name": "RBIB - Zaal 1A Seat 32",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 33,
+         "x": 349,
+         "y": 708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304529,
+         "name": "RBIB - Zaal 1A Seat 33",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 34,
+         "x": 405,
+         "y": 708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400394,
+         "name": "RBIB - Zaal 1A Seat 34",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 35,
+         "x": 461,
+         "y": 708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304531,
+         "name": "RBIB - Zaal 1A Seat 35",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 36,
+         "x": 517,
+         "y": 708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400393,
+         "name": "RBIB - Zaal 1A Seat 36",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 37,
+         "x": 516,
+         "y": 603,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304533,
+         "name": "RBIB - Zaal 1A Seat 37",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 38,
+         "x": 458,
+         "y": 603,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400392,
+         "name": "RBIB - Zaal 1A Seat 38",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 39,
+         "x": 401,
+         "y": 603,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 304535,
+         "name": "RBIB - Zaal 1A Seat 39",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 40,
+         "x": 347,
+         "y": 603,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400391,
+         "name": "RBIB - Zaal 1A Seat 40",
+         "locationId": 26,
+         "unit": "Law and Criminology Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/rbib/faciliteiten/1a.png",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Law and Criminology Library",
+   "locationId": 26,
+   "zoneName": "Zaal 1A"
+}

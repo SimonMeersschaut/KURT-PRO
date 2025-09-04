@@ -1,1 +1,10 @@
-{"image_height": 4476, "image_width": 1312, "seats": []}
+{
+   "version": "2.0",
+   "image_width": 1312,
+   "image_height": 4476,
+   "seats": [],
+   "city": "Leuven",
+   "library": "Agora Learning Centre",
+   "locationId": 10,
+   "zoneName": "Group Study Area"
+}

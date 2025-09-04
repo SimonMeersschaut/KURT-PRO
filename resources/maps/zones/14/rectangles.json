@@ -1,1022 +1,4496 @@
 {
-    "image_width": 1350,
-    "image_height": 1909,
-    "seats": [
-        {
-            "id": 351,
-            "x": 363,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 352,
-            "x": 418,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 353,
-            "x": 365,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 354,
-            "x": 417,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 355,
-            "x": 544,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 356,
-            "x": 599,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 357,
-            "x": 541,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 358,
-            "x": 593,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 359,
-            "x": 725,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 360,
-            "x": 780,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 361,
-            "x": 725,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 362,
-            "x": 777,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 363,
-            "x": 900,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 364,
-            "x": 955,
-            "y": 1678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 365,
-            "x": 905,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 366,
-            "x": 957,
-            "y": 1747,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 367,
-            "x": 917,
-            "y": 1459,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 368,
-            "x": 917,
-            "y": 1425,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 369,
-            "x": 917,
-            "y": 1392,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 370,
-            "x": 917,
-            "y": 1358,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 371,
-            "x": 917,
-            "y": 1324,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 372,
-            "x": 917,
-            "y": 1290,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 373,
-            "x": 917,
-            "y": 1256,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 374,
-            "x": 917,
-            "y": 1223,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 375,
-            "x": 917,
-            "y": 1189,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 376,
-            "x": 810,
-            "y": 1191,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 377,
-            "x": 810,
-            "y": 1224,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 378,
-            "x": 810,
-            "y": 1258,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 379,
-            "x": 810,
-            "y": 1291,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 380,
-            "x": 810,
-            "y": 1324,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 381,
-            "x": 810,
-            "y": 1357,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 382,
-            "x": 810,
-            "y": 1390,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 383,
-            "x": 810,
-            "y": 1424,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 384,
-            "x": 810,
-            "y": 1457,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 385,
-            "x": 479,
-            "y": 1460,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 386,
-            "x": 479,
-            "y": 1426,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 387,
-            "x": 479,
-            "y": 1392,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 388,
-            "x": 479,
-            "y": 1357,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 389,
-            "x": 479,
-            "y": 1323,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 390,
-            "x": 479,
-            "y": 1289,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 391,
-            "x": 479,
-            "y": 1254,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 392,
-            "x": 479,
-            "y": 1220,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 393,
-            "x": 479,
-            "y": 1186,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 394,
-            "x": 375,
-            "y": 1195,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 395,
-            "x": 375,
-            "y": 1228,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 396,
-            "x": 375,
-            "y": 1261,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 397,
-            "x": 375,
-            "y": 1295,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 398,
-            "x": 375,
-            "y": 1328,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 399,
-            "x": 375,
-            "y": 1361,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 400,
-            "x": 375,
-            "y": 1395,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 401,
-            "x": 375,
-            "y": 1428,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 402,
-            "x": 375,
-            "y": 1461,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 403,
-            "x": 530,
-            "y": 1094,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 404,
-            "x": 603,
-            "y": 1094,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 405,
-            "x": 675,
-            "y": 1094,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 406,
-            "x": 748,
-            "y": 1094,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 407,
-            "x": 750,
-            "y": 1031,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 408,
-            "x": 677,
-            "y": 1031,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 409,
-            "x": 605,
-            "y": 1031,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 410,
-            "x": 532,
-            "y": 1031,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 411,
-            "x": 897,
-            "y": 917,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 412,
-            "x": 897,
-            "y": 884,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 413,
-            "x": 897,
-            "y": 850,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 414,
-            "x": 897,
-            "y": 817,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 415,
-            "x": 897,
-            "y": 784,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 416,
-            "x": 897,
-            "y": 750,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 417,
-            "x": 897,
-            "y": 717,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 418,
-            "x": 897,
-            "y": 683,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 419,
-            "x": 897,
-            "y": 650,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 420,
-            "x": 785,
-            "y": 650,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 421,
-            "x": 785,
-            "y": 683,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 422,
-            "x": 785,
-            "y": 716,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 423,
-            "x": 785,
-            "y": 748,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 424,
-            "x": 785,
-            "y": 781,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 425,
-            "x": 785,
-            "y": 814,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 426,
-            "x": 785,
-            "y": 847,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 427,
-            "x": 785,
-            "y": 879,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 428,
-            "x": 785,
-            "y": 912,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 429,
-            "x": 485,
-            "y": 916,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 430,
-            "x": 485,
-            "y": 882,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 431,
-            "x": 485,
-            "y": 848,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 432,
-            "x": 485,
-            "y": 814,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 433,
-            "x": 485,
-            "y": 780,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 434,
-            "x": 485,
-            "y": 746,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 435,
-            "x": 485,
-            "y": 712,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 436,
-            "x": 485,
-            "y": 678,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 437,
-            "x": 485,
-            "y": 644,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 438,
-            "x": 368,
-            "y": 651,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 439,
-            "x": 368,
-            "y": 684,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 440,
-            "x": 368,
-            "y": 718,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 441,
-            "x": 368,
-            "y": 751,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 442,
-            "x": 368,
-            "y": 785,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 443,
-            "x": 368,
-            "y": 818,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 444,
-            "x": 368,
-            "y": 851,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 445,
-            "x": 368,
-            "y": 885,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 446,
-            "x": 368,
-            "y": 918,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 447,
-            "x": 356,
-            "y": 458,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 448,
-            "x": 409,
-            "y": 460,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 449,
-            "x": 351,
-            "y": 520,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 450,
-            "x": 401,
-            "y": 521,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 451,
-            "x": 538,
-            "y": 519,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 452,
-            "x": 592,
-            "y": 519,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 453,
-            "x": 545,
-            "y": 460,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 454,
-            "x": 596,
-            "y": 459,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 455,
-            "x": 777,
-            "y": 518,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 456,
-            "x": 726,
-            "y": 519,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 457,
-            "x": 782,
-            "y": 458,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 458,
-            "x": 731,
-            "y": 460,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 459,
-            "x": 959,
-            "y": 519,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 460,
-            "x": 908,
-            "y": 520,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 461,
-            "x": 963,
-            "y": 460,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 462,
-            "x": 913,
-            "y": 459,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 463,
-            "x": 404,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 464,
-            "x": 351,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 465,
-            "x": 407,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 466,
-            "x": 352,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 467,
-            "x": 591,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 468,
-            "x": 542,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 469,
-            "x": 590,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 470,
-            "x": 539,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 471,
-            "x": 773,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 472,
-            "x": 722,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 473,
-            "x": 775,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 474,
-            "x": 723,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 475,
-            "x": 934,
-            "y": 356,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 476,
-            "x": 960,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 477,
-            "x": 902,
-            "y": 294,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        }
-    ]
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 351,
+         "x": 368,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301426,
+         "name": "CBA - Zolder Seat 351",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 352,
+         "x": 423,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 353,
+         "x": 370,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305372,
+         "name": "CBA - Zolder Seat 353",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 354,
+         "x": 422,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301429,
+         "name": "CBA - Zolder Seat 354",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 355,
+         "x": 549,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301430,
+         "name": "CBA - Zolder Seat 355",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 356,
+         "x": 604,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401214,
+         "name": "CBA - Zolder Seat 356",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 357,
+         "x": 546,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301432,
+         "name": "CBA - Zolder Seat 357",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 358,
+         "x": 598,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301433,
+         "name": "CBA - Zolder Seat 358",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 359,
+         "x": 730,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305371,
+         "name": "CBA - Zolder Seat 359",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 360,
+         "x": 785,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301435,
+         "name": "CBA - Zolder Seat 360",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 361,
+         "x": 730,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301436,
+         "name": "CBA - Zolder Seat 361",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 362,
+         "x": 782,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401215,
+         "name": "CBA - Zolder Seat 362",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 363,
+         "x": 905,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301438,
+         "name": "CBA - Zolder Seat 363",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 364,
+         "x": 960,
+         "y": 1708,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301439,
+         "name": "CBA - Zolder Seat 364",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 365,
+         "x": 910,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305370,
+         "name": "CBA - Zolder Seat 365",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 366,
+         "x": 962,
+         "y": 1772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301441,
+         "name": "CBA - Zolder Seat 366",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 367,
+         "x": 962,
+         "y": 1459,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301442,
+         "name": "CBA - Zolder Seat 367",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 368,
+         "x": 962,
+         "y": 1425,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401216,
+         "name": "CBA - Zolder Seat 368",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 369,
+         "x": 962,
+         "y": 1392,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301444,
+         "name": "CBA - Zolder Seat 369",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 370,
+         "x": 962,
+         "y": 1358,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301445,
+         "name": "CBA - Zolder Seat 370",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 371,
+         "x": 962,
+         "y": 1324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305369,
+         "name": "CBA - Zolder Seat 371",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 372,
+         "x": 962,
+         "y": 1290,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301447,
+         "name": "CBA - Zolder Seat 372",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 373,
+         "x": 962,
+         "y": 1256,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301448,
+         "name": "CBA - Zolder Seat 373",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 374,
+         "x": 962,
+         "y": 1223,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401217,
+         "name": "CBA - Zolder Seat 374",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 375,
+         "x": 962,
+         "y": 1189,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301450,
+         "name": "CBA - Zolder Seat 375",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 376,
+         "x": 785,
+         "y": 1191,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301451,
+         "name": "CBA - Zolder Seat 376",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 377,
+         "x": 785,
+         "y": 1224,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305368,
+         "name": "CBA - Zolder Seat 377",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 378,
+         "x": 785,
+         "y": 1258,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301453,
+         "name": "CBA - Zolder Seat 378",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 379,
+         "x": 785,
+         "y": 1291,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301454,
+         "name": "CBA - Zolder Seat 379",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 380,
+         "x": 785,
+         "y": 1324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401218,
+         "name": "CBA - Zolder Seat 380",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 381,
+         "x": 785,
+         "y": 1357,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301456,
+         "name": "CBA - Zolder Seat 381",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 382,
+         "x": 785,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301457,
+         "name": "CBA - Zolder Seat 382",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 383,
+         "x": 785,
+         "y": 1424,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305367,
+         "name": "CBA - Zolder Seat 383",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 384,
+         "x": 785,
+         "y": 1457,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301459,
+         "name": "CBA - Zolder Seat 384",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 385,
+         "x": 524,
+         "y": 1460,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301460,
+         "name": "CBA - Zolder Seat 385",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 386,
+         "x": 524,
+         "y": 1426,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401219,
+         "name": "CBA - Zolder Seat 386",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 387,
+         "x": 524,
+         "y": 1392,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301462,
+         "name": "CBA - Zolder Seat 387",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 388,
+         "x": 524,
+         "y": 1357,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301463,
+         "name": "CBA - Zolder Seat 388",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 389,
+         "x": 524,
+         "y": 1323,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305366,
+         "name": "CBA - Zolder Seat 389",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 390,
+         "x": 524,
+         "y": 1289,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301465,
+         "name": "CBA - Zolder Seat 390",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 391,
+         "x": 524,
+         "y": 1254,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301466,
+         "name": "CBA - Zolder Seat 391",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 392,
+         "x": 524,
+         "y": 1220,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401220,
+         "name": "CBA - Zolder Seat 392",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 393,
+         "x": 524,
+         "y": 1186,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301468,
+         "name": "CBA - Zolder Seat 393",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 394,
+         "x": 345,
+         "y": 1190,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301469,
+         "name": "CBA - Zolder Seat 394",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 395,
+         "x": 345,
+         "y": 1223,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305365,
+         "name": "CBA - Zolder Seat 395",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 396,
+         "x": 345,
+         "y": 1256,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301471,
+         "name": "CBA - Zolder Seat 396",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 397,
+         "x": 345,
+         "y": 1290,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301472,
+         "name": "CBA - Zolder Seat 397",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 398,
+         "x": 345,
+         "y": 1323,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401221,
+         "name": "CBA - Zolder Seat 398",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 399,
+         "x": 345,
+         "y": 1356,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301474,
+         "name": "CBA - Zolder Seat 399",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 400,
+         "x": 345,
+         "y": 1390,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301475,
+         "name": "CBA - Zolder Seat 400",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 401,
+         "x": 345,
+         "y": 1423,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305364,
+         "name": "CBA - Zolder Seat 401",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 402,
+         "x": 345,
+         "y": 1456,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301477,
+         "name": "CBA - Zolder Seat 402",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 403,
+         "x": 540,
+         "y": 1124,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301478,
+         "name": "CBA - Zolder Seat 403",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 404,
+         "x": 613,
+         "y": 1124,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401222,
+         "name": "CBA - Zolder Seat 404",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 405,
+         "x": 685,
+         "y": 1124,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301480,
+         "name": "CBA - Zolder Seat 405",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 406,
+         "x": 758,
+         "y": 1124,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301481,
+         "name": "CBA - Zolder Seat 406",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 407,
+         "x": 755,
+         "y": 1056,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305363,
+         "name": "CBA - Zolder Seat 407",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 408,
+         "x": 682,
+         "y": 1056,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301483,
+         "name": "CBA - Zolder Seat 408",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 409,
+         "x": 610,
+         "y": 1056,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301484,
+         "name": "CBA - Zolder Seat 409",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 410,
+         "x": 537,
+         "y": 1056,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401223,
+         "name": "CBA - Zolder Seat 410",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 411,
+         "x": 942,
+         "y": 912,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301486,
+         "name": "CBA - Zolder Seat 411",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 412,
+         "x": 942,
+         "y": 879,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301487,
+         "name": "CBA - Zolder Seat 412",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 413,
+         "x": 942,
+         "y": 845,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305362,
+         "name": "CBA - Zolder Seat 413",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 414,
+         "x": 942,
+         "y": 812,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301489,
+         "name": "CBA - Zolder Seat 414",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 415,
+         "x": 942,
+         "y": 779,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301490,
+         "name": "CBA - Zolder Seat 415",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 416,
+         "x": 942,
+         "y": 745,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401224,
+         "name": "CBA - Zolder Seat 416",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 417,
+         "x": 942,
+         "y": 712,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301492,
+         "name": "CBA - Zolder Seat 417",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 418,
+         "x": 942,
+         "y": 678,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301493,
+         "name": "CBA - Zolder Seat 418",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 419,
+         "x": 942,
+         "y": 645,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305361,
+         "name": "CBA - Zolder Seat 419",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 420,
+         "x": 765,
+         "y": 650,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301495,
+         "name": "CBA - Zolder Seat 420",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 421,
+         "x": 765,
+         "y": 683,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301496,
+         "name": "CBA - Zolder Seat 421",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 422,
+         "x": 765,
+         "y": 716,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401225,
+         "name": "CBA - Zolder Seat 422",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 423,
+         "x": 765,
+         "y": 748,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301498,
+         "name": "CBA - Zolder Seat 423",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 424,
+         "x": 765,
+         "y": 781,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301499,
+         "name": "CBA - Zolder Seat 424",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 425,
+         "x": 765,
+         "y": 814,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305360,
+         "name": "CBA - Zolder Seat 425",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 426,
+         "x": 765,
+         "y": 847,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301501,
+         "name": "CBA - Zolder Seat 426",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 427,
+         "x": 765,
+         "y": 879,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301502,
+         "name": "CBA - Zolder Seat 427",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 428,
+         "x": 765,
+         "y": 912,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401226,
+         "name": "CBA - Zolder Seat 428",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 429,
+         "x": 525,
+         "y": 916,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301504,
+         "name": "CBA - Zolder Seat 429",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 430,
+         "x": 525,
+         "y": 882,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301505,
+         "name": "CBA - Zolder Seat 430",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 431,
+         "x": 525,
+         "y": 848,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305359,
+         "name": "CBA - Zolder Seat 431",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 432,
+         "x": 525,
+         "y": 814,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301507,
+         "name": "CBA - Zolder Seat 432",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 433,
+         "x": 525,
+         "y": 780,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301508,
+         "name": "CBA - Zolder Seat 433",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 434,
+         "x": 525,
+         "y": 746,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401227,
+         "name": "CBA - Zolder Seat 434",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 435,
+         "x": 525,
+         "y": 712,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301510,
+         "name": "CBA - Zolder Seat 435",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 436,
+         "x": 525,
+         "y": 678,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301511,
+         "name": "CBA - Zolder Seat 436",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 437,
+         "x": 525,
+         "y": 644,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305358,
+         "name": "CBA - Zolder Seat 437",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 438,
+         "x": 343,
+         "y": 646,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301513,
+         "name": "CBA - Zolder Seat 438",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 439,
+         "x": 343,
+         "y": 679,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301514,
+         "name": "CBA - Zolder Seat 439",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 440,
+         "x": 343,
+         "y": 713,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401228,
+         "name": "CBA - Zolder Seat 440",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 441,
+         "x": 343,
+         "y": 746,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301516,
+         "name": "CBA - Zolder Seat 441",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 442,
+         "x": 343,
+         "y": 780,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301517,
+         "name": "CBA - Zolder Seat 442",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 443,
+         "x": 343,
+         "y": 813,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305357,
+         "name": "CBA - Zolder Seat 443",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 444,
+         "x": 343,
+         "y": 846,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301519,
+         "name": "CBA - Zolder Seat 444",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 445,
+         "x": 343,
+         "y": 880,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301520,
+         "name": "CBA - Zolder Seat 445",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 446,
+         "x": 343,
+         "y": 913,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401229,
+         "name": "CBA - Zolder Seat 446",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 447,
+         "x": 361,
+         "y": 483,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301522,
+         "name": "CBA - Zolder Seat 447",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 448,
+         "x": 414,
+         "y": 485,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301523,
+         "name": "CBA - Zolder Seat 448",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 449,
+         "x": 361,
+         "y": 550,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305356,
+         "name": "CBA - Zolder Seat 449",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 450,
+         "x": 411,
+         "y": 551,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 451,
+         "x": 548,
+         "y": 549,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301526,
+         "name": "CBA - Zolder Seat 451",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 452,
+         "x": 602,
+         "y": 549,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401230,
+         "name": "CBA - Zolder Seat 452",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 453,
+         "x": 550,
+         "y": 485,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301528,
+         "name": "CBA - Zolder Seat 453",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 454,
+         "x": 601,
+         "y": 484,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301529,
+         "name": "CBA - Zolder Seat 454",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 455,
+         "x": 787,
+         "y": 548,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305355,
+         "name": "CBA - Zolder Seat 455",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 456,
+         "x": 736,
+         "y": 549,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301531,
+         "name": "CBA - Zolder Seat 456",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 457,
+         "x": 787,
+         "y": 483,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301532,
+         "name": "CBA - Zolder Seat 457",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 458,
+         "x": 736,
+         "y": 485,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401231,
+         "name": "CBA - Zolder Seat 458",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 459,
+         "x": 969,
+         "y": 549,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301534,
+         "name": "CBA - Zolder Seat 459",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 460,
+         "x": 918,
+         "y": 550,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401232,
+         "name": "CBA - Zolder Seat 460",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 461,
+         "x": 968,
+         "y": 485,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305354,
+         "name": "CBA - Zolder Seat 461",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 462,
+         "x": 918,
+         "y": 484,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301537,
+         "name": "CBA - Zolder Seat 462",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 463,
+         "x": 414,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301538,
+         "name": "CBA - Zolder Seat 463",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 464,
+         "x": 361,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401233,
+         "name": "CBA - Zolder Seat 464",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 465,
+         "x": 417,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301540,
+         "name": "CBA - Zolder Seat 465",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 466,
+         "x": 362,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301541,
+         "name": "CBA - Zolder Seat 466",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 467,
+         "x": 601,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305353,
+         "name": "CBA - Zolder Seat 467",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 468,
+         "x": 552,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301543,
+         "name": "CBA - Zolder Seat 468",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 469,
+         "x": 600,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301544,
+         "name": "CBA - Zolder Seat 469",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 470,
+         "x": 549,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401234,
+         "name": "CBA - Zolder Seat 470",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 471,
+         "x": 783,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301546,
+         "name": "CBA - Zolder Seat 471",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 472,
+         "x": 732,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301547,
+         "name": "CBA - Zolder Seat 472",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 473,
+         "x": 785,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305352,
+         "name": "CBA - Zolder Seat 473",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 474,
+         "x": 733,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301549,
+         "name": "CBA - Zolder Seat 474",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 475,
+         "x": 944,
+         "y": 386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401235,
+         "name": "CBA - Zolder Seat 475",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 476,
+         "x": 970,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401236,
+         "name": "CBA - Zolder Seat 476",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 477,
+         "x": 912,
+         "y": 324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401237,
+         "name": "CBA - Zolder Seat 477",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "2Bergen Arenberg",
+   "locationId": 1,
+   "zoneName": "De zolder"
 }
