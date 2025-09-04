@@ -10,7 +10,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402268,
+         "name": "EBIB - ResLab Seat 101",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 102,
@@ -19,7 +48,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402267,
+         "name": "EBIB - ResLab Seat 102",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 103,
@@ -28,7 +86,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402265,
+         "name": "EBIB - ResLab Seat 103",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 104,
@@ -37,7 +124,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402266,
+         "name": "EBIB - ResLab Seat 104",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 105,
@@ -46,7 +162,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402269,
+         "name": "EBIB - ResLab Seat 105",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 106,
@@ -55,7 +200,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402270,
+         "name": "EBIB - ResLab Seat 106",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 107,
@@ -64,7 +238,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402271,
+         "name": "EBIB - ResLab Seat 107",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 108,
@@ -73,7 +276,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402272,
+         "name": "EBIB - ResLab Seat 108",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 109,
@@ -82,7 +314,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402276,
+         "name": "EBIB - ResLab Seat 109",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 110,
@@ -91,7 +352,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402275,
+         "name": "EBIB - ResLab Seat 110",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 111,
@@ -100,7 +390,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402274,
+         "name": "EBIB - ResLab Seat 111",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 112,
@@ -109,7 +428,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402273,
+         "name": "EBIB - ResLab Seat 112",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 113,
@@ -118,7 +466,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402277,
+         "name": "EBIB - ResLab Seat 113",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 114,
@@ -127,7 +504,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402278,
+         "name": "EBIB - ResLab Seat 114",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 115,
@@ -136,7 +542,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402279,
+         "name": "EBIB - ResLab Seat 115",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 116,
@@ -145,7 +580,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402280,
+         "name": "EBIB - ResLab Seat 116",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 117,
@@ -154,7 +618,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402284,
+         "name": "EBIB - ResLab Seat 117",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 118,
@@ -163,7 +656,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402283,
+         "name": "EBIB - ResLab Seat 118",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 119,
@@ -172,7 +694,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402282,
+         "name": "EBIB - ResLab Seat 119",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 120,
@@ -181,7 +732,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402281,
+         "name": "EBIB - ResLab Seat 120",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 121,
@@ -190,7 +770,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402285,
+         "name": "EBIB - ResLab Seat 121",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 122,
@@ -199,7 +808,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402286,
+         "name": "EBIB - ResLab Seat 122",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 123,
@@ -208,7 +846,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402287,
+         "name": "EBIB - ResLab Seat 123",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 124,
@@ -217,7 +884,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 402288,
+         "name": "EBIB - ResLab Seat 124",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       }
    ],
    "city": "Leuven",

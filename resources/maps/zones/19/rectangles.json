@@ -10,7 +10,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 401643,
+         "name": "Erasmushuis fifth floor Seat 235",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 236,
@@ -19,7 +42,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303245,
+         "name": "Erasmushuis fifth floor Seat 236",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 237,
@@ -28,7 +74,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 400516,
+         "name": "Erasmushuis fifth floor Seat 237",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 238,
@@ -37,7 +106,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303247,
+         "name": "Erasmushuis fifth floor Seat 238",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 239,
@@ -46,7 +138,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303248,
+         "name": "Erasmushuis fifth floor Seat 239",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 240,
@@ -55,7 +170,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 305502,
+         "name": "Erasmushuis fifth floor Seat 240",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 241,
@@ -64,7 +202,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303250,
+         "name": "Erasmushuis fifth floor Seat 241",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 242,
@@ -73,7 +234,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303251,
+         "name": "Erasmushuis fifth floor Seat 242",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 243,
@@ -82,7 +266,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303252,
+         "name": "Erasmushuis fifth floor Seat 243",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 244,
@@ -91,7 +298,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303253,
+         "name": "Erasmushuis fifth floor Seat 244",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 245,
@@ -100,7 +330,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303254,
+         "name": "Erasmushuis fifth floor Seat 245",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 246,
@@ -109,7 +362,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303255,
+         "name": "Erasmushuis fifth floor Seat 246",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 247,
@@ -118,7 +394,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303256,
+         "name": "Erasmushuis fifth floor Seat 247",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 248,
@@ -127,7 +426,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 400515,
+         "name": "Erasmushuis fifth floor Seat 248",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 249,
@@ -136,7 +458,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303344,
+         "name": "Erasmushuis fifth floor Seat 249",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 250,
@@ -145,7 +490,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 305501,
+         "name": "Erasmushuis fifth floor Seat 250",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 251,
@@ -154,7 +522,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303346,
+         "name": "Erasmushuis fifth floor Seat 251",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 252,
@@ -163,7 +554,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303347,
+         "name": "Erasmushuis fifth floor Seat 252",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 253,
@@ -172,7 +586,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303348,
+         "name": "Erasmushuis fifth floor Seat 253",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 254,
@@ -181,7 +618,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303349,
+         "name": "Erasmushuis fifth floor Seat 254",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 255,
@@ -190,7 +650,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303350,
+         "name": "Erasmushuis fifth floor Seat 255",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 256,
@@ -199,7 +682,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303351,
+         "name": "Erasmushuis fifth floor Seat 256",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 257,
@@ -208,7 +714,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 400514,
+         "name": "Erasmushuis fifth floor Seat 257",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 258,
@@ -217,7 +746,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303353,
+         "name": "Erasmushuis fifth floor Seat 258",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 259,
@@ -226,7 +778,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303354,
+         "name": "Erasmushuis fifth floor Seat 259",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 260,
@@ -235,7 +810,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303355,
+         "name": "Erasmushuis fifth floor Seat 260",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 261,
@@ -244,7 +842,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 400513,
+         "name": "Erasmushuis fifth floor Seat 261",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 262,
@@ -253,7 +874,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303357,
+         "name": "Erasmushuis fifth floor Seat 262",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 263,
@@ -262,7 +906,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303358,
+         "name": "Erasmushuis fifth floor Seat 263",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 264,
@@ -271,7 +938,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303359,
+         "name": "Erasmushuis fifth floor Seat 264",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 265,
@@ -280,7 +970,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 400512,
+         "name": "Erasmushuis fifth floor Seat 265",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 266,
@@ -289,7 +1002,30 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 303361,
+         "name": "Erasmushuis fifth floor Seat 266",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       }
    ],
    "city": "Leuven",

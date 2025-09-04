@@ -7705,7 +7705,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 401632,
+         "name": "EBIB - Quiet Study  Seat 364",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 1,
+         "fixedTimes": []
       },
       {
          "seatNr": 365,

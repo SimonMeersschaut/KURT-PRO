@@ -43,7 +43,36 @@
          "width": 45,
          "height": 25,
          "rotation": 0,
-         "id": null
+         "id": 301427,
+         "name": "CBA - Zolder Seat 352",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
       },
       {
          "seatNr": 353,

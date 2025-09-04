@@ -5,7 +5,7 @@ export const kurt3 =
     : "https://kurt3.ghum.kuleuven.be"; // Production
 
 export const github =
-  "https://corsproxy.io/?https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/";
+  "https://corsproxy.io/?https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/react-app/";
 
 /**
  * Centralized fetch wrapper
