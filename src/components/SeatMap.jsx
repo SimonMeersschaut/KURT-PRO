@@ -31,12 +31,12 @@ export default function SeatMap({ zone, date, time, onReserve }) {
 
     const fetchAvailability = async () => {
       try {
-        const startDate = date.toISOString().split("T")[0];
+        // const startDate = date.toISOString().split("T")[0];
         const availabilityData = (await getZoneAvailabilities(
           1, // locationId
           zone.id,
-          startDate,
-          time.start
+          date,
+          time
         ))["availabilities"];
 
         // Transform availability into { seatId: true/false }
@@ -51,8 +51,9 @@ export default function SeatMap({ zone, date, time, onReserve }) {
             startIndex >= 0 &&
             endIndex <= seat.slotAllocation.length &&
             [...seat.slotAllocation].slice(startIndex, endIndex).every(c => c === "A");
-
-          availabilityMap[seat.id] = available;
+          
+          let seatNr = /[^ ]*$/.exec(seat.name)[0];
+          availabilityMap[seatNr] = available;
         });
         setAvailabilities(availabilityMap);
         setSelectedSeat(null);
@@ -65,6 +66,8 @@ export default function SeatMap({ zone, date, time, onReserve }) {
   }, [zone, date, time]);
 
   const handleSeatClick = (seat) => {
+    console.log(seat)
+    console.log(availabilities)
     if (!availabilities[seat.id]) return;
     setSelectedSeat(seat.id);
   };

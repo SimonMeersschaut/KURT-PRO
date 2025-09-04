@@ -1,34 +1,17 @@
-import React, { useState } from "react";
-import { Button, Typography, Container } from "@mui/material";
+// import { useState } from "react";
+import { Typography, Container, IconButton } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SeatMap from "./SeatMap";
+import makeReservation from "../api/reservation"
 
 export default function ReservationPage({ zone, date, time, onBack }) {
-  const [selectedSeatId, setSelectedSeatId] = useState(null);
-  const [reservation, setReservation] = useState(null); // mock reservation data if needed
-
-  const handleSelectSeat = (seatId) => {
-    setSelectedSeatId(seatId);
-  };
-
-  const handleConfirmReservation = () => {
-    if (!selectedSeatId) {
-      alert("Please select a seat first!");
-      return;
-    }
-    // Here you would call your booking API
-    alert(`Reservation submitted for seat ${selectedSeatId} (mock)`);
-    // Update reservation state if you want to show reservation card
-    setReservation({
-      seatNr: selectedSeatId,
-      startTime: time.start,
-      endTime: time.end,
-      onChange: () => alert("Change reservation clicked (mock)"),
-      onCancel: () => alert("Cancel reservation clicked (mock)"),
-    });
-  };
-
   return (
-    <Container sx={{ mt: 4 }}>
+    <Container sx={{ mt: 2 }}>
+      {/* Back arrow at the top */}
+      <IconButton onClick={onBack} sx={{ mb: 2 }}>
+        <ArrowBackIcon />
+      </IconButton>
+
       <Typography variant="h5" gutterBottom>
         Reserve a seat in {zone.name || `Zone ${zone.id}`}
       </Typography>
@@ -47,25 +30,8 @@ export default function ReservationPage({ zone, date, time, onBack }) {
         zone={zone}
         date={date}
         time={time}
-        onSelectSeat={handleSelectSeat}
-        reservationData={reservation}
+        onReserve = {makeReservation}
       />
-
-      {/* Action buttons */}
-      {!reservation && (
-        <Button
-          sx={{ mt: 2 }}
-          variant="contained"
-          color="primary"
-          onClick={handleConfirmReservation}
-        >
-          Confirm Reservation
-        </Button>
-      )}
-
-      <Button sx={{ mt: 2, ml: 2 }} variant="outlined" onClick={onBack}>
-        Back
-      </Button>
     </Container>
   );
 }

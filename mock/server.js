@@ -100,6 +100,1091 @@ app.get("/api/zoneavailabilities", (req, res) => {
   res.json(response);
 });
 
+app.get("/api/resourcetypeavailabilities", (req, res) => {
+  res.json({
+    "availabilities": [
+        {
+            "id": 301783,
+            "name": "CBA - Boekenzaal Seat 137",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301784,
+            "name": "CBA - Boekenzaal Seat 138",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301785,
+            "name": "CBA - Boekenzaal Seat 139",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301786,
+            "name": "CBA - Boekenzaal Seat 140",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301787,
+            "name": "CBA - Boekenzaal Seat 141",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301788,
+            "name": "CBA - Boekenzaal Seat 142",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301789,
+            "name": "CBA - Boekenzaal Seat 143",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301790,
+            "name": "CBA - Boekenzaal Seat 144",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301791,
+            "name": "CBA - Boekenzaal Seat 145",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301792,
+            "name": "CBA - Boekenzaal Seat 146",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301793,
+            "name": "CBA - Boekenzaal Seat 147",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301794,
+            "name": "CBA - Boekenzaal Seat 148",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "power socket nearby",
+                    "name": "Power socket nearby",
+                    "iconType": 0,
+                    "icon": "power"
+                },
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                },
+                {
+                    "id": "no study",
+                    "name": "No study",
+                    "iconType": 1,
+                    "icon": "assets/tags/no-study.svg"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301224,
+            "name": "CBA - Boekenzaal Seat 149",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301225,
+            "name": "CBA - Boekenzaal Seat 150",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301226,
+            "name": "CBA - Boekenzaal Seat 151",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301227,
+            "name": "CBA - Boekenzaal Seat 152",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301228,
+            "name": "CBA - Boekenzaal Seat 153",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301229,
+            "name": "CBA - Boekenzaal Seat 154",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301230,
+            "name": "CBA - Boekenzaal Seat 155",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301231,
+            "name": "CBA - Boekenzaal Seat 156",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301232,
+            "name": "CBA - Boekenzaal Seat 157",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301233,
+            "name": "CBA - Boekenzaal Seat 158",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301234,
+            "name": "CBA - Boekenzaal Seat 159",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301235,
+            "name": "CBA - Boekenzaal Seat 160",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301236,
+            "name": "CBA - Boekenzaal Seat 161",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301237,
+            "name": "CBA - Boekenzaal Seat 162",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        },
+        {
+            "id": 301238,
+            "name": "CBA - Boekenzaal Seat 163",
+            "locationId": 1,
+            "unit": "2Bergen Arenberg",
+            "resourceTypeId": 302,
+            "resourceTypeName": "Study Seat",
+            "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+            "startDate": "2025-09-04",
+            "startTime": "",
+            "endDate": "2025-09-04",
+            "endTime": "",
+            "participantCount": 1,
+            "minParticipants": 1,
+            "maxParticipants": 1,
+            "minDurationMinutes": 60,
+            "maxDurationMinutes": 960,
+            "tags": [
+                {
+                    "id": "silence",
+                    "name": "Silence",
+                    "iconType": 0,
+                    "icon": "voice_over_off"
+                }
+            ],
+            "favorite": false,
+            "exactMatch": true,
+            "startSlotAllocation": 8,
+            "slotAllocation": "UAAAAAAAAAAAAAUU",
+            "reservationRequestRequired": false,
+            "isMultiDayReservable": false,
+            "matchScore": 13,
+            "otherScore": 13,
+            "fixedTimes": []
+        }
+    ],
+    "message": ""
+  })
+});
+
 app.listen(port, () => {
   console.log(`Mock server running at http://localhost:${port}`);
 });

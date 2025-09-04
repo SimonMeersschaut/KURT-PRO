@@ -28,7 +28,7 @@ async function fetchDailyAvailabilities(locationId, zoneId, resourceTypeId, date
 
   while (true) {
     const query = new URLSearchParams({
-      locationId: String(locationId),
+      locationId: String(locationId), // TODO: kan dit weg?
       zoneId: String(zoneId),   // ⬅️ use actual zoneId
       resourceTypeId: String(resourceTypeId),
       pageNumber: String(page),

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "KURT-PRO Full Page App",
   "version": "1.0",
-  "description": "Replace entire page with React app",
+  "description": "Provides a better interface for KURT3.",
   "icons": {
     "16": "favicon.ico",
     "48": "logo192.png",
