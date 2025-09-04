@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import ZoneCardLoader from "./ZoneCardLoader";
 import ReservationPage from "./ReservationPage";
-import { Collapse, Button, Box } from "@mui/material";
+import { Collapse, Button, Box, Typography, Paper } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { getZones } from "../api/zones";
+import { fetchReservations } from "../api/reservations"; // <-- assumed
 
 export default function ZonesContainer({ selectedDate, selectedTime }) {
   const locationId = 1;
   const [reservedZone, setReservedZone] = useState(null);
   const [showAll, setShowAll] = useState(false);
-
   const [allZones, setAllZones] = useState([]);
-  const [favoriteZoneIds, setFavoriteZoneIds] = useState([14, 11, 2]); // Default favorites
+  const [favoriteZoneIds, setFavoriteZoneIds] = useState([14, 11, 2]);
+  const [upcomingReservations, setUpcomingReservations] = useState([]);
 
-  // Flatten zones from API
+  // Fetch zones
   useEffect(() => {
     async function fetchZones() {
       const locations = await getZones();
@@ -30,6 +31,19 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
       setAllZones(zones);
     }
     fetchZones();
+  }, []);
+
+  // Fetch upcoming reservations
+  useEffect(() => {
+    async function getReservations() {
+      try {
+        const reservations = await fetchReservations(); // assume API exists
+        setUpcomingReservations(reservations);
+      } catch (err) {
+        console.error("Failed to fetch upcoming reservations:", err);
+      }
+    }
+    getReservations();
   }, []);
 
   const toggleFavorite = (zone) => {
@@ -58,10 +72,38 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
     !favoriteZoneIds.includes(zone.id)
   );
 
+  // Filter reservations for the selected date
+  const reservationsForSelectedDate = upcomingReservations.filter(
+    (res) =>
+      new Date(res.startDate).setHours(0, 0, 0, 0) ===
+      selectedDate.setHours(0, 0, 0, 0)
+  );
+
   return (
     <Box>
+      {/* Upcoming Reservations for selected date */}
+      {reservationsForSelectedDate.length > 0 && (
+        <Box mb={3}>
+          <Typography variant="h6" gutterBottom>
+            Your Reservations on {selectedDate.toDateString()}
+          </Typography>
+          <Box display="flex" flexDirection="column" gap={1}>
+            {reservationsForSelectedDate.map((res) => (
+              <Paper key={res.id} sx={{ p: 2 }}>
+                <Typography>{res.resourceName}</Typography>
+                <Typography>
+                  {res.startTime} - {res.endTime}
+                </Typography>
+              </Paper>
+            ))}
+          </Box>
+        </Box>
+      )}
+
       {/* Favorites Section */}
-      <h2>Favorites</h2>
+      <Typography variant="h6" gutterBottom>
+        Favorites
+      </Typography>
       <Box
         display="grid"
         gap="1rem"
@@ -70,8 +112,8 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
         {favoriteZones.map((zone) => (
           <ZoneCardLoader
             key={zone.id}
-            zone = {zone}
-            locationId = {locationId}
+            zone={zone}
+            locationId={locationId}
             date={selectedDate}
             time={selectedTime}
             onReserve={(z) => setReservedZone(z)}
@@ -92,15 +134,15 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
         </Button>
       </Box>
 
-      {/* Collapsible All Zones (Vertical List) */}
+      {/* Collapsible All Zones */}
       <Collapse in={showAll} unmountOnExit>
         <Box display="flex" flexDirection="column" gap="0.5rem" mt={1}>
           {showAll &&
             otherZones.map((zone) => (
               <ZoneCardLoader
                 key={zone.id}
-                zone = {zone}
-                locationId = {locationId}
+                zone={zone}
+                locationId={locationId}
                 date={selectedDate}
                 time={selectedTime}
                 onReserve={(z) => setReservedZone(z)}

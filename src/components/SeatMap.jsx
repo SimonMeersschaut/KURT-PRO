@@ -1,90 +1,88 @@
-import React, { useEffect, useState } from "react";
-import { Box, Typography, Paper, Button } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Box, Typography, Paper, Button, Alert, Snackbar } from "@mui/material";
 import { getZoneAvailabilities } from "../api/zoneAvailabilities";
+import { fetchRectangles } from "../api/rectangles";
 
-export default function SeatMap({ zone, date, time, onReserve }) {
-  const [seatMap, setSeatMap] = useState(null);
+export default function SeatMap({ zone, startDate, timeRange, onReserve }) {
+  const [rectangles, setRectangles] = useState(null);
   const [availabilities, setAvailabilities] = useState({});
   const [selectedSeat, setSelectedSeat] = useState(null);
+  const [notification, setNotification] = useState(null); // { type: "success" | "error", message: string }
 
   // Fetch static map once per zone
   useEffect(() => {
     if (!zone) return;
-
     const fetchMap = async () => {
       try {
-        const mapData = await fetch(
-          `https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/main/resources/maps/zones/${zone.id}/rectangles.json`
-        ).then((res) => res.json());
-        setSeatMap(mapData);
+        const rectangleData = await fetchRectangles(zone.id);
+        if (!rectangleData) throw new Error("No mapData found.");
+        setRectangles(rectangleData);
       } catch (err) {
         console.error("Failed to fetch map data:", err);
+        setNotification({ type: "error", message: "Failed to load seat map." });
       }
     };
-
     fetchMap();
   }, [zone]);
 
   // Fetch availability when date/time changes
   useEffect(() => {
-    if (!zone || !date || !time) return;
+    if (!zone || !startDate || !timeRange) return;
 
     const fetchAvailability = async () => {
       try {
-        // const startDate = date.toISOString().split("T")[0];
         const availabilityData = (await getZoneAvailabilities(
           1, // locationId
           zone.id,
-          date,
-          time
+          startDate,
+          timeRange
         ))["availabilities"];
 
-        // Transform availability into { seatId: true/false }
         const availabilityMap = {};
         availabilityData.forEach((seat) => {
-          const startHour = parseInt(time.start.split(":")[0], 10);
-          const endHour = parseInt(time.end.split(":")[0], 10);
-          const startIndex = startHour - seat.startSlotAllocation;
-          const endIndex = endHour - seat.startSlotAllocation;
-
-          const available =
-            startIndex >= 0 &&
-            endIndex <= seat.slotAllocation.length &&
-            [...seat.slotAllocation].slice(startIndex, endIndex).every(c => c === "A");
-          
-          let seatNr = /[^ ]*$/.exec(seat.name)[0];
-          availabilityMap[seatNr] = available;
+          const seatNr = seat?.seatNr ?? /[^ ]*$/.exec(seat.name)[0];
+          availabilityMap[seatNr] = seat;
         });
         setAvailabilities(availabilityMap);
         setSelectedSeat(null);
       } catch (err) {
         console.error("Failed to fetch seat availability:", err);
+        setNotification({ type: "error", message: "Failed to fetch seat availability." });
       }
     };
-
     fetchAvailability();
-  }, [zone, date, time]);
+  }, [zone, startDate, timeRange]);
 
-  const handleSeatClick = (seat) => {
-    console.log(seat)
-    console.log(availabilities)
-    if (!availabilities[seat.id]) return;
-    setSelectedSeat(seat.id);
+  const handleSeatClick = (seatNr) => {
+    setSelectedSeat(seatNr);
   };
 
-  const handleReserve = () => {
+  const handleReserve = async () => {
     if (!selectedSeat) return;
-    onReserve(selectedSeat);
+    const seat = availabilities[selectedSeat];
+
+    try {
+      const result = await onReserve(seat.id, startDate, timeRange);
+
+      if (result.success) {
+        setNotification({ type: "success", message: result.message });
+        // Optionally refresh availability or update cache
+      } else {
+        setNotification({ type: "error", message: result.message });
+      }
+    } catch (err) {
+      setNotification({ type: "error", message: "Reservation failed: " + err.message });
+    }
   };
 
-  if (!seatMap) return <Typography>Loading seat map...</Typography>;
+  if (!rectangles) return <Typography>Loading seat map...</Typography>;
 
   return (
     <Box
       sx={{
         position: "relative",
         width: "100%",
-        aspectRatio: `${seatMap.image_width} / ${seatMap.image_height}`,
+        aspectRatio: `${rectangles.image_width} / ${rectangles.image_height}`,
       }}
     >
       {/* Map image */}
@@ -103,23 +101,24 @@ export default function SeatMap({ zone, date, time, onReserve }) {
       />
 
       {/* Seat overlays */}
-      {seatMap.seats.map((seat) => {
-        const available = availabilities[seat.id] ?? false;
+      {rectangles.seats.map((seat) => {
+        const available = seat.seatNr in availabilities;
+        const seatNr = /[^ ]*$/.exec(seat.name)[0];
         return (
           <Box
-            key={seat.id}
-            onClick={() => handleSeatClick(seat)}
+            key={seat.id || seat.seatNr}
+            onClick={() => handleSeatClick(seatNr)}
             sx={{
               position: "absolute",
-              left: `${(seat.x / seatMap.image_width) * 100}%`,
-              top: `${(seat.y / seatMap.image_height) * 100}%`,
-              width: `${(seat.width / seatMap.image_width) * 100}%`,
-              height: `${(seat.height / seatMap.image_height) * 100}%`,
+              left: `${(seat.x / rectangles.image_width) * 100}%`,
+              top: `${(seat.y / rectangles.image_height) * 100}%`,
+              width: `${(seat.width / rectangles.image_width) * 100}%`,
+              height: `${(seat.height / rectangles.image_height) * 100}%`,
               backgroundColor: available
-                ? selectedSeat === seat.id
-                  ? "rgba(0,0,255,0.6)" // selected = blue
-                  : "rgba(0,255,0,0.4)" // available = green
-                : "rgba(128,128,128,0.4)", // unavailable = grey
+                ? selectedSeat === seatNr
+                  ? "rgba(0,0,255,0.6)"
+                  : "rgba(0,255,0,0.4)"
+                : "rgba(128,128,128,0.4)",
               border: "1px solid black",
               transform: `rotate(${seat.rotation}deg)`,
               transformOrigin: "center",
@@ -153,6 +152,24 @@ export default function SeatMap({ zone, date, time, onReserve }) {
           </Button>
         </Paper>
       )}
+
+      {/* Notification */}
+      <Snackbar
+        open={!!notification}
+        autoHideDuration={6000}
+        onClose={() => setNotification(null)}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        {notification && (
+          <Alert
+            severity={notification.type}
+            onClose={() => setNotification(null)}
+            sx={{ width: "100%" }}
+          >
+            {notification.message}
+          </Alert>
+        )}
+      </Snackbar>
     </Box>
   );
 }

@@ -43,3 +43,7 @@ export async function apiFetch(endpoint, options = {}, baseUrl = null) {
     throw err;
   }
 }
+
+export function apiPostFetch(endpoint, bodyData, baseUrl){
+  return apiFetch(endpoint, {method: "POST", "body": JSON.stringify(bodyData)}, baseUrl);
+}

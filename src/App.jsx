@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import './App.css';
 import { Container, Box, Typography } from "@mui/material";
 import DaySelector from "./components/DaySelector";       // your day selector
 import ZonesContainer from "./components/ZonesContainer"; // new zones grid

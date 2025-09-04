@@ -100,6 +100,84 @@ app.get("/api/zoneavailabilities", (req, res) => {
   res.json(response);
 });
 
+// Helper to format date as YYYY-MM-DD
+function formatDate(date) {
+  return date.toISOString().split("T")[0];
+}
+
+// Helper to generate unique IDs
+let nextId = 1000000000;
+function generateId() {
+  return nextId++;
+}
+
+
+app.get("/api/reservations", (req, res) => {
+  const today = new Date();
+  res.json([
+    {
+      id: generateId(),
+      subject: "CBA - Boekenzaal Seat 101",
+      purpose: "",
+      resourceId: 301001,
+      resourceName: "CBA - Boekenzaal Seat 101",
+      startDate: formatDate(today),
+      startTime: "09:00",
+      endDate: formatDate(today),
+      endTime: "10:00",
+      participants: [],
+      minDurationMinutes: 60,
+      maxDurationMinutes: 960,
+      isMultiDayReservable: false,
+      isEditable: true,
+      status: "Booked",
+      possibleStartDates: [],
+      possibleEndDates: [],
+      withCheckIn: false,
+    },
+    {
+      id: generateId(),
+      subject: "CBA - Boekenzaal Seat 102",
+      purpose: "",
+      resourceId: 301002,
+      resourceName: "CBA - Boekenzaal Seat 102",
+      startDate: formatDate(new Date(today.getTime() + 24 * 60 * 60 * 1000)), // tomorrow
+      startTime: "11:00",
+      endDate: formatDate(new Date(today.getTime() + 24 * 60 * 60 * 1000)),
+      endTime: "12:00",
+      participants: [],
+      minDurationMinutes: 60,
+      maxDurationMinutes: 960,
+      isMultiDayReservable: false,
+      isEditable: true,
+      status: "Booked",
+      possibleStartDates: [],
+      possibleEndDates: [],
+      withCheckIn: false,
+    },
+    {
+      id: generateId(),
+      subject: "CBA - Boekenzaal Seat 103",
+      purpose: "",
+      resourceId: 301003,
+      resourceName: "CBA - Boekenzaal Seat 103",
+      startDate: formatDate(new Date(today.getTime() + 2 * 24 * 60 * 60 * 1000)), // day after tomorrow
+      startTime: "14:00",
+      endDate: formatDate(new Date(today.getTime() + 2 * 24 * 60 * 60 * 1000)),
+      endTime: "15:00",
+      participants: [],
+      minDurationMinutes: 60,
+      maxDurationMinutes: 960,
+      isMultiDayReservable: false,
+      isEditable: true,
+      status: "Booked",
+      possibleStartDates: [],
+      possibleEndDates: [],
+      withCheckIn: false,
+    },
+  ]);
+});
+
 app.get("/api/resourcetypeavailabilities", (req, res) => {
   res.json({
     "availabilities": [
