@@ -28,21 +28,31 @@ export default function SeatMap({ zone, date, time, onReserve }) {
   // Fetch availability when date/time changes
   useEffect(() => {
     if (!zone || !date || !time) return;
-    console.log(zone)
+
     const fetchAvailability = async () => {
       try {
         const startDate = date.toISOString().split("T")[0];
         const availabilityData = (await getZoneAvailabilities(
-          1, // hardcoded locationId
+          1, // locationId
           zone.id,
           startDate,
           time.start
         ))["availabilities"];
-        console.log(availabilityData)
-        // Transform availability data into { seatId: true/false }
+
+        // Transform availability into { seatId: true/false }
         const availabilityMap = {};
         availabilityData.forEach((seat) => {
-          availabilityMap[seat.id] = seat.available;
+          const startHour = parseInt(time.start.split(":")[0], 10);
+          const endHour = parseInt(time.end.split(":")[0], 10);
+          const startIndex = startHour - seat.startSlotAllocation;
+          const endIndex = endHour - seat.startSlotAllocation;
+
+          const available =
+            startIndex >= 0 &&
+            endIndex <= seat.slotAllocation.length &&
+            [...seat.slotAllocation].slice(startIndex, endIndex).every(c => c === "A");
+
+          availabilityMap[seat.id] = available;
         });
         setAvailabilities(availabilityMap);
         setSelectedSeat(null);
@@ -72,9 +82,6 @@ export default function SeatMap({ zone, date, time, onReserve }) {
         position: "relative",
         width: "100%",
         aspectRatio: `${seatMap.image_width} / ${seatMap.image_height}`,
-        display: "grid",
-        gridTemplateColumns: `repeat(${seatMap.image_width}, 1fr)`,
-        gridTemplateRows: `repeat(${seatMap.image_height}, 1fr)`,
       }}
     >
       {/* Map image */}
@@ -83,38 +90,37 @@ export default function SeatMap({ zone, date, time, onReserve }) {
         src={`https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/main/resources/maps/zones/${zone.id}/map.png`}
         alt={zone.name}
         sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
           width: "100%",
           height: "100%",
           objectFit: "contain",
-          zIndex: 0,
+          position: "absolute",
+          top: 0,
+          left: 0,
         }}
       />
 
-      {/* Seats */}
-      {Object.values(seatMap.seats).map((seat) => {
+      {/* Seat overlays */}
+      {seatMap.seats.map((seat) => {
         const available = availabilities[seat.id] ?? false;
         return (
           <Box
             key={seat.id}
             onClick={() => handleSeatClick(seat)}
             sx={{
-              gridColumnStart: seat.x,
-              gridColumnEnd: seat.x + seat.width,
-              gridRowStart: seat.y,
-              gridRowEnd: seat.y + seat.height,
+              position: "absolute",
+              left: `${(seat.x / seatMap.image_width) * 100}%`,
+              top: `${(seat.y / seatMap.image_height) * 100}%`,
+              width: `${(seat.width / seatMap.image_width) * 100}%`,
+              height: `${(seat.height / seatMap.image_height) * 100}%`,
               backgroundColor: available
                 ? selectedSeat === seat.id
-                  ? "blue"
-                  : "green"
-                : "grey",
-              transform: `rotate(${seat.rotation}deg)`,
-              transformOrigin: "center", // <-- rotate around center
-              cursor: available ? "pointer" : "not-allowed",
+                  ? "rgba(0,0,255,0.6)" // selected = blue
+                  : "rgba(0,255,0,0.4)" // available = green
+                : "rgba(128,128,128,0.4)", // unavailable = grey
               border: "1px solid black",
-              zIndex: 1,
+              transform: `rotate(${seat.rotation}deg)`,
+              transformOrigin: "center",
+              cursor: available ? "pointer" : "not-allowed",
             }}
           />
         );
@@ -131,7 +137,6 @@ export default function SeatMap({ zone, date, time, onReserve }) {
             p: 2,
             backgroundColor: "rgba(255,255,255,0.9)",
             maxWidth: 300,
-            zIndex: 2,
           }}
         >
           <Typography>Selected Seat: {selectedSeat}</Typography>
