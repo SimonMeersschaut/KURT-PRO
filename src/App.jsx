@@ -19,7 +19,7 @@ export default function App() {
   return (
     <Container maxWidth="md" sx={{ py: 2 }}>
       <Typography variant="h1" gutterBottom>
-        Kurt PRO
+        Kurt PRO {process.env.NODE_ENV === "development" ? " Dev" : ""}
       </Typography>
 
       <DaySelector onSelect={setSelectedDate} />

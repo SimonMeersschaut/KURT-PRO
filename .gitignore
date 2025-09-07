@@ -26,5 +26,7 @@ dist-ssr
 **/serviceAccountKey*
 package-lock.json
 
-build
+build/
 **/*.env
+
+build/*
