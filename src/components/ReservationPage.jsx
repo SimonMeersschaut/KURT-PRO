@@ -16,15 +16,15 @@ export default function ReservationPage({ zone, date, time, onBack }) {
         Reserve a seat in {zone.name || `Zone ${zone.id}`}
       </Typography>
 
-        <Typography variant="body1">Date: {date.toDateString()}</Typography>
+      <Typography variant="body1">Date: {date.toDateString()}</Typography>
 
-        <Typography variant="body1">
-          Time: {time.start} - {time.end}
-        </Typography>
+      <Typography variant="body1">
+        Time: {time.start} - {time.end}
+      </Typography>
 
-        <Typography variant="body1">
-          Zone: {zone.name || `Zone ${zone.id}`}
-        </Typography>
+      <Typography variant="body1">
+        Zone: {zone.name || `Zone ${zone.id}`}
+      </Typography>
 
       {/* Seat map with details panel */}
       <SeatMap
