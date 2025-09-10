@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ZoneCardLoader from "./ZoneCardLoader";
 import ReservationPage from "./ReservationPage";
+import UpcommingReservations from "./UpcommingReservations";
+import UpcommingReservation from "./UpcommingReservation";
 import { Collapse, Button, Box, Typography, Paper } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
@@ -10,6 +12,7 @@ import { fetchReservations } from "../api/reservations"; // <-- assumed
 export default function ZonesContainer({ selectedDate, selectedTime }) {
   const locationId = 1;
   const [reservedZone, setReservedZone] = useState(null);
+  const [showMapReservation, setShowMapReservation] = useState(null);
   const [showAll, setShowAll] = useState(false);
   const [allZones, setAllZones] = useState([]);
   const [favoriteZoneIds, setFavoriteZoneIds] = useState([14, 11, 2]);
@@ -65,6 +68,15 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
     );
   }
 
+  if (showMapReservation) {
+    return (
+      <UpcommingReservation
+          reservationData={showMapReservation}
+          onBack={() => setShowMapReservation(null)}
+      />
+    );
+  }
+
   const favoriteZones = allZones.filter((zone) =>
     favoriteZoneIds.includes(zone.id)
   );
@@ -83,25 +95,15 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
     <Box>
       {/* Upcoming Reservations for selected date */}
       {reservationsForSelectedDate.length > 0 && (
-        <Box mb={3}>
-          <Typography variant="h6" gutterBottom>
-            Your Reservations on {selectedDate.toDateString()}
-          </Typography>
-          <Box display="flex" flexDirection="column" gap={1}>
-            {reservationsForSelectedDate.map((res) => (
-              <Paper key={res.id} sx={{ p: 2 }}>
-                <Typography>{res.resourceName}</Typography>
-                <Typography>
-                  {res.startTime} - {res.endTime}
-                </Typography>
-              </Paper>
-            ))}
-          </Box>
-        </Box>
+        <UpcommingReservations 
+          selectedDate={selectedDate}
+          reservationsForSelectedDate={reservationsForSelectedDate}
+          onClick = {(reservation) => setShowMapReservation(reservation)}
+        />
       )}
 
       {/* Favorites Section */}
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h4" gutterBottom>
         Favorites
       </Typography>
       <Box

@@ -13,7 +13,7 @@ export const github =
  * @param {object} options - fetch options
  * @param {string} baseUrl - optional, defaults to kurt3
  */
-export async function apiFetch(endpoint, options = {}, baseUrl = null) {
+export async function apiFetch(endpoint, options = {}, baseUrl = null, returnResponse=false) {
   if (baseUrl == null){
     throw new Error("No base url was provided.")
   }
@@ -27,6 +27,10 @@ export async function apiFetch(endpoint, options = {}, baseUrl = null) {
         ...(options.headers || {}),
       },
     });
+
+    if (returnResponse){
+      return res;
+    }
 
     if (!res.ok) {
       let errMsg = `Error ${res.status}: ${res.statusText}`;
@@ -44,6 +48,6 @@ export async function apiFetch(endpoint, options = {}, baseUrl = null) {
   }
 }
 
-export function apiPostFetch(endpoint, bodyData, baseUrl){
-  return apiFetch(endpoint, {method: "POST", "body": JSON.stringify(bodyData)}, baseUrl);
+export function apiPostFetch(endpoint, bodyData, baseUrl, returnResponse){
+  return apiFetch(endpoint, {method: "POST", "body": JSON.stringify(bodyData)}, baseUrl, returnResponse);
 }

@@ -1,6 +1,5 @@
 import os
 import json
-import glob
 import shutil
 
 # Define directories and file names
@@ -27,32 +26,6 @@ def setup():
     # Create output directory
     os.makedirs(DIST_DIR, exist_ok=True)
     os.makedirs(BUILD_DIR, exist_ok=True)
-
-"""
-This function returns the content of a single javascript file.
-"""
-def script_content():
-    # Bundle all .js files into one single file for Safari
-    output = ""
-
-    # Read css files and append to .js script
-    for filename in glob.glob("src/styles/*.css"):
-        with open(filename, 'r') as f:
-            var_name = filename.split('/')[-1].split('\\')[-1].replace('.', '_')
-            output += f"""const {var_name} = "{f.read().replace('\n', '').replace('"', '\\"')}";\n"""
-    
-    # paste zones.json
-    with open("src/data/zones.json", 'r') as f:
-            output += "const ALL_ZONES = " + f.read().replace('\n', '').strip() + "\n"
-    
-    # Paste all .js files after one another
-    script_files = glob.glob("src/scripts/*.js") + glob.glob("src/scripts/*/*.js")
-    for filename in script_files:
-        with open(filename, 'r') as f:
-            output += f.read() + "\n"
-    
-            
-    return output
 
 """
 This function will create a folder with a script and a manifest file.

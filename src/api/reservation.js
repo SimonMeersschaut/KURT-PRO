@@ -1,4 +1,5 @@
 import { apiPostFetch, kurt3 } from "./client";
+import { getUid } from "./authentication";
 
 /** Format a Date object to YYYY-MM-DD */
 function formatDate(d) {
@@ -37,8 +38,8 @@ export default async function makeReservation(seatId, startDate, timeRange) {
 
   const bodyData = {
     id: seatId,
-    resourceName: ` - `, // TODO: set proper resource name
-    subject: "",          // TODO: set proper subject
+    resourceName: ` - `,
+    subject: "",
     purpose: "",
     resourceId: seatId,
     startDate: formatDate(startDate),
@@ -46,21 +47,21 @@ export default async function makeReservation(seatId, startDate, timeRange) {
     endDate: formatDate(startDate),
     endTime: timeRange.end,
     participants: [
-      "KURT-PRO user" // TODO: set proper participant object { uid, email }
+      {"uid": getUid(), "email": ""}
     ],
     summary: [
-      "", "", "", "" // TODO: fill summary properly
+      "", "", "", ""
     ],
     withCheckIn: false
   };
 
   try {
-    const response = await apiPostFetch("/api/reservations", bodyData, kurt3);
-    const responseText = await response.text();
+    const response = await apiPostFetch("/api/reservations", bodyData, kurt3, true);
+    const responseText = await response.json();
 
     if (response.ok) {
-      const successMessage = "Your reservation has been created.";
-      if (responseText.startsWith(`"${successMessage}`)) {
+      const successMessage = "Your reservation has been created. The following attendees were validated: ";
+      if (responseText.startsWith(successMessage)) {
         return { success: true, message: successMessage, data: bodyData };
       } else {
         // Unexpected response, but still 200 OK
@@ -81,6 +82,7 @@ export default async function makeReservation(seatId, startDate, timeRange) {
       };
     }
   } catch (err) {
+    console.error(err.message)
     return { success: false, message: `Request failed: ${err.message}` };
   }
 }
