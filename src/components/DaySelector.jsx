@@ -14,15 +14,25 @@ export default function DaySelector({ onSelect }) {
   });
 
   useEffect(() => {
-    async function loadReservations() {
-      try {
-        const data = await fetchReservations();
-        setReservations(data || []);
-      } catch (err) {
-        console.error("Failed to fetch reservations:", err);
+    let isMounted = true;
+
+    fetchReservations(unverifiedData => {
+      if (isMounted) {
+        setReservations(unverifiedData || []);
       }
-    }
-    loadReservations();
+    })
+      .then(verifiedData => {
+        if (isMounted) {
+          setReservations(verifiedData || []);
+        }
+      })
+      .catch(err => {
+        console.error("Failed to fetch reservations:", err);
+      });
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const handleChange = (event, newValue) => {
@@ -64,7 +74,7 @@ export default function DaySelector({ onSelect }) {
                         width: 8,
                         height: 8,
                         borderRadius: "50%",
-                        bgcolor: "primary.main",
+                        bgcolor: reservations.isVerified === false ? "grey.500" : "primary.main",
                       }}
                     />
                   )}

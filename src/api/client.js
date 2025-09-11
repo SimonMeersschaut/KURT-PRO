@@ -7,6 +7,11 @@ export const kurt3 =
 export const github =
   "https://corsproxy.io/?https://raw.githubusercontent.com/SimonMeersschaut/KURT-PRO/refs/heads/react-app/";
 
+export const kurtpro =
+  process.env.NODE_ENV === "development"
+  ? "http://localhost:8000" // Mock server
+    : "https://kurtpro.org"; // Production
+
 /**
  * Centralized fetch wrapper
  * @param {string} endpoint - relative path (e.g., "/reservations")

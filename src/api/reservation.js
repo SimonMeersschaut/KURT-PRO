@@ -1,5 +1,30 @@
-import { apiPostFetch, kurt3 } from "./client";
+import { apiPostFetch, kurt3, kurtpro} from "./client";
 import { getUid } from "./authentication";
+import { fetchReservations, clearReservationCache } from "./reservations";
+
+/**
+ * Syncs all reservations with the backend.
+ */
+async function syncReservations() {
+  try {
+    // Invalidate cache and fetch fresh reservations
+    clearReservationCache();
+    const reservations = await fetchReservations();
+
+    // TODO: Replace with your actual backend endpoint
+    const backendUrl = kurtpro + "/api/sync-reservations";
+
+    await fetch(backendUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(reservations),
+    });
+  } catch (error) {
+    console.error("Failed to sync reservations:", error);
+  }
+}
 
 /** Format a Date object to YYYY-MM-DD */
 function formatDate(d) {
@@ -62,6 +87,8 @@ export default async function makeReservation(seatId, startDate, timeRange) {
     if (response.ok) {
       const successMessage = "Your reservation has been created. The following attendees were validated: ";
       if (responseText.startsWith(successMessage)) {
+        // Don't await this, let it run in the background
+        syncReservations();
         return { success: true, message: successMessage, data: bodyData };
       } else {
         // Unexpected response, but still 200 OK

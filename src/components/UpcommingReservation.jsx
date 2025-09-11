@@ -32,9 +32,10 @@ export default function UpcommingReservation({ reservationData, onBack }) {
 
             <SeatMap 
                 zone={{id: zone_id, name: reservationData["resourceName"]}}
+                reservationNr={parseInt(reservationData["resourceName"].split(" ").pop())}
             />
 
-            <ShareDialog isOpen={open} handleClose={() => {handleClose()}}/>
+            <ShareDialog isOpen={open} handleClose={() => {handleClose()}} clickedReservationId={reservationData.id}/>
         </Container>
     );
 }

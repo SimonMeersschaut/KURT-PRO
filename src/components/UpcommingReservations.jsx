@@ -21,6 +21,7 @@ export default function UpcommingReservations({ selectedDate, reservationsForSel
                         <Typography>{res.resourceName}</Typography>
                         <Typography>
                             {res.startTime} - {res.endTime}
+                            {res.isVerified === false && <Typography component="span" variant="body2" color="textSecondary"> (unverified)</Typography>}
                         </Typography>
                         </Paper>
                     </Card>

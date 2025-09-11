@@ -21,8 +21,10 @@ import {
 } from "@mui/material";
 import * as htmlToImage from "html-to-image";
 import { fetchReservations } from "../api/reservations";
+import SeatMap from "./SeatMap";
+import getZoneId from "../api/getZoneId";
 
-export default function ShareDialog({ isOpen, handleClose }) {
+export default function ShareDialog({ isOpen, handleClose, clickedReservationId }) {
   const [reservations, setReservations] = useState([]);
   const [selectedReservations, setSelectedReservations] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -31,14 +33,38 @@ export default function ShareDialog({ isOpen, handleClose }) {
   useEffect(() => {
     if (isOpen) {
       setLoading(true);
-      fetchReservations()
-        .then((data) => {
-          setReservations(data);
-          setSelectedReservations(data.map((r) => r.id)); // default: all selected
+      setReservations([]);
+      setSelectedReservations(clickedReservationId ? [clickedReservationId] : []);
+
+      let isMounted = true;
+
+      fetchReservations(unverifiedData => {
+        if (isMounted) {
+          setReservations(unverifiedData || []);
+          if (!clickedReservationId) {
+            setSelectedReservations((unverifiedData || []).map(r => r.id));
+          }
+        }
+      })
+        .then(verifiedData => {
+          if (isMounted) {
+            setReservations(verifiedData || []);
+            if (!clickedReservationId) {
+              setSelectedReservations((verifiedData || []).map(r => r.id));
+            }
+          }
         })
-        .finally(() => setLoading(false));
+        .finally(() => {
+            if(isMounted){
+                setLoading(false)
+            }
+        });
+
+      return () => {
+        isMounted = false;
+      };
     }
-  }, [isOpen]);
+  }, [isOpen, clickedReservationId]);
 
   const handleToggleReservation = (id) => {
     setSelectedReservations((prev) =>
@@ -90,6 +116,15 @@ export default function ShareDialog({ isOpen, handleClose }) {
     handleClose();
   };
 
+  const groupedReservations = reservations.reduce((acc, r) => {
+    const date = new Date(r.startDate).toDateString();
+    if (!acc[date]) {
+      acc[date] = [];
+    }
+    acc[date].push(r);
+    return acc;
+  }, {});
+
   // --- Visualization Component ---
   const ReservationPreview = () => {
     const selected = reservations.filter((r) =>
@@ -102,16 +137,21 @@ export default function ShareDialog({ isOpen, handleClose }) {
 
     if (selected.length === 1) {
       const r = selected[0];
+      const seatNrStr = /[^ ]*$/.exec(r.resourceName)[0];
+      const seatNr = parseInt(seatNrStr, 10);
+      const zoneId = getZoneId(r.resourceName, seatNr);
+      const zone = { id: zoneId, name: '' }; // SeatMap primarily needs the id.
+      const startDate = new Date(r.startDate);
+      const timeRange = { start: r.startTime, end: r.endTime };
+
       return (
-        <Paper elevation={2} sx={{ mt: 2, p: 2 }}>
-          <Typography variant="h6">{r.resourceName}</Typography>
-          <Typography>
-            {r.startDate} {r.startTime} – {r.endDate} {r.endTime}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Status: {r.status}
-          </Typography>
-        </Paper>
+        <SeatMap
+          zone={zone}
+          startDate={startDate}
+          timeRange={timeRange}
+          reservationNr={seatNr}
+          onReserve={() => {}} // onReserve is not needed for preview
+        />
       );
     }
 
@@ -123,6 +163,7 @@ export default function ShareDialog({ isOpen, handleClose }) {
               <TableCell >Resource</TableCell>
               <TableCell >Date</TableCell>
               <TableCell >Time</TableCell>
+              <TableCell >Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -133,6 +174,7 @@ export default function ShareDialog({ isOpen, handleClose }) {
                 <TableCell>
                   {r.startTime} – {r.endTime}
                 </TableCell>
+                <TableCell>{r.isVerified === false ? 'Unverified' : ''}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -158,17 +200,22 @@ export default function ShareDialog({ isOpen, handleClose }) {
                 ? "Deselect All"
                 : "Select All"}
             </Button>
-            {reservations.map((r) => (
-              <FormControlLabel
-                key={r.id}
-                control={
-                  <Checkbox
-                    checked={selectedReservations.includes(r.id)}
-                    onChange={() => handleToggleReservation(r.id)}
+            {Object.entries(groupedReservations).map(([date, reservationsOnDate]) => (
+              <Box key={date} sx={{ mb: 2 }}>
+                <Typography variant="h6">{date}</Typography>
+                {reservationsOnDate.map((r) => (
+                  <FormControlLabel
+                    key={r.id}
+                    control={
+                      <Checkbox
+                        checked={selectedReservations.includes(r.id)}
+                        onChange={() => handleToggleReservation(r.id)}
+                      />
+                    }
+                    label={r.resourceName}
                   />
-                }
-                label={r.resourceName}
-              />
+                ))}
+              </Box>
             ))}
 
             {/* --- Preview Section (captured by html-to-image) --- */}

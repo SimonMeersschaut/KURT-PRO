@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
-import { Box, Typography, Paper, Button, Alert, Snackbar } from "@mui/material";
+import { Box, Typography, Alert } from "@mui/material";
 import { getZoneAvailabilities } from "../api/zoneAvailabilities";
 import { fetchRectangles } from "../api/rectangles";
+import { getAvatar } from "../api/authentication";
 
-export default function SeatMap({ zone, startDate, timeRange, onReserve }) {
+
+export default function SeatMap({ zone, startDate, timeRange, onReserve, reservationNr}) {
+  
   const [rectangles, setRectangles] = useState(null);
   const [availabilities, setAvailabilities] = useState({});
-  const [selectedSeat, setSelectedSeat] = useState(null);
+  const [selectedSeat, setSelectedSeat] = useState(reservationNr);
   const [notification, setNotification] = useState(null); // { type: "success" | "error", message: string }
-
+  
+  
   // Fetch static map once per zone
   useEffect(() => {
     if (!zone) return;
@@ -77,6 +81,27 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve }) {
 
   if (!rectangles) return <Typography>Loading seat map...</Typography>;
 
+  // Determine if reservation exists on map
+  const mySeatOnMap = reservationNr
+    ? rectangles?.seats.find(
+        (seat) => (seat.seatNr) === reservationNr
+      )
+    : null;
+
+  if (reservationNr && !mySeatOnMap) {
+    return (
+      <Box sx={{ p: 4 }}>
+        <Alert severity="warning" sx={{ mb: 2 }}>
+          Your reservation (#{reservationNr}) was not found on the map.
+        </Alert>
+        <Typography>
+          We are sorry for the inconvenience.
+        </Typography>
+      </Box>
+    );
+  }
+  
+
   return (
     <Box
       sx={{
@@ -103,7 +128,10 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve }) {
       {/* Seat overlays */}
       {rectangles.seats.map((seat) => {
         const available = seat.seatNr in availabilities;
-        const seatNr = /[^ ]*$/.exec(seat.name)[0];
+        const seatNr = seat.seatNr;
+
+        const isMySeat = reservationNr && reservationNr === seatNr;
+
         return (
           <Box
             key={seat.id || seat.seatNr}
@@ -114,62 +142,34 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve }) {
               top: `${(seat.y / rectangles.image_height) * 100}%`,
               width: `${(seat.width / rectangles.image_width) * 100}%`,
               height: `${(seat.height / rectangles.image_height) * 100}%`,
-              backgroundColor: available
-                ? selectedSeat === seatNr
-                  ? "rgba(0,0,255,0.6)"
-                  : "rgba(0,255,0,0.4)"
-                : "rgba(128,128,128,0.4)",
-              border: "1px solid black",
               transform: `rotate(${seat.rotation}deg)`,
               transformOrigin: "center",
               cursor: available ? "pointer" : "not-allowed",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: isMySeat ? 2: 1
             }}
-          />
+          >
+            {isMySeat ? (
+              getAvatar()
+            ) : (
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: available
+                    ? selectedSeat === seatNr
+                      ? "rgba(0,0,255,0.6)"
+                      : "rgba(0,255,0,0.4)"
+                    : "rgba(128,128,128,0.4)",
+                  border: "1px solid black",
+                }}
+              />
+            )}
+          </Box>
         );
       })}
-
-      {/* Reservation button */}
-      {selectedSeat && (
-        <Paper
-          sx={{
-            position: "absolute",
-            bottom: 8,
-            left: "50%",
-            transform: "translateX(-50%)",
-            p: 2,
-            backgroundColor: "rgba(255,255,255,0.9)",
-            maxWidth: 300,
-          }}
-        >
-          <Typography>Selected Seat: {selectedSeat}</Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ mt: 1 }}
-            onClick={handleReserve}
-          >
-            Reserve
-          </Button>
-        </Paper>
-      )}
-
-      {/* Notification */}
-      <Snackbar
-        open={!!notification}
-        autoHideDuration={6000}
-        onClose={() => setNotification(null)}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      >
-        {notification && (
-          <Alert
-            severity={notification.type}
-            onClose={() => setNotification(null)}
-            sx={{ width: "100%" }}
-          >
-            {notification.message}
-          </Alert>
-        )}
-      </Snackbar>
     </Box>
   );
 }

@@ -38,16 +38,30 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
 
   // Fetch upcoming reservations
   useEffect(() => {
-    async function getReservations() {
-      try {
-        const reservations = await fetchReservations(); // assume API exists
-        setUpcomingReservations(reservations);
-      } catch (err) {
-        console.error("Failed to fetch upcoming reservations:", err);
+    let isMounted = true;
+
+    fetchReservations(unverifiedData => {
+      if (isMounted) {
+        setUpcomingReservations(unverifiedData || []);
       }
-    }
-    getReservations();
+    })
+      .then(verifiedData => {
+        if (isMounted) {
+          setUpcomingReservations(verifiedData || []);
+        }
+      })
+      .catch(err => {
+        console.error("Failed to fetch upcoming reservations:", err);
+      });
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
+
+  useEffect(() => {
+    setShowMapReservation(null);
+  }, [selectedDate]);
 
   const toggleFavorite = (zone) => {
     setFavoriteZoneIds((prev) =>

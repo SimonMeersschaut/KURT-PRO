@@ -117,10 +117,10 @@ app.get("/api/reservations", (req, res) => {
   res.json([
     {
       id: generateId(),
-      subject: "CBA - Boekenzaal Seat 101",
+      subject: "CBA - Boekenzaal Seat 151",
       purpose: "",
       resourceId: 301001,
-      resourceName: "CBA - Boekenzaal Seat 101",
+      resourceName: "CBA - Boekenzaal Seat 151",
       startDate: formatDate(today),
       startTime: "09:00",
       endDate: formatDate(today),
@@ -137,10 +137,10 @@ app.get("/api/reservations", (req, res) => {
     },
     {
       id: generateId(),
-      subject: "CBA - Boekenzaal Seat 102",
+      subject: "CBA - Boekenzaal Seat 112",
       purpose: "",
       resourceId: 301002,
-      resourceName: "CBA - Boekenzaal Seat 102",
+      resourceName: "CBA - Boekenzaal Seat 112",
       startDate: formatDate(new Date(today.getTime() + 24 * 60 * 60 * 1000)), // tomorrow
       startTime: "11:00",
       endDate: formatDate(new Date(today.getTime() + 24 * 60 * 60 * 1000)),
@@ -157,10 +157,10 @@ app.get("/api/reservations", (req, res) => {
     },
     {
       id: generateId(),
-      subject: "CBA - Boekenzaal Seat 103",
+      subject: "CBA - Boekenzaal Seat 113",
       purpose: "",
       resourceId: 301003,
-      resourceName: "CBA - Boekenzaal Seat 103",
+      resourceName: "CBA - Boekenzaal Seat 113",
       startDate: formatDate(new Date(today.getTime() + 2 * 24 * 60 * 60 * 1000)), // day after tomorrow
       startTime: "14:00",
       endDate: formatDate(new Date(today.getTime() + 2 * 24 * 60 * 60 * 1000)),

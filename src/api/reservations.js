@@ -1,30 +1,64 @@
-import { apiFetch, kurt3 } from "./client";
+import { apiFetch, apiPostFetch, kurt3, kurtpro } from "./client";
 
-// Cache can store either data or a Promise
+let fetchInProgressPromise = null;
+let unverifiedDataPromise = null;
 let reservationCache = null;
+let cacheIsVerified = false;
 
-/**
- * Fetch reservations with caching
- * Multiple simultaneous calls will share the same request
- */
-export function fetchReservations() {
-  if (reservationCache) {
-    // If it's a promise or resolved data, return it
-    return reservationCache instanceof Promise
-      ? reservationCache
-      : Promise.resolve(reservationCache);
+export function clearReservationCache() {
+  fetchInProgressPromise = null;
+  unverifiedDataPromise = null;
+  reservationCache = null;
+  cacheIsVerified = false;
+}
+
+export function fetchReservations(onUnverifiedData) {
+  if (reservationCache && cacheIsVerified) {
+    return Promise.resolve(reservationCache);
   }
 
-  // Start the fetch and store the promise immediately
-  reservationCache = apiFetch(`/api/reservations`, {}, kurt3)
-    .then((data) => {
-      reservationCache = data; // replace promise with actual data after resolution
-      return data;
-    })
-    .catch((err) => {
-      reservationCache = null; // reset on error so future calls can retry
-      throw err;
-    });
+  if (!fetchInProgressPromise) {
+    // Start fetching if not already in progress.
+    
+    unverifiedDataPromise = apiFetch(`/api/reservations`, {}, kurtpro)
+      .then(data => {
+        if (!cacheIsVerified) {
+          const unverifiedData = data.map(r => ({...r, isVerified: false}));
+          reservationCache = unverifiedData;
+          return unverifiedData;
+        }
+        return null;
+      })
+      .catch(error => {
+        console.error("Failed to fetch from kurtpro", error);
+        return null;
+      });
 
-  return reservationCache;
+    fetchInProgressPromise = apiFetch(`/api/reservations`, {}, kurt3)
+      .then(data => {
+        const verifiedData = data.map(r => ({...r, isVerified: true}));
+        reservationCache = verifiedData;
+        cacheIsVerified = true;
+
+        // Sync with the user's backend. Don't wait for it.
+        apiPostFetch('/api/sync-reservations', verifiedData, kurtpro)
+            .catch(err => console.error("Failed to sync with kurtpro backend", err));
+
+        return verifiedData;
+      })
+      .catch(err => {
+        clearReservationCache();
+        throw err;
+      });
+  }
+
+  if (onUnverifiedData) {
+    unverifiedDataPromise.then(unverifiedData => {
+      if (unverifiedData && !cacheIsVerified) {
+        onUnverifiedData(unverifiedData);
+      }
+    });
+  }
+
+  return fetchInProgressPromise;
 }
