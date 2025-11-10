@@ -2,6 +2,7 @@ import os
 import json
 import shutil
 import pathlib
+import subprocess
 import glob
 
 # Define directories and file names
@@ -95,7 +96,7 @@ def main():
     # 3. Build React app
     print("Running npm run build...")
     # It's assumed this is run before the script
-    # subprocess.run("npm run build", check=True, shell=True)
+    subprocess.run("npm run build", check=True, shell=True)
 
     # 4. Create Userscript
     create_userscript(version, BUILD_DIR)
