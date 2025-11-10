@@ -1,71 +1,113 @@
 import os
 import json
 import shutil
+import pathlib
+import glob
 
 # Define directories and file names
-SRC_DIR = "src"
 DIST_DIR = "dist"
-BUILD_DIR = os.path.join(DIST_DIR, "build")
-SAFARI_FILENAME = "KURT_PRO_userscript.user.js"
-CHROME_ZIP_FILENAME = "KURT_PRO_chrome_extention.zip"
-LOGO_FILENAME = "48x48.png"
+BUILD_DIR = "build"
+CHROME_ZIP_FILENAME = "KURT_PRO_chrome_extention"
+USERSCRIPT_FILENAME = "KURT_PRO_userscript.user.js"
 
-# read current version
-with open("VERSION") as f:
-    VERSION = f.read()
+def get_version():
+    with open("package.json") as f:
+        data = json.load(f)
+        return data["version"]
 
-with open(os.path.join(SRC_DIR, "data", "userscript.js"), "r") as f:
-    USER_SCRIPT_DOCS = f.read()
-# replace the version with the current version
-USER_SCRIPT_DOCS = USER_SCRIPT_DOCS.replace("$VERSION$", VERSION)
-
-"""
-Initialize the working directory with a `dist` folder.
-"""
-def setup():
-    # Create output directory
-    os.makedirs(DIST_DIR, exist_ok=True)
-    os.makedirs(BUILD_DIR, exist_ok=True)
-
-"""
-This function will create a folder with a script and a manifest file.
-"""
-def create_chrome_extention(script_path:str, manifest_path:str):
-    # Package the Chrome extension: include the manifest & all js files
-
-    # Copy javascript file to the output directory
-    shutil.copy(script_path, os.path.join(BUILD_DIR, "main.js"))
-
-    # Read manifest data
-    with open(manifest_path, 'r') as f:
-        manifest_data = json.load(f)
-    manifest_data['version'] = VERSION
-    # Write manifest file to the output directory
-    with open(os.path.join(BUILD_DIR, "manifest.json"), 'w') as f:
-        json.dump(manifest_data, f)
-    # Copy the logo image
-    shutil.copy(
-        os.path.join(SRC_DIR, "images/logo", LOGO_FILENAME),
-        os.path.join(BUILD_DIR, LOGO_FILENAME)
-    )
-
-if __name__ == '__main__':
-    print("Building Artifacts.") 
-    setup()
-    # write dist output
-    # write user-script safari extention (.js file)
-    with open(os.path.join(DIST_DIR, SAFARI_FILENAME), 'w+') as f:
-        f.write(USER_SCRIPT_DOCS + script_content())
+def get_asset_files(build_dir):
+    manifest_path = os.path.join(build_dir, "asset-manifest.json")
+    with open(manifest_path) as f:
+        manifest = json.load(f)
     
-    # write chrome extention (.zip file)
-    create_chrome_extention(
-        os.path.join(DIST_DIR, SAFARI_FILENAME),
-        os.path.join(SRC_DIR, "data", "manifest.json")
-    )
+    main_js = manifest["files"]["main.js"]
+    main_css = manifest["files"]["main.css"]
 
-    # Create a zip file for the Chrome extension
-    shutil.make_archive(
-        os.path.join(DIST_DIR, CHROME_ZIP_FILENAME).split(".zip")[0],
-        'zip',
-        "dist/build")
+    with open(os.path.join(build_dir, main_css[1:])) as f:
+        css_content = f.read()
+    
+    with open(os.path.join(build_dir, main_js[1:])) as f:
+        js_content = f.read()
+        
+    return css_content, js_content
+
+def create_userscript(version, build_dir):
+    print("Creating Userscript...")
+    
+    css_content, js_content = get_asset_files(build_dir)
+
+    with open("src/userscript.js", "r") as f:
+        userscript_template = f.read()
+    
+    userscript_header = userscript_template.split('// ==/UserScript==')[0] + '// ==/UserScript=='
+    userscript_header = userscript_header.replace("$VERSION$", version)
+
+    # Escape for single-quoted JS string
+    css_content_escaped = css_content.replace('\\', '\\\\').replace("'", "\'\'")
+    js_content_escaped = js_content.replace('\\', '\\\\').replace("'", "\'\'")
+
+    with open("inject.js", 'r') as f:
+        userscript_body = f.read()\
+            .replace("{CSS_CONTENT}", css_content_escaped) \
+            .replace("{JS_CONTENT}", js_content_escaped)
+
+    userscript_full_content = userscript_header + '\n' + userscript_body
+    
+    with open(os.path.join(DIST_DIR, USERSCRIPT_FILENAME), 'w') as f:
+        f.write(userscript_full_content)
+
+def create_extension(build_dir):
+    print("Creating development extension...")
+    
+    dev_dir = os.path.join(DIST_DIR, "dev")
+    os.makedirs(dev_dir, exist_ok=True)
+    
+    css_content, js_content = get_asset_files(build_dir)
+    
+    # Write app.js and app.css
+    with open(os.path.join(dev_dir, "app.js"), 'w') as f:
+        f.write(js_content)
+    with open(os.path.join(dev_dir, "app.css"), 'w') as f:
+        f.write(css_content)
+        
+    # Copy content script
+    shutil.copy("inject_extension.js", os.path.join(dev_dir, "main.js"))
+    
+    # Copy manifest and other resources
+    shutil.copy("src/manifest.json", os.path.join(dev_dir, "manifest.json"))
+    for filename in glob.glob("resources/extension/*.*"):
+        name = pathlib.Path(filename).name
+        shutil.copy(filename, os.path.join(dev_dir, name))
+
+
+def main():
+    print("Building artifacts...")
+    
+    # 1. Clean up
+    if os.path.exists(DIST_DIR):
+        shutil.rmtree(DIST_DIR)
+    os.makedirs(DIST_DIR)
+
+    # 2. Get version
+    version = get_version()
+    print(f"Version: {version}")
+
+    # 3. Build React app
+    print("Running npm run build...")
+    # It's assumed this is run before the script
+    # subprocess.run("npm run build", check=True, shell=True)
+
+    # 4. Create Userscript
+    create_userscript(version, BUILD_DIR)
+    
+    # 5. Create development version of the extension
+    create_extension(BUILD_DIR)
+    
+    # 6. Create Chrome Extension zip (optional)
+    # print("Creating Chrome extension zip...")
+    # shutil.make_archive(os.path.join(DIST_DIR, CHROME_ZIP_FILENAME), 'zip', os.path.join(DIST_DIR, "dev"))
+    
     print("Artifacts built successfully.")
+
+if __name__ == "__main__":
+    main()

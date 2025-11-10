@@ -20,8 +20,10 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
 
   // Fetch zones
   useEffect(() => {
+    let isMounted = true;
     async function fetchZones() {
       const locations = await getZones();
+      if (!isMounted) return;
       const location = locations.find((loc) => loc.id === locationId);
       if (!location) return;
 
@@ -34,6 +36,9 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
       setAllZones(zones);
     }
     fetchZones();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   // Fetch upcoming reservations

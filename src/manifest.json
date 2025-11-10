@@ -15,5 +15,11 @@
       "css": []
     }
   ],
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "web_accessible_resources": [
+    {
+      "resources": ["app.js", "app.css"],
+      "matches": ["http://kurt3.ghum.kuleuven.be/*", "https://kurt3.ghum.kuleuven.be/*"]
+    }
+  ]
 }

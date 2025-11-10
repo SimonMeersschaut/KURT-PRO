@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Box, Typography, Alert } from "@mui/material";
+import { Box, Typography, Alert, Dialog, DialogTitle, DialogContent, DialogActions, Button, Avatar } from "@mui/material";
 import { getZoneAvailabilities } from "../api/zoneAvailabilities";
 import { fetchRectangles } from "../api/rectangles";
 import { getAvatar } from "../api/authentication";
+import { useNotification } from "../context/NotificationContext";
 
 
 export default function SeatMap({ zone, startDate, timeRange, onReserve, reservationNr}) {
@@ -10,7 +11,7 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
   const [rectangles, setRectangles] = useState(null);
   const [availabilities, setAvailabilities] = useState({});
   const [selectedSeat, setSelectedSeat] = useState(reservationNr);
-  const [notification, setNotification] = useState(null); // { type: "success" | "error", message: string }
+  const { showNotification } = useNotification();
   
   
   // Fetch static map once per zone
@@ -23,7 +24,7 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
         setRectangles(rectangleData);
       } catch (err) {
         console.error("Failed to fetch map data:", err);
-        setNotification({ type: "error", message: "Failed to load seat map." });
+        showNotification("Failed to load seat map.", "error");
       }
     };
     fetchMap();
@@ -51,7 +52,7 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
         setSelectedSeat(null);
       } catch (err) {
         console.error("Failed to fetch seat availability:", err);
-        setNotification({ type: "error", message: "Failed to fetch seat availability." });
+        showNotification("Failed to fetch seat availability.", "error");
       }
     };
     fetchAvailability();
@@ -69,13 +70,14 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
       const result = await onReserve(seat.id, startDate, timeRange);
 
       if (result.success) {
-        setNotification({ type: "success", message: result.message });
+        showNotification(result.message, "success");
+        setSelectedSeat(null); // close dialog on success
         // Optionally refresh availability or update cache
       } else {
-        setNotification({ type: "error", message: result.message });
+        showNotification(result.message, "error");
       }
     } catch (err) {
-      setNotification({ type: "error", message: "Reservation failed: " + err.message });
+      showNotification("Reservation failed: " + err.message, "error");
     }
   };
 
@@ -101,7 +103,6 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
     );
   }
   
-
   return (
     <Box
       sx={{
@@ -170,6 +171,60 @@ export default function SeatMap({ zone, startDate, timeRange, onReserve, reserva
           </Box>
         );
       })}
+
+      {/* Seat details / Confirm dialog */}
+      {selectedSeat && (
+        (() => {
+          const seatData = availabilities[selectedSeat] ?? null;
+          const seatOnMap = rectangles.seats.find((s) => s.seatNr === selectedSeat) ?? null;
+          return (
+            <Dialog
+              open={Boolean(selectedSeat)}
+              onClose={() => setSelectedSeat(null)}
+              fullWidth
+              maxWidth="xs"
+            >
+              <DialogTitle>Seat {selectedSeat}</DialogTitle>
+              <DialogContent dividers>
+                {seatOnMap && (
+                  <Box sx={{ display: "flex", gap: 2, alignItems: "center", mb: 1 }}>
+                    <Avatar>{String(selectedSeat).slice(0,2)}</Avatar>
+                    <Box>
+                      <Typography variant="subtitle1">{seatOnMap.name ?? `Seat ${selectedSeat}`}</Typography>
+                      <Typography variant="body2" color="text.secondary">Zone: {zone.name}</Typography>
+                    </Box>
+                  </Box>
+                )}
+                <Typography variant="body2" sx={{ mb: 1 }}>
+                  Date: {startDate instanceof Date ? startDate.toLocaleDateString() : startDate}
+                </Typography>
+                <Typography variant="body2" sx={{ mb: 2 }}>
+                  Time range: {typeof timeRange === 'object' ? `${timeRange.start} - ${timeRange.end}` : timeRange}
+                </Typography>
+                <Typography variant="body2">
+                  {seatData
+                    ? `Status: ${seatData?.status ?? "Available"}`
+                    : "No availability details (seat may be unavailable)."}
+                </Typography>
+              </DialogContent>
+              <DialogActions sx={{ p: 2 }}>
+                <Button onClick={() => setSelectedSeat(null)} variant="outlined">
+                  Cancel
+                </Button>
+                <Button
+                  onClick={handleReserve}
+                  variant="contained"
+                  size="large"
+                  fullWidth
+                  disabled={!seatData}
+                >
+                  Confirm
+                </Button>
+              </DialogActions>
+            </Dialog>
+          );
+        })()
+      )}
     </Box>
   );
 }

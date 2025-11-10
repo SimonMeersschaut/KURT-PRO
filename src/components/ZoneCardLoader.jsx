@@ -21,14 +21,25 @@ export default function ZoneCardLoader({
   const [error, setError] = useState("");
 
   useEffect(() => {
+    let isMounted = true;
     setAvailabilitiesData(null);
     setError("");
 
     getZoneAvailabilities(locationId, zone?.id, date, time)
       .then((res) => {
-        setAvailabilitiesData(res);
+        if (isMounted) {
+          setAvailabilitiesData(res);
+        }
       })
-      .catch((err) => setError(err.message));
+      .catch((err) => {
+        if (isMounted) {
+          setError(err.message);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
   }, [locationId, zone?.id, date, time]);
 
   if (error) {
