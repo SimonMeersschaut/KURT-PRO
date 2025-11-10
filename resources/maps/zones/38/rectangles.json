@@ -1,1 +1,1181 @@
-{"image_height": 2073, "image_width": 1350, "seats": [{"id": 125, "x": 782, "y": 1568, "width": 45, "height": 25, "rotation": 0}, {"id": 126, "x": 770, "y": 1442, "width": 45, "height": 25, "rotation": 0}, {"id": 127, "x": 694, "y": 1568, "width": 45, "height": 25, "rotation": 0}, {"id": 128, "x": 682, "y": 1442, "width": 45, "height": 25, "rotation": 0}, {"id": 129, "x": 606, "y": 1568, "width": 45, "height": 25, "rotation": 0}, {"id": 130, "x": 594, "y": 1442, "width": 45, "height": 25, "rotation": 0}, {"id": 131, "x": 776, "y": 1356, "width": 45, "height": 25, "rotation": 0}, {"id": 132, "x": 770, "y": 1226, "width": 45, "height": 25, "rotation": 0}, {"id": 133, "x": 688, "y": 1356, "width": 45, "height": 25, "rotation": 0}, {"id": 134, "x": 682, "y": 1226, "width": 45, "height": 25, "rotation": 0}, {"id": 135, "x": 600, "y": 1356, "width": 45, "height": 25, "rotation": 0}, {"id": 136, "x": 594, "y": 1226, "width": 45, "height": 25, "rotation": 0}, {"id": 137, "x": 770, "y": 1142, "width": 45, "height": 25, "rotation": 0}, {"id": 138, "x": 770, "y": 1016, "width": 45, "height": 25, "rotation": 0}, {"id": 139, "x": 682, "y": 1142, "width": 45, "height": 25, "rotation": 0}, {"id": 140, "x": 682, "y": 1016, "width": 45, "height": 25, "rotation": 0}, {"id": 141, "x": 594, "y": 1142, "width": 45, "height": 25, "rotation": 0}, {"id": 142, "x": 594, "y": 1016, "width": 45, "height": 25, "rotation": 0}, {"id": 143, "x": 770, "y": 942, "width": 45, "height": 25, "rotation": 0}, {"id": 144, "x": 768, "y": 818, "width": 45, "height": 25, "rotation": 0}, {"id": 145, "x": 682, "y": 942, "width": 45, "height": 25, "rotation": 0}, {"id": 146, "x": 680, "y": 818, "width": 45, "height": 25, "rotation": 0}, {"id": 147, "x": 594, "y": 942, "width": 45, "height": 25, "rotation": 0}, {"id": 148, "x": 592, "y": 818, "width": 45, "height": 25, "rotation": 0}, {"id": 149, "x": 618, "y": 664, "width": 45, "height": 25, "rotation": 0}, {"id": 150, "x": 760, "y": 664, "width": 45, "height": 25, "rotation": 0}, {"id": 151, "x": 618, "y": 590, "width": 45, "height": 25, "rotation": 0}, {"id": 152, "x": 760, "y": 595, "width": 45, "height": 25, "rotation": 0}, {"id": 153, "x": 618, "y": 512, "width": 45, "height": 25, "rotation": 0}, {"id": 154, "x": 760, "y": 518, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 2073,
+   "seats": [
+      {
+         "seatNr": 125,
+         "x": 782,
+         "y": 1568,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303776,
+         "name": "EBIB - Deloitte Seat 125",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 126,
+         "x": 770,
+         "y": 1442,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303777,
+         "name": "EBIB - Deloitte Seat 126",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 127,
+         "x": 694,
+         "y": 1568,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303775,
+         "name": "EBIB - Deloitte Seat 127",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 128,
+         "x": 682,
+         "y": 1442,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303778,
+         "name": "EBIB - Deloitte Seat 128",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 129,
+         "x": 606,
+         "y": 1568,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303774,
+         "name": "EBIB - Deloitte Seat 129",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 130,
+         "x": 594,
+         "y": 1442,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303779,
+         "name": "EBIB - Deloitte Seat 130",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 131,
+         "x": 776,
+         "y": 1356,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303782,
+         "name": "EBIB - Deloitte Seat 131",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 132,
+         "x": 770,
+         "y": 1226,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303783,
+         "name": "EBIB - Deloitte Seat 132",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 133,
+         "x": 688,
+         "y": 1356,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303781,
+         "name": "EBIB - Deloitte Seat 133",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 134,
+         "x": 682,
+         "y": 1226,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303784,
+         "name": "EBIB - Deloitte Seat 134",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 135,
+         "x": 600,
+         "y": 1356,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303780,
+         "name": "EBIB - Deloitte Seat 135",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 136,
+         "x": 594,
+         "y": 1226,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303785,
+         "name": "EBIB - Deloitte Seat 136",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 137,
+         "x": 770,
+         "y": 1142,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303788,
+         "name": "EBIB - Deloitte Seat 137",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 138,
+         "x": 770,
+         "y": 1016,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303789,
+         "name": "EBIB - Deloitte Seat 138",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 139,
+         "x": 682,
+         "y": 1142,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303787,
+         "name": "EBIB - Deloitte Seat 139",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 140,
+         "x": 682,
+         "y": 1016,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303790,
+         "name": "EBIB - Deloitte Seat 140",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 141,
+         "x": 594,
+         "y": 1142,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303786,
+         "name": "EBIB - Deloitte Seat 141",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 142,
+         "x": 594,
+         "y": 1016,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303791,
+         "name": "EBIB - Deloitte Seat 142",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 143,
+         "x": 770,
+         "y": 942,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303794,
+         "name": "EBIB - Deloitte Seat 143",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 144,
+         "x": 768,
+         "y": 818,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303795,
+         "name": "EBIB - Deloitte Seat 144",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 145,
+         "x": 682,
+         "y": 942,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303793,
+         "name": "EBIB - Deloitte Seat 145",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 146,
+         "x": 680,
+         "y": 818,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303796,
+         "name": "EBIB - Deloitte Seat 146",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 147,
+         "x": 594,
+         "y": 942,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303792,
+         "name": "EBIB - Deloitte Seat 147",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 148,
+         "x": 592,
+         "y": 818,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303797,
+         "name": "EBIB - Deloitte Seat 148",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 149,
+         "x": 618,
+         "y": 664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303798,
+         "name": "EBIB - Deloitte Seat 149",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 150,
+         "x": 760,
+         "y": 664,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303803,
+         "name": "EBIB - Deloitte Seat 150",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 151,
+         "x": 618,
+         "y": 590,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303799,
+         "name": "EBIB - Deloitte Seat 151",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 152,
+         "x": 760,
+         "y": 595,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303802,
+         "name": "EBIB - Deloitte Seat 152",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 153,
+         "x": 618,
+         "y": 512,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303800,
+         "name": "EBIB - Deloitte Seat 153",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 154,
+         "x": 760,
+         "y": 518,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303801,
+         "name": "EBIB - Deloitte Seat 154",
+         "locationId": 7,
+         "unit": "Economics and Business Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/ebib/leuven/toegang/seats-library-of-economics-and-business",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Economics and Business Library",
+   "locationId": 7,
+   "zoneName": "EBIB - Deloitte "
+}

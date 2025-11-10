@@ -1,1 +1,1361 @@
-{"image_height": 720, "image_width": 1280, "seats": [{"id": 109, "x": 295, "y": 227, "width": 45, "height": 25, "rotation": 0}, {"id": 110, "x": 376, "y": 227, "width": 45, "height": 25, "rotation": 0}, {"id": 111, "x": 457, "y": 227, "width": 45, "height": 25, "rotation": 0}, {"id": 112, "x": 538, "y": 227, "width": 45, "height": 25, "rotation": 0}, {"id": 113, "x": 296, "y": 275, "width": 45, "height": 25, "rotation": 0}, {"id": 114, "x": 377, "y": 275, "width": 45, "height": 25, "rotation": 0}, {"id": 115, "x": 461, "y": 275, "width": 45, "height": 25, "rotation": 0}, {"id": 116, "x": 544, "y": 277, "width": 45, "height": 25, "rotation": 0}, {"id": 117, "x": 289, "y": 371, "width": 45, "height": 25, "rotation": 0}, {"id": 118, "x": 373, "y": 371, "width": 45, "height": 25, "rotation": 0}, {"id": 119, "x": 457, "y": 371, "width": 45, "height": 25, "rotation": 0}, {"id": 120, "x": 541, "y": 371, "width": 45, "height": 25, "rotation": 0}, {"id": 121, "x": 293, "y": 420, "width": 45, "height": 25, "rotation": 0}, {"id": 122, "x": 377, "y": 420, "width": 45, "height": 25, "rotation": 0}, {"id": 123, "x": 461, "y": 420, "width": 45, "height": 25, "rotation": 0}, {"id": 124, "x": 545, "y": 420, "width": 45, "height": 25, "rotation": 0}, {"id": 125, "x": 294, "y": 517, "width": 45, "height": 25, "rotation": 0}, {"id": 126, "x": 378, "y": 517, "width": 45, "height": 25, "rotation": 0}, {"id": 127, "x": 462, "y": 517, "width": 45, "height": 25, "rotation": 0}, {"id": 128, "x": 546, "y": 517, "width": 45, "height": 25, "rotation": 0}, {"id": 129, "x": 292, "y": 563, "width": 45, "height": 25, "rotation": 0}, {"id": 130, "x": 377, "y": 563, "width": 45, "height": 25, "rotation": 0}, {"id": 131, "x": 461, "y": 563, "width": 45, "height": 25, "rotation": 0}, {"id": 132, "x": 546, "y": 563, "width": 45, "height": 25, "rotation": 0}, {"id": 133, "x": 219, "y": 571, "width": 45, "height": 25, "rotation": 0}, {"id": 134, "x": 219, "y": 501, "width": 45, "height": 25, "rotation": 0}, {"id": 135, "x": 219, "y": 425, "width": 45, "height": 25, "rotation": 0}, {"id": 136, "x": 219, "y": 363, "width": 45, "height": 25, "rotation": 0}, {"id": 137, "x": 219, "y": 287, "width": 45, "height": 25, "rotation": 0}, {"id": 138, "x": 219, "y": 219, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1280,
+   "image_height": 720,
+   "seats": [
+      {
+         "seatNr": 109,
+         "x": 295,
+         "y": 227,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402649,
+         "name": "Antwerpen - Silent Study floor three 109",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 110,
+         "x": 376,
+         "y": 227,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402650,
+         "name": "Antwerpen - Silent Study floor three 110",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 111,
+         "x": 457,
+         "y": 227,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402651,
+         "name": "Antwerpen - Silent Study floor three 111",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 112,
+         "x": 538,
+         "y": 227,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402652,
+         "name": "Antwerpen - Silent Study floor three 112",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 113,
+         "x": 296,
+         "y": 275,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402653,
+         "name": "Antwerpen - Silent Study floor three 113",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 114,
+         "x": 377,
+         "y": 275,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402654,
+         "name": "Antwerpen - Silent Study floor three 114",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 115,
+         "x": 461,
+         "y": 275,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402655,
+         "name": "Antwerpen - Silent Study floor three 115",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 116,
+         "x": 544,
+         "y": 277,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402656,
+         "name": "Antwerpen - Silent Study floor three 116",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 117,
+         "x": 289,
+         "y": 371,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402657,
+         "name": "Antwerpen - Silent Study floor three 117",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 118,
+         "x": 373,
+         "y": 371,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402658,
+         "name": "Antwerpen - Silent Study floor three 118",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 119,
+         "x": 457,
+         "y": 371,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402659,
+         "name": "Antwerpen - Silent Study floor three 119",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 120,
+         "x": 541,
+         "y": 371,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402660,
+         "name": "Antwerpen - Silent Study floor three 120",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 121,
+         "x": 293,
+         "y": 420,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402661,
+         "name": "Antwerpen - Silent Study floor three 121",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 122,
+         "x": 377,
+         "y": 420,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402662,
+         "name": "Antwerpen - Silent Study floor three 122",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 123,
+         "x": 461,
+         "y": 420,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402663,
+         "name": "Antwerpen - Silent Study floor three 123",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 124,
+         "x": 545,
+         "y": 420,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402664,
+         "name": "Antwerpen - Silent Study floor three 124",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 125,
+         "x": 294,
+         "y": 517,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402665,
+         "name": "Antwerpen - Silent Study floor three 125",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 126,
+         "x": 378,
+         "y": 517,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402666,
+         "name": "Antwerpen - Silent Study floor three 126",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 127,
+         "x": 462,
+         "y": 517,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402667,
+         "name": "Antwerpen - Silent Study floor three 127",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 128,
+         "x": 546,
+         "y": 517,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402668,
+         "name": "Antwerpen - Silent Study floor three 128",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 129,
+         "x": 292,
+         "y": 563,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402669,
+         "name": "Antwerpen - Silent Study floor three 129",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 130,
+         "x": 377,
+         "y": 563,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402670,
+         "name": "Antwerpen - Silent Study floor three 130",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 131,
+         "x": 461,
+         "y": 563,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402671,
+         "name": "Antwerpen - Silent Study floor three 131",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 132,
+         "x": 546,
+         "y": 563,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402672,
+         "name": "Antwerpen - Silent Study floor three 132",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 133,
+         "x": 219,
+         "y": 571,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402673,
+         "name": "Antwerpen - Silent Study floor three 133",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 134,
+         "x": 219,
+         "y": 501,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402674,
+         "name": "Antwerpen - Silent Study floor three 134",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 135,
+         "x": 219,
+         "y": 425,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402675,
+         "name": "Antwerpen - Silent Study floor three 135",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 136,
+         "x": 219,
+         "y": 363,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402676,
+         "name": "Antwerpen - Silent Study floor three 136",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 137,
+         "x": 219,
+         "y": 287,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402677,
+         "name": "Antwerpen - Silent Study floor three 137",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 138,
+         "x": 219,
+         "y": 219,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402678,
+         "name": "Antwerpen - Silent Study floor three 138",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Antwerp",
+   "library": "Antwerp Library",
+   "locationId": 47,
+   "zoneName": "Silent Study floor 3"
+}

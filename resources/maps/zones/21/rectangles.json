@@ -1,1 +1,203 @@
-{"image_height": 906, "image_width": 1350, "seats": [{"id": 327, "x": 800, "y": 571, "width": 45, "height": 25, "rotation": 0}, {"id": 330, "x": 800, "y": 658, "width": 45, "height": 25, "rotation": 0}, {"id": 331, "x": 800, "y": 702, "width": 45, "height": 25, "rotation": 0}, {"id": 332, "x": 748, "y": 702, "width": 45, "height": 25, "rotation": 0}, {"id": 333, "x": 748, "y": 790, "width": 45, "height": 25, "rotation": 0}, {"id": 334, "x": 800, "y": 790, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 906,
+   "seats": [
+      {
+         "seatNr": 327,
+         "x": 800,
+         "y": 571,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303290,
+         "name": "Erasmushuis seventh floor Seat 327",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 330,
+         "x": 800,
+         "y": 658,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303293,
+         "name": "Erasmushuis seventh floor Seat 330",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 331,
+         "x": 800,
+         "y": 702,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303294,
+         "name": "Erasmushuis seventh floor Seat 331",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 332,
+         "x": 748,
+         "y": 702,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305484,
+         "name": "Erasmushuis seventh floor Seat 332",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 333,
+         "x": 748,
+         "y": 790,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303296,
+         "name": "Erasmushuis seventh floor Seat 333",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 334,
+         "x": 800,
+         "y": 790,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303297,
+         "name": "Erasmushuis seventh floor Seat 334",
+         "locationId": 3,
+         "unit": "Artes Erasmushuis",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/artes/Erasmushuis/zitplaatsen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Artes Erasmushuis",
+   "locationId": 3,
+   "zoneName": "Floor 7"
+}

@@ -1,1 +1,932 @@
-{"image_height": 699, "image_width": 999, "seats": [{"id": 60, "x": 593, "y": 246, "width": 45, "height": 25, "rotation": 0}, {"id": 61, "x": 627, "y": 252, "width": 45, "height": 25, "rotation": 0}, {"id": 62, "x": 662, "y": 258, "width": 45, "height": 25, "rotation": 0}, {"id": 63, "x": 698, "y": 265, "width": 45, "height": 25, "rotation": 0}, {"id": 64, "x": 734, "y": 272, "width": 45, "height": 25, "rotation": 0}, {"id": 65, "x": 770, "y": 279, "width": 45, "height": 25, "rotation": 0}, {"id": 66, "x": 807, "y": 286, "width": 45, "height": 25, "rotation": 0}, {"id": 67, "x": 879, "y": 320, "width": 45, "height": 25, "rotation": 0}, {"id": 68, "x": 921, "y": 383, "width": 45, "height": 25, "rotation": 0}, {"id": 69, "x": 927, "y": 461, "width": 45, "height": 25, "rotation": 0}, {"id": 70, "x": 888, "y": 524, "width": 45, "height": 25, "rotation": 0}, {"id": 71, "x": 821, "y": 557, "width": 45, "height": 25, "rotation": 0}, {"id": 72, "x": 774, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 73, "x": 738, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 74, "x": 702, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 75, "x": 667, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 76, "x": 631, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 77, "x": 595, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 78, "x": 559, "y": 564, "width": 45, "height": 25, "rotation": 0}, {"id": 56, "x": 629, "y": 162, "width": 45, "height": 25, "rotation": 0}, {"id": 57, "x": 705, "y": 174, "width": 45, "height": 25, "rotation": 0}, {"id": 58, "x": 778, "y": 190, "width": 45, "height": 25, "rotation": 0}, {"id": 59, "x": 842, "y": 202, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 999,
+   "image_height": 699,
+   "seats": [
+      {
+         "seatNr": 60,
+         "x": 593,
+         "y": 246,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402600,
+         "name": "Antwerpen - Balustrade floor two 060",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 61,
+         "x": 627,
+         "y": 252,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402601,
+         "name": "Antwerpen - Balustrade floor two 061",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 62,
+         "x": 662,
+         "y": 258,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402602,
+         "name": "Antwerpen - Balustrade floor two 062",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 63,
+         "x": 698,
+         "y": 265,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402603,
+         "name": "Antwerpen - Balustrade floor two 063",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 64,
+         "x": 734,
+         "y": 272,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402604,
+         "name": "Antwerpen - Balustrade floor two 064",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 65,
+         "x": 770,
+         "y": 279,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402605,
+         "name": "Antwerpen - Balustrade floor two 065",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 66,
+         "x": 807,
+         "y": 286,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402606,
+         "name": "Antwerpen - Balustrade floor two 066",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 67,
+         "x": 879,
+         "y": 320,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402607,
+         "name": "Antwerpen - Balustrade floor two 067",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 68,
+         "x": 921,
+         "y": 383,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402608,
+         "name": "Antwerpen - Balustrade floor two 068",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 69,
+         "x": 927,
+         "y": 461,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402609,
+         "name": "Antwerpen - Balustrade floor two 069",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 70,
+         "x": 888,
+         "y": 524,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402610,
+         "name": "Antwerpen - Balustrade floor two 070",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 71,
+         "x": 821,
+         "y": 557,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402611,
+         "name": "Antwerpen - Balustrade floor two 071",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 72,
+         "x": 774,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402612,
+         "name": "Antwerpen - Balustrade floor two 072",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 73,
+         "x": 738,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402613,
+         "name": "Antwerpen - Balustrade floor two 073",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 74,
+         "x": 702,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402614,
+         "name": "Antwerpen - Balustrade floor two 074",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 75,
+         "x": 667,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402615,
+         "name": "Antwerpen - Balustrade floor two 075",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 76,
+         "x": 631,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402616,
+         "name": "Antwerpen - Balustrade floor two 076",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 77,
+         "x": 595,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402617,
+         "name": "Antwerpen - Balustrade floor two 077",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 78,
+         "x": 559,
+         "y": 564,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402618,
+         "name": "Antwerpen - Balustrade floor two 078",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 56,
+         "x": 629,
+         "y": 162,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402596,
+         "name": "Antwerpen - PC table floor two 056",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 57,
+         "x": 705,
+         "y": 174,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402597,
+         "name": "Antwerpen - PC table floor two 057",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 58,
+         "x": 778,
+         "y": 190,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402598,
+         "name": "Antwerpen - PC table floor two 058",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 59,
+         "x": 842,
+         "y": 202,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 402599,
+         "name": "Antwerpen - PC table floor two 059",
+         "locationId": 47,
+         "unit": "Antwerp Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/antwerpen/copy_of_zitplaatsen-antwerpen",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            },
+            {
+               "id": "headphones",
+               "name": "Headphones are required",
+               "iconType": 0,
+               "icon": "headphones"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Antwerp",
+   "library": "Antwerp Library",
+   "locationId": 47,
+   "zoneName": "Balustrade floor 2"
+}

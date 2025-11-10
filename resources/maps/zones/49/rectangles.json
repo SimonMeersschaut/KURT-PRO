@@ -1,1 +1,830 @@
-{"image_height": 2000, "image_width": 1200, "seats": [{"id": 61, "x": 225, "y": 897, "width": 45, "height": 25, "rotation": 0}, {"id": 62, "x": 292, "y": 899, "width": 45, "height": 25, "rotation": 0}, {"id": 63, "x": 364, "y": 898, "width": 45, "height": 25, "rotation": 0}, {"id": 64, "x": 434, "y": 899, "width": 45, "height": 25, "rotation": 0}, {"id": 65, "x": 440, "y": 772, "width": 45, "height": 25, "rotation": 0}, {"id": 66, "x": 368, "y": 772, "width": 45, "height": 25, "rotation": 0}, {"id": 67, "x": 294, "y": 773, "width": 45, "height": 25, "rotation": 0}, {"id": 68, "x": 225, "y": 774, "width": 45, "height": 25, "rotation": 0}, {"id": 69, "x": 930, "y": 533, "width": 45, "height": 25, "rotation": 0}, {"id": 70, "x": 855, "y": 533, "width": 45, "height": 25, "rotation": 0}, {"id": 71, "x": 782, "y": 535, "width": 45, "height": 25, "rotation": 0}, {"id": 72, "x": 781, "y": 628, "width": 45, "height": 25, "rotation": 0}, {"id": 73, "x": 853, "y": 627, "width": 45, "height": 25, "rotation": 0}, {"id": 74, "x": 928, "y": 629, "width": 45, "height": 25, "rotation": 0}, {"id": 76, "x": 424, "y": 439, "width": 45, "height": 25, "rotation": 0}, {"id": 77, "x": 281, "y": 437, "width": 45, "height": 25, "rotation": 0}, {"id": 78, "x": 253, "y": 395, "width": 45, "height": 25, "rotation": 0}, {"id": 80, "x": 955, "y": 279, "width": 45, "height": 25, "rotation": 0}, {"id": 81, "x": 951, "y": 391, "width": 45, "height": 25, "rotation": 0}, {"id": 82, "x": 919, "y": 438, "width": 45, "height": 25, "rotation": 0}, {"id": 83, "x": 775, "y": 438, "width": 45, "height": 25, "rotation": 0}]}
+{
+   "version": "2.0",
+   "image_width": 1200,
+   "image_height": 2000,
+   "seats": [
+      {
+         "seatNr": 61,
+         "x": 225,
+         "y": 897,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303561,
+         "name": "SBIB -  Seat 061",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 62,
+         "x": 292,
+         "y": 899,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303562,
+         "name": "SBIB -  Seat 062",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 63,
+         "x": 364,
+         "y": 898,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401488,
+         "name": "SBIB -  Seat 063",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 64,
+         "x": 434,
+         "y": 899,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303564,
+         "name": "SBIB -  Seat 064",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 65,
+         "x": 440,
+         "y": 772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303565,
+         "name": "SBIB -  Seat 065",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 66,
+         "x": 368,
+         "y": 772,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303566,
+         "name": "SBIB -  Seat 066",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 67,
+         "x": 294,
+         "y": 773,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401489,
+         "name": "SBIB -  Seat 067",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 68,
+         "x": 225,
+         "y": 774,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303568,
+         "name": "SBIB -  Seat 068",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 69,
+         "x": 930,
+         "y": 533,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303569,
+         "name": "SBIB -  Seat 069",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 70,
+         "x": 855,
+         "y": 533,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401490,
+         "name": "SBIB -  Seat 070",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 71,
+         "x": 782,
+         "y": 535,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303570,
+         "name": "SBIB -  Seat 071",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 72,
+         "x": 781,
+         "y": 628,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401491,
+         "name": "SBIB -  Seat 072",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 73,
+         "x": 853,
+         "y": 627,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303572,
+         "name": "SBIB -  Seat 073",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 74,
+         "x": 928,
+         "y": 629,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401492,
+         "name": "SBIB -  Seat 074",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 76,
+         "x": 424,
+         "y": 439,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303576,
+         "name": "SBIB -  Seat 076",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 77,
+         "x": 281,
+         "y": 437,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401494,
+         "name": "SBIB -  Seat 077",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 78,
+         "x": 253,
+         "y": 395,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303578,
+         "name": "SBIB -  Seat 078",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 80,
+         "x": 955,
+         "y": 279,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303580,
+         "name": "SBIB -  Seat 080",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 81,
+         "x": 951,
+         "y": 391,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401496,
+         "name": "SBIB -  Seat 081",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 82,
+         "x": 919,
+         "y": 438,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303582,
+         "name": "SBIB -  Seat 082",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 83,
+         "x": 775,
+         "y": 438,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 303583,
+         "name": "SBIB -  Seat 083",
+         "locationId": 12,
+         "unit": "Social Sciences Library",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/english/sbib/facilities/seats_SBIB",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Social Sciences Library",
+   "locationId": 12,
+   "zoneName": "Anthropology"
+}

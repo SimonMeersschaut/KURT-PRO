@@ -1,454 +1,2188 @@
 {
-    "image_width": 1350,
-    "image_height": 1909,
-    "seats": [
-        {
-            "id": 101,
-            "x": 969,
-            "y": 1542,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 102,
-            "x": 970,
-            "y": 1386,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 103,
-            "x": 966,
-            "y": 1313,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 104,
-            "x": 970,
-            "y": 1155,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 105,
-            "x": 970,
-            "y": 1081,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 106,
-            "x": 970,
-            "y": 926,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 107,
-            "x": 971,
-            "y": 851,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 108,
-            "x": 970,
-            "y": 693,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 109,
-            "x": 970,
-            "y": 617,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 110,
-            "x": 898,
-            "y": 617,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 111,
-            "x": 898,
-            "y": 693,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 112,
-            "x": 898,
-            "y": 850,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 113,
-            "x": 898,
-            "y": 926,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 114,
-            "x": 898,
-            "y": 1084,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 115,
-            "x": 898,
-            "y": 1151,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 116,
-            "x": 898,
-            "y": 1313,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 117,
-            "x": 898,
-            "y": 1386,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 118,
-            "x": 895,
-            "y": 1542,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 119,
-            "x": 680,
-            "y": 1545,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 120,
-            "x": 682,
-            "y": 1385,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 121,
-            "x": 677,
-            "y": 1311,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 122,
-            "x": 683,
-            "y": 1158,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 123,
-            "x": 684,
-            "y": 1078,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 124,
-            "x": 677,
-            "y": 922,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 125,
-            "x": 677,
-            "y": 849,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 126,
-            "x": 679,
-            "y": 693,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 127,
-            "x": 684,
-            "y": 620,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 128,
-            "x": 679,
-            "y": 456,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 129,
-            "x": 598,
-            "y": 454,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 130,
-            "x": 602,
-            "y": 621,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 131,
-            "x": 602,
-            "y": 694,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 132,
-            "x": 607,
-            "y": 850,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 133,
-            "x": 607,
-            "y": 922,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 134,
-            "x": 607,
-            "y": 1081,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 135,
-            "x": 607,
-            "y": 1157,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 136,
-            "x": 607,
-            "y": 1314,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 137,
-            "x": 607,
-            "y": 1389,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 138,
-            "x": 601,
-            "y": 1542,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 139,
-            "x": 381,
-            "y": 1543,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 140,
-            "x": 381,
-            "y": 1386,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 141,
-            "x": 381,
-            "y": 1313,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 142,
-            "x": 381,
-            "y": 1153,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 143,
-            "x": 381,
-            "y": 1081,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 144,
-            "x": 381,
-            "y": 917,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 145,
-            "x": 381,
-            "y": 848,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 146,
-            "x": 381,
-            "y": 686,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 147,
-            "x": 381,
-            "y": 613,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 148,
-            "x": 304,
-            "y": 615,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 149,
-            "x": 304,
-            "y": 688,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 150,
-            "x": 304,
-            "y": 846,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 151,
-            "x": 309,
-            "y": 918,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 152,
-            "x": 304,
-            "y": 1080,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 153,
-            "x": 304,
-            "y": 1156,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 154,
-            "x": 304,
-            "y": 1314,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 155,
-            "x": 304,
-            "y": 1383,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 156,
-            "x": 309,
-            "y": 1543,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        }
-    ]
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 101,
+         "x": 1024,
+         "y": 1542,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300854,
+         "name": "Agora - Silent Study Seat 101",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 7,
+         "otherScore": 2,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 102,
+         "x": 1025,
+         "y": 1386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300855,
+         "name": "Agora - Silent Study Seat 102",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 103,
+         "x": 1021,
+         "y": 1313,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300856,
+         "name": "Agora - Silent Study Seat 103",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 104,
+         "x": 1025,
+         "y": 1155,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300857,
+         "name": "Agora - Silent Study Seat 104",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 105,
+         "x": 1025,
+         "y": 1081,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300858,
+         "name": "Agora - Silent Study Seat 105",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 106,
+         "x": 1025,
+         "y": 926,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300859,
+         "name": "Agora - Silent Study Seat 106",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 107,
+         "x": 1026,
+         "y": 851,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300860,
+         "name": "Agora - Silent Study Seat 107",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 108,
+         "x": 1025,
+         "y": 693,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300861,
+         "name": "Agora - Silent Study Seat 108",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 109,
+         "x": 1025,
+         "y": 617,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300862,
+         "name": "Agora - Silent Study Seat 109",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 110,
+         "x": 858,
+         "y": 617,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300863,
+         "name": "Agora - Silent Study Seat 110",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 2,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 111,
+         "x": 858,
+         "y": 693,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300864,
+         "name": "Agora - Silent Study Seat 111",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 112,
+         "x": 858,
+         "y": 850,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300865,
+         "name": "Agora - Silent Study Seat 112",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 7,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 113,
+         "x": 858,
+         "y": 926,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300866,
+         "name": "Agora - Silent Study Seat 113",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 114,
+         "x": 858,
+         "y": 1084,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300867,
+         "name": "Agora - Silent Study Seat 114",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 7,
+         "otherScore": 6,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 115,
+         "x": 858,
+         "y": 1151,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300868,
+         "name": "Agora - Silent Study Seat 115",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 116,
+         "x": 858,
+         "y": 1313,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300869,
+         "name": "Agora - Silent Study Seat 116",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 117,
+         "x": 858,
+         "y": 1386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300870,
+         "name": "Agora - Silent Study Seat 117",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 118,
+         "x": 860,
+         "y": 1542,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300871,
+         "name": "Agora - Silent Study Seat 118",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 5,
+         "otherScore": 4,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 119,
+         "x": 735,
+         "y": 1545,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300872,
+         "name": "Agora - Silent Study Seat 119",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 120,
+         "x": 737,
+         "y": 1385,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300873,
+         "name": "Agora - Silent Study Seat 120",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 121,
+         "x": 737,
+         "y": 1311,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300874,
+         "name": "Agora - Silent Study Seat 121",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 122,
+         "x": 738,
+         "y": 1153,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300875,
+         "name": "Agora - Silent Study Seat 122",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 123,
+         "x": 739,
+         "y": 1083,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300876,
+         "name": "Agora - Silent Study Seat 123",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 124,
+         "x": 737,
+         "y": 922,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300877,
+         "name": "Agora - Silent Study Seat 124",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 0,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 125,
+         "x": 737,
+         "y": 854,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300878,
+         "name": "Agora - Silent Study Seat 125",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 3,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 126,
+         "x": 739,
+         "y": 693,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300879,
+         "name": "Agora - Silent Study Seat 126",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 127,
+         "x": 739,
+         "y": 620,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300880,
+         "name": "Agora - Silent Study Seat 127",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 128,
+         "x": 734,
+         "y": 456,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300881,
+         "name": "Agora - Silent Study Seat 128",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 129,
+         "x": 568,
+         "y": 454,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300882,
+         "name": "Agora - Silent Study Seat 129",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 6,
+         "otherScore": 4,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 130,
+         "x": 567,
+         "y": 611,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300883,
+         "name": "Agora - Silent Study Seat 130",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 131,
+         "x": 567,
+         "y": 684,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300884,
+         "name": "Agora - Silent Study Seat 131",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 132,
+         "x": 567,
+         "y": 850,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300885,
+         "name": "Agora - Silent Study Seat 132",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 2,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 133,
+         "x": 567,
+         "y": 922,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300886,
+         "name": "Agora - Silent Study Seat 133",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 134,
+         "x": 567,
+         "y": 1086,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300887,
+         "name": "Agora - Silent Study Seat 134",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 135,
+         "x": 567,
+         "y": 1152,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300888,
+         "name": "Agora - Silent Study Seat 135",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 3,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 136,
+         "x": 567,
+         "y": 1314,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300889,
+         "name": "Agora - Silent Study Seat 136",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 137,
+         "x": 567,
+         "y": 1384,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300890,
+         "name": "Agora - Silent Study Seat 137",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 4,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 138,
+         "x": 566,
+         "y": 1547,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300891,
+         "name": "Agora - Silent Study Seat 138",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 139,
+         "x": 441,
+         "y": 1548,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300892,
+         "name": "Agora - Silent Study Seat 139",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 140,
+         "x": 441,
+         "y": 1391,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300893,
+         "name": "Agora - Silent Study Seat 140",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 141,
+         "x": 441,
+         "y": 1318,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300894,
+         "name": "Agora - Silent Study Seat 141",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 142,
+         "x": 441,
+         "y": 1158,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300895,
+         "name": "Agora - Silent Study Seat 142",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 143,
+         "x": 441,
+         "y": 1086,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300896,
+         "name": "Agora - Silent Study Seat 143",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 144,
+         "x": 441,
+         "y": 922,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300897,
+         "name": "Agora - Silent Study Seat 144",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 145,
+         "x": 441,
+         "y": 853,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300898,
+         "name": "Agora - Silent Study Seat 145",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 146,
+         "x": 441,
+         "y": 691,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300899,
+         "name": "Agora - Silent Study Seat 146",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 147,
+         "x": 441,
+         "y": 618,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300900,
+         "name": "Agora - Silent Study Seat 147",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 148,
+         "x": 274,
+         "y": 615,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300901,
+         "name": "Agora - Silent Study Seat 148",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 3,
+         "otherScore": 1,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 149,
+         "x": 274,
+         "y": 688,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300902,
+         "name": "Agora - Silent Study Seat 149",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 6,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 150,
+         "x": 274,
+         "y": 846,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300903,
+         "name": "Agora - Silent Study Seat 150",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 151,
+         "x": 274,
+         "y": 923,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300904,
+         "name": "Agora - Silent Study Seat 151",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 152,
+         "x": 274,
+         "y": 1080,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300905,
+         "name": "Agora - Silent Study Seat 152",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 153,
+         "x": 274,
+         "y": 1156,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300906,
+         "name": "Agora - Silent Study Seat 153",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 154,
+         "x": 274,
+         "y": 1314,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300907,
+         "name": "Agora - Silent Study Seat 154",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 155,
+         "x": 274,
+         "y": 1383,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300908,
+         "name": "Agora - Silent Study Seat 155",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 156,
+         "x": 274,
+         "y": 1543,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 300909,
+         "name": "Agora - Silent Study Seat 156",
+         "locationId": 10,
+         "unit": "Agora Learning Centre",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://kurt3.ghum.kuleuven.be/zone/1",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 11,
+         "otherScore": 10,
+         "fixedTimes": []
+      }
+   ],
+   "city": "Leuven",
+   "library": "Agora Learning Centre",
+   "locationId": 10,
+   "zoneName": "Silent study 1"
 }

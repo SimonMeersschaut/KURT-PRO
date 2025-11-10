@@ -30,7 +30,7 @@ def load_zone(zone_id: int, cookies):
     for seat in data["availabilities"]:
         try:
             output.append({
-                "id": int(seat['resourceName'].split(' ')[-1]),
+                "seatNr": int(seat['resourceName'].split(' ')[-1]),
                 "x": round(seat["positionX"]),
                 "y": round(seat["positionY"]),
                 "width": 45,
@@ -60,7 +60,7 @@ def load_zone(zone_id: int, cookies):
             "image_height": im.shape[0], # width
             "image_width": im.shape[1], # height
             "seats": output,
-        }, f)
+        }, f, indent=3)
 
     print(output)
 

@@ -1,614 +1,2627 @@
 {
-    "image_width": 1350,
-    "image_height": 1909,
-    "seats": [
-        {
-            "id": 541,
-            "x": 458,
-            "y": 610,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 542,
-            "x": 500,
-            "y": 586,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 543,
-            "x": 538,
-            "y": 566,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 544,
-            "x": 576,
-            "y": 550,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 545,
-            "x": 612,
-            "y": 538,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 546,
-            "x": 650,
-            "y": 528,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 547,
-            "x": 686,
-            "y": 530,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 548,
-            "x": 722,
-            "y": 540,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 549,
-            "x": 758,
-            "y": 550,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 550,
-            "x": 791,
-            "y": 568,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 551,
-            "x": 816,
-            "y": 600,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 552,
-            "x": 840,
-            "y": 642,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 553,
-            "x": 848,
-            "y": 683,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 554,
-            "x": 860,
-            "y": 724,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 555,
-            "x": 860,
-            "y": 775,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 556,
-            "x": 886,
-            "y": 817,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 557,
-            "x": 930,
-            "y": 840,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 558,
-            "x": 954,
-            "y": 873,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 559,
-            "x": 978,
-            "y": 903,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 560,
-            "x": 992,
-            "y": 947,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 561,
-            "x": 1007,
-            "y": 991,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 562,
-            "x": 1009,
-            "y": 1042,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 563,
-            "x": 1002,
-            "y": 1089,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 564,
-            "x": 994,
-            "y": 1145,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 565,
-            "x": 996,
-            "y": 1193,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 566,
-            "x": 762,
-            "y": 1575,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 567,
-            "x": 741,
-            "y": 1539,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 568,
-            "x": 707,
-            "y": 1507,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 569,
-            "x": 676,
-            "y": 1483,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 570,
-            "x": 645,
-            "y": 1463,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 571,
-            "x": 601,
-            "y": 1449,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 572,
-            "x": 558,
-            "y": 1439,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 573,
-            "x": 515,
-            "y": 1436,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 574,
-            "x": 468,
-            "y": 1441,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 575,
-            "x": 438,
-            "y": 1425,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 576,
-            "x": 439,
-            "y": 1372,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 577,
-            "x": 416,
-            "y": 1337,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 578,
-            "x": 391,
-            "y": 1292,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 579,
-            "x": 365,
-            "y": 1251,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 580,
-            "x": 326,
-            "y": 1215,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 581,
-            "x": 283,
-            "y": 1206,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 582,
-            "x": 269,
-            "y": 1167,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 583,
-            "x": 278,
-            "y": 1116,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 584,
-            "x": 268,
-            "y": 1057,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 585,
-            "x": 252,
-            "y": 1002,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 586,
-            "x": 222,
-            "y": 963,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 587,
-            "x": 215,
-            "y": 932,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 588,
-            "x": 257,
-            "y": 847,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 589,
-            "x": 247,
-            "y": 759,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 590,
-            "x": 219,
-            "y": 685,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 591,
-            "x": 303,
-            "y": 929,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 592,
-            "x": 403,
-            "y": 855,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 593,
-            "x": 497,
-            "y": 777,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 594,
-            "x": 495,
-            "y": 710,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 595,
-            "x": 553,
-            "y": 670,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 596,
-            "x": 581,
-            "y": 771,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 598,
-            "x": 377,
-            "y": 922,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 600,
-            "x": 566,
-            "y": 1256,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 603,
-            "x": 644,
-            "y": 1210,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 605,
-            "x": 718,
-            "y": 1159,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 606,
-            "x": 795,
-            "y": 1101,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 607,
-            "x": 614,
-            "y": 1324,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 610,
-            "x": 687,
-            "y": 1278,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 611,
-            "x": 768,
-            "y": 1226,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 612,
-            "x": 845,
-            "y": 1171,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 615,
-            "x": 712,
-            "y": 1373,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 616,
-            "x": 800,
-            "y": 1317,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 617,
-            "x": 884,
-            "y": 1264,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 620,
-            "x": 764,
-            "y": 1429,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 621,
-            "x": 841,
-            "y": 1381,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 622,
-            "x": 928,
-            "y": 1319,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 1,
-            "x": 695,
-            "y": 895,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 1,
-            "x": 422,
-            "y": 1081,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 1,
-            "x": 571,
-            "y": 983,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 1,
-            "x": 555,
-            "y": 1127,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        },
-        {
-            "id": 1,
-            "x": 706,
-            "y": 1029,
-            "width": 55,
-            "height": 35,
-            "rotation": 0
-        }
-    ]
+   "version": "2.0",
+   "image_width": 1350,
+   "image_height": 1909,
+   "seats": [
+      {
+         "seatNr": 541,
+         "x": 463,
+         "y": 615,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301616,
+         "name": "CBA - Tulp 1 Seat 541",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 542,
+         "x": 505,
+         "y": 591,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301617,
+         "name": "CBA - Tulp 1 Seat 542",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 543,
+         "x": 543,
+         "y": 571,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305382,
+         "name": "CBA - Tulp 1 Seat 543",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 544,
+         "x": 581,
+         "y": 555,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301619,
+         "name": "CBA - Tulp 1 Seat 544",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 545,
+         "x": 617,
+         "y": 543,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301620,
+         "name": "CBA - Tulp 1 Seat 545",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 546,
+         "x": 655,
+         "y": 533,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401204,
+         "name": "CBA - Tulp 1 Seat 546",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 547,
+         "x": 691,
+         "y": 535,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301622,
+         "name": "CBA - Tulp 1 Seat 547",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 548,
+         "x": 727,
+         "y": 545,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301623,
+         "name": "CBA - Tulp 1 Seat 548",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 549,
+         "x": 763,
+         "y": 555,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305381,
+         "name": "CBA - Tulp 1 Seat 549",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 550,
+         "x": 796,
+         "y": 573,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301625,
+         "name": "CBA - Tulp 1 Seat 550",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 551,
+         "x": 821,
+         "y": 605,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301626,
+         "name": "CBA - Tulp 1 Seat 551",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 552,
+         "x": 845,
+         "y": 647,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401205,
+         "name": "CBA - Tulp 1 Seat 552",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 553,
+         "x": 853,
+         "y": 688,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301628,
+         "name": "CBA - Tulp 1 Seat 553",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 554,
+         "x": 865,
+         "y": 729,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301629,
+         "name": "CBA - Tulp 1 Seat 554",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 555,
+         "x": 865,
+         "y": 780,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305380,
+         "name": "CBA - Tulp 1 Seat 555",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 556,
+         "x": 891,
+         "y": 822,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301631,
+         "name": "CBA - Tulp 1 Seat 556",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 557,
+         "x": 935,
+         "y": 845,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301632,
+         "name": "CBA - Tulp 1 Seat 557",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 558,
+         "x": 959,
+         "y": 878,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401206,
+         "name": "CBA - Tulp 1 Seat 558",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 559,
+         "x": 983,
+         "y": 908,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301634,
+         "name": "CBA - Tulp 1 Seat 559",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 560,
+         "x": 997,
+         "y": 952,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301635,
+         "name": "CBA - Tulp 1 Seat 560",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 561,
+         "x": 1012,
+         "y": 996,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305379,
+         "name": "CBA - Tulp 1 Seat 561",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 562,
+         "x": 1014,
+         "y": 1047,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301637,
+         "name": "CBA - Tulp 1 Seat 562",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 563,
+         "x": 1007,
+         "y": 1094,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301638,
+         "name": "CBA - Tulp 1 Seat 563",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 564,
+         "x": 999,
+         "y": 1150,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401207,
+         "name": "CBA - Tulp 1 Seat 564",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 565,
+         "x": 1001,
+         "y": 1198,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301640,
+         "name": "CBA - Tulp 1 Seat 565",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 566,
+         "x": 767,
+         "y": 1580,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301641,
+         "name": "CBA - Tulp 1 Seat 566",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 567,
+         "x": 746,
+         "y": 1544,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305378,
+         "name": "CBA - Tulp 1 Seat 567",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 568,
+         "x": 712,
+         "y": 1512,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301643,
+         "name": "CBA - Tulp 1 Seat 568",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 569,
+         "x": 681,
+         "y": 1488,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301644,
+         "name": "CBA - Tulp 1 Seat 569",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 570,
+         "x": 650,
+         "y": 1468,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401208,
+         "name": "CBA - Tulp 1 Seat 570",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 571,
+         "x": 606,
+         "y": 1454,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301646,
+         "name": "CBA - Tulp 1 Seat 571",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 572,
+         "x": 563,
+         "y": 1444,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301647,
+         "name": "CBA - Tulp 1 Seat 572",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 573,
+         "x": 520,
+         "y": 1441,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305377,
+         "name": "CBA - Tulp 1 Seat 573",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 574,
+         "x": 473,
+         "y": 1446,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301649,
+         "name": "CBA - Tulp 1 Seat 574",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "interactive",
+               "name": "Speaking is allowed",
+               "iconType": 0,
+               "icon": "record_voice_over"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 575,
+         "x": 443,
+         "y": 1430,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301650,
+         "name": "CBA - Tulp 1 Seat 575",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 576,
+         "x": 444,
+         "y": 1377,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401209,
+         "name": "CBA - Tulp 1 Seat 576",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 577,
+         "x": 421,
+         "y": 1342,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301652,
+         "name": "CBA - Tulp 1 Seat 577",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 578,
+         "x": 396,
+         "y": 1297,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301653,
+         "name": "CBA - Tulp 1 Seat 578",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 579,
+         "x": 370,
+         "y": 1256,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305376,
+         "name": "CBA - Tulp 1 Seat 579",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 580,
+         "x": 331,
+         "y": 1220,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301655,
+         "name": "CBA - Tulp 1 Seat 580",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 581,
+         "x": 288,
+         "y": 1211,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301656,
+         "name": "CBA - Tulp 1 Seat 581",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 582,
+         "x": 274,
+         "y": 1172,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401210,
+         "name": "CBA - Tulp 1 Seat 582",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 583,
+         "x": 283,
+         "y": 1121,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301658,
+         "name": "CBA - Tulp 1 Seat 583",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 584,
+         "x": 273,
+         "y": 1062,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301659,
+         "name": "CBA - Tulp 1 Seat 584",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 585,
+         "x": 257,
+         "y": 1007,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305375,
+         "name": "CBA - Tulp 1 Seat 585",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 586,
+         "x": 227,
+         "y": 968,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301661,
+         "name": "CBA - Tulp 1 Seat 586",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 587,
+         "x": 220,
+         "y": 937,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301662,
+         "name": "CBA - Tulp 1 Seat 587",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 588,
+         "x": 262,
+         "y": 852,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401211,
+         "name": "CBA - Tulp 1 Seat 588",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 589,
+         "x": 252,
+         "y": 764,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301664,
+         "name": "CBA - Tulp 1 Seat 589",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 590,
+         "x": 224,
+         "y": 690,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301665,
+         "name": "CBA - Tulp 1 Seat 590",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 591,
+         "x": 308,
+         "y": 934,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 305374,
+         "name": "CBA - Tulp 1 Seat 591",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 592,
+         "x": 408,
+         "y": 860,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301667,
+         "name": "CBA - Tulp 1 Seat 592",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 593,
+         "x": 502,
+         "y": 782,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301668,
+         "name": "CBA - Tulp 1 Seat 593",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 594,
+         "x": 500,
+         "y": 715,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401212,
+         "name": "CBA - Tulp 1 Seat 594",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "power socket nearby",
+               "name": "Power socket nearby",
+               "iconType": 0,
+               "icon": "power"
+            },
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 595,
+         "x": 558,
+         "y": 675,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301670,
+         "name": "CBA - Tulp 1 Seat 595",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 596,
+         "x": 586,
+         "y": 776,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301671,
+         "name": "CBA - Tulp 1 Seat 596",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 598,
+         "x": 382,
+         "y": 927,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301673,
+         "name": "CBA - Tulp 1 Seat 598",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 600,
+         "x": 571,
+         "y": 1261,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 401213,
+         "name": "CBA - Tulp 1 Seat 600",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 603,
+         "x": 649,
+         "y": 1215,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301678,
+         "name": "CBA - Tulp 1 Seat 603",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 605,
+         "x": 723,
+         "y": 1164,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301680,
+         "name": "CBA - Tulp 1 Seat 605",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 606,
+         "x": 800,
+         "y": 1106,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301681,
+         "name": "CBA - Tulp 1 Seat 606",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 607,
+         "x": 619,
+         "y": 1329,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301682,
+         "name": "CBA - Tulp 1 Seat 607",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 610,
+         "x": 692,
+         "y": 1283,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400302,
+         "name": "CBA - Tulp 1 Seat 610",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 611,
+         "x": 773,
+         "y": 1231,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301686,
+         "name": "CBA - Tulp 1 Seat 611",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 612,
+         "x": 850,
+         "y": 1176,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301687,
+         "name": "CBA - Tulp 1 Seat 612",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 615,
+         "x": 717,
+         "y": 1378,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301690,
+         "name": "CBA - Tulp 1 Seat 615",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 616,
+         "x": 805,
+         "y": 1322,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301691,
+         "name": "CBA - Tulp 1 Seat 616",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 617,
+         "x": 889,
+         "y": 1269,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301692,
+         "name": "CBA - Tulp 1 Seat 617",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 620,
+         "x": 769,
+         "y": 1434,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400301,
+         "name": "CBA - Tulp 1 Seat 620",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 621,
+         "x": 846,
+         "y": 1386,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 400300,
+         "name": "CBA - Tulp 1 Seat 621",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 622,
+         "x": 933,
+         "y": 1324,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": 301697,
+         "name": "CBA - Tulp 1 Seat 622",
+         "locationId": 1,
+         "unit": "2Bergen Arenberg",
+         "resourceTypeId": 302,
+         "resourceTypeName": "Study Seat",
+         "url": "https://bib.kuleuven.be/2bergen/cba/faciliteiten/plattegrond_heropstart_cba",
+         "participantCount": 1,
+         "minParticipants": 1,
+         "maxParticipants": 1,
+         "minDurationMinutes": 60,
+         "maxDurationMinutes": 960,
+         "tags": [
+            {
+               "id": "silence",
+               "name": "Silence",
+               "iconType": 0,
+               "icon": "voice_over_off"
+            }
+         ],
+         "reservationRequestRequired": false,
+         "isMultiDayReservable": false,
+         "matchScore": 8,
+         "otherScore": 8,
+         "fixedTimes": []
+      },
+      {
+         "seatNr": 1,
+         "x": 700,
+         "y": 900,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 1,
+         "x": 427,
+         "y": 1086,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 1,
+         "x": 576,
+         "y": 988,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 1,
+         "x": 560,
+         "y": 1132,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      },
+      {
+         "seatNr": 1,
+         "x": 711,
+         "y": 1034,
+         "width": 45,
+         "height": 25,
+         "rotation": 0,
+         "id": null
+      }
+   ],
+   "city": "Leuven",
+   "library": "2Bergen Arenberg",
+   "locationId": 1,
+   "zoneName": "Tulp 1"
 }
