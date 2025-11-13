@@ -8,6 +8,7 @@ import {
   Typography,
   IconButton,
   Container,
+  Box,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import ShareIcon from "@mui/icons-material/Share";
@@ -59,10 +60,12 @@ export default function ViewReservationModal({
         </IconButton>
       </DialogTitle>
       <DialogContent dividers>
-        <SeatMap
-          zone={{ id: zone_id, name: reservationData["resourceName"] }}
-          reservationNr={parseInt(reservationData["resourceName"].split(" ").pop())}
-        />
+        <Box sx={{ maxWidth: '600px', margin: 'auto' }}>
+          <SeatMap
+            zone={{ id: zone_id, name: reservationData["resourceName"] }}
+            reservationNr={parseInt(reservationData["resourceName"].split(" ").pop())}
+          />
+        </Box>
       </DialogContent>
       <DialogActions sx={{ p: 2 }}>
         <Button onClick={onClose}>Close</Button>
