@@ -55,7 +55,7 @@ def create_script(version, build_dir):
     with open("inject.js", 'r') as f:
         userscript_body = f.read()\
             .replace('"{CSS_CONTENT}"', to_js_concatenation(css_content.split('\n')[0])) \
-            .replace('"{JS_CONTENT}"', to_js_concatenation(js_content.split('\n')[1]))
+            .replace('{JS_CONTENT}', js_content.split('\n')[1])
 
     return userscript_header + '\n' + userscript_body
 
