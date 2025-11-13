@@ -21,5 +21,8 @@
       "resources": ["app.js", "app.css"],
       "matches": ["http://kurt3.ghum.kuleuven.be/*", "https://kurt3.ghum.kuleuven.be/*"]
     }
-  ]
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
 }

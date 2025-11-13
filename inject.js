@@ -14,6 +14,7 @@
 
     // Inject JS
     const script = document.createElement('script');
+    script.setAttribute("nonce", "abc123");
     script.textContent = "{JS_CONTENT}";
     document.body.appendChild(script);
 }})();

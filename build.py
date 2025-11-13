@@ -4,6 +4,7 @@ import shutil
 import pathlib
 import subprocess
 import glob
+from js_concat import to_js_concatenation
 
 # Define directories and file names
 DIST_DIR = "dist"
@@ -33,6 +34,12 @@ def get_asset_files(build_dir):
     return css_content, js_content
 
 def create_userscript(version, build_dir):
+    script = create_script(version, build_dir)
+
+    with open(os.path.join(DIST_DIR, USERSCRIPT_FILENAME), 'w') as f:
+        f.write(script)
+
+def create_script(version, build_dir):
     print("Creating Userscript...")
     
     css_content, js_content = get_asset_files(build_dir)
@@ -44,35 +51,23 @@ def create_userscript(version, build_dir):
     userscript_header = userscript_header.replace("$VERSION$", version)
 
     # Escape for single-quoted JS string
-    css_content_escaped = css_content.replace('\\', '\\\\').replace("'", "\'\'")
-    js_content_escaped = js_content.replace('\\', '\\\\').replace("'", "\'\'")
 
     with open("inject.js", 'r') as f:
         userscript_body = f.read()\
-            .replace("{CSS_CONTENT}", css_content_escaped) \
-            .replace("{JS_CONTENT}", js_content_escaped)
+            .replace('"{CSS_CONTENT}"', to_js_concatenation(css_content.split('\n')[0])) \
+            .replace('"{JS_CONTENT}"', to_js_concatenation(js_content.split('\n')[1]))
 
-    userscript_full_content = userscript_header + '\n' + userscript_body
-    
-    with open(os.path.join(DIST_DIR, USERSCRIPT_FILENAME), 'w') as f:
-        f.write(userscript_full_content)
+    return userscript_header + '\n' + userscript_body
 
-def create_extension(build_dir):
+
+def create_extension(version, build_dir):
     print("Creating development extension...")
     
     dev_dir = os.path.join(DIST_DIR, "dev")
     os.makedirs(dev_dir, exist_ok=True)
     
-    css_content, js_content = get_asset_files(build_dir)
-    
-    # Write app.js and app.css
-    with open(os.path.join(dev_dir, "app.js"), 'w') as f:
-        f.write(js_content)
-    with open(os.path.join(dev_dir, "app.css"), 'w') as f:
-        f.write(css_content)
-        
-    # Copy content script
-    shutil.copy("inject_extension.js", os.path.join(dev_dir, "main.js"))
+    with open("dist/dev/main.js", 'w+') as f:
+        f.write(create_script(version, build_dir))
     
     # Copy manifest and other resources
     shutil.copy("src/manifest.json", os.path.join(dev_dir, "manifest.json"))
@@ -102,7 +97,7 @@ def main():
     create_userscript(version, BUILD_DIR)
     
     # 5. Create development version of the extension
-    create_extension(BUILD_DIR)
+    create_extension(version, BUILD_DIR)
     
     # 6. Create Chrome Extension zip (optional)
     # print("Creating Chrome extension zip...")
