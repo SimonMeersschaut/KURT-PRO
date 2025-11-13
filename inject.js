@@ -1,19 +1,56 @@
-if (!document.getElementById('root')) {{
-    const rootDiv = document.createElement('div');
-    rootDiv.id = 'root';
-    document.body.appendChild(rootDiv);
-}}
+/*
+This function will make sure the user is authenticated and will return wether he succeeded in doing so.
+*/
+async function enforceAuthentication(){
+    try{
+        const response = await fetch("api/information")
+        // const data = response.json();
+        return response.ok;
+    }
+    catch(e){
+        log.error(e);
+        return false;
+    }
+}
 
-// Inject CSS
-const style = document.createElement('style');
-style.textContent = "{CSS_CONTENT}";
-document.head.appendChild(style);
+/*
+Removes all the present content of the page.
+*/
+function clearDOM(){
+    document.head.innerHTML = "";
+    document.body.innerHTML = "";
+}
 
-// Inject JS
+
 function inject(){
+    if (!document.getElementById('root')) {{
+        const rootDiv = document.createElement('div');
+        rootDiv.id = 'root';
+        document.body.appendChild(rootDiv);
+    }}
+
+    // Inject CSS
+    const style = document.createElement('style');
+    style.textContent = "{CSS_CONTENT}";
+    document.head.appendChild(style);
+
+    // Inject JS
     console.log("Injecting js.");
     {JS_CONTENT}
 }
 
 
-inject();
+function main(){
+    enforceAuthentication()
+    .then(success => {
+        if (!success){
+            throw new Error("User could not be authenticated.");
+        }
+        // we assume the user is authenticated when the script reaches this point
+        clearDOM();
+        inject();
+    });
+}
+
+
+main();
