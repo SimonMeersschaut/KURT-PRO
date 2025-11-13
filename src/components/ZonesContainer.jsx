@@ -1,18 +1,20 @@
 import { useState, useEffect } from "react";
 import ZoneCardLoader from "./ZoneCardLoader";
-import ReservationPage from "./ReservationPage";
+import ReservationModal from "./ReservationModal";
+import ViewReservationModal from "./ViewReservationModal";
 import UpcommingReservations from "./UpcommingReservations";
-import UpcommingReservation from "./UpcommingReservation";
-import { Collapse, Button, Box, Typography, Paper } from "@mui/material";
+import { Collapse, Button, Box, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { getZones } from "../api/zones";
-import { fetchReservations } from "../api/reservations"; // <-- assumed
+import { fetchReservations } from "../api/reservations"; 
 
 export default function ZonesContainer({ selectedDate, selectedTime }) {
   const locationId = 1;
-  const [reservedZone, setReservedZone] = useState(null);
-  const [showMapReservation, setShowMapReservation] = useState(null);
+  const [zoneForModal, setZoneForModal] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [reservationToView, setReservationToView] = useState(null);
+  const [isViewModalOpen, setIsViewModalOpen] = useState(false);
   const [showAll, setShowAll] = useState(false);
   const [allZones, setAllZones] = useState([]);
   const [favoriteZoneIds, setFavoriteZoneIds] = useState([14, 11, 2]);
@@ -64,37 +66,25 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
     };
   }, []);
 
-  useEffect(() => {
-    setShowMapReservation(null);
-  }, [selectedDate]);
-
-  const toggleFavorite = (zone) => {
-    setFavoriteZoneIds((prev) =>
-      prev.includes(zone.id)
-        ? prev.filter((id) => id !== zone.id)
-        : [...prev, zone.id]
-    );
+  const handleReserveClick = (zone) => {
+    setZoneForModal(zone);
+    setIsModalOpen(true);
   };
 
-  if (reservedZone) {
-    return (
-      <ReservationPage
-        zone={reservedZone}
-        date={selectedDate}
-        time={selectedTime}
-        onBack={() => setReservedZone(null)}
-      />
-    );
-  }
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setZoneForModal(null);
+  };
 
-  if (showMapReservation) {
-    return (
-      <UpcommingReservation
-          reservationData={showMapReservation}
-          onBack={() => setShowMapReservation(null)}
-      />
-    );
-  }
+  const handleViewReservationClick = (reservation) => {
+    setReservationToView(reservation);
+    setIsViewModalOpen(true);
+  };
+
+  const handleCloseViewModal = () => {
+    setIsViewModalOpen(false);
+    setReservationToView(null);
+  };
 
   const favoriteZones = allZones.filter((zone) =>
     favoriteZoneIds.includes(zone.id)
@@ -117,7 +107,7 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
         <UpcommingReservations 
           selectedDate={selectedDate}
           reservationsForSelectedDate={reservationsForSelectedDate}
-          onClick = {(reservation) => setShowMapReservation(reservation)}
+          onClick={handleViewReservationClick}
         />
       )}
 
@@ -137,7 +127,7 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
             locationId={locationId}
             date={selectedDate}
             time={selectedTime}
-            onReserve={(z) => setReservedZone(z)}
+            onReserve={handleReserveClick}
             isFavorite={true}
           />
         ))}
@@ -166,12 +156,32 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
                 locationId={locationId}
                 date={selectedDate}
                 time={selectedTime}
-                onReserve={(z) => setReservedZone(z)}
+                onReserve={handleReserveClick}
                 isFavorite={false}
               />
             ))}
         </Box>
       </Collapse>
+
+      {/* Reservation Modal */}
+      {zoneForModal && (
+        <ReservationModal
+          zone={zoneForModal}
+          date={selectedDate}
+          time={selectedTime}
+          open={isModalOpen}
+          onClose={handleCloseModal}
+        />
+      )}
+
+      {/* View Reservation Modal */}
+      {reservationToView && (
+        <ViewReservationModal
+          reservationData={reservationToView}
+          open={isViewModalOpen}
+          onClose={handleCloseViewModal}
+        />
+      )}
     </Box>
   );
 }
