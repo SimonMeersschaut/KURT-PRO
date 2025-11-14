@@ -47,15 +47,17 @@ function inject(){
 
 
 function main(){
-    enforceAuthentication()
-    .then(success => {
-        if (!success){
-            throw new Error("User could not be authenticated.");
-        }
-        // we assume the user is authenticated when the script reaches this point
-        clearDOM();
-        inject();
-    });
+    if (document.location.href.endsWith("#kurt-pro")){
+        enforceAuthentication()
+        .then(success => {
+            if (!success){
+                throw new Error("User could not be authenticated.");
+            }
+            // we assume the user is authenticated when the script reaches this point
+            clearDOM();
+            inject();
+        });
+    }
 }
 
 

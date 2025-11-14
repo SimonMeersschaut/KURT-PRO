@@ -43,10 +43,9 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
     };
   }, []);
 
-  // Fetch upcoming reservations
-  useEffect(() => {
+  // Function to fetch reservations
+  const refreshReservations = () => {
     let isMounted = true;
-
     fetchReservations(unverifiedData => {
       if (isMounted) {
         setUpcomingReservations(unverifiedData || []);
@@ -60,10 +59,15 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
       .catch(err => {
         console.error("Failed to fetch upcoming reservations:", err);
       });
-
     return () => {
       isMounted = false;
     };
+  };
+
+  // Fetch upcoming reservations on mount
+  useEffect(() => {
+    const cleanup = refreshReservations();
+    return cleanup;
   }, []);
 
   const handleReserveClick = (zone) => {
@@ -180,6 +184,7 @@ export default function ZonesContainer({ selectedDate, selectedTime }) {
           reservationData={reservationToView}
           open={isViewModalOpen}
           onClose={handleCloseViewModal}
+          onDeleteSuccess={refreshReservations}
         />
       )}
     </Box>
