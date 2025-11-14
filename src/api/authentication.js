@@ -1,15 +1,37 @@
 import { Avatar } from "@mui/material";
 
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 /*
 Get the Uid from the browser cookies.
 */
 export function getUid(){
-
+  return getCookie("uid");
 }
 
+/*
+Get the email from the browser cookies.
+*/
+export function getEmail(){
+  return getCookie("email") || "unknown.dev@student.kuleuven.be";
+}
 
 export function getName(){
-    return "Simon Meersschaut";
+    return getEmail().split("@")[0].replace('.', ' ');
 }
 
 
@@ -40,7 +62,7 @@ function stringAvatar(name) {
       height:40,
       bgcolor: stringToColor(name),
     },
-    children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
+    children: `${name.split(' ')[0][0] || name[0]}${name.split(' ')[1][0] || ""}` || "?",
   };
 }
 

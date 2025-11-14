@@ -4,11 +4,17 @@ This function will make sure the user is authenticated and will return wether he
 async function enforceAuthentication(){
     try{
         const response = await fetch("api/information")
-        // const data = response.json();
+        const data = await response.json();
+        
+        if(response.ok){
+            document.cookie = `email=${data.email}; path=/`;
+            document.cookie = `uid=${data.uid}; path=/`;
+        }
+        
         return response.ok;
     }
     catch(e){
-        log.error(e);
+        console.error(e);
         return false;
     }
 }

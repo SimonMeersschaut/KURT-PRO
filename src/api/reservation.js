@@ -1,29 +1,29 @@
 import { apiPostFetch, kurt3, kurtpro} from "./client";
-import { getUid } from "./authentication";
+import { getUid, getEmail} from "./authentication";
 import { fetchReservations, clearReservationCache } from "./reservations";
 
 /**
  * Syncs all reservations with the backend.
  */
 async function syncReservations() {
-  try {
-    // Invalidate cache and fetch fresh reservations
-    clearReservationCache();
-    const reservations = await fetchReservations();
+  // try {
+  //   Invalidate cache and fetch fresh reservations
+  //   clearReservationCache();
+  //   const reservations = await fetchReservations();
 
-    // TODO: Replace with your actual backend endpoint
-    const backendUrl = kurtpro + "/api/sync-reservations";
+  //   // TODO: Replace with your actual backend endpoint
+  //   const backendUrl = kurtpro + "/api/sync-reservations";
 
-    await fetch(backendUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(reservations),
-    });
-  } catch (error) {
-    console.error("Failed to sync reservations:", error);
-  }
+  //   await fetch(backendUrl, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(reservations),
+  //   });
+  // } catch (error) {
+  //   console.error("Failed to sync reservations:", error);
+  // }
 }
 
 /** Format a Date object to YYYY-MM-DD */
@@ -72,7 +72,7 @@ export default async function makeReservation(seatId, startDate, timeRange) {
     endDate: formatDate(startDate),
     endTime: timeRange.end,
     participants: [
-      {"uid": getUid(), "email": ""}
+      {"uid": getUid(), "email":getEmail()}
     ],
     summary: [
       "", "", "", ""
@@ -85,7 +85,7 @@ export default async function makeReservation(seatId, startDate, timeRange) {
     const responseText = await response.json();
 
     if (response.ok) {
-      const successMessage = "Your reservation has been created. The following attendees were validated: ";
+      const successMessage = "Your reservation has been created.  The following attendees were validated: ";
       if (responseText.startsWith(successMessage)) {
         // Don't await this, let it run in the background
         syncReservations();
@@ -99,7 +99,7 @@ export default async function makeReservation(seatId, startDate, timeRange) {
       // Non-OK response
       let errorMessage = "Unknown error";
       try {
-        errorMessage = responseText ? JSON.parse(responseText) : errorMessage;
+        errorMessage = responseText ? JSON.parse(responseText).details : errorMessage;
       } catch (e) {
         errorMessage = responseText || errorMessage;
       }
