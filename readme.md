@@ -3,12 +3,15 @@
 ## About
 
 ![KURT-PRO homepage](docs/readme-screenshots/homepage.png)
+
 The above screenshot was concept art.
 
 ![Screenshot](docs/screenshot.png)
+
 The above screenshot was the very first version of KURT-PRO.
 
 <img width="1325" height="737" alt="image" src="https://github.com/user-attachments/assets/e42840b5-7b52-43d6-9443-7e07d483a78d" />
+
 The above screenshot was the revisited version of Kurt-Pro, now switching to React (15-11-2025).
 
 
